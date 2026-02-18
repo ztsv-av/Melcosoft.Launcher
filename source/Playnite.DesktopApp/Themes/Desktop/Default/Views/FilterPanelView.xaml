@@ -8,7 +8,7 @@
         <Setter Property="Margin" Value="8,2,6,8" />
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="{StaticResource False}">
-                <Setter Property="Opacity" Value="0.6" />
+                <Setter Property="Opacity" Value="1.0" />
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -17,7 +17,7 @@
         <Setter Property="Margin" Value="8,10,6,4" />
         <Style.Triggers>
             <Trigger Property="Tag" Value="{StaticResource False}">
-                <Setter Property="Opacity" Value="0.6"/>
+                <Setter Property="Opacity" Value="0.5"/>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -52,13 +52,14 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type FilterPanel}">
                     <Border BorderBrush="{DynamicResource PanelSeparatorBrush}"
+                            Background="{DynamicResource FilterPanelViewBackgroundBrush}"
                             d:DesignWidth="200">
                         <Border.Style>
                             <Style TargetType="Border">
-                                <Setter Property="BorderThickness" Value="1,0,0,0" />
+                                <Setter Property="BorderThickness" Value="2.5,0,0,0" />
                                 <Style.Triggers>                                    
                                     <DataTrigger Binding="{Settings FilterPanelPosition}" Value="Left">
-                                        <Setter Property="BorderThickness" Value="0,0,1,0" />
+                                        <Setter Property="BorderThickness" Value="0,0,2.5,0" />
                                     </DataTrigger>
                                     <DataTrigger Binding="{Settings ShowPanelSeparators}" Value="False">
                                         <Setter Property="BorderThickness" Value="0" />
@@ -87,7 +88,7 @@
                                 <ComboBox x:Name="PART_ComboFilterPresets"
                                           DockPanel.Dock="Left" VerticalAlignment="Center" />
                             </DockPanel>                            
-                            <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"
+                            <ScrollViewer Margin="0,15,0,0" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"
                                       DockPanel.Dock="Top" Padding="0,0,0,15">
                                 <StackPanel x:Name="PART_PanelItemsHost" />
                             </ScrollViewer>

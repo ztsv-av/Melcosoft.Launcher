@@ -8,13 +8,23 @@ namespace Playnite
 {
     public static class UrlConstants
     {
-        public const string IssuesTesting = @"https://github.com/JosefNemec/Playnite.Testing/issues/new";
-        public const string Issues = @"https://github.com/JosefNemec/Playnite/issues/new/choose";
-        public const string Patreon = @"https://www.patreon.com/playnite";
-        public const string Kofi = @"https://ko-fi.com/playnite";
-        public const string Discord = @"https://playnite.link/discord";
-        public const string Reddit = @"https://www.reddit.com/r/playnite/";
-        public const string SdkDocs = @"https://playnite.link/docs/";
-        public const string Wiki = @"https://github.com/JosefNemec/Playnite/wiki";
+        public const string IssuesTesting = @"https://melcosoft.cc/en/";
+        public const string Issues = @"https://melcosoft.cc/en/";
+        public const string Patreon = @"https://melcosoft.cc/en/";
+        public const string Kofi = @"https://melcosoft.cc/en/";
+        public const string Reddit = @"https://melcosoft.cc/en/";
+        public const string SdkDocs = @"https://melcosoft.cc/en/";
+        public const string Wiki = @"https://melcosoft.cc/en/";
+
+        public const string Melcosoft = @"https://melcosoft.cc/";
+        public const string MA = @"https://melcosoft-ma.games/";
+        public const string Community = @"https://melcosoft.community/";
+        public const string Help = @"https://melcosoft.help/";
+        public const string Boosty = @"https://boosty.to/melcosoft.games/";
+        public const string Discord = @"https://discord.com/invite/5qmCV9q/";
+        public const string Telegram = @"t.me/melcosoft_games/";
+        public const string VK = @"http://vk.com/melcosoft.games/";
+        public const string Facebook = @"https://www.facebook.com/melcosoft.games/";
+        public const string Instagram = @"https://www.instagram.com/melcosoft.games/";
     }
 }

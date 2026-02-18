@@ -1247,4 +1247,45 @@
   <PropertyGroup>
     <LargeAddressAware>true</LargeAddressAware>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <CefPlatform Condition="'$(Platform)'=='Win32'">x86</CefPlatform>
+    <CefPlatform Condition="'$(Platform)'!='Win32'">$(Platform)</CefPlatform>
+  </PropertyGroup>
+
+  <Target Name="StageCefRuntime" AfterTargets="Build">
+    <PropertyGroup>
+      <PackagesRoot>$(SolutionDir)source\packages\</PackagesRoot>
+      <CefPkgRoot>$(PackagesRoot)chromiumembeddedframework.runtime.win-$(CefPlatform).143.0.9\</CefPkgRoot>
+      <CefNative>$(CefPkgRoot)runtimes\win-$(CefPlatform)\native\</CefNative>
+      <CefCef>$(CefPkgRoot)CEF\win-$(CefPlatform)\</CefCef>
+      <CefSharpRoot>$(PackagesRoot)CefSharp.Common.143.0.90\CefSharp\$(CefPlatform)\</CefSharpRoot>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <CefNativeFiles Include="$(CefNative)**\*.*" />
+      <CefCefFiles Include="$(CefCef)**\*.*" />
+      <CefSharpFiles Include="$(CefSharpRoot)**\*.*" />
+    </ItemGroup>
+
+    <Copy SourceFiles="@(CefNativeFiles)"
+          DestinationFiles="@(CefNativeFiles->'$(TargetDir)%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="true" />
+
+    <Copy SourceFiles="@(CefCefFiles)"
+          DestinationFiles="@(CefCefFiles->'$(TargetDir)%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="true" />
+
+    <Copy SourceFiles="@(CefSharpFiles)"
+          DestinationFiles="@(CefSharpFiles->'$(TargetDir)%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="true" />
+  </Target>
+
+	<Target Name="CopyPortableConfig" AfterTargets="Build">
+		<Copy SourceFiles="$(SolutionDir)..\assets\playnite\config.json"
+			  DestinationFolder="$(TargetDir)"
+			  SkipUnchangedFiles="true" />
+		<MakeDir Directories="$(TargetDir)library" />
+	</Target>
+  
 </Project>

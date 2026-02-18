@@ -424,8 +424,8 @@ namespace Playnite.DesktopApp.ViewModels
             AvailableTrayIcons = new List<SelectableTrayIcon>
             {
                 new SelectableTrayIcon(TrayIconType.Default),
-                new SelectableTrayIcon(TrayIconType.Bright),
-                new SelectableTrayIcon(TrayIconType.Dark)
+                // new SelectableTrayIcon(TrayIconType.Bright),
+                // new SelectableTrayIcon(TrayIconType.Dark)
             };
 
             sectionViews = new Dictionary<DesktopSettingsPage, UserControl>()

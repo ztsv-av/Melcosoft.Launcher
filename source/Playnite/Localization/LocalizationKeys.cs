@@ -10,7 +10,7 @@ namespace Playnite
         /// </summary>
         public const string LanguageName = "LanguageName";
         /// <summary>
-        /// Playnite language
+        /// Melcosoft language
         /// </summary>
         public const string LanguageSettingsLabel = "LOCLanguageSettingsLabel";
         /// <summary>
@@ -46,7 +46,7 @@ namespace Playnite
         /// </summary>
         public const string SaveChangesAskTitle = "LOCSaveChangesAskTitle";
         /// <summary>
-        /// Homepage at www.playnite.link
+        /// Homepage at www.melcosoft.cc/en
         /// </summary>
         public const string AboutHomePageLink = "LOCAboutHomePageLink";
         /// <summary>
@@ -62,7 +62,7 @@ namespace Playnite
         /// </summary>
         public const string AboutSendDiagButton = "LOCAboutSendDiagButton";
         /// <summary>
-        /// About Playnite
+        /// About Melcosoft
         /// </summary>
         public const string AboutWindowTitle = "LOCAboutWindowTitle";
         /// <summary>
@@ -134,7 +134,7 @@ namespace Playnite
         /// </summary>
         public const string CrashReportIssue = "LOCCrashReportIssue";
         /// <summary>
-        /// Restart Playnite
+        /// Restart Melcosoft
         /// </summary>
         public const string CrashRestartPlaynite = "LOCCrashRestartPlaynite";
         /// <summary>
@@ -146,7 +146,7 @@ namespace Playnite
         /// </summary>
         public const string CrashRestartSafeTooltip = "LOCCrashRestartSafeTooltip";
         /// <summary>
-        /// Exit Playnite
+        /// Exit Melcosoft
         /// </summary>
         public const string CrashClosePlaynite = "LOCCrashClosePlaynite";
         /// <summary>
@@ -602,7 +602,7 @@ namespace Playnite
         /// </summary>
         public const string ContributorsLabel = "LOCContributorsLabel";
         /// <summary>
-        /// Exiting Playnite…
+        /// Exiting Melcosoft…
         /// </summary>
         public const string ClosingPlaynite = "LOCClosingPlaynite";
         /// <summary>
@@ -774,11 +774,11 @@ namespace Playnite
         /// </summary>
         public const string MetaSourceIGDB = "LOCMetaSourceIGDB";
         /// <summary>
-        /// Please select which fields should be automatically populated by Playnite and which sources should be used to obtain the data from.
+        /// Please select which fields should be automatically populated by Melcosoft and which sources should be used to obtain the data from.
         /// </summary>
         public const string MetaDescriptionFields = "LOCMetaDescriptionFields";
         /// <summary>
-        /// Please consider clicking on the logo above and contribute updates to igdb.com database in order to improve data Playnite uses.
+        /// Please consider clicking on the logo above and contribute updates to igdb.com database in order to improve data Melcosoft uses.
         /// </summary>
         public const string MetaIgdbContribNotif = "LOCMetaIgdbContribNotif";
         /// <summary>
@@ -894,7 +894,7 @@ namespace Playnite
         /// </summary>
         public const string MenuAddWindowsStore = "LOCMenuAddWindowsStore";
         /// <summary>
-        /// About Playnite
+        /// About Melcosoft
         /// </summary>
         public const string MenuAbout = "LOCMenuAbout";
         /// <summary>
@@ -1158,11 +1158,11 @@ namespace Playnite
         /// </summary>
         public const string SettingsDownloadMetadataOnImport = "LOCSettingsDownloadMetadataOnImport";
         /// <summary>
-        /// Launch Playnite minimized
+        /// Launch Melcosoft minimized
         /// </summary>
         public const string SettingsStartMinimized = "LOCSettingsStartMinimized";
         /// <summary>
-        /// Launch Playnite when you start your computer
+        /// Launch Melcosoft when you start your computer
         /// </summary>
         public const string SettingsStartOnBoot = "LOCSettingsStartOnBoot";
         /// <summary>
@@ -1170,7 +1170,7 @@ namespace Playnite
         /// </summary>
         public const string SettingsStartOnBootClosedToTray = "LOCSettingsStartOnBootClosedToTray";
         /// <summary>
-        /// Failed to register Playnite to launch when computer starts.
+        /// Failed to register Melcosoft to launch when computer starts.
         /// </summary>
         public const string SettingsStartOnBootRegistrationError = "LOCSettingsStartOnBootRegistrationError";
         /// <summary>
@@ -1274,7 +1274,7 @@ namespace Playnite
         /// </summary>
         public const string SettingsLoginStatus = "LOCSettingsLoginStatus";
         /// <summary>
-        /// Playnite Settings
+        /// Melcosoft Settings
         /// </summary>
         public const string SettingsWindowTitle = "LOCSettingsWindowTitle";
         /// <summary>
@@ -1290,11 +1290,11 @@ namespace Playnite
         /// </summary>
         public const string SettingsShowTray = "LOCSettingsShowTray";
         /// <summary>
-        /// Minimize Playnite to system tray
+        /// Minimize Melcosoft to system tray
         /// </summary>
         public const string SettingsMinimizeToTray = "LOCSettingsMinimizeToTray";
         /// <summary>
-        /// Minimize Playnite to system tray when the application window is closed
+        /// Minimize Melcosoft to system tray when the application window is closed
         /// </summary>
         public const string SettingsCloseToTray = "LOCSettingsCloseToTray";
         /// <summary>
@@ -1322,7 +1322,7 @@ namespace Playnite
         /// </summary>
         public const string SettingsClearCacheTitle = "LOCSettingsClearCacheTitle";
         /// <summary>
-        /// Playnite restart is required to apply new theme
+        /// Melcosoft restart is required to apply new theme
         /// </summary>
         public const string SettingsSkinChangeRestart = "LOCSettingsSkinChangeRestart";
         /// <summary>
@@ -1342,19 +1342,19 @@ namespace Playnite
         /// </summary>
         public const string SettingsCreateExtensions = "LOCSettingsCreateExtensions";
         /// <summary>
-        /// Help us translate Playnite
+        /// Help us translate Melcosoft
         /// </summary>
         public const string SettingsCreateLocalization = "LOCSettingsCreateLocalization";
         /// <summary>
-        /// Playnite needs to be restarted in order to apply new settings. Restart now?
+        /// Melcosoft needs to be restarted in order to apply new settings. Restart now?
         /// </summary>
         public const string SettingsRestartAskMessage = "LOCSettingsRestartAskMessage";
         /// <summary>
-        /// Restart Playnite?
+        /// Restart Melcosoft?
         /// </summary>
         public const string SettingsRestartTitle = "LOCSettingsRestartTitle";
         /// <summary>
-        /// Playnite cannot move your library files automatically. You must manually move/copy the files before changing the location. If there is no library in the target location, a new one will be created.
+        /// Melcosoft cannot move your library files automatically. You must manually move/copy the files before changing the location. If there is no library in the target location, a new one will be created.
         /// </summary>
         public const string SettingsDBPathNotification = "LOCSettingsDBPathNotification";
         /// <summary>
@@ -1386,7 +1386,7 @@ namespace Playnite
         /// </summary>
         public const string SettingsPlaytimeImportMode = "LOCSettingsPlaytimeImportMode";
         /// <summary>
-        /// Configures when should Playnite import the playtime reported by library plugins for games in the Playnite database. Support by the library plugins in charge of handling the game(s) is needed to be able to use this feature.
+        /// Configures when should Melcosoft import the playtime reported by library plugins for games in the Melcosoft database. Support by the library plugins in charge of handling the game(s) is needed to be able to use this feature.
         /// </summary>
         public const string SettingsPlaytimeImportModeTooltip = "LOCSettingsPlaytimeImportModeTooltip";
         /// <summary>
@@ -1522,13 +1522,13 @@ namespace Playnite
         /// </summary>
         public const string SettingsImmediateBackgroundDownload = "LOCSettingsImmediateBackgroundDownload";
         /// <summary>
-        /// If enabled, Playnite will download background artwork while downloading metadata, using more disk space and making artwork available when offline.
+        /// If enabled, Melcosoft will download background artwork while downloading metadata, using more disk space and making artwork available when offline.
         /// </summary>
         public const string SettingsImmediateBackgroundDownloadTooltip = "LOCSettingsImmediateBackgroundDownloadTooltip";
         /// <summary>
         /// Automatically close third party client after game exits
         /// </summary>
-        public const string SettingsAutoCloseLauncherOption = "LOCSettingsAutoCloseLauncherOption";
+        public const string SettingsAutoCloseMelcosoftOption = "LOCSettingsAutoCloseMelcosoftOption";
         /// <summary>
         /// Client shutdown delay (in seconds)
         /// </summary>
@@ -1654,15 +1654,15 @@ namespace Playnite
         /// </summary>
         public const string EmuWizardNotice = "LOCEmuWizardNotice";
         /// <summary>
-        /// Below is a list of emulators that Playnite can recognize and configure automatically. You can download emulator installers from their websites. Once you have the emulators installed (manually), you can import them on emulator configuration dialog.
+        /// Below is a list of emulators that Melcosoft can recognize and configure automatically. You can download emulator installers from their websites. Once you have the emulators installed (manually), you can import them on emulator configuration dialog.
         /// </summary>
         public const string EmuDownloadDescription = "LOCEmuDownloadDescription";
         /// <summary>
-        /// You can import any emulators that are installed on your PC by clicking the 'Autodetect From Folder…' button. Playnite will search the selected folder for any known emulators and provide the option to import them. You can use this button multiple times to import emulators from different folders. Emulators will be added to the bottom of the current list.
+        /// You can import any emulators that are installed on your PC by clicking the 'Autodetect From Folder…' button. Melcosoft will search the selected folder for any known emulators and provide the option to import them. You can use this button multiple times to import emulators from different folders. Emulators will be added to the bottom of the current list.
         /// </summary>
         public const string EmuWizardEmuImportIntro = "LOCEmuWizardEmuImportIntro";
         /// <summary>
-        /// You can import games by clicking the 'Scan Folder Using Emulator' button. Selecting the appropriate emulator will tell Playnite which file types should be scanned and imported. You can use this button multiple times to import games from different folders. Games will be added to the bottom of the current list.
+        /// You can import games by clicking the 'Scan Folder Using Emulator' button. Selecting the appropriate emulator will tell Melcosoft which file types should be scanned and imported. You can use this button multiple times to import games from different folders. Games will be added to the bottom of the current list.
         /// </summary>
         public const string EmuWizardGameImportIntro = "LOCEmuWizardGameImportIntro";
         /// <summary>
@@ -1670,7 +1670,7 @@ namespace Playnite
         /// </summary>
         public const string EmuWizardNoEmulatorWarning = "LOCEmuWizardNoEmulatorWarning";
         /// <summary>
-        /// There are no emulators configured in Playnite. You cannot import games without first configuring the emulator and selecting the appropriate file types. Do you want to add some emulators now?
+        /// There are no emulators configured in Melcosoft. You cannot import games without first configuring the emulator and selecting the appropriate file types. Do you want to add some emulators now?
         /// </summary>
         public const string EmuWizardNoEmulatorForGamesWarning = "LOCEmuWizardNoEmulatorForGamesWarning";
         /// <summary>
@@ -1702,7 +1702,7 @@ namespace Playnite
         /// </summary>
         public const string FirstWindowTitle = "LOCFirstWindowTitle";
         /// <summary>
-        /// This process will guide you through an automatic import and configuration of external game libraries. Playnite can automatically import games from multiple game services, such as Steam or GOG.
+        /// This process will guide you through an automatic import and configuration of external game libraries. Melcosoft can automatically import games from multiple game services, such as Steam or GOG.
         /// </summary>
         public const string FirstIntro = "LOCFirstIntro";
         /// <summary>
@@ -1710,7 +1710,7 @@ namespace Playnite
         /// </summary>
         public const string FirstExternalTitle = "LOCFirstExternalTitle";
         /// <summary>
-        /// Following is the list of some curated library integrations Playnite supports. Please select ones you want to install.
+        /// Following is the list of some curated library integrations Melcosoft supports. Please select ones you want to install.
         /// </summary>
         public const string FirstImportIntroduction = "LOCFirstImportIntroduction";
         /// <summary>
@@ -2174,7 +2174,7 @@ namespace Playnite
         /// </summary>
         public const string ScanEmulatorGamesEmptyProfileError = "LOCScanEmulatorGamesEmptyProfileError";
         /// <summary>
-        /// Playnite failed to start. Please close all other instances and try again.
+        /// Melcosoft failed to start. Please close all other instances and try again.
         /// </summary>
         public const string StartGenericError = "LOCStartGenericError";
         /// <summary>
@@ -2190,7 +2190,7 @@ namespace Playnite
         /// </summary>
         public const string AppStartupError = "LOCAppStartupError";
         /// <summary>
-        /// Failed to initialize web view component. Playnite cannot continue with startup process.
+        /// Failed to initialize web view component. Melcosoft cannot continue with startup process.
         /// </summary>
         public const string CefSharpInitError = "LOCCefSharpInitError";
         /// <summary>
@@ -2254,7 +2254,7 @@ namespace Playnite
         /// </summary>
         public const string Browse = "LOCBrowse";
         /// <summary>
-        /// Open Playnite
+        /// Open Melcosoft
         /// </summary>
         public const string OpenPlaynite = "LOCOpenPlaynite";
         /// <summary>
@@ -2446,7 +2446,7 @@ namespace Playnite
         /// </summary>
         public const string BackToDesktopMode = "LOCBackToDesktopMode";
         /// <summary>
-        /// Exit Playnite
+        /// Exit Melcosoft
         /// </summary>
         public const string ExitPlaynite = "LOCExitPlaynite";
         /// <summary>
@@ -2658,7 +2658,7 @@ namespace Playnite
         /// </summary>
         public const string UpdateProgressCancelAsk = "LOCUpdateProgressCancelAsk";
         /// <summary>
-        /// Some background task is currently in progress. Do you want to cancel it and exit Playnite?
+        /// Some background task is currently in progress. Do you want to cancel it and exit Melcosoft?
         /// </summary>
         public const string BackgroundProgressCancelAskExit = "LOCBackgroundProgressCancelAskExit";
         /// <summary>
@@ -2666,7 +2666,7 @@ namespace Playnite
         /// </summary>
         public const string BackgroundProgressCancelAskSwitchMode = "LOCBackgroundProgressCancelAskSwitchMode";
         /// <summary>
-        /// An update for Playnite is available
+        /// An update for Melcosoft is available
         /// </summary>
         public const string UpdateIsAvailableNotificationBody = "LOCUpdateIsAvailableNotificationBody";
         /// <summary>
@@ -2886,7 +2886,7 @@ namespace Playnite
         /// </summary>
         public const string DescriptionScoreValues = "LOCDescriptionScoreValues";
         /// <summary>
-        /// Playnite's development is supported by these patrons and Ko-fi members:
+        /// Melcosoft's development is supported by these patrons and Ko-fi members:
         /// </summary>
         public const string PatreonDevelopMessage = "LOCPatreonDevelopMessage";
         /// <summary>
@@ -3054,7 +3054,7 @@ namespace Playnite
         /// </summary>
         public const string PLaytime1000plus = "LOCPLaytime1000plus";
         /// <summary>
-        /// Playnite must be restarted to complete the installation. Do you want to restart now?
+        /// Melcosoft must be restarted to complete the installation. Do you want to restart now?
         /// </summary>
         public const string ExtInstallationRestartNotif = "LOCExtInstallationRestartNotif";
         /// <summary>
@@ -3070,7 +3070,7 @@ namespace Playnite
         /// </summary>
         public const string SpecificExtensionLoadError = "LOCSpecificExtensionLoadError";
         /// <summary>
-        /// Can't load "{0}" extension, current Playnite version is not supported.
+        /// Can't load "{0}" extension, current Melcosoft version is not supported.
         /// </summary>
         public const string SpecificExtensionLoadSDKError = "LOCSpecificExtensionLoadSDKError";
         /// <summary>
@@ -3078,7 +3078,7 @@ namespace Playnite
         /// </summary>
         public const string SpecificThemeLoadError = "LOCSpecificThemeLoadError";
         /// <summary>
-        /// Can't load "{0}" theme, current Playnite version is not supported.
+        /// Can't load "{0}" theme, current Melcosoft version is not supported.
         /// </summary>
         public const string SpecificThemeLoadSDKError = "LOCSpecificThemeLoadSDKError";
         /// <summary>
@@ -3134,7 +3134,7 @@ namespace Playnite
         /// </summary>
         public const string ThemeUpdatePrompt = "LOCThemeUpdatePrompt";
         /// <summary>
-        /// You are about to leave Playnite and navigate to the following web page using your default web browser. Do you want to continue?
+        /// You are about to leave Melcosoft and navigate to the following web page using your default web browser. Do you want to continue?
         /// </summary>
         public const string UrlNavigationMessage = "LOCUrlNavigationMessage";
         /// <summary>
@@ -3170,7 +3170,7 @@ namespace Playnite
         /// </summary>
         public const string ThemeBuiltInUninstallHint = "LOCThemeBuiltInUninstallHint";
         /// <summary>
-        /// This theme doesn't support this version of Playnite.
+        /// This theme doesn't support this version of Melcosoft.
         /// </summary>
         public const string ThemeUnsupported = "LOCThemeUnsupported";
         /// <summary>
@@ -3182,7 +3182,7 @@ namespace Playnite
         /// </summary>
         public const string ExtensionBuiltInUninstallHint = "LOCExtensionBuiltInUninstallHint";
         /// <summary>
-        /// This extension doesn't support this version of Playnite.
+        /// This extension doesn't support this version of Melcosoft.
         /// </summary>
         public const string ExtensionUnsupported = "LOCExtensionUnsupported";
         /// <summary>
@@ -3278,7 +3278,7 @@ namespace Playnite
         /// </summary>
         public const string CommonLinksStorePage = "LOCCommonLinksStorePage";
         /// <summary>
-        /// The initial setup is not complete. Playnite will now restart to Desktop Mode to finish the procedure.
+        /// The initial setup is not complete. Melcosoft will now restart to Desktop Mode to finish the procedure.
         /// </summary>
         public const string FullscreenFirstTimeError = "LOCFullscreenFirstTimeError";
         /// <summary>
@@ -3366,7 +3366,7 @@ namespace Playnite
         /// </summary>
         public const string AddonsSearching = "LOCAddonsSearching";
         /// <summary>
-        /// Add-on is not compatible with this version of Playnite.
+        /// Add-on is not compatible with this version of Melcosoft.
         /// </summary>
         public const string AddonErrorNotCompatible = "LOCAddonErrorNotCompatible";
         /// <summary>
@@ -3650,7 +3650,7 @@ namespace Playnite
         /// </summary>
         public const string SettingsMinimizeAfterStartingGame = "LOCSettingsMinimizeAfterStartingGame";
         /// <summary>
-        /// Minimize Playnite after a game is started.
+        /// Minimize Melcosoft after a game is started.
         /// </summary>
         public const string SettingsMinimizeAfterStartingGameDescription = "LOCSettingsMinimizeAfterStartingGameDescription";
         /// <summary>
@@ -3670,7 +3670,7 @@ namespace Playnite
         /// </summary>
         public const string SettingsXInputProcessing = "LOCSettingsXInputProcessing";
         /// <summary>
-        /// If disabled, Playnite won't accept any game controller inputs.
+        /// If disabled, Melcosoft won't accept any game controller inputs.
         /// </summary>
         public const string SettingsXInputProcessingDescription = "LOCSettingsXInputProcessingDescription";
         /// <summary>
@@ -3702,7 +3702,7 @@ namespace Playnite
         /// </summary>
         public const string SettingsPrimaryControllerOnlyDescription = "LOCSettingsPrimaryControllerOnlyDescription";
         /// <summary>
-        /// Guide button focuses Playnite
+        /// Guide button focuses Melcosoft
         /// </summary>
         public const string SettingsRefocusOnGuidButton = "LOCSettingsRefocusOnGuidButton";
         /// <summary>
@@ -3802,7 +3802,7 @@ namespace Playnite
         /// </summary>
         public const string StartupScript = "LOCStartupScript";
         /// <summary>
-        /// Please note that both extensions and themes can greatly affect Playnite's performance, stability and security.
+        /// Please note that both extensions and themes can greatly affect Melcosoft's performance, stability and security.
         /// </summary>
         public const string AddonPerfNotice = "LOCAddonPerfNotice";
         /// <summary>
@@ -3958,7 +3958,7 @@ namespace Playnite
         /// </summary>
         public const string EmuImportWithRelativePaths = "LOCEmuImportWithRelativePaths";
         /// <summary>
-        /// If possible import game files using paths relative to Playnite's installation folder or emulator's installation folder.
+        /// If possible import game files using paths relative to Melcosoft's installation folder or emulator's installation folder.
         /// </summary>
         public const string EmuImportWithRelativePathsTooltip = "LOCEmuImportWithRelativePathsTooltip";
         /// <summary>
@@ -4038,15 +4038,15 @@ namespace Playnite
         /// </summary>
         public const string SortingNameAutofillProgress = "LOCSortingNameAutofillProgress";
         /// <summary>
-        /// Nahimic service has been detected to be running on your system. This service is known to cause rendering issues to Playnite (and other apps).
+        /// Nahimic service has been detected to be running on your system. This service is known to cause rendering issues to Melcosoft (and other apps).
         /// </summary>
         public const string NahimicServiceWarning = "LOCNahimicServiceWarning";
         /// <summary>
-        /// Playnite is running with elevated privileges (as an administrator). This is not recommended since it gives elevated privileges to all installed extensions and all games/apps started from Playnite!
+        /// Melcosoft is running with elevated privileges (as an administrator). This is not recommended since it gives elevated privileges to all installed extensions and all games/apps started from Melcosoft!
         /// </summary>
         public const string ElevatedProcessWarning = "LOCElevatedProcessWarning";
         /// <summary>
-        /// Show warning if Playnite is running with elevated privileges
+        /// Show warning if Melcosoft is running with elevated privileges
         /// </summary>
         public const string ElevatedProcessWarningShowOption = "LOCElevatedProcessWarningShowOption";
         /// <summary>
@@ -4086,7 +4086,7 @@ namespace Playnite
         /// </summary>
         public const string OverrideInstallState = "LOCOverrideInstallState";
         /// <summary>
-        /// When set, Playnite will ignore installation state (including installation directory) set by the integration plugin that imports this game.
+        /// When set, Melcosoft will ignore installation state (including installation directory) set by the integration plugin that imports this game.
         /// </summary>
         public const string OverrideInstallStateTooltip = "LOCOverrideInstallStateTooltip";
         /// <summary>
@@ -4238,7 +4238,7 @@ namespace Playnite
         /// </summary>
         public const string SearchSettingsSystemWideShortcut = "LOCSearchSettingsSystemWideShortcut";
         /// <summary>
-        /// Playnite search
+        /// Melcosoft search
         /// </summary>
         public const string SearchTitle = "LOCSearchTitle";
         /// <summary>
@@ -4474,7 +4474,7 @@ namespace Playnite
         /// </summary>
         public const string UserDataFolder = "LOCUserDataFolder";
         /// <summary>
-        /// Library file corruption has been detected, Playnite will now shutdown.
+        /// Library file corruption has been detected, Melcosoft will now shutdown.
         /// </summary>
         public const string DBCorruptionCrashMessage = "LOCDBCorruptionCrashMessage";
         /// <summary>

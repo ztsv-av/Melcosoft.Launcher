@@ -178,32 +178,40 @@ namespace Playnite.DesktopApp.Controls
             // FullScreen
             extensionsEndItem = new Separator();
             Items.Add(extensionsEndItem);
-            AddMenuChild(Items, "LOCMenuOpenFullscreen", mainModel.OpenFullScreenCommand, null, "FullscreenModeIcon");
-            Items.Add(new Separator());
+            // AddMenuChild(Items, "LOCMenuOpenFullscreen", mainModel.OpenFullScreenCommand, null, "FullscreenModeIcon");
+            // Items.Add(new Separator());
 
             // Links
             var linksItem = AddMenuChild(Items, "LOCMenuLinksTitle", null);
+            AddMenuChild(linksItem.Items, "Melcosoft", GlobalCommands.NavigateUrlCommand, UrlConstants.Melcosoft, "Images/reddit.png");
+            AddMenuChild(linksItem.Items, "Master Account", GlobalCommands.NavigateUrlCommand, UrlConstants.MA, "Images/reddit.png");
+            AddMenuChild(linksItem.Items, "Community", GlobalCommands.NavigateUrlCommand, UrlConstants.Community, "Images/reddit.png");
+            AddMenuChild(linksItem.Items, "Help", GlobalCommands.NavigateUrlCommand, UrlConstants.Help, "Images/reddit.png");
+            AddMenuChild(linksItem.Items, "Boosty", GlobalCommands.NavigateUrlCommand, UrlConstants.Boosty, "Images/reddit.png");
             AddMenuChild(linksItem.Items, "Discord", GlobalCommands.NavigateUrlCommand, UrlConstants.Discord, "Images/discord.png");
-            AddMenuChild(linksItem.Items, "Reddit", GlobalCommands.NavigateUrlCommand, UrlConstants.Reddit, "Images/reddit.png");
+            AddMenuChild(linksItem.Items, "Telegram", GlobalCommands.NavigateUrlCommand, UrlConstants.Telegram, "Images/reddit.png");
+            AddMenuChild(linksItem.Items, "VK", GlobalCommands.NavigateUrlCommand, UrlConstants.VK, "Images/reddit.png");
+            AddMenuChild(linksItem.Items, "Facebook", GlobalCommands.NavigateUrlCommand, UrlConstants.Facebook, "Images/reddit.png");
+            AddMenuChild(linksItem.Items, "Instagram", GlobalCommands.NavigateUrlCommand, UrlConstants.Instagram, "Images/reddit.png");
 
             // Help
             var helpItem = AddMenuChild(Items, "LOCMenuHelpTitle", null);
-            AddMenuChild(helpItem.Items, "LOCUserManual", GlobalCommands.NavigateUrlCommand, UrlConstants.SdkDocs);
-            AddMenuChild(helpItem.Items, "LOCMenuIssues", mainModel.ReportIssueCommand);
-            AddMenuChild(helpItem.Items, "LOCSDKDocumentation", GlobalCommands.NavigateUrlCommand, UrlConstants.SdkDocs);
-            helpItem.Items.Add(new Separator());
+            // AddMenuChild(helpItem.Items, "LOCUserManual", GlobalCommands.NavigateUrlCommand, UrlConstants.SdkDocs);
+            // AddMenuChild(helpItem.Items, "LOCMenuIssues", mainModel.ReportIssueCommand);
+            // AddMenuChild(helpItem.Items, "LOCSDKDocumentation", GlobalCommands.NavigateUrlCommand, UrlConstants.SdkDocs);
+            // helpItem.Items.Add(new Separator());
             AddMenuChild(helpItem.Items, "LOCCrashRestartPlaynite", mainModel.RestartApp);
-            AddMenuChild(helpItem.Items, "LOCCrashRestartSafe", mainModel.RestartInSafeMode);
+            // AddMenuChild(helpItem.Items, "LOCCrashRestartSafe", mainModel.RestartInSafeMode);
 
             // About
-            AddMenuChild(Items, "LOCMenuAbout", mainModel.OpenAboutCommand, null, "AboutPlayniteIcon");
+            // AddMenuChild(Items, "LOCMenuAbout", mainModel.OpenAboutCommand, null, "AboutPlayniteIcon");
             AddMenuChild(Items, "LOCCheckForUpdates", mainModel.CheckForUpdateCommand);
             Items.Add(new Separator());
 
             // Patreon
-            AddMenuChild(Items, "LOCMenuPatreonSupport", GlobalCommands.NavigateUrlCommand, UrlConstants.Patreon, "Images/patreon.png");
-            AddMenuChild(Items, "LOCMenuKofiSupport", GlobalCommands.NavigateUrlCommand, UrlConstants.Kofi, "Images/kofi.png");
-            Items.Add(new Separator());
+            // AddMenuChild(Items, "LOCMenuPatreonSupport", GlobalCommands.NavigateUrlCommand, UrlConstants.Patreon, "Images/patreon.png");
+            // AddMenuChild(Items, "LOCMenuKofiSupport", GlobalCommands.NavigateUrlCommand, UrlConstants.Kofi, "Images/kofi.png");
+            // Items.Add(new Separator());
 
             // Exit
             AddMenuChild(Items, "LOCExitAppLabel", mainModel.ShutdownCommand, null, "ExitIcon");

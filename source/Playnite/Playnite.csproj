@@ -359,7 +359,9 @@
     <Compile Include="Common\TGASharpLib.cs" />
     <Compile Include="Common\Timer.cs" />
     <Compile Include="Common\Units.cs" />
-    <Compile Include="Common\Web\Downloader.cs" />
+    <Compile Include="Common\Web\Downloader.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Common\Web\HttpDownloader.cs" />
     <Compile Include="Common\Xaml.cs" />
     <Compile Include="Common\Xml.cs" />
@@ -777,11 +779,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>SDL2.dll</TargetPath>
     </ContentWithTargetPath>
-      <ContentWithTargetPath Include="..\..\references\SDL3.dll">
-          <Link>Dependencies\SDL3.dll</Link>
-          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-          <TargetPath>SDL3.dll</TargetPath>
-      </ContentWithTargetPath>
+    <ContentWithTargetPath Include="..\..\references\SDL3.dll">
+      <Link>Dependencies\SDL3.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>SDL3.dll</TargetPath>
+    </ContentWithTargetPath>
     <ContentWithTargetPath Include="..\..\references\SDL2_mixer.dll">
       <Link>Dependencies\SDL2_mixer.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
