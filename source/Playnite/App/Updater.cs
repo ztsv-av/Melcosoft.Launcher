@@ -1,15 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using System.Windows;
-using Flurl;
-using System.Net;
 using Playnite.Common;
 using Playnite.Common.Web;
 using Playnite.Settings;
@@ -19,6 +15,22 @@ namespace Playnite
 {
     public class Updater
     {
+        // Hardcode local backend endpoint.
+        private const string BackendBaseUrl = "http://127.0.0.1:17877";
+        private const string CheckEndpoint = "/launcher/release/check";
+        private const string DownloadEndpoint = "/launcher/release/download";
+        private const string PrepareUpdaterEndpoint = "/launcher/release/prepare_updater";
+
+        private static ILogger logger = LogManager.GetLogger();
+
+        private IPlayniteApplication playniteApp;
+        private IDownloader downloader;
+
+        // Cache check response to avoid calling backend too often inside same window open
+        private BackendManifest cachedManifest;
+        private DateTime cachedManifestAtUtc = DateTime.MinValue;
+        private static readonly TimeSpan CacheTtl = TimeSpan.FromSeconds(10);
+
         private static string updateBranch
         {
             get
@@ -27,17 +39,71 @@ namespace Playnite
             }
         }
 
-        private static ILogger logger = LogManager.GetLogger();
-        private UpdateManifest updateManifest;
-        private IPlayniteApplication playniteApp;
-        private IDownloader downloader;
-
-        private string updaterPath
+        private static Version currentVersion;
+        public static Version CurrentVersion
         {
             get
             {
-                return Path.Combine(PlaynitePaths.TempPath, "update.exe");
+                if (currentVersion == null)
+                {
+                    currentVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+                }
+
+                return currentVersion;
             }
+        }
+
+        // Backend manifest shape (subset)
+        private sealed class BackendManifest
+        {
+            [JsonProperty("pending_update")]
+            public bool PendingUpdate { get; set; }
+
+            [JsonProperty("pending_version")]
+            public string PendingVersion { get; set; }
+
+            [JsonProperty("pending_release_notes")]
+            public string PendingReleaseNotes { get; set; }
+
+            [JsonProperty("update_state")]
+            public string UpdateState { get; set; }
+
+            [JsonProperty("pending_package_path")]
+            public string PendingPackagePath { get; set; }
+
+            [JsonProperty("install_dir")]
+            public string InstallDir { get; set; }
+        }
+
+        private sealed class PrepareUpdaterResponse
+        {
+            [JsonProperty("ok")]
+            public bool Ok { get; set; }
+
+            [JsonProperty("error")]
+            public string Error { get; set; }
+
+            [JsonProperty("version")]
+            public string Version { get; set; }
+
+            [JsonProperty("package")]
+            public string Package { get; set; }
+
+            [JsonProperty("install_dir")]
+            public string InstallDir { get; set; }
+
+            [JsonProperty("updater_path")]
+            public string UpdaterPath { get; set; }
+        }
+
+        public Updater(IPlayniteApplication app) : this(app, new Downloader())
+        {
+        }
+
+        public Updater(IPlayniteApplication app, IDownloader webDownloader)
+        {
+            playniteApp = app;
+            downloader = webDownloader;
         }
 
         public bool IsUpdateAvailable
@@ -63,167 +129,192 @@ namespace Playnite
             }
         }
 
-        private static Version currentVersion;
-        public static Version CurrentVersion
+        public Version GetLatestVersion()
         {
-            get
+            var m = EnsureBackendChecked();
+            if (m == null)
             {
-                if (currentVersion == null)
-                {
-                    currentVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
-                }
-
-                return currentVersion;
+                return CurrentVersion;
             }
-        }
 
-        public Updater(IPlayniteApplication app) : this(app, new Downloader())
-        {
-        }
+            if (!m.PendingUpdate || string.IsNullOrWhiteSpace(m.PendingVersion))
+            {
+                return CurrentVersion;
+            }
 
-        public Updater(IPlayniteApplication app, IDownloader webDownloader)
-        {
-            playniteApp = app;
-            downloader = webDownloader;
-        }
+            if (Version.TryParse(m.PendingVersion.Trim(), out var v))
+            {
+                return v;
+            }
 
-        private string GetUpdateDataRootUrl(string configKey)
-        {
-            return Url.Combine(ConfigurationManager.AppSettings[configKey], updateBranch, $"{CurrentVersion.Major}.{CurrentVersion.Minor}");
+            return CurrentVersion;
         }
 
         public List<ReleaseNoteData> GetReleaseNotes()
         {
             var notes = new List<ReleaseNoteData>();
-            if (updateManifest == null)
+            var m = EnsureBackendChecked();
+            if (m == null)
             {
-                DownloadManifest();
+                return notes;
             }
 
-            foreach (var version in updateManifest.VersionHistory)
+            if (!m.PendingUpdate || string.IsNullOrWhiteSpace(m.PendingVersion))
             {
-                if (version.CompareTo(CurrentVersion) > 0)
-                {
-                    var noteUrls = new List<string>
-                    {
-                        Url.Combine(ConfigurationManager.AppSettings["UpdateUrl"], updateBranch, $"{version.Major}.{version.Minor}.html"),
-                        Url.Combine(ConfigurationManager.AppSettings["UpdateUrl2"], updateBranch, $"{version.Major}.{version.Minor}.html")
-                    };
-
-                    var note = downloader.DownloadString(noteUrls);
-                    notes.Add(new ReleaseNoteData()
-                    {
-                        Version = version,
-                        Note = note
-                    });
-                }
+                return notes;
             }
+
+            if (!Version.TryParse(m.PendingVersion.Trim(), out var v))
+            {
+                v = CurrentVersion;
+            }
+
+            var rn = m.PendingReleaseNotes ?? string.Empty;
+
+            notes.Add(new ReleaseNoteData()
+            {
+                Version = v,
+                Note = rn
+            });
 
             return notes;
         }
 
-        private bool VerifyUpdateFile(string checksum, string path)
-        {
-            var newMD5 = FileSystem.GetMD5(path);
-            if (newMD5 != checksum)
-            {
-                logger.Error($"Checksum of downloaded file doesn't match: {newMD5} vs {checksum}");
-                return false;
-            }
-
-            return true;
-        }
-
         public async Task DownloadUpdate(Action<DownloadProgressChangedEventArgs> progressHandler)
         {
-            if (updateManifest == null)
-            {
-                DownloadManifest();
-            }
-
-            if (File.Exists(updaterPath))
-            {
-                if (VerifyUpdateFile(updateManifest.Checksum, updaterPath))
-                {
-                    logger.Info("Update already downloaded skipping download.");
-                    return;
-                }
-            }
-
             try
             {
-                await downloader.DownloadFileAsync(updateManifest.PackageUrls, updaterPath, progressHandler);
+                // Notify start (0%)
+                progressHandler?.Invoke(null);
+
+                await PostJsonAsync(BackendBaseUrl + DownloadEndpoint, "{}");
+
+                // Notify finish (100%)
+                progressHandler?.Invoke(null);
             }
             catch (Exception e)
             {
-                logger.Error(e, "Failed to download update file.");
+                logger.Error(e, "Failed to trigger backend download.");
                 throw new Exception("Failed to download update file.");
-            }
-
-            if (!VerifyUpdateFile(updateManifest.Checksum, updaterPath))
-            {
-                throw new Exception($"Update file integrity check failed.");
             }
         }
 
         public void InstallUpdate(ApplicationMode mode)
         {
-            var portable = PlayniteSettings.IsPortable ? "/PORTABLE" : "";
-            var fullscreen = mode == ApplicationMode.Fullscreen ? "/FULLSCREEN" : "";
-            logger.Info("Installing new update to {0}, in {1} mode".Format(PlaynitePaths.ProgramPath, portable));
-            playniteApp.QuitAndStart(
-                updaterPath,
-                @"/SILENT /NOCANCEL /DIR=""{0}"" /UPDATE {1} {2}".Format(PlaynitePaths.ProgramPath, portable, fullscreen),
-                !FileSystem.CanWriteToFolder(PlaynitePaths.ProgramPath));
+            // 1) Ask backend to prepare Melcosoft.Updater.exe
+            PrepareUpdaterResponse prep;
+            try
+            {
+                var json = PostJson(BackendBaseUrl + PrepareUpdaterEndpoint, "{}");
+                prep = JsonConvert.DeserializeObject<PrepareUpdaterResponse>(json);
+            }
+            catch (Exception e)
+            {
+                logger.Error(e, "prepare_updater call failed.");
+                throw new Exception("Failed to prepare updater.");
+            }
+
+            if (prep == null || !prep.Ok)
+            {
+                var err = prep?.Error ?? "prepare_updater_failed";
+                throw new Exception(err);
+            }
+
+            if (string.IsNullOrWhiteSpace(prep.UpdaterPath) ||
+                string.IsNullOrWhiteSpace(prep.Version) ||
+                string.IsNullOrWhiteSpace(prep.Package) ||
+                string.IsNullOrWhiteSpace(prep.InstallDir))
+            {
+                throw new Exception("prepare_updater returned invalid payload.");
+            }
+
+            if (!File.Exists(prep.UpdaterPath))
+            {
+                throw new Exception($"updater_exe_missing: {prep.UpdaterPath}");
+            }
+
+            // 2) Build args for the Melcosoft.Updater.exe
+            var args = $"--apply --version \"{prep.Version}\" --package \"{prep.Package}\" --install-dir \"{prep.InstallDir}\"";
+
+            logger.Info($"Starting Melcosoft updater: {prep.UpdaterPath} {args}");
+
+            // 3) Elevate
+            playniteApp.QuitAndStart(prep.UpdaterPath, args, true);
         }
 
+        private BackendManifest EnsureBackendChecked()
+        {
+            if (cachedManifest != null && (DateTime.UtcNow - cachedManifestAtUtc) < CacheTtl)
+            {
+                return cachedManifest;
+            }
+
+            try
+            {
+                var json = PostJson(BackendBaseUrl + CheckEndpoint, "{}");
+                var m = JsonConvert.DeserializeObject<BackendManifest>(json);
+                cachedManifest = m;
+                cachedManifestAtUtc = DateTime.UtcNow;
+                return m;
+            }
+            catch (Exception e)
+            {
+                logger.Warn(e, "Failed to check updates via backend.");
+                return null;
+            }
+        }
+
+        private static async Task<string> PostJsonAsync(string url, string body)
+        {
+            var req = (HttpWebRequest)WebRequest.Create(url);
+            req.Method = "POST";
+            req.ContentType = "application/json";
+            req.Timeout = 30_000;
+
+            var bytes = Encoding.UTF8.GetBytes(body ?? "{}");
+            using (var stream = await req.GetRequestStreamAsync().ConfigureAwait(false))
+            {
+                await stream.WriteAsync(bytes, 0, bytes.Length).ConfigureAwait(false);
+            }
+
+            using (var resp = (HttpWebResponse)await req.GetResponseAsync().ConfigureAwait(false))
+            using (var reader = new StreamReader(resp.GetResponseStream()))
+            {
+                return await reader.ReadToEndAsync().ConfigureAwait(false);
+            }
+        }
+
+        private static string PostJson(string url, string body)
+        {
+            var req = (HttpWebRequest)WebRequest.Create(url);
+            req.Method = "POST";
+            req.ContentType = "application/json";
+            req.Timeout = 30_000;
+
+            var bytes = Encoding.UTF8.GetBytes(body ?? "{}");
+            using (var stream = req.GetRequestStream())
+            {
+                stream.Write(bytes, 0, bytes.Length);
+            }
+
+            using (var resp = (HttpWebResponse)req.GetResponse())
+            using (var reader = new StreamReader(resp.GetResponseStream()))
+            {
+                return reader.ReadToEnd();
+            }
+        }
+
+        // Unused, kept for compatibility
+        private string GetUpdateDataRootUrl(string configKey)
+        {
+            return string.Empty;
+        }
+
+        // Unused, kept for compatibility
         public UpdateManifest DownloadManifest()
         {
-            var dataString = string.Empty;
-
-            try
-            {
-                dataString = GetUpdateManifestData(GetUpdateDataRootUrl("UpdateUrl"));
-            }
-            catch (Exception e)
-            {
-                logger.Warn(e, "Failed to download update manifest from main URL");
-            }
-
-            try
-            {
-                if (string.IsNullOrEmpty(dataString))
-                {
-                    dataString = GetUpdateManifestData(GetUpdateDataRootUrl("UpdateUrl2"));
-                }
-            }
-            catch (Exception e)
-            {
-                logger.Warn(e, "Failed to download update manifest from secondary URL");
-            }
-
-            if (string.IsNullOrEmpty(dataString))
-            {
-                throw new Exception("Failed to download update manifest.");
-            }
-
-            updateManifest = JsonConvert.DeserializeObject<UpdateManifest>(dataString);
-            return updateManifest;
-        }
-
-        public Version GetLatestVersion()
-        {
-            if (updateManifest == null)
-            {
-                DownloadManifest();
-            }
-
-            return updateManifest.Version;
-        }
-
-        private string GetUpdateManifestData(string url)
-        {
-            return downloader.DownloadString(Url.Combine(url, UpdateManifest.ServerManifestFileName));
+            EnsureBackendChecked();
+            return null;
         }
     }
 }

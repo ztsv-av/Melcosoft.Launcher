@@ -1191,7 +1191,7 @@ namespace Playnite
             {
                 action();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 logger.Error(e, "Failed to execute app quit action.");
             }
@@ -1305,6 +1305,9 @@ namespace Playnite
 
         private void CheckForUpdates(bool checkProgram, bool checkAddons)
         {
+            logger.Info("--------------------------------------------------------------------");
+            logger.Info($"MELCOSOFT: Using custom Updater backend flow. Update available hz");
+            logger.Info("--------------------------------------------------------------------");
             if (checkProgram)
             {
                 try
@@ -1533,7 +1536,8 @@ namespace Playnite
                     MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 {
                     Restart(new CmdLineOptions { SkipLibUpdate = true });
-                };
+                }
+                ;
             }
             catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
             {
@@ -1579,7 +1583,8 @@ namespace Playnite
                         {
                             SkipLibUpdate = true,
                         });
-                    };
+                    }
+                    ;
                 }
             }
             catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
@@ -1623,7 +1628,8 @@ namespace Playnite
                         {
                             SkipLibUpdate = true,
                         });
-                    };
+                    }
+                    ;
                 }
             }
             catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
