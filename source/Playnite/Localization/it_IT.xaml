@@ -3,7 +3,7 @@
     <!--
     THIS FILE IS NOT PART OF THE THEME, DO NOT MODIFY!
     -->
-    <sys:String x:Key="LanguageName">Italian</sys:String>
+    <sys:String x:Key="LanguageName">Italiano</sys:String>
     <sys:String x:Key="LOCLanguageSettingsLabel">Lingua Playnite</sys:String>
     <sys:String x:Key="LOCExitAppLabel">Esci</sys:String>
     <sys:String x:Key="LOCFilterActiveLabel">Filtro attivo</sys:String>
@@ -280,7 +280,7 @@ Selezionando l'opzione &quot;Aggiungi alla lista delle esclusioni&quot; i giochi
     <sys:String x:Key="LOCSettingsGameDetailsListIconSize">Altezza icona lista giochi</sys:String>
     <sys:String x:Key="LOCSettingsInterfaceFont">Carattere dell'applicazione</sys:String>
     <sys:String x:Key="LOCSettingsInterfaceMonoFont">Carattere monospaziato</sys:String>
-    <sys:String x:Key="LOCSettingsFilterPanelPosition">Posizione del pannello filtro</sys:String>
+    <sys:String x:Key="LOCSettingsFilterPanelPosition">Posizione pannello filtro</sys:String>
     <sys:String x:Key="LOCSettingsExplorerPanelPosition">Posizione pannello esplora</sys:String>
     <sys:String x:Key="LOCSettingsCoverArtRenderingLabel">Rendering copertina</sys:String>
     <sys:String x:Key="LOCSettingsTargetAspectRatioLabel">Rapporto d'aspetto dell'oggetto</sys:String>
@@ -656,7 +656,7 @@ Maggiori informazioni su https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCDoNothing">Non fare niente</sys:String>
     <sys:String x:Key="LOCMinimize">Minimizza</sys:String>
     <sys:String x:Key="LOCRestoreWindow">Ripristina finestra</sys:String>
-    <sys:String x:Key="LOCRestoreWindowOnlyFromUI">Ripristina la finestra solo quando viene lanciata dall'interfaccia utente</sys:String>
+    <sys:String x:Key="LOCRestoreWindowOnlyFromUI">Ripristina finestra solo quando lanciata dall'interfaccia utente</sys:String>
     <sys:String x:Key="LOCClose">Chiudi</sys:String>
     <sys:String x:Key="LOCChange">Cambia</sys:String>
     <sys:String x:Key="LOCAdvanced">Avanzate</sys:String>
@@ -1024,7 +1024,7 @@ Se vuoi installare o disinstallare ulteriori integrazioni, usa l'opzione &quot;E
 Disattivare questa opzione può portare a problemi con i giochi che non ottengono la messa a fuoco dei comandi all'avvio!</sys:String>
     <sys:String x:Key="LOCSettingsFontSize">Dimensione carattere</sys:String>
     <sys:String x:Key="LOCSettingsFontSizeSmall">Dimensione caratteri piccola</sys:String>
-    <sys:String x:Key="LOCSettingsControllerApi"></sys:String>
+    <sys:String x:Key="LOCSettingsControllerApi">Abilita il supporto API del controller di gioco</sys:String>
     <sys:String x:Key="LOCSettingsXInputProcessing">Supporto controller di gioco</sys:String>
     <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">Se disabilitato, Playnite non accetta nessun input del controller di gioco.
         
