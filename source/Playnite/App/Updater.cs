@@ -1,25 +1,32 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Playnite.Common;
+using Playnite.Common.Web;
+using Playnite.SDK;
+using Playnite.Settings;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Playnite.Common;
-using Playnite.Common.Web;
-using Playnite.Settings;
-using Playnite.SDK;
 
 namespace Playnite
 {
     public class Updater
     {
-        // Hardcode local backend endpoint.
+        // TODO: HARDCODED local backend endpoint
         private const string BackendBaseUrl = "http://127.0.0.1:17877";
         private const string CheckEndpoint = "/launcher/release/check";
         private const string DownloadEndpoint = "/launcher/release/download";
         private const string PrepareUpdaterEndpoint = "/launcher/release/prepare_updater";
+        private static readonly string LauncherManifestPath = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
+            "Melcosoft",
+            "launcher_manifest.json"
+        );
 
         private static ILogger logger = LogManager.GetLogger();
 
@@ -46,7 +53,30 @@ namespace Playnite
             {
                 if (currentVersion == null)
                 {
-                    currentVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+                    try
+                    {
+                        if (File.Exists(LauncherManifestPath))
+                        {
+                            var json = File.ReadAllText(LauncherManifestPath);
+                            var jObj = JObject.Parse(json);
+                            var versionString = jObj["launcher_version"]?.ToString();
+
+                            if (!string.IsNullOrWhiteSpace(versionString))
+                            {
+                                currentVersion = new Version(versionString);
+                                return currentVersion;
+                            }
+                        }
+                    }
+                    catch
+                    {
+                        // fallback
+                    }
+
+                    currentVersion = Assembly
+                        .GetExecutingAssembly()
+                        .GetName()
+                        .Version;
                 }
 
                 return currentVersion;
