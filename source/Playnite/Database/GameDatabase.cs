@@ -426,20 +426,42 @@ namespace Playnite.Database
             }
         }
 
+
+        private static void DebugDb(string msg)
+        {
+            try
+            {
+                var path = Path.Combine(Path.GetTempPath(), "melcosoft_db_debug.txt");
+                File.AppendAllText(path,
+                    DateTime.Now.ToString("s") + " | " + msg + Environment.NewLine);
+            }
+            catch { }
+        }
+
         public static string GetDefaultPath(bool portable, string userDataDirOverride)
         {
+            DebugDb($"GetDefaultPath called");
+            DebugDb($"portable={portable}");
+            DebugDb($"userDataDirOverride='{userDataDirOverride}'");
+
             if (!userDataDirOverride.IsNullOrWhiteSpace())
             {
-                return Path.Combine(userDataDirOverride, "library");
+                var result = Path.Combine(userDataDirOverride, "library");
+                DebugDb($"RETURN (override) = {result}");
+                return result;
             }
 
             if (portable)
             {
-                return ExpandableVariables.PlayniteDirectory + @"\library";
+                var result = ExpandableVariables.PlayniteDirectory + @"\library";
+                DebugDb($"RETURN (portable) = {result}");
+                return result;
             }
             else
             {
-                return @"%AppData%\Playnite\library";
+                var result = Environment.ExpandEnvironmentVariables(@"%AppData%\Playnite\library");
+                DebugDb($"RETURN (installed) = {result}");
+                return result;
             }
         }
 
@@ -508,6 +530,25 @@ namespace Playnite.Database
 
             var dbExists = File.Exists(DatabaseFileSettingsPath);
             logger.Info("Opening db " + DatabasePath);
+
+            try
+            {
+                var path = Path.Combine(Path.GetTempPath(), "melcosoft_db_open_debug.txt");
+                File.AppendAllText(path,
+                    DateTime.Now.ToString("s") + " | OpenDatabase DatabasePath=" + DatabasePath + Environment.NewLine);
+            }
+            catch { }
+
+            try
+            {
+                var path = Path.Combine(Path.GetTempPath(), "melcosoft_db_open_debug.txt");
+                File.AppendAllText(path,
+                    DateTime.Now.ToString("s") +
+                    " | IsPortable=" + PlaynitePaths.IsPortable +
+                    " | ProgramPath=" + PlaynitePaths.ProgramPath +
+                    Environment.NewLine);
+            }
+            catch { }
 
             if (!FileSystem.CanWriteToFolder(DatabasePath))
             {

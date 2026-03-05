@@ -180,6 +180,36 @@ namespace Playnite
             return CurrentVersion;
         }
 
+        private static string WrapReleaseNotesAsHtml(string text)
+        {
+            if (text == null)
+            {
+                text = string.Empty;
+            }
+
+            var safe = WebUtility.HtmlEncode(text)
+                .Replace("\r\n", "\n")
+                .Replace("\n", "<br/>");
+
+            return $@"
+<html>
+<head>
+  <meta charset=""utf-8""/>
+  <style>
+    body {{
+      background: transparent;
+      color: #E6E6E6;
+      font-family: Segoe UI, Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.35;
+    }}
+    a {{ color: #6CB4FF; }}
+  </style>
+</head>
+<body>{safe}</body>
+</html>";
+        }
+
         public List<ReleaseNoteData> GetReleaseNotes()
         {
             var notes = new List<ReleaseNoteData>();
@@ -201,10 +231,12 @@ namespace Playnite
 
             var rn = m.PendingReleaseNotes ?? string.Empty;
 
-            notes.Add(new ReleaseNoteData()
+            var rnHtml = WrapReleaseNotesAsHtml(m.PendingReleaseNotes);
+
+            notes.Add(new ReleaseNoteData
             {
                 Version = v,
-                Note = rn
+                Note = rnHtml
             });
 
             return notes;
@@ -332,19 +364,6 @@ namespace Playnite
             {
                 return reader.ReadToEnd();
             }
-        }
-
-        // Unused, kept for compatibility
-        private string GetUpdateDataRootUrl(string configKey)
-        {
-            return string.Empty;
-        }
-
-        // Unused, kept for compatibility
-        public UpdateManifest DownloadManifest()
-        {
-            EnsureBackendChecked();
-            return null;
         }
     }
 }

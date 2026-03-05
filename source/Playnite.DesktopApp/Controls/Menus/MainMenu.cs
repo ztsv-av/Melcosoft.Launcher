@@ -137,43 +137,62 @@ namespace Playnite.DesktopApp.Controls
             AddMenuChild(Items, "LOCMenuPlayniteSettingsTitle", mainModel.OpenSettingsCommand, null, "SettingsIcon");
 
             // View
-            viewItem = AddMenuChild(Items, LOC.MenuView, null, null, null);
-            var sideBarItem = AddMenuChild(viewItem.Items, LOC.Sidebar, null, null, null);
-            var sideBarEnableItem = AddMenuChild(sideBarItem.Items, LOC.EnabledTitle, null);
-            sideBarEnableItem.IsCheckable = true;
-            BindingOperations.SetBinding(sideBarEnableItem, MenuItem.IsCheckedProperty,
-                new Binding
-                {
-                    Source = mainModel.AppSettings,
-                    Path = new PropertyPath(nameof(PlayniteSettings.ShowSidebar))
-                });
+            // viewItem = AddMenuChild(Items, LOC.MenuView, null, null, null);
+            // var sideBarItem = AddMenuChild(viewItem.Items, LOC.Sidebar, null, null, null);
+            // var sideBarEnableItem = AddMenuChild(sideBarItem.Items, LOC.EnabledTitle, null);
+            // sideBarEnableItem.IsCheckable = true;
+            // BindingOperations.SetBinding(sideBarEnableItem, MenuItem.IsCheckedProperty,
+            //     new Binding
+            //     {
+            //         Source = mainModel.AppSettings,
+            //         Path = new PropertyPath(nameof(PlayniteSettings.ShowSidebar))
+            //     });
 
-            sideBarItem.Items.Add(new Separator());
-            MenuHelpers.PopulateEnumOptions<Dock>(sideBarItem.Items, nameof(PlayniteSettings.SidebarPosition), mainModel.AppSettings);
-            viewItem.Items.Add(new Separator());
+            // sideBarItem.Items.Add(new Separator());
+            // MenuHelpers.PopulateEnumOptions<Dock>(sideBarItem.Items, nameof(PlayniteSettings.SidebarPosition), mainModel.AppSettings);
+            // viewItem.Items.Add(new Separator());
 
-            Items.Add(new Separator());
+            // Items.Add(new Separator());
 
             // Open Client
-            var openClientItem = AddMenuChild(Items, "LOCMenuClients", null);
-            foreach (var tool in mainModel.ThirdPartyTools)
-            {
-                var item = new MenuItem
-                {
-                    Header = tool.Name,
-                    Command = mainModel.ThirdPartyToolOpenCommand,
-                    CommandParameter = tool,
-                    Icon = tool.Icon
-                };
+            // var openClientItem = AddMenuChild(Items, "LOCMenuClients", null);
+            // foreach (var tool in mainModel.ThirdPartyTools)
+            // {
+            //     var item = new MenuItem
+            //     {
+            //         Header = tool.Name,
+            //         Command = mainModel.ThirdPartyToolOpenCommand,
+            //         CommandParameter = tool,
+            //         Icon = tool.Icon
+            //     };
 
-                openClientItem.Items.Add(item);
-            }
+            //     openClientItem.Items.Add(item);
+            // }
 
             // Tools
-            toolsItem = AddMenuChild(Items, "LOCMenuTools", null);
+            // toolsItem = AddMenuChild(Items, "LOCMenuTools", null);
 
             // Extensions
-            extensionsItem = AddMenuChild(Items, "LOCExtensions", null);
+            // extensionsItem = AddMenuChild(Items, "LOCExtensions", null);
+
+            // Create placeholders so downstream code doesn't NRE even if you don't show them
+            if (viewItem == null)
+            {
+                viewItem = new MenuItem { Header = "View", Visibility = Visibility.Collapsed };
+                Items.Add(viewItem);
+            }
+
+            if (toolsItem == null)
+            {
+                toolsItem = new MenuItem { Header = "Tools", Visibility = Visibility.Collapsed };
+                Items.Add(toolsItem);
+            }
+
+            if (extensionsItem == null)
+            {
+                extensionsItem = new MenuItem { Header = "Extensions", Visibility = Visibility.Collapsed };
+                Items.Add(extensionsItem);
+            }
 
             // FullScreen
             extensionsEndItem = new Separator();
@@ -219,10 +238,21 @@ namespace Playnite.DesktopApp.Controls
 
         private void MainMenu_Opened(object sender, RoutedEventArgs e)
         {
-            ClearExtensionItems();
-            AddExtensionItems();
-            AddToolsItems();
-            AddSidebarViewItems();
+            if (extensionsItem != null)
+            {
+                ClearExtensionItems();
+                AddExtensionItems();
+            }
+
+            if (toolsItem != null)
+            {
+                AddToolsItems();
+            }
+
+            if (viewItem != null)
+            {
+                AddSidebarViewItems();
+            }
             AddEmulationUpdateItems();
         }
 

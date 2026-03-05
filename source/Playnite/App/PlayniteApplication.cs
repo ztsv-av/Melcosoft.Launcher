@@ -728,16 +728,17 @@ namespace Playnite
 
             if (PlayniteEnvironment.IsElevated && AppSettings.ShowElevatedRightsWarning)
             {
-                var okResponse = new MessageBoxOption(LOC.OKLabel, true, true);
-                var dontShowResponse = new MessageBoxOption(LOC.DontShowAgainTitle);
-                var res = Dialogs.ShowMessage(
-                    LOC.ElevatedProcessWarning, "",
-                    MessageBoxImage.Warning,
-                    new List<MessageBoxOption> { okResponse, dontShowResponse });
-                if (res == dontShowResponse)
-                {
-                    AppSettings.ShowElevatedRightsWarning = false;
-                }
+                AppSettings.ShowElevatedRightsWarning = false;
+                // var okResponse = new MessageBoxOption(LOC.OKLabel, true, true);
+                // var dontShowResponse = new MessageBoxOption(LOC.DontShowAgainTitle);
+                // var res = Dialogs.ShowMessage(
+                //     LOC.ElevatedProcessWarning, "",
+                //     MessageBoxImage.Warning,
+                //     new List<MessageBoxOption> { okResponse, dontShowResponse });
+                // if (res == dontShowResponse)
+                // {
+                //     AppSettings.ShowElevatedRightsWarning = false;
+                // }
             }
         }
 
