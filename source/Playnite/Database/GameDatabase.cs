@@ -426,41 +426,22 @@ namespace Playnite.Database
             }
         }
 
-
-        private static void DebugDb(string msg)
-        {
-            try
-            {
-                var path = Path.Combine(Path.GetTempPath(), "melcosoft_db_debug.txt");
-                File.AppendAllText(path,
-                    DateTime.Now.ToString("s") + " | " + msg + Environment.NewLine);
-            }
-            catch { }
-        }
-
         public static string GetDefaultPath(bool portable, string userDataDirOverride)
         {
-            DebugDb($"GetDefaultPath called");
-            DebugDb($"portable={portable}");
-            DebugDb($"userDataDirOverride='{userDataDirOverride}'");
-
             if (!userDataDirOverride.IsNullOrWhiteSpace())
             {
                 var result = Path.Combine(userDataDirOverride, "library");
-                DebugDb($"RETURN (override) = {result}");
                 return result;
             }
 
             if (portable)
             {
                 var result = ExpandableVariables.PlayniteDirectory + @"\library";
-                DebugDb($"RETURN (portable) = {result}");
                 return result;
             }
             else
             {
                 var result = Environment.ExpandEnvironmentVariables(@"%AppData%\Playnite\library");
-                DebugDb($"RETURN (installed) = {result}");
                 return result;
             }
         }

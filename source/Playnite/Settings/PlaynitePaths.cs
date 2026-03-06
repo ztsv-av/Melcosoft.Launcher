@@ -66,17 +66,6 @@ namespace Playnite
 
         public static bool IsPortable { get; }
 
-        private static void DebugPortable(string msg)
-        {
-            try
-            {
-                var path = Path.Combine(Path.GetTempPath(), "melcosoft_portable_debug.txt");
-                File.AppendAllText(path, DateTime.Now.ToString("s") + " | " + msg + Environment.NewLine);
-            }
-            catch { }
-        }
-
-
         static PlaynitePaths()
         {
             ProgramPath = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
