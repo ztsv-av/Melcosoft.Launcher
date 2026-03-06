@@ -39,7 +39,6 @@ namespace Playnite.DesktopApp.ViewModels
 {
     public partial class DesktopAppViewModel : MainViewModelBase, IDisposable, IMainViewModelBase
     {
-        private ILogger logger = LogManager.GetLogger();
         private static object gamesLock = new object();
         protected bool ignoreCloseActions = false;
         protected bool ignoreSelectionChanges = false;
@@ -925,9 +924,6 @@ namespace Playnite.DesktopApp.ViewModels
         public void CheckForUpdate()
         {
             var updater = new Updater(App);
-            logger.Info("--------------------------------------------------------------------");
-            logger.Info($"MELCOSOFT: Using custom Updater backend flow. Update available: {updater.IsUpdateAvailable}");
-            logger.Info("--------------------------------------------------------------------");
             var appUpdateAvailable = false;
             var addonUpdates = new List<AddonUpdate>();
             var dialogRes = Dialogs.ActivateGlobalProgress((args) =>
