@@ -6,11 +6,11 @@ using System.Windows.Markup;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Playnite SDK")]
-[assembly: AssemblyDescription("Playnite Development Kit Library")]
+[assembly: AssemblyTitle("Melcosoft SDK")]
+[assembly: AssemblyDescription("Melcosoft Development Kit Library")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Playnite")]
+[assembly: AssemblyProduct("Melcosoft")]
 [assembly: AssemblyCopyright("Copyright © Josef Nemec 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
