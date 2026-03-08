@@ -202,16 +202,16 @@ namespace Playnite.DesktopApp.Controls
 
             // Links
             var linksItem = AddMenuChild(Items, "LOCMenuLinksTitle", null);
-            AddMenuChild(linksItem.Items, "Melcosoft", GlobalCommands.NavigateUrlCommand, UrlConstants.Melcosoft, "Images/reddit.png");
-            AddMenuChild(linksItem.Items, "Master Account", GlobalCommands.NavigateUrlCommand, UrlConstants.MA, "Images/reddit.png");
-            AddMenuChild(linksItem.Items, "Community", GlobalCommands.NavigateUrlCommand, UrlConstants.Community, "Images/reddit.png");
-            AddMenuChild(linksItem.Items, "Help", GlobalCommands.NavigateUrlCommand, UrlConstants.Help, "Images/reddit.png");
-            AddMenuChild(linksItem.Items, "Boosty", GlobalCommands.NavigateUrlCommand, UrlConstants.Boosty, "Images/reddit.png");
+            AddMenuChild(linksItem.Items, "Melcosoft", GlobalCommands.NavigateUrlCommand, UrlConstants.Melcosoft, "Images/applogo.png");
+            AddMenuChild(linksItem.Items, "Master Account", GlobalCommands.NavigateUrlCommand, UrlConstants.MA, "Images/applogo.png");
+            AddMenuChild(linksItem.Items, "Community", GlobalCommands.NavigateUrlCommand, UrlConstants.Community, "Images/applogo.png");
+            AddMenuChild(linksItem.Items, "Help", GlobalCommands.NavigateUrlCommand, UrlConstants.Help, "Images/applogo.png");
+            AddMenuChild(linksItem.Items, "Boosty", GlobalCommands.NavigateUrlCommand, UrlConstants.Boosty, "Images/boosty.png");
             AddMenuChild(linksItem.Items, "Discord", GlobalCommands.NavigateUrlCommand, UrlConstants.Discord, "Images/discord.png");
-            AddMenuChild(linksItem.Items, "Telegram", GlobalCommands.NavigateUrlCommand, UrlConstants.Telegram, "Images/reddit.png");
-            AddMenuChild(linksItem.Items, "VK", GlobalCommands.NavigateUrlCommand, UrlConstants.VK, "Images/reddit.png");
-            AddMenuChild(linksItem.Items, "Facebook", GlobalCommands.NavigateUrlCommand, UrlConstants.Facebook, "Images/reddit.png");
-            AddMenuChild(linksItem.Items, "Instagram", GlobalCommands.NavigateUrlCommand, UrlConstants.Instagram, "Images/reddit.png");
+            AddMenuChild(linksItem.Items, "Telegram", GlobalCommands.NavigateUrlCommand, UrlConstants.Telegram, "Images/telegram.png");
+            AddMenuChild(linksItem.Items, "VK", GlobalCommands.NavigateUrlCommand, UrlConstants.VK, "Images/vk.png");
+            AddMenuChild(linksItem.Items, "Facebook", GlobalCommands.NavigateUrlCommand, UrlConstants.Facebook, "Images/facebook.png");
+            AddMenuChild(linksItem.Items, "Instagram", GlobalCommands.NavigateUrlCommand, UrlConstants.Instagram, "Images/instagram.png");
 
             // Help
             var helpItem = AddMenuChild(Items, "LOCMenuHelpTitle", null);
