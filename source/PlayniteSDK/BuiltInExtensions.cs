@@ -67,7 +67,8 @@ namespace Playnite.SDK
             "SteamLibrary_Builtin",
             "TwitchLibrary_Builtin",
             "UplayLibrary_Builtin",
-            "XboxLibrary_Builtin"
+            "XboxLibrary_Builtin",
+            "Melcosoft"
         };
 
         /// <summary>

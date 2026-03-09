@@ -1314,7 +1314,7 @@ namespace Playnite
             }
         }
 
-        private void CheckForUpdates(bool checkProgram, bool checkAddons)
+        public void CheckForUpdates(bool checkProgram, bool checkAddons)
         {
             if (checkProgram)
             {
@@ -1410,8 +1410,8 @@ namespace Playnite
             updateCheckTimer = new System.Threading.Timer(
                 UpdateCheckerCallback,
                 null,
-                Common.Timer.HoursToMilliseconds(4),
-                Common.Timer.HoursToMilliseconds(4));
+                Common.Timer.MinutesToMilliseconds(30),
+                Common.Timer.MinutesToMilliseconds(30));
         }
 
         public bool MigrateDatabase()
