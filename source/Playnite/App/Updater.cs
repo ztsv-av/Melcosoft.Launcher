@@ -296,7 +296,7 @@ namespace Playnite
             }
 
             // 2) Build args for the Melcosoft.Updater.exe
-            var args = $"--apply --version \"{prep.Version}\" --package \"{prep.Package}\" --install-dir \"{prep.InstallDir}\" --service-name \"Melcosoft\" --health-url \"http://127.0.0.1:17877/health\"";
+            var args = $"--apply --version \"{prep.Version}\" --package \"{prep.Package}\" --install-dir \"{prep.InstallDir}\" --service-name \"Melcosoft\" --health-url \"{BackendBaseUrl}/health\"";
 
             logger.Info($"Starting Melcosoft updater: {prep.UpdaterPath} {args}");
 
