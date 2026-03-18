@@ -9,7 +9,6 @@ CommandLine.dll
 concrt140.dll
 Crc32.NET.dll
 d3dcompiler_47.dll
-DiscordRPC.dll
 Flurl.dll
 Hardcodet.Wpf.TaskbarNotification.dll
 HtmlRenderer.dll
@@ -174,7 +173,6 @@ CommandLine.xml
 concrt140.xml
 Crc32.NET.xml
 d3dcompiler_47.xml
-DiscordRPC.xml
 Flurl.xml
 Hardcodet.Wpf.TaskbarNotification.xml
 HtmlRenderer.xml

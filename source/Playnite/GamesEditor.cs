@@ -457,7 +457,7 @@ namespace Playnite
                             }
                             else
                             {
-                                controller.Start(action, false,  new SDK.Events.OnGameStartingEventArgs
+                                controller.Start(action, false, new SDK.Events.OnGameStartingEventArgs
                                 {
                                     Game = game,
                                     SourceAction = action

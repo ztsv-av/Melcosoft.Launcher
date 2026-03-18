@@ -25,6 +25,10 @@ namespace Playnite.FullscreenApp.ViewModels
         public RelayCommand SelectRandomGameCommand => new RelayCommand(() => PlayRandomGame(), () => MainModel.Database?.IsOpen == true);
         public RelayCommand OpenPatreonCommand => new RelayCommand(() => OpenPatreon());
         public RelayCommand OpenKofiCommand => new RelayCommand(() => OpenKofi());
+        public RelayCommand OpenMelcosoftMACommand => new RelayCommand(() => OpenMelcosoftMA());
+        public RelayCommand OpenMelcosoftHelpCommand => new RelayCommand(() => OpenMelcosoftHelp());
+        public RelayCommand OpenMelcosoftCommunityCommand => new RelayCommand(() => OpenMelcosoftCommunity());
+        public RelayCommand OpenMelcosoftMainCommand => new RelayCommand(() => OpenMelcosoftMain());
         public RelayCommand ShutdownSystemCommand => new RelayCommand(() => ShutdownSystem());
         public RelayCommand HibernateSystemCommand => new RelayCommand(() => HibernateSystem());
         public RelayCommand SleepSystemCommand => new RelayCommand(() => SleepSystem());
@@ -114,6 +118,30 @@ namespace Playnite.FullscreenApp.ViewModels
         {
             Close();
             NavigateUrlCommand.Navigate(UrlConstants.Kofi);
+        }
+
+        public void OpenMelcosoftMA()
+        {
+            Close();
+            NavigateUrlCommand.Navigate(UrlConstants.MelcosoftMA);
+        }
+
+        public void OpenMelcosoftHelp()
+        {
+            Close();
+            NavigateUrlCommand.Navigate(UrlConstants.MelcosoftHelp);
+        }
+
+        public void OpenMelcosoftCommunity()
+        {
+            Close();
+            NavigateUrlCommand.Navigate(UrlConstants.MelcosoftCommunity);
+        }
+
+        public void OpenMelcosoftMain()
+        {
+            Close();
+            NavigateUrlCommand.Navigate(UrlConstants.MelcosoftMain);
         }
 
         public void ShutdownSystem()

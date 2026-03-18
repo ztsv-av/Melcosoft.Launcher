@@ -172,8 +172,8 @@ namespace Playnite.Common.Web
                 {
                     webClient.Headers.Add("User-Agent", playniteUserAgent);
                     return webClient.DownloadData(url);
-                    }
                 }
+            }
             catch (WebException ex) when (ex.Status == WebExceptionStatus.RequestCanceled)
             {
                 logger.Warn("Download canceled.");

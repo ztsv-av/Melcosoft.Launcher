@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playnite.FullscreenApp", "Playnite.FullscreenApp.csproj", "{9FD2AB79-BE83-61C8-DD65-E0277816F21E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FD2AB79-BE83-61C8-DD65-E0277816F21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD2AB79-BE83-61C8-DD65-E0277816F21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD2AB79-BE83-61C8-DD65-E0277816F21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD2AB79-BE83-61C8-DD65-E0277816F21E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCF62785-33F1-41E9-B526-F70D83638B88}
+	EndGlobalSection
+EndGlobal

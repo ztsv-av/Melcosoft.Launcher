@@ -16,10 +16,10 @@ namespace Playnite
         public const string SdkDocs = @"https://melcosoft.cc/en/";
         public const string Wiki = @"https://melcosoft.cc/en/";
 
-        public const string Melcosoft = @"https://melcosoft.cc/";
-        public const string MA = @"https://melcosoft-ma.games/";
-        public const string Community = @"https://melcosoft.community/";
-        public const string Help = @"https://melcosoft.help/";
+        public const string MelcosoftMA = @"https://melcosoft-ma.games/?theme=dark&r=%2Faccount%2Flogin/";
+        public const string MelcosoftHelp = @"https://melcosoft.help/";
+        public const string MelcosoftMain = @"https://melcosoft.cc/";
+        public const string MelcosoftCommunity = @"https://melcosoft.community/";
         public const string Boosty = @"https://boosty.to/melcosoft.games/";
         public const string Discord = @"https://discord.com/invite/5qmCV9q/";
         public const string Telegram = @"t.me/melcosoft_games/";

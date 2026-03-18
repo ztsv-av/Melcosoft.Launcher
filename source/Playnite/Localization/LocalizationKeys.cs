@@ -922,6 +922,22 @@ namespace Playnite
         /// </summary>
         public const string MenuKofiSupport = "LOCMenuKofiSupport";
         /// <summary>
+        /// Melcosoft MA
+        /// </summary>
+        public const string MenuMelcosoftMA = "LOCMenuMelcosoftMA";
+        /// <summary>
+        /// Melcosoft Help
+        /// </summary>
+        public const string MenuMelcosoftHelp = "LOCMenuMelcosoftHelp";
+        /// <summary>
+        /// Melcosoft Community
+        /// </summary>
+        public const string MenuMelcosoftCommunity = "LOCMenuMelcosoftCommunity";
+        /// <summary>
+        /// Melcosoft Main
+        /// </summary>
+        public const string MenuMelcosoftMain = "LOCMenuMelcosoftMain";
+        /// <summary>
         /// User manual
         /// </summary>
         public const string UserManual = "LOCUserManual";

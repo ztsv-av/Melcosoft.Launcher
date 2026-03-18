@@ -197,15 +197,15 @@ namespace Playnite.DesktopApp.Controls
             // FullScreen
             extensionsEndItem = new Separator();
             Items.Add(extensionsEndItem);
-            // AddMenuChild(Items, "LOCMenuOpenFullscreen", mainModel.OpenFullScreenCommand, null, "FullscreenModeIcon");
-            // Items.Add(new Separator());
+            AddMenuChild(Items, "LOCMenuOpenFullscreen", mainModel.OpenFullScreenCommand, null, "FullscreenModeIcon");
+            Items.Add(new Separator());
 
             // Links
             var linksItem = AddMenuChild(Items, "LOCMenuLinksTitle", null);
-            AddMenuChild(linksItem.Items, "Melcosoft", GlobalCommands.NavigateUrlCommand, UrlConstants.Melcosoft, "Images/applogo.png");
-            AddMenuChild(linksItem.Items, "Master Account", GlobalCommands.NavigateUrlCommand, UrlConstants.MA, "Images/applogo.png");
-            AddMenuChild(linksItem.Items, "Community", GlobalCommands.NavigateUrlCommand, UrlConstants.Community, "Images/applogo.png");
-            AddMenuChild(linksItem.Items, "Help", GlobalCommands.NavigateUrlCommand, UrlConstants.Help, "Images/applogo.png");
+            AddMenuChild(linksItem.Items, "LOCMenuMelcosoftMA", GlobalCommands.NavigateUrlCommand, UrlConstants.MelcosoftMA, "Images/applogo.png");
+            AddMenuChild(linksItem.Items, "LOCMenuMelcosoftHelp", GlobalCommands.NavigateUrlCommand, UrlConstants.MelcosoftHelp, "Images/melcosoft_help_logo.png");
+            AddMenuChild(linksItem.Items, "LOCMenuMelcosoftCommunity", GlobalCommands.NavigateUrlCommand, UrlConstants.MelcosoftCommunity, "Images/applogo.png");
+            AddMenuChild(linksItem.Items, "LOCMenuMelcosoftMain", GlobalCommands.NavigateUrlCommand, UrlConstants.MelcosoftMain, "Images/applogo.png");
             AddMenuChild(linksItem.Items, "Boosty", GlobalCommands.NavigateUrlCommand, UrlConstants.Boosty, "Images/boosty.png");
             AddMenuChild(linksItem.Items, "Discord", GlobalCommands.NavigateUrlCommand, UrlConstants.Discord, "Images/discord.png");
             AddMenuChild(linksItem.Items, "Telegram", GlobalCommands.NavigateUrlCommand, UrlConstants.Telegram, "Images/telegram.png");
@@ -223,7 +223,7 @@ namespace Playnite.DesktopApp.Controls
             // AddMenuChild(helpItem.Items, "LOCCrashRestartSafe", mainModel.RestartInSafeMode);
 
             // About
-            // AddMenuChild(Items, "LOCMenuAbout", mainModel.OpenAboutCommand, null, "AboutPlayniteIcon");
+            AddMenuChild(Items, "LOCMenuAbout", mainModel.OpenAboutCommand, null, "AboutPlayniteIcon");
             AddMenuChild(Items, "LOCCheckForUpdates", mainModel.CheckForUpdateCommand);
             Items.Add(new Separator());
 

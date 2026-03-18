@@ -20,7 +20,7 @@ namespace Playnite
 
         public DiscordManager(bool presenceEnabled = false)
         {
-            IsPresenceEnabled = presenceEnabled;
+            IsPresenceEnabled = false;  // presenceEnabled;
             if (IsPresenceEnabled)
             {
                 InitializeDiscord();

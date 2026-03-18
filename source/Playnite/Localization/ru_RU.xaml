@@ -263,6 +263,12 @@
     <sys:String x:Key="LOCMenuHelpTitle">Справка</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">Поддержать на Patreon</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">Поддержать на Ko-fi</sys:String>
+
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft Помощь</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft Форум</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft Главная</sys:String>
+
     <sys:String x:Key="LOCUserManual">Руководство пользователя</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">Документация по SDK</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">Перезагрузка</sys:String>

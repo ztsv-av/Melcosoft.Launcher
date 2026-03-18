@@ -129,7 +129,7 @@ namespace Playnite
             if (FileSystem.FileExists(PlaynitePaths.SafeStartupFlagFile))
             {
                 if (MessageBox.Show(
-                    "Playnite closed unexpectedly while starting. This is usually caused by 3rd party theme or extension. Do you want to start in safe mode with all 3rd party add-ons disabled?",
+                    "Melcosoft closed unexpectedly while starting. This is usually caused by 3rd party theme or extension. Do you want to start in safe mode with all 3rd party add-ons disabled?",
                     "Startup Error",
                     MessageBoxButton.YesNo,
                     MessageBoxImage.Warning) == MessageBoxResult.Yes)

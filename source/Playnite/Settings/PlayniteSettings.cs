@@ -2616,7 +2616,7 @@ namespace Playnite
 
         private Thickness GetItemSpacingMargin()
         {
-            return new Thickness(GridItemSpacing / 2, GridItemSpacing / 2, GridItemSpacing / 2, GridItemSpacing / 2);;
+            return new Thickness(GridItemSpacing / 2, GridItemSpacing / 2, GridItemSpacing / 2, GridItemSpacing / 2); ;
         }
 
         private Thickness GetFullscreenItemSpacingMargin()
@@ -2642,98 +2642,32 @@ namespace Playnite
 
         public bool ShouldCheckProgramUpdatePeriodic()
         {
-            switch (CheckForProgramUpdates)
-            {
-                case UpdateCheckFrequency.Manually:
-                    return false;
-                case UpdateCheckFrequency.OnceADay:
-                    return DateTimes.Now.Date > LastProgramUpdateCheck.Date;
-                case UpdateCheckFrequency.OnceAWeek:
-                    return (DateTimes.Now - LastProgramUpdateCheck).TotalDays > 6;
-                case UpdateCheckFrequency.OnEveryStartup:
-                default:
-                    return false;
-            }
+            return true;
         }
 
         public bool ShouldCheckAddonUpdatePeriodic()
         {
-            switch (CheckForAddonUpdates)
-            {
-                case UpdateCheckFrequency.Manually:
-                    return false;
-                case UpdateCheckFrequency.OnceADay:
-                    return DateTimes.Now.Date > LastAddonUpdateCheck.Date;
-                case UpdateCheckFrequency.OnceAWeek:
-                    return (DateTimes.Now - LastAddonUpdateCheck).TotalDays > 6;
-                case UpdateCheckFrequency.OnEveryStartup:
-                default:
-                    return false;
-            }
+            return true;
         }
 
         public bool ShouldCheckProgramUpdateStartup()
         {
-            switch (CheckForProgramUpdates)
-            {
-                case UpdateCheckFrequency.Manually:
-                    return false;
-                case UpdateCheckFrequency.OnceADay:
-                    return DateTimes.Now.Date > LastProgramUpdateCheck.Date;
-                case UpdateCheckFrequency.OnceAWeek:
-                    return (DateTimes.Now - LastProgramUpdateCheck).TotalDays > 6;
-                case UpdateCheckFrequency.OnEveryStartup:
-                default:
-                    return true;
-            }
+            return true;
         }
 
         public bool ShouldCheckAddonUpdateStartup()
         {
-            switch (CheckForAddonUpdates)
-            {
-                case UpdateCheckFrequency.Manually:
-                    return false;
-                case UpdateCheckFrequency.OnceADay:
-                    return DateTimes.Now.Date > LastAddonUpdateCheck.Date;
-                case UpdateCheckFrequency.OnceAWeek:
-                    return (DateTimes.Now - LastAddonUpdateCheck).TotalDays > 6;
-                case UpdateCheckFrequency.OnEveryStartup:
-                default:
-                    return true;
-            }
+            return true;
         }
 
         public bool ShouldCheckLibraryOnStartup()
         {
-            switch (CheckForLibraryUpdates)
-            {
-                case LibraryUpdateCheckFrequency.OnceADay:
-                    return DateTimes.Now.Date > LastLibraryUpdateCheck.Date;
-                case LibraryUpdateCheckFrequency.OnceAWeek:
-                    return (DateTimes.Now - LastLibraryUpdateCheck).TotalDays > 6;
-                case LibraryUpdateCheckFrequency.Manually:
-                    return false;
-                case LibraryUpdateCheckFrequency.OnEveryStartup:
-                default:
-                    return true;
-            }
+            return true;
         }
 
         public bool ShouldCheckEmuLibraryOnStartup()
         {
-            switch (CheckForEmulatedLibraryUpdates)
-            {
-                case LibraryUpdateCheckFrequency.OnceADay:
-                    return DateTimes.Now.Date > LastEmuLibraryUpdateCheck.Date;
-                case LibraryUpdateCheckFrequency.OnceAWeek:
-                    return (DateTimes.Now - LastEmuLibraryUpdateCheck).TotalDays > 6;
-                case LibraryUpdateCheckFrequency.Manually:
-                    return false;
-                case LibraryUpdateCheckFrequency.OnEveryStartup:
-                default:
-                    return true;
-            }
+            return true;
         }
 
         public bool ShouldDataBackupOnStartup()

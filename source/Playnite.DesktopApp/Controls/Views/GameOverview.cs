@@ -393,6 +393,7 @@ namespace Playnite.DesktopApp.Controls.Views
                 GetGameBindingPath(nameof(GamesCollectionViewEntry.PluginId)),
                 GetGameBindingPath($"{nameof(GamesCollectionViewEntry.LibraryPlugin)}.{nameof(GamesCollectionViewEntry.LibraryPlugin.Name)}"),
                 nameof(GameDetailsViewModel.SourceLibraryVisibility));
+            DisableButtonInteraction(ButtonLibrary);
 
             SetGameItemButtonBinding(ref ButtonReleaseDate, "PART_ButtonReleaseDate",
                 nameof(GameDetailsViewModel.SetReleaseDateFilterCommand),
@@ -401,18 +402,21 @@ namespace Playnite.DesktopApp.Controls.Views
                 nameof(GameDetailsViewModel.ReleaseDateVisibility),
                 new ReleaseDateToStringConverter(),
                 mainModel.AppSettings.DateTimeFormatReleaseDate);
+            DisableButtonInteraction(ButtonReleaseDate);
 
             SetGameItemButtonBinding(ref ButtonVersion, "PART_ButtonVersion",
                 nameof(GameDetailsViewModel.SetVersionFilterCommand),
                 GetGameBindingPath(nameof(GamesCollectionViewEntry.Version)),
                 GetGameBindingPath(nameof(GamesCollectionViewEntry.Version)),
                 nameof(GameDetailsViewModel.VersionVisibility));
+            DisableButtonInteraction(ButtonVersion);
 
             SetGameItemButtonBinding(ref ButtonSource, "PART_ButtonSource",
                 nameof(GameDetailsViewModel.SetSourceFilterCommand),
                 GetGameBindingPath(nameof(GamesCollectionViewEntry.Source)),
                 GetGameBindingPath($"{nameof(GamesCollectionViewEntry.Source)}.{nameof(GamesCollectionViewEntry.Source.Name)}"),
                 nameof(GameDetailsViewModel.SourceVisibility));
+            DisableButtonInteraction(ButtonSource);
 
             SetGameItemTextBinding(ref TextPlayTime, "PART_TextPlayTime",
                 nameof(GameDetailsViewModel.Game.Playtime),
@@ -454,6 +458,7 @@ namespace Playnite.DesktopApp.Controls.Views
                 GetGameBindingPath(nameof(GamesCollectionViewEntry.CompletionStatus)),
                 GetGameBindingPath($"{nameof(GamesCollectionViewEntry.CompletionStatus)}.{nameof(GamesCollectionViewEntry.CompletionStatus.Name)}"),
                 nameof(GameDetailsViewModel.CompletionStatusVisibility));
+            DisableButtonInteraction(ButtonCompletionStatus);
 
             SetGameItemTextBinding(ref TextCommunityScore, "PART_TextCommunityScore",
                 nameof(GameDetailsViewModel.Game.CommunityScore),
@@ -615,6 +620,17 @@ namespace Playnite.DesktopApp.Controls.Views
             }
         }
 
+        private void DisableButtonInteraction(Button button)
+        {
+            if (button != null)
+            {
+                button.Command = null;
+                button.CommandParameter = null;
+                button.Focusable = false;
+                button.IsHitTestVisible = false;
+            }
+        }
+
         private void SetGameItemButtonBinding(ref Button button, string partId, string command, string commandParameter, string content, string visibility, IValueConverter contentConverter = null, object contentConverterParameter = null)
         {
             button = Template.FindName(partId, this) as Button;
@@ -645,11 +661,12 @@ namespace Playnite.DesktopApp.Controls.Views
         private DataTemplate GetFieldItemTemplate(string command, string tooltip = null)
         {
             XNamespace pns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation";
+
             var buttonElem = new XElement(pns + nameof(Button),
-                new XAttribute("Command", $"{{Binding DataContext.{command}, RelativeSource={{RelativeSource AncestorType=ItemsControl}}}}"),
-                new XAttribute("CommandParameter", "{Binding}"),
                 new XAttribute("Content", "{Binding Name}"),
-                new XAttribute("Style", "{StaticResource PropertyItemButton}"));
+                new XAttribute("Style", "{StaticResource PropertyItemButton}"),
+                new XAttribute("Focusable", "False"),
+                new XAttribute("IsHitTestVisible", "False"));
 
             if (!tooltip.IsNullOrEmpty())
             {

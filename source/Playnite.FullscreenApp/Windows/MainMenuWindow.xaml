@@ -1,36 +1,47 @@
 ﻿<c:WindowBase x:Class="Playnite.FullscreenApp.Windows.MainMenuWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Playnite.FullscreenApp.Windows"
-        xmlns:c="clr-namespace:Playnite.Controls;assembly=Playnite"
-        xmlns:pmrk="clr-namespace:Playnite.FullscreenApp.Markup"
-        xmlns:pbeh="clr-namespace:Playnite.Behaviors;assembly=Playnite"
-        xmlns:pctrls="clr-namespace:Playnite.FullscreenApp.Controls"
-        xmlns:pin="clr-namespace:Playnite.Input;assembly=Playnite"
-        mc:Ignorable="d"
-        ShowMinimizeButton="False" ShowMaximizeButton="False" ShowCloseButton="False"
-        ShowInTaskbar="False" WindowStyle="None"
-        ResizeMode="NoResize" WindowStartupLocation="CenterOwner"
-        Style="{StaticResource ChildWindowStyle}"
-        d:DesignWidth="1920" d:DesignHeight="1080">
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:local="clr-namespace:Playnite.FullscreenApp.Windows"
+              xmlns:c="clr-namespace:Playnite.Controls;assembly=Playnite"
+              xmlns:pmrk="clr-namespace:Playnite.FullscreenApp.Markup"
+              xmlns:pbeh="clr-namespace:Playnite.Behaviors;assembly=Playnite"
+              xmlns:pctrls="clr-namespace:Playnite.FullscreenApp.Controls"
+              xmlns:pin="clr-namespace:Playnite.Input;assembly=Playnite"
+              mc:Ignorable="d"
+              ShowMinimizeButton="False"
+              ShowMaximizeButton="False"
+              ShowCloseButton="False"
+              ShowInTaskbar="False"
+              WindowStyle="None"
+              ResizeMode="NoResize"
+              WindowStartupLocation="CenterOwner"
+              Style="{StaticResource ChildWindowStyle}"
+              d:DesignWidth="1920"
+              d:DesignHeight="1080">
 
     <c:WindowBase.InputBindings>
-        <KeyBinding Key="Esc" Command="{Binding CloseCommand}" />
-        <KeyBinding Key="Backspace" Command="{Binding CloseCommand}" />
-        <pin:GameControllerInputBinding Button="{Binding Path=(pin:GameControllerGesture.CancellationBinding)}" Command="{Binding CloseCommand}" />
+        <KeyBinding Key="Esc"
+                    Command="{Binding CloseCommand}"/>
+        <KeyBinding Key="Backspace"
+                    Command="{Binding CloseCommand}"/>
+        <pin:GameControllerInputBinding Button="{Binding Path=(pin:GameControllerGesture.CancellationBinding)}"
+                                        Command="{Binding CloseCommand}"/>
     </c:WindowBase.InputBindings>
 
     <Viewbox>
-        <Grid Height="1080" Width="1920" Name="GridMain">
+        <Grid Height="1080"
+              Width="1920"
+              Name="GridMain">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition MinWidth="400" Width="Auto" />
-                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition MinWidth="400"
+                                  Width="Auto"/>
+                <ColumnDefinition Width="100"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <Border Grid.Column="1"
@@ -39,11 +50,14 @@
                     Style="{DynamicResource MainMenuBorder}">
                 <StackPanel>
                     <StackPanel.Resources>
-                        <Style TargetType="pctrls:ButtonEx" BasedOn="{StaticResource MainMenuButton}" />
+                        <Style TargetType="pctrls:ButtonEx"
+                               BasedOn="{StaticResource MainMenuButton}"/>
                     </StackPanel.Resources>
 
                     <ContentControl ContentTemplate="{DynamicResource MainMenuHeaderTemplate}"
-                                    Focusable="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                                    Focusable="False"
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Stretch"/>
 
                     <pctrls:ButtonEx x:Name="PART_ButtonPickRandomGame"
                                      ContentTemplate="{DynamicResource MainMenuRandomGameButtonTemplate}"
@@ -79,16 +93,16 @@
                                      Visibility="{pmrk:SettingsBinding Fullscreen.MainMenuShowExtensions, Converter={StaticResource BooleanToVisibilityConverter}}"
                                      Command="{Binding OpenExtensionsCommand}"
                                      AutomationProperties.Name="{DynamicResource LOCExtensions}"/>
-                    <Canvas Height="20" />
+                    <Canvas Height="20"/>
                     <pctrls:ButtonEx x:Name="PART_ButtonExitPlaynite"
                                      ContentTemplate="{DynamicResource MainMenuExitPlayniteButtonTemplate}"
                                      Command="{Binding ExitCommand}"
-                                     AutomationProperties.Name="{DynamicResource LOCExitPlaynite}" />
+                                     AutomationProperties.Name="{DynamicResource LOCExitPlaynite}"/>
                     <pctrls:ButtonEx x:Name="PART_ButtonSwitchToDesktop"
                                      ContentTemplate="{DynamicResource MainMenuSwithDesktopButtonTemplate}"
                                      Command="{Binding SwitchToDesktopCommand}"
-                                     AutomationProperties.Name="{DynamicResource LOCBackToDesktopMode}"  />
-                    <Canvas Height="20" />
+                                     AutomationProperties.Name="{DynamicResource LOCBackToDesktopMode}"/>
+                    <Canvas Height="20"/>
                     <pctrls:ButtonEx x:Name="PART_ButtonShutdownSystem"
                                      ContentTemplate="{DynamicResource MainMenuShutdowButtonTemplate}"
                                      Command="{Binding ShutdownSystemCommand}"
@@ -98,30 +112,30 @@
                                      ContentTemplate="{DynamicResource MainMenuSuspendButtonTemplate}"
                                      Command="{Binding SleepSystemCommand}"
                                      Visibility="{pmrk:SettingsBinding Fullscreen.MainMenuShowSuspend, Converter={StaticResource BooleanToVisibilityConverter}}"
-                                     AutomationProperties.Name="{DynamicResource LOCMenuSuspendSystem}" />
+                                     AutomationProperties.Name="{DynamicResource LOCMenuSuspendSystem}"/>
                     <pctrls:ButtonEx x:Name="PART_ButtonHibernateSystem"
                                      ContentTemplate="{DynamicResource MainMenuHibernateButtonTemplate}"
                                      Command="{Binding HibernateSystemCommand}"
                                      Visibility="{pmrk:SettingsBinding Fullscreen.MainMenuShowHibernate, Converter={StaticResource BooleanToVisibilityConverter}}"
-                                     AutomationProperties.Name="{DynamicResource LOCMenuHibernateSystem}" />
+                                     AutomationProperties.Name="{DynamicResource LOCMenuHibernateSystem}"/>
                     <pctrls:ButtonEx x:Name="PART_ButtonRestartSystem"
                                      ContentTemplate="{DynamicResource MainMenuRestartButtonTemplate}"
                                      Command="{Binding RestartSystemCommand}"
                                      Visibility="{pmrk:SettingsBinding Fullscreen.MainMenuShowRestart, Converter={StaticResource BooleanToVisibilityConverter}}"
                                      AutomationProperties.Name="{DynamicResource LOCMenuRestartSystem}"/>
                     <pctrls:ButtonEx x:Name="PART_ButtonLockSystem"
-                                  ContentTemplate="{DynamicResource MainMenuLockSystemButtonTemplate}"
-                                  Command="{Binding LockSystemCommand}"
-                                  Visibility="{pmrk:SettingsBinding Fullscreen.MainMenuShowLock, Converter={StaticResource BooleanToVisibilityConverter}}"
-                                  AutomationProperties.Name="{DynamicResource LOCMenuRestartSystem}"/>
+                                     ContentTemplate="{DynamicResource MainMenuLockSystemButtonTemplate}"
+                                     Command="{Binding LockSystemCommand}"
+                                     Visibility="{pmrk:SettingsBinding Fullscreen.MainMenuShowLock, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                     AutomationProperties.Name="{DynamicResource LOCMenuRestartSystem}"/>
                     <pctrls:ButtonEx x:Name="PART_ButtonLogoutUser"
-                                  ContentTemplate="{DynamicResource MainMenuLogoutUserButtonTemplate}"
-                                  Command="{Binding LogoutUserCommand}"
-                                  Visibility="{pmrk:SettingsBinding Fullscreen.MainMenuShowLogout, Converter={StaticResource BooleanToVisibilityConverter}}"
-                                  AutomationProperties.Name="{DynamicResource LOCMenuRestartSystem}"/>
+                                     ContentTemplate="{DynamicResource MainMenuLogoutUserButtonTemplate}"
+                                     Command="{Binding LogoutUserCommand}"
+                                     Visibility="{pmrk:SettingsBinding Fullscreen.MainMenuShowLogout, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                     AutomationProperties.Name="{DynamicResource LOCMenuRestartSystem}"/>
 
-                    <Canvas Height="40" />
-                    <pctrls:ButtonEx x:Name="PART_ButtonFeedback"
+                    <Canvas Height="40"/>
+                    <!-- <pctrls:ButtonEx x:Name="PART_ButtonFeedback"
                                      ContentTemplate="{DynamicResource MainMenuHelpButtonTemplate}"
                                      Command="{Binding OpenHelpCommand}"
                                      AutomationProperties.Name="{DynamicResource LOCMenuHelpTitle}" />
@@ -132,12 +146,28 @@
                     <pctrls:ButtonEx x:Name="PART_ButtonKofi"
                                      ContentTemplate="{DynamicResource MainMenuKofiButtonTemplate}"
                                      Command="{Binding OpenKofiCommand}"
-                                     AutomationProperties.Name="{DynamicResource LOCMenuKofiSupport}" />
+                                     AutomationProperties.Name="{DynamicResource LOCMenuKofiSupport}" /> -->
+                    <pctrls:ButtonEx x:Name="PART_ButtonMelcosoftMA"
+                                     ContentTemplate="{DynamicResource MainMenuMelcosoftMAButtonTemplate}"
+                                     Command="{Binding OpenMelcosoftMACommand}"
+                                     AutomationProperties.Name="{DynamicResource LOCMenuMelcosoftMA}"/>
+                    <pctrls:ButtonEx x:Name="PART_ButtonMelcosoftHelp"
+                                     ContentTemplate="{DynamicResource MainMenuMelcosoftHelpButtonTemplate}"
+                                     Command="{Binding OpenMelcosoftHelpCommand}"
+                                     AutomationProperties.Name="{DynamicResource LOCMenuMelcosoftHelp}"/>
+                    <pctrls:ButtonEx x:Name="PART_ButtonMelcosoftCommunity"
+                                     ContentTemplate="{DynamicResource MainMenuMelcosoftCommunityButtonTemplate}"
+                                     Command="{Binding OpenMelcosoftCommunityCommand}"
+                                     AutomationProperties.Name="{DynamicResource LOCMenuMelcosoftCommunity}"/>
+                    <pctrls:ButtonEx x:Name="PART_ButtonMelcosoftMain"
+                                     ContentTemplate="{DynamicResource MainMenuMelcosoftMainButtonTemplate}"
+                                     Command="{Binding OpenMelcosoftMainCommand}"
+                                     AutomationProperties.Name="{DynamicResource LOCMenuMelcosoftMain}"/>
                     <pctrls:ButtonEx x:Name="PART_ButtonMinimize"
                                      ContentTemplate="{DynamicResource MainMenuMinimizeButtonTemplate}"
-                                     Command="{Binding MinimizeCommand}"                                     
+                                     Command="{Binding MinimizeCommand}"
                                      Visibility="{pmrk:SettingsBinding Fullscreen.MainMenuShowMinimize, Converter={StaticResource BooleanToVisibilityConverter}}"
-                                     AutomationProperties.Name="{DynamicResource LOCMinimize}" />
+                                     AutomationProperties.Name="{DynamicResource LOCMinimize}"/>
                 </StackPanel>
             </Border>
 

@@ -21,6 +21,7 @@ namespace Playnite
         private const string BackendBaseUrl = "http://127.0.0.1:17877";
         private const string CheckEndpoint = "/launcher/release/check";
         private const string DownloadEndpoint = "/launcher/release/download";
+        private const string DownloadStatusEndpoint = "/launcher/release/download/status";
         private const string PrepareUpdaterEndpoint = "/launcher/release/prepare_updater";
         private static readonly string LauncherManifestPath = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
@@ -44,6 +45,57 @@ namespace Playnite
             {
                 return ConfigurationManager.AppSettings["UpdateBranch"];
             }
+        }
+
+        public class DownloadResponse
+        {
+            [JsonProperty("job_id")]
+            public string JobId { get; set; }
+
+            [JsonProperty("error")]
+            public string Error { get; set; }
+        }
+
+        public class DownloadJobProgressResponse
+        {
+            [JsonProperty("bytes_done")]
+            public long BytesDone { get; set; }
+
+            [JsonProperty("bytes_total")]
+            public long? BytesTotal { get; set; }
+
+            [JsonProperty("phase")]
+            public string Phase { get; set; }
+
+            [JsonProperty("percent")]
+            public double? Percent { get; set; }
+        }
+
+        public class DownloadJobFailureResponse
+        {
+            [JsonProperty("code")]
+            public string Code { get; set; }
+
+            [JsonProperty("message")]
+            public string Message { get; set; }
+        }
+
+        public class DownloadJobStatusResponse
+        {
+            [JsonProperty("job_id")]
+            public string JobId { get; set; }
+
+            [JsonProperty("state")]
+            public string State { get; set; }
+
+            [JsonProperty("message")]
+            public string Message { get; set; }
+
+            [JsonProperty("progress")]
+            public DownloadJobProgressResponse Progress { get; set; }
+
+            [JsonProperty("failure")]
+            public DownloadJobFailureResponse Failure { get; set; }
         }
 
         private static Version currentVersion;
@@ -242,21 +294,81 @@ namespace Playnite
             return notes;
         }
 
-        public async Task DownloadUpdate(Action<DownloadProgressChangedEventArgs> progressHandler)
+        public async Task DownloadUpdate(Action<int> progressHandler)
         {
             try
             {
-                // Notify start (0%)
-                progressHandler?.Invoke(null);
+                progressHandler?.Invoke(0);
 
-                await PostJsonAsync(BackendBaseUrl + DownloadEndpoint, "{}");
+                var startJson = await PostJsonAsync(BackendBaseUrl + DownloadEndpoint, "{}");
+                var start = Serialization.FromJson<DownloadResponse>(startJson);
 
-                // Notify finish (100%)
-                progressHandler?.Invoke(null);
+                if (start == null)
+                {
+                    throw new Exception("download_start_failed");
+                }
+
+                if (!string.IsNullOrWhiteSpace(start.Error))
+                {
+                    throw new Exception(start.Error);
+                }
+
+                if (string.IsNullOrWhiteSpace(start.JobId))
+                {
+                    throw new Exception("download_job_id_missing");
+                }
+
+                while (true)
+                {
+                    var statusJson = await GetAsync(BackendBaseUrl + DownloadStatusEndpoint + "/" + start.JobId);
+                    logger.Info($"download status raw | {statusJson}");
+
+                    var status = Serialization.FromJson<DownloadJobStatusResponse>(statusJson);
+
+                    logger.Info(
+                        $"download status parsed | state={status?.State} | bytes_done={status?.Progress?.BytesDone} | bytes_total={status?.Progress?.BytesTotal} | percent={status?.Progress?.Percent}"
+                    );
+
+                    if (status == null)
+                    {
+                        throw new Exception("download_status_invalid");
+                    }
+
+                    int percent = 0;
+
+                    if (status.Progress != null && status.Progress.BytesTotal.HasValue && status.Progress.BytesTotal.Value > 0)
+                    {
+                        percent = (int)((status.Progress.BytesDone * 100L) / status.Progress.BytesTotal.Value);
+                    }
+                    else if (status.Progress != null && status.Progress.Percent.HasValue)
+                    {
+                        percent = (int)status.Progress.Percent.Value;
+                    }
+
+                    if (status.State == "SUCCEEDED")
+                    {
+                        progressHandler?.Invoke(100);
+                        break;
+                    }
+
+                    if (status.State == "FAILED" || status.State == "CANCELLED")
+                    {
+                        var msg = status.Failure?.Message;
+                        if (string.IsNullOrWhiteSpace(msg))
+                        {
+                            msg = "Failed to download update file.";
+                        }
+
+                        throw new Exception(msg);
+                    }
+
+                    progressHandler?.Invoke(Math.Max(0, Math.Min(percent, 99)));
+                    await Task.Delay(300);
+                }
             }
             catch (Exception e)
             {
-                logger.Error(e, "Failed to trigger backend download.");
+                logger.Error(e, "Failed to download update file.");
                 throw new Exception("Failed to download update file.");
             }
         }
@@ -323,6 +435,19 @@ namespace Playnite
             {
                 logger.Warn(e, "Failed to check updates via backend.");
                 return null;
+            }
+        }
+
+        private static async Task<string> GetAsync(string url)
+        {
+            var req = (HttpWebRequest)WebRequest.Create(url);
+            req.Method = "GET";
+            req.Timeout = 30_000;
+
+            using (var resp = (HttpWebResponse)await req.GetResponseAsync().ConfigureAwait(false))
+            using (var reader = new StreamReader(resp.GetResponseStream()))
+            {
+                return await reader.ReadToEndAsync().ConfigureAwait(false);
             }
         }
 

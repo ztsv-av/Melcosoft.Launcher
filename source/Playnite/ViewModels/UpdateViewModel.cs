@@ -127,7 +127,13 @@ namespace Playnite.ViewModels
                 ShowProgress = true;
                 UpdateProgress = 0;
 
-                await updater.DownloadUpdate(null);
+                await updater.DownloadUpdate(percent =>
+                {
+                    context.Post(_ =>
+                    {
+                        UpdateProgress = percent;
+                    }, null);
+                });
 
                 UpdateProgress = 100;
                 updater.InstallUpdate(mode);

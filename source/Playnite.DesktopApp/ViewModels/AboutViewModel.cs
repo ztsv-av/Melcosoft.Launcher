@@ -26,7 +26,7 @@ namespace Playnite.DesktopApp.ViewModels
         {
             get
             {
-                return "Playnite " + Updater.CurrentVersion.ToString(2);
+                return "Melcosoft " + Updater.CurrentVersion.ToString(4);
             }
         }
 
