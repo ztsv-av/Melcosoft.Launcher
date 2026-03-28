@@ -4,7 +4,7 @@
     THIS FILE IS NOT PART OF THE THEME, DO NOT MODIFY!
     -->
     <sys:String x:Key="LanguageName">עברית</sys:String>
-    <sys:String x:Key="LOCLanguageSettingsLabel">שפת התצוגה של Playnite</sys:String>
+    <sys:String x:Key="LOCLanguageSettingsLabel">שפת התצוגה של Melcosoft</sys:String>
     <sys:String x:Key="LOCExitAppLabel">יציאה</sys:String>
     <sys:String x:Key="LOCFilterActiveLabel">סינון פעיל</sys:String>
     <sys:String x:Key="LOCFilterInactiveLabel">מסנן כבוי</sys:String>
@@ -257,6 +257,11 @@
     <sys:String x:Key="LOCMenuHelpTitle">עזרה</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">תמוך באמצעות Patreon</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">תמיכה דרך Ko-fi</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft עזרה</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft פורום</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft ראשי</sys:String>
+
     <sys:String x:Key="LOCUserManual">מדריך למשתמש</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">תיעוד SDK</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">איתחול מערכת</sys:String>
@@ -790,7 +795,7 @@ https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCDescriptionSizeBytes">נפח ההתקנה מוצג בביטים</sys:String>
     <sys:String x:Key="LOCReleaseDateTooltip">תאריך השחרור חייב להיות בתצורה 'שנה-חודש-יום'. ערכי החודש והיום יכולים להיות מושמטים.</sys:String>
     <sys:String x:Key="LOCDescriptionScoreValues">ערכים בין 0 ל 100 או ריק לללא ציון.</sys:String>
-    <sys:String x:Key="LOCPatreonDevelopMessage">פיתוח Playnite מתאפשר באמצעות תמיכה של הפטרונים וחברי Ko-fi הבאים:</sys:String>
+    <sys:String x:Key="LOCPatreonDevelopMessage">פיתוח Melcosoft מתאפשר באמצעות תמיכה של הפטרונים וחברי Ko-fi הבאים:</sys:String>
     <sys:String x:Key="LOCAboutContributorsMessage">תורמים לקוד, תרגום ואחרים לא בסדר כלשהו:</sys:String>
     <sys:String x:Key="LOCCancelMonitoringAskTitle">בטל ניטור משחקים?</sys:String>
     <sys:String x:Key="LOCCancelMonitoringSetupAsk">ניתור התקנה כרגע רץ, הרם ברצונך לבטל את התהליך ולהחזיר את המשחק למצבו הקודם?</sys:String>
@@ -870,7 +875,7 @@ https://playnite.link/cefstartup</sys:String>
 
 גרסה נוכחית: {1}
 גרסה חדשה: {2}</sys:String>
-    <sys:String x:Key="LOCUrlNavigationMessage" xml:space="preserve">אתם עומדים לעזוב את Playnite ולנווט לדף אינטרנט על ידי דפדפן ברירת המחדל. האם ברצונך להמשיך?
+    <sys:String x:Key="LOCUrlNavigationMessage" xml:space="preserve">אתם עומדים לעזוב את Melcosoft ולנווט לדף אינטרנט על ידי דפדפן ברירת המחדל. האם ברצונך להמשיך?
  
 {0}</sys:String>
     <sys:String x:Key="LOCGameImageSizeWarning" xml:space="preserve">תמונה/תמונות שנבחרו עשויות להיות גדולות מדי לביצוע מיטבי. שימוש בתמונות גדולות מאוד עלול לגרום לתגובה הרבה פחות טובה של ממשק המשתמש ולשיפור השימוש בזיכרון.

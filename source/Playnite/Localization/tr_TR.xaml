@@ -30,7 +30,7 @@ Belirsiz - Değişiklik yok (birden fazla oyun düzenlenirken)</sys:String>
     <sys:String x:Key="LOCCrashWindowTitle">Amanın! Bir şeyler ters gitti…</sys:String>
     <sys:String x:Key="LOCCrashDescription" xml:space="preserve">Kurtarılamaz bir hata oluştu.
  
-Bu sorunu çözmemize yardımcı olmak istiyorsanız, lütfen çökmeden önce gerçekleştirilen eylemleri kısaca açıklayın ve ardından bir tanı bilgisi gönderin. Çevrimiçiyseniz, paket, analiz için Playnite sunucusuna yüklenecektir.
+Bu sorunu çözmemize yardımcı olmak istiyorsanız, lütfen çökmeden önce gerçekleştirilen eylemleri kısaca açıklayın ve ardından bir tanı bilgisi gönderin. Çevrimiçiyseniz, paket, analiz için Melcosoft sunucusuna yüklenecektir.
 
 Alternatif olarak, GitHub'da yeni bir sorun oluşturmak ve çöküşü elle bildirmek için 'Çökme Bildir' düğmesini kullanabilirsiniz.
 
@@ -216,8 +216,8 @@ Bu sorunu çözmemize yardımcı olmak için lütfen tanılama bilgilerini gönd
     <sys:String x:Key="LOCMetaNoFieldsSelectedErrorMessage">İndirme için hiçbir üst veri alanı seçilmedi. Lütfen en az birini seçin ve bunun için en az bir üst veri sağlayıcısını etkinleştirin.</sys:String>
     <sys:String x:Key="LOCMetaSourceStore">Resmi Mağaza</sys:String>
     <sys:String x:Key="LOCMetaSourceIGDB">IGDB</sys:String>
-    <sys:String x:Key="LOCMetaDescriptionFields">Lütfen Playnite tarafından hangi alanların otomatik olarak doldurulacağını ve verileri almak için hangi kaynakların kullanılması gerektiğini seçin.</sys:String>
-    <sys:String x:Key="LOCMetaIgdbContribNotif">Lütfen yukarıdaki logoya tıklayıp Playnite'ın kullandığı verileri geliştirmek için igdb.com veritabanı güncellemelerine katkıda bulun.</sys:String>
+    <sys:String x:Key="LOCMetaDescriptionFields">Lütfen Melcosoft tarafından hangi alanların otomatik olarak doldurulacağını ve verileri almak için hangi kaynakların kullanılması gerektiğini seçin.</sys:String>
+    <sys:String x:Key="LOCMetaIgdbContribNotif">Lütfen yukarıdaki logoya tıklayıp Melcosoft'ın kullandığı verileri geliştirmek için igdb.com veritabanı güncellemelerine katkıda bulun.</sys:String>
     <!--Progress string-->
     <sys:String x:Key="LOCProgressMetadata">Üst veriler indiriliyor…</sys:String>
     <sys:String x:Key="LOCProgressInstalledGames">Kurulu oyunlar içeri aktarılıyor…</sys:String>
@@ -255,6 +255,11 @@ Bu sorunu çözmemize yardımcı olmak için lütfen tanılama bilgilerini gönd
     <sys:String x:Key="LOCMenuHelpTitle">Yardım</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">Patreon'da Destekle</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">Ko-fi üzerinden destekle</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft Yardım</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft Forum</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft Ana Sayfa</sys:String>
+
     <sys:String x:Key="LOCUserManual">Kullanım kılavuzu</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">SDK Belgelendirmesi</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">Sistemi Yeniden Başlat</sys:String>
@@ -318,7 +323,7 @@ Bu sorunu çözmemize yardımcı olmak için lütfen tanılama bilgilerini gönd
     <sys:String x:Key="LOCSettingsStartMinimized">Simge durumunda başlat</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBoot">Playnite bilgisayar açıldığında başlasın</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootClosedToTray">Sistem tepsisinde başlat</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Bilgisayar başladığında başlatmak için Playnite kaydı yapılamadı.</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Bilgisayar başladığında başlatmak için Melcosoft kaydı yapılamadı.</sys:String>
     <sys:String x:Key="LOCSettingsStartInFullscreen">Tam ekran kipinde başlat</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoading">Görüntüleri arka planda yükle</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoadingTooltip">Daha yavaş görüntü yükleme süreleri karşılığında oyun listelerinin kaydırma akıcılığını artırır.</sys:String>
@@ -356,13 +361,13 @@ Bu sorunu çözmemize yardımcı olmak için lütfen tanılama bilgilerini gönd
     <sys:String x:Key="LOCSettingsDatesFormatsLabel">Tarih biçimleri:</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheWarn">Bu sizi bağlı tüm servislerden çıkarır. Uygulamanın yeniden başlatılması gerekiyor, devam etmek istiyor musunuz?</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheTitle">Önbelleği Temizle?</sys:String>
-    <sys:String x:Key="LOCSettingsSkinChangeRestart">Yeni temayı uygulamak için playnite yeniden başlatılmalıdır</sys:String>
+    <sys:String x:Key="LOCSettingsSkinChangeRestart">Yeni temayı uygulamak için Melcosoft yeniden başlatılmalıdır</sys:String>
     <sys:String x:Key="LOCSettingsGetThemes">Daha fazla tema edin</sys:String>
     <sys:String x:Key="LOCSettingsCreateThemes">Yeni tema oluştur</sys:String>
     <sys:String x:Key="LOCSettingsGetExtensions">Daha fazla uzantı al</sys:String>
     <sys:String x:Key="LOCSettingsCreateExtensions">Yeni uzantı oluştur</sys:String>
     <sys:String x:Key="LOCSettingsCreateLocalization">Playnite'ı çevirmemize yardımcı olun</sys:String>
-    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">Yeni ayarların uygulanması için Playnite'ın yeniden başlatılması gerekiyor. Şimdi yeniden başlatılsın mı?
+    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">Yeni ayarların uygulanması için Melcosoft'ın yeniden başlatılması gerekiyor. Şimdi yeniden başlatılsın mı?
 
 Yeniden başlatmak, halihazırda devam etmekte olan tüm etkin görevleri (indirmeleri) iptal edecektir.</sys:String>
     <sys:String x:Key="LOCSettingsRestartTitle">Playnite yeniden başlatılsın mı?</sys:String>
@@ -376,9 +381,9 @@ Playnite yeniden başlatılıncaya kadar yeni veritabanı konumu kullanılmayaca
     <sys:String x:Key="LOCSettingsFullscreenBackgroundOnMainScreen">Arkaplan Resmini Ana Ekranda Göster</sys:String>
     <sys:String x:Key="LOCBackgroundImageScreenOptionTooltip" xml:space="preserve">Üst verileri yeniden indirmeden mevcut oyunlara geriye dönük olarak uygulanmaz.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportMode">Kütüphanedeki oyunların oynanış sürelerini aktar:</sys:String>
-    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Playnite veritabanındaki oyunlar için kütüphane eklentileri tarafından raporlanan oynatma süresini Playnite tarafından ne zaman içe aktaracağını yapılandırır. Bu özelliğin kullanılabilmesi için oyunlardan sorumlu kütüphane eklentilerinin desteği gereklidir.
+    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Playnite veritabanındaki oyunlar için kütüphane eklentileri tarafından raporlanan oynatma süresini Melcosoft tarafından ne zaman içe aktaracağını yapılandırır. Bu özelliğin kullanılabilmesi için oyunlardan sorumlu kütüphane eklentilerinin desteği gereklidir.
 
-Her Zaman: Playnite veritabanındaki yeni içe aktarılan ve mevcut oyunlar için oyun süresini içe aktarır.
+Her Zaman: Melcosoft veritabanındaki yeni içe aktarılan ve mevcut oyunlar için oyun süresini içe aktarır.
 Yalnızca yeni içe aktarılan oyunlar için: Oynatma süresini yalnızca yeni içe aktarılan oyunlar için içe aktarır.
 Asla: Hiçbir koşulda oyun süresini içe aktarmaz.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportModeAlways">Her zaman</sys:String>
@@ -414,7 +419,7 @@ Asla: Hiçbir koşulda oyun süresini içe aktarmaz.</sys:String>
     <sys:String x:Key="LOCSettingsTextRenderingMode">Yazı işleme kipi</sys:String>
     <sys:String x:Key="LOCSettingsTextRenderingNotice">Metin oluşturma ve biçimlendirme yöntemleri şu anda oyun açıklamaları için kullanılmamaktadır.</sys:String>
     <sys:String x:Key="LOCSettingsImmediateBackgroundDownload">Arka plan resimlerini önceden yükle</sys:String>
-    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">Etkinleştirilirse, Playnite üst verileri indirirken arka plan resmini indirir. Bu şekilde daha fazla disk alanı kullanır ancak resmi çevrimdışı kullanılabilir.
+    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">Etkinleştirilirse, Melcosoft üst verileri indirirken arka plan resmini indirir. Bu şekilde daha fazla disk alanı kullanır ancak resmi çevrimdışı kullanılabilir.
 
 Devre dışı bırakılırsa, arka plan resmi yalnızca ilk ihtiyaç duyulduğunda indirilir. Daha az alan kullanır, ancak resim gösterilmeden önce bir gecikmeye neden olabilir ve bazı resimler çevrimdışı olunduğunda kullanılamayabilir.</sys:String>
     <sys:String x:Key="LOCSettingsAutoCloseLauncherOption">Oyundan çıktıktan sonra üçüncü parti istemciyi otomatik kapat</sys:String>
@@ -455,8 +460,8 @@ Aynı zamanda uygulama ayarlarından da değiştirilebilir.</sys:String>
     <sys:String x:Key="LOCEmuWizardIntro">Bu sihirbaz, hem konsol emülatörlerini indirme ve içe aktarma hem de emülatör oyunlarını içe aktarma süreçlerinde size rehberlik edecektir.</sys:String>
     <sys:String x:Key="LOCEmuWizardNotice">Her zaman ek emülatör ve/veya oyunları ana menüden (Emülatör ayarları için &quot;Kütüphane&quot; menüsü altında ve emülatör oyunları için &quot;Oyun Ekle&quot; menüsü) ekleyebileceğinizi unutmayın.</sys:String>
     <sys:String x:Key="LOCEmuDownloadDescription">Playnite tarafından otomatik olarak tanınan ve yapılandırılabilen emülatörlerin bir listesi bulunmaktadır. Kurulumları web sitelerinden indirebilirsiniz. Emülatörler kurulduktan sonra (el ile), emülatör yapılandırma menüsünden bunları içe aktarabilirsiniz.</sys:String>
-    <sys:String x:Key="LOCEmuWizardEmuImportIntro">'Klasörden Otomatik Algıla…'  düğmesini tıklayarak PC'nizde kurulu olan tüm emülatörleri içe aktarabilirsiniz. Playnite, seçilen klasörde bilinen emülatörler için arama yapacak ve bunları içe aktarma seçeneği sunacaktır. Emülatörleri farklı klasörlerden içe aktarmak için bu düğmeyi birden çok kez kullanabilirsiniz. Emülatörler mevcut listenin altına eklenecektir.</sys:String>
-    <sys:String x:Key="LOCEmuWizardGameImportIntro">'Emülatörü Kullanarak Klasörü Tara' düğmesini tıklayarak oyunları içe aktarabilirsiniz. Uygun emülatörün seçilmesi, Playnite'a hangi dosya türlerinin taranması ve içe aktarılması gerektiğini söyleyecektir. Oyunları farklı klasörlerden içe aktarmak için bu düğmeyi birden çok kez kullanabilirsiniz. Oyunlar, mevcut listenin altına eklenecektir.</sys:String>
+    <sys:String x:Key="LOCEmuWizardEmuImportIntro">'Klasörden Otomatik Algıla…'  düğmesini tıklayarak PC'nizde kurulu olan tüm emülatörleri içe aktarabilirsiniz. Melcosoft, seçilen klasörde bilinen emülatörler için arama yapacak ve bunları içe aktarma seçeneği sunacaktır. Emülatörleri farklı klasörlerden içe aktarmak için bu düğmeyi birden çok kez kullanabilirsiniz. Emülatörler mevcut listenin altına eklenecektir.</sys:String>
+    <sys:String x:Key="LOCEmuWizardGameImportIntro">'Emülatörü Kullanarak Klasörü Tara' düğmesini tıklayarak oyunları içe aktarabilirsiniz. Uygun emülatörün seçilmesi, Melcosoft'a hangi dosya türlerinin taranması ve içe aktarılması gerektiğini söyleyecektir. Oyunları farklı klasörlerden içe aktarmak için bu düğmeyi birden çok kez kullanabilirsiniz. Oyunlar, mevcut listenin altına eklenecektir.</sys:String>
     <sys:String x:Key="LOCEmuWizardNoEmulatorWarning">İçe aktarma için seçilen emülatör yok. Emülatörü yapılandırmadan, oyunları otomatik olarak içe aktaramazsınız. İçe aktarma işlemini iptal ederek, devam etmek istediğinizden emin misiniz?</sys:String>
     <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning">Playnite'da yapılandırılmış emülatör yok. Emülatörü yapılandırmadan ve uygun dosya türlerini seçmeden önce oyunları içe aktaramazsınız. Şimdi emülatör eklemek ister misiniz?</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonScanGames">Emülatör kullanarak klasörü tara</sys:String>
@@ -467,11 +472,11 @@ Aynı zamanda uygulama ayarlarından da değiştirilebilir.</sys:String>
     <sys:String x:Key="LOCEmuWizardScanningSpecific">Taranıyor {0}…</sys:String>
     <!--FirstTime Wizard-->
     <sys:String x:Key="LOCFirstWindowTitle">İlk Kez Yapılandırma</sys:String>
-    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">Bu sihirbaz, harici oyun kütüphanelerinin otomatik olarak içe aktarılması ve yapılandırılması sürecinde size yol gösterecektir. Playnite, Steam veya GOG gibi birden çok oyun hizmetinden oyunları otomatik olarak içe aktarabilir ve ayrıca uygulama başlatıldığında otomatik olarak güncelleyerek kütüphanenizi güncel tutabilir.
+    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">Bu sihirbaz, harici oyun kütüphanelerinin otomatik olarak içe aktarılması ve yapılandırılması sürecinde size yol gösterecektir. Melcosoft, Steam veya GOG gibi birden çok oyun hizmetinden oyunları otomatik olarak içe aktarabilir ve ayrıca uygulama başlatıldığında otomatik olarak güncelleyerek kütüphanenizi güncel tutabilir.
 
 Daha sonra ana menüdeki 'Playnite' düğmesine tıklayarak herhangi bir platform için herhangi bir özel oyunu el ile ekleyebileceğinizi unutmayın.</sys:String>
     <sys:String x:Key="LOCFirstExternalTitle">Kütüphane Entegrasyonu</sys:String>
-    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">Aşağıda listelenen hizmetlerden oyunları otomatik olarak içe aktarın. Daha sonraki herhangi bir oyun değişikliği (Kurulum Durumu) Playnite başlangıcında veya manuel olarak tetiklendiğinde otomatik olarak güncellenecektir. Seçilen ayarlar ilk ve sonraki tüm içe aktarımları etkileyecektir.</sys:String>
+    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">Aşağıda listelenen hizmetlerden oyunları otomatik olarak içe aktarın. Daha sonraki herhangi bir oyun değişikliği (Kurulum Durumu) Melcosoft başlangıcında veya manuel olarak tetiklendiğinde otomatik olarak güncellenecektir. Seçilen ayarlar ilk ve sonraki tüm içe aktarımları etkileyecektir.</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedTitle">Yapılandırma Tamamlandı</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedText" xml:space="preserve">İlk kurulum tamamlandı. Tüm ayarları daha sonra 'Ayarlar' menüsünden değiştirebileceğinizi unutmayın.
 
@@ -605,7 +610,7 @@ Lütfen sorun raporunuza aşağıdaki kimliği ekleyin:</sys:String>
 {2}</sys:String>
     <sys:String x:Key="LOCURLFormatError">Bağlantı açılamıyor, URL geçerli biçimde değil.</sys:String>
     <sys:String x:Key="LOCAppStartupError">Uygulama başlatılamadı.</sys:String>
-    <sys:String x:Key="LOCCefSharpInitError" xml:space="preserve">Web görüntüleyici bileşeni başlatılamadı. Playnite, başlangıç sürecini devam ettiremiyor.
+    <sys:String x:Key="LOCCefSharpInitError" xml:space="preserve">Web görüntüleyici bileşeni başlatılamadı. Melcosoft, başlangıç sürecini devam ettiremiyor.
 
 Bilgi için: https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCEmulatorImportNoDefinitionsError">Eksik veya bozuk tanım dosyası nedeniyle emülatörler içe aktarılamıyor.</sys:String>
@@ -725,7 +730,7 @@ Bilgi için: https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCUpdateNoNewUpdateMessage">Şu anda son sürümü kullanıyorsunuz.</sys:String>
     <sys:String x:Key="LOCGeneralUpdateFailMessage">Güncelleme indirilemediği için kurulamadı.</sys:String>
     <sys:String x:Key="LOCUpdateProgressCancelAsk">Birkaç arka plan görevi şu anda devam ediyor. İptal edip güncellemeye devam etmek istiyor musunuz?</sys:String>
-    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">Birkaç arka plan görevi şu anda devam ediyor. İptal edip Playnite'tan çıkmak istiyor musunuz?</sys:String>
+    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">Birkaç arka plan görevi şu anda devam ediyor. İptal edip Melcosoft'tan çıkmak istiyor musunuz?</sys:String>
     <sys:String x:Key="LOCBackgroundProgressCancelAskSwitchMode">Birkaç arka plan görevi şu anda devam ediyor. Modlar arasında geçiş yapmak görevi iptal edecek. Yine de geçiş yapmak istiyor musunuz?</sys:String>
     <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">Playnite için bir güncelleme mevcut</sys:String>
     <sys:String x:Key="LOCThemeTestReloadList">Tema listesini yeniden yükle</sys:String>
@@ -825,13 +830,13 @@ Bilgi için: https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCPLaytime100to500">100-500 saat</sys:String>
     <sys:String x:Key="LOCPLaytime500to1000">500-1000 saat</sys:String>
     <sys:String x:Key="LOCPLaytime1000plus">1000 saatten fazla</sys:String>
-    <sys:String x:Key="LOCExtInstallationRestartNotif">Kurulumu tamamlamak için Playnite yeniden başlatılmalıdır. Şimdi yeniden başlatmak istiyor musunuz?</sys:String>
+    <sys:String x:Key="LOCExtInstallationRestartNotif">Kurulumu tamamlamak için Melcosoft yeniden başlatılmalıdır. Şimdi yeniden başlatmak istiyor musunuz?</sys:String>
     <sys:String x:Key="LOCGeneralExtensionPackageError">Uzantı düzgün paketlenmemiş.</sys:String>
     <sys:String x:Key="LOCGeneralThemePackageError">Tema düzgün paketlenmemiş.</sys:String>
     <sys:String x:Key="LOCSpecificExtensionLoadError">&quot;{0}&quot; uzantısı düzgün yüklenemedi.</sys:String>
-    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">&quot;{0}&quot; uzantısı yüklenemiyor, mevcut Playnite sürümü desteklenmiyor.</sys:String>
+    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">&quot;{0}&quot; uzantısı yüklenemiyor, mevcut Melcosoft sürümü desteklenmiyor.</sys:String>
     <sys:String x:Key="LOCSpecificThemeLoadError">&quot;{0}&quot; teması düzgün yüklenemedi.</sys:String>
-    <sys:String x:Key="LOCSpecificThemeLoadSDKError">&quot;{0}&quot; teması yüklenemiyor, mevcut Playnite sürümü desteklenmiyor.</sys:String>
+    <sys:String x:Key="LOCSpecificThemeLoadSDKError">&quot;{0}&quot; teması yüklenemiyor, mevcut Melcosoft sürümü desteklenmiyor.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionLoadError">Uzantı düzgün yüklenemedi.</sys:String>    
     <sys:String x:Key="LOCGeneralThemeLoadError">Tema düzgün yüklenemedi.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionInstallApiVersionFails">Tema/Uzantı, desteklenmeyen API sürümü kullanıyor.</sys:String>
@@ -879,10 +884,10 @@ Arka planlar: {2} mega piksel</sys:String>
     <sys:String x:Key="LOCLargeMediaWarningTooltip">Seçilen resim dosyası en iyi performans için çok büyük olabilir.</sys:String>
     <sys:String x:Key="LOCThemeUninstallQuestion">Seçili temayı kaldırmak istediğinizden emin misiniz? Kaldırma işlemi, bir sonraki uygulama başlangıcına kadar sıraya alınacaktır.</sys:String>
     <sys:String x:Key="LOCThemeBuiltInUninstallHint">Yerleşik temalar kaldırılamaz.</sys:String>
-    <sys:String x:Key="LOCThemeUnsupported">Bu tema Playnite'ın bu sürümünü desteklemiyor.</sys:String>
+    <sys:String x:Key="LOCThemeUnsupported">Bu tema Melcosoft'ın bu sürümünü desteklemiyor.</sys:String>
     <sys:String x:Key="LOCExtensionUninstallQuestion">Seçili uzantıyı kaldırmak istediğinizden emin misiniz? Kaldırma işlemi, bir sonraki uygulama başlangıcına kadar sıraya alınacaktır.</sys:String>
     <sys:String x:Key="LOCExtensionBuiltInUninstallHint">Yerleşik uzantılar kaldırılamaz.</sys:String>
-    <sys:String x:Key="LOCExtensionUnsupported">Bu uzantı, Playnite'ın bu sürümünü desteklemiyor.</sys:String>
+    <sys:String x:Key="LOCExtensionUnsupported">Bu uzantı, Melcosoft'ın bu sürümünü desteklemiyor.</sys:String>
     <sys:String x:Key="LOCExtensionInstallDir">Kurulum klasörü</sys:String>
     <sys:String x:Key="LOCExtensionDataDir">Veri klasörü</sys:String>
     <sys:String x:Key="LOCDiagGenerating">Tanılama paketi oluşturuluyor…</sys:String>
@@ -912,7 +917,7 @@ Arka planlar: {2} mega piksel</sys:String>
     <sys:String x:Key="LOCCommonLinksForum">Forum</sys:String>
     <sys:String x:Key="LOCCommonLinksNews">Haberler</sys:String>
     <sys:String x:Key="LOCCommonLinksStorePage">Mağaza Sayfası</sys:String>
-    <sys:String x:Key="LOCFullscreenFirstTimeError">İlk kurulum tamamlanmadı. Playnite, prosedürü bitirmek için şimdi Masaüstü Moduna yeniden başlayacaktır.</sys:String>
+    <sys:String x:Key="LOCFullscreenFirstTimeError">İlk kurulum tamamlanmadı. Melcosoft, prosedürü bitirmek için şimdi Masaüstü Moduna yeniden başlayacaktır.</sys:String>
     <sys:String x:Key="LOCQuickFilterRecentlyPlayed">En Son Oynananlar</sys:String>
     <sys:String x:Key="LOCQuickFilterFavorites">Favoriler</sys:String>
     <sys:String x:Key="LOCQuickFilterMostPlayed">Çok Oynanan</sys:String>
@@ -936,7 +941,7 @@ Ek bütünleştirmeler kurmak veya kaldırmak istiyorsanız ana menüden &quot;E
     <sys:String x:Key="LOCAddonsThemesDesktop">Masaüstü Temaları</sys:String>
     <sys:String x:Key="LOCAddonsThemesFullscren">Tam Ekran Temaları</sys:String>
     <sys:String x:Key="LOCAddonsSearching">Aranıyor…</sys:String>
-    <sys:String x:Key="LOCAddonErrorNotCompatible">Eklenti, Playnite'ın bu sürümüyle uyumlu değil.</sys:String>
+    <sys:String x:Key="LOCAddonErrorNotCompatible">Eklenti, Melcosoft'ın bu sürümüyle uyumlu değil.</sys:String>
     <sys:String x:Key="LOCAddonErrorDownloadFailed">Eklenti yükleme paketi indirilemedi.</sys:String>
     <sys:String x:Key="LOCAddonErrorManifestDownloadError">Eklenti yükleme paketi indirilemedi.</sys:String>
     <sys:String x:Key="LOCAddonChangesRestart">Yeni ayarları uygulamak için yeniden başlatma gerekiyor.</sys:String>
@@ -1007,16 +1012,16 @@ Ek bütünleştirmeler kurmak veya kaldırmak istiyorsanız ana menüden &quot;E
     <sys:String x:Key="LOCConfigure">Yapılandır</sys:String>
     <sys:String x:Key="LOCFilterPresetSave">Önayarı kaydet</sys:String>
     <sys:String x:Key="LOCSettingsMinimizeAfterStartingGame">Oyuna başladıktan sonra simge durumuna küçült</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeAfterStartingGameDescription" xml:space="preserve">Oyun başladıktan sonra Playnite'ı simge durumuna küçültün.
+    <sys:String x:Key="LOCSettingsMinimizeAfterStartingGameDescription" xml:space="preserve">Oyun başladıktan sonra Melcosoft'ı simge durumuna küçültün.
 
 Bunu devre dışı bırakmak, oyunların başlangıçta girdiye odaklanmamasıyla ilgili sorunlara yol açabilir!</sys:String>
     <sys:String x:Key="LOCSettingsFontSize">Yazı Tipi Boyutu</sys:String>
     <sys:String x:Key="LOCSettingsFontSizeSmall">Yazı Tipi Boyutu Küçük</sys:String>
     <sys:String x:Key="LOCSettingsControllerApi">Oyun kontrolcüsü API desteğini etkinleştir</sys:String>
     <sys:String x:Key="LOCSettingsXInputProcessing">Oyun kolu desteği</sys:String>
-    <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">Devre dışı bırakılırsa Playnite hiçbir oyun kolu girişini kabul etmez.
+    <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">Devre dışı bırakılırsa Melcosoft hiçbir oyun kolu girişini kabul etmez.
         
-Oyun kolu girişlerini fare/klavye girişlerine çeviren araçlar kullanıyorsanız ve Playnite ile çift giriş alıyorsanız devre dışı bırakın.</sys:String>
+Oyun kolu girişlerini fare/klavye girişlerine çeviren araçlar kullanıyorsanız ve Melcosoft ile çift giriş alıyorsanız devre dışı bırakın.</sys:String>
     <sys:String x:Key="LOCSettingsShowItemsMainMenuHeader">Öğeleri ana menüde göster:</sys:String>
     <sys:String x:Key="LOCSettingsSwapMainViewXAButtons">Ters X/A ana görünüm düğmesi bağlama</sys:String>
     <sys:String x:Key="LOCSettingsSwapMainViewXAButtonsDescriptions">Bir oyunu başlatmak ve ana görünüm sayfasında oyun ayrıntılarını göstermek için düğme bağlantılarını değiştirir.</sys:String>
@@ -1024,7 +1029,7 @@ Oyun kolu girişlerini fare/klavye girişlerine çeviren araçlar kullanıyorsan
     <sys:String x:Key="LOCSettingsSwapConfirmCancelButtonsDescriptions">Onay ve iptal için A/B düğme eşlemelerini tersine çevirir.</sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnly">Sadece ana oyun kolu</sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnlyDescription">Aktif olduğunda, sadece ana oyun kolundan gelen girdiler dikkate alınır.</sys:String>
-    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">Rehber düğmesi Playnite'ı öne getirir</sys:String>
+    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">Rehber düğmesi Melcosoft'ı öne getirir</sys:String>
     <sys:String x:Key="LOCSettingsInterfaceVolume">Arayüz ses seviyesi</sys:String>
     <sys:String x:Key="LOCSettingsMusiVolume">Arka plan ses seviyesi</sys:String>
     <sys:String x:Key="LOCSettingsMuteBackground">Arka plandayken sessize al</sys:String>
@@ -1056,7 +1061,7 @@ Daha iyi kalite, orta hız, düşük bellek kullanımı.</sys:String>
     <sys:String x:Key="LOCSelectFileTooltip">Dosya seç…</sys:String>
     <sys:String x:Key="LOCSelectDirectoryTooltip">Klasör seç…</sys:String>
     <sys:String x:Key="LOCStartupScript">Başlangıç ​​betiği</sys:String>
-    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">Lütfen hem uzantıların hem de temaların Playnite'ın performansını, kararlılığını ve güvenliğini büyük ölçüde etkileyebileceğini unutmayın.
+    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">Lütfen hem uzantıların hem de temaların Melcosoft'ın performansını, kararlılığını ve güvenliğini büyük ölçüde etkileyebileceğini unutmayın.
     
 Bir tema veya uzantı yükledikten sonra bazı sorunlar yaşamaya başlarsanız, sorunun kaynağı olup olmadığını görmek için önce bunları devre dışı bırakmayı/kaldırmayı deneyin.</sys:String>
     <sys:String x:Key="LOCGameActionSelectOnStart">Başlangıçta seç</sys:String>
@@ -1097,7 +1102,7 @@ Bir tema veya uzantı yükledikten sonra bazı sorunlar yaşamaya başlarsanız,
     <sys:String x:Key="LOCEmuSaveScanConfig">Otomatik tarama ayarları olarak kaydet</sys:String>
     <sys:String x:Key="LOCEmuSaveScanConfigTooltip">Daha sonra kütüphane güncellemesi sırasında kullanılmak üzere yapılandırmayı kaydeder. Kaydedilen yapılandırmalar &quot;Emülatörleri Yapılandır&quot; menüsünden yönetilebilir.</sys:String>
     <sys:String x:Key="LOCEmuImportWithRelativePaths">Göreceli dizinler kullanarak aktar</sys:String>
-    <sys:String x:Key="LOCEmuImportWithRelativePathsTooltip">Mümkün olduğunda oyun dosyaları, Playnite ya da emülatör kurulum klasörlerine bağıntılı dizinler altından içe aktarılır.</sys:String>
+    <sys:String x:Key="LOCEmuImportWithRelativePathsTooltip">Mümkün olduğunda oyun dosyaları, Melcosoft ya da emülatör kurulum klasörlerine bağıntılı dizinler altından içe aktarılır.</sys:String>
     <sys:String x:Key="LOCEmuImportScanSubfolders">Alt klasörleri tara</sys:String>
     <sys:String x:Key="LOCEmuImportScanInsideArchives">Arşivlerin içini tara</sys:String>
     <sys:String x:Key="LOCEmuMergeRelatedFiles">İlişkili dosyaları birleştir</sys:String>
@@ -1117,12 +1122,12 @@ Bir tema veya uzantı yükledikten sonra bazı sorunlar yaşamaya başlarsanız,
     <sys:String x:Key="LOCSortingNameAutofillButton">Sıralama İsmi boş olduğunda doldur</sys:String>
     <sys:String x:Key="LOCSettingsSortingLabel">Sıralama</sys:String>
     <sys:String x:Key="LOCSortingNameAutofillProgress">İsim Sıralama Değerini Doldur…</sys:String>
-    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">Nahimic hizmetinin sisteminizde çalıştığı tespit edildi. Bu hizmetin Playnite'ta (ve diğer uygulamalarda) ciddi işleme sorunlarına neden olduğu bilinmektedir.        
+    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">Nahimic hizmetinin sisteminizde çalıştığı tespit edildi. Bu hizmetin Melcosoft'ta (ve diğer uygulamalarda) ciddi işleme sorunlarına neden olduğu bilinmektedir.        
 
 Playnite'ta grafiksel bozulmalar veya başka işleme sorunları ile karşılaşırsanız, Nahimic servisini devre dışı bırakmanızı veya tamamen kaldırmanızı öneririz.
 
 https://playnite.link/nahimicsucks adresinden daha fazla bilgi edinin.</sys:String>
-    <sys:String x:Key="LOCElevatedProcessWarning" xml:space="preserve">Playnite, yükseltilmiş ayrıcalıklarla (yönetici olarak) çalışıyor. Bu, Playnite'tan başlatılan tüm kurulu uzantılara ve tüm oyunlara/uygulamalara yükseltilmiş ayrıcalıklar sağladığı için önerilmez!
+    <sys:String x:Key="LOCElevatedProcessWarning" xml:space="preserve">Playnite, yükseltilmiş ayrıcalıklarla (yönetici olarak) çalışıyor. Bu, Melcosoft'tan başlatılan tüm kurulu uzantılara ve tüm oyunlara/uygulamalara yükseltilmiş ayrıcalıklar sağladığı için önerilmez!
 
 https://playnite.link/adminfaq adresinde daha fazla bilgi alabilirsiniz.</sys:String>
     <sys:String x:Key="LOCElevatedProcessWarningShowOption">Playnite yükseltilmiş ayrıcalıklarla çalışıyorsa uyarı göster</sys:String>
@@ -1140,7 +1145,7 @@ Yalnızca şunlar için desteklenir: Google Drive, DropBox, OneDrive</sys:String
     <sys:String x:Key="LOCEmuUseSimplifiedOnlineFileScanTooltip">Dosyalar içe aktarılacak, ancak dosya içeriğinin indirilmesini ve yerel olarak sunulmasını gerektirmeyen daha az doğru bir yöntem kullanılacaktır.</sys:String>
     <sys:String x:Key="LOCMetadatSetAllFieldsToValue">Tümüne uygula</sys:String>
     <sys:String x:Key="LOCOverrideInstallState">Esas alınan kurulum durumu</sys:String>
-    <sys:String x:Key="LOCOverrideInstallStateTooltip" xml:space="preserve">Tanımlı olduğunda Playnite, entegrasyon eklentisi tarafından belirlenen kurulum durumunu (kurulum dizini de dahil olmak üzere) göz ardı edecektir.
+    <sys:String x:Key="LOCOverrideInstallStateTooltip" xml:space="preserve">Tanımlı olduğunda Melcosoft, entegrasyon eklentisi tarafından belirlenen kurulum durumunu (kurulum dizini de dahil olmak üzere) göz ardı edecektir.
 
 Bu seçenek, belirli oyun aktarım metodunu kullanan ve bu ayarı dikkate almayan eklentiler için tam çalışmayabilir.</sys:String>
     <sys:String x:Key="LOCOptionOnlyManually">Sadece el ile</sys:String>
@@ -1256,7 +1261,7 @@ Diğer tüm tarihler için belirtilen tarih biçimi kullanılacaktır.</sys:Stri
     <sys:String x:Key="LOCGameMenu">Oyun menüsü</sys:String>
     <sys:String x:Key="LOCProgramFolder">Program klasörü</sys:String>
     <sys:String x:Key="LOCUserDataFolder">Kullanıcı veri dizini</sys:String>
-    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">Kütüphane dosyasında arıza tespit edildi, Playnite şimdi sonlandırılacak.
+    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">Kütüphane dosyasında arıza tespit edildi, Melcosoft şimdi sonlandırılacak.
 
 Playnite GitHub sayfasında yeni bir hata kaydı oluşturarak arızalı dosyalarınızın tamir edilmesini talep edin.</sys:String>
     <sys:String x:Key="LOCUnsavedChangesAskMessage">Yaptığınız değişiklikleri kaydetmek istiyor musunuz?</sys:String>

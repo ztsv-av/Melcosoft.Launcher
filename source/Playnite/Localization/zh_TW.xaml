@@ -173,7 +173,7 @@
     <sys:String x:Key="LOCSpecialThanks">特別感謝</sys:String>
     <sys:String x:Key="LOCLicenseLabel">授權</sys:String>
     <sys:String x:Key="LOCContributorsLabel">貢獻者</sys:String>
-    <sys:String x:Key="LOCClosingPlaynite">正在退出 Playnite…</sys:String>
+    <sys:String x:Key="LOCClosingPlaynite">正在退出 Melcosoft…</sys:String>
     <sys:String x:Key="LOCToday">今天</sys:String>
     <sys:String x:Key="LOCYesterday">昨天</sys:String>
     <sys:String x:Key="LOCMonday">星期一</sys:String>
@@ -255,6 +255,11 @@
     <sys:String x:Key="LOCMenuHelpTitle">說明</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">在Patreon上支持我們</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">在 Ko-fi 上支持我們</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft 說明</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft 論壇</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft 主頁</sys:String>
+
     <sys:String x:Key="LOCUserManual">使用說明</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">SDK文件</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">系統重啟</sys:String>
@@ -376,7 +381,7 @@
     <sys:String x:Key="LOCSettingsFullscreenBackgroundOnMainScreen">在主螢幕顯示背景圖片</sys:String>
     <sys:String x:Key="LOCBackgroundImageScreenOptionTooltip" xml:space="preserve">未重新下載元資料時現有遊戲不會被覆蓋</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportMode">匯入資料庫當中的遊玩時間:</sys:String>
-    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">設定 Playnite 應該在何時匯入由管理Playnite資料庫外掛所回報的遊玩時間。
+    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">設定 Melcosoft 應該在何時匯入由管理Playnite資料庫外掛所回報的遊玩時間。
 負責管理遊戲資料庫的外掛必須要有支援才能使用這個功能。
 
 總是: 將會對新匯入以及已存在於Playnite資料庫的遊戲匯入遊玩時間。

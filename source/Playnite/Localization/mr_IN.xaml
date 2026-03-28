@@ -239,6 +239,11 @@
     <sys:String x:Key="LOCMenuHelpTitle">मदत</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">पेट्रीऑनवर समर्थन करा</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">Ko-fi वर समर्थन करा</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft मदत</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft मंच</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft मुखपृष्ठ</sys:String>
+
     <sys:String x:Key="LOCUserManual">प्रयोक्ता माहितीपुस्तिका</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">एसडीके दस्तऐवज</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">सिस्टम रीस्टार्ट करा</sys:String>

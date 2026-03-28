@@ -30,7 +30,7 @@
     <sys:String x:Key="LOCCrashWindowTitle">이런! 문제가 발생했어요…</sys:String>
     <sys:String x:Key="LOCCrashDescription" xml:space="preserve">복구할 수 없는 오류가 발생했습니다.
 
-이 문제를 해결할 수 있도록 도움을 주시고 싶으시다면 오류가 발생하기 이전에 헀던 동작에 대해서 설명해주시고 분석 정보를 보내주세요. 온라인이면 패키지가 분석을 위해서 Playnite 서버로 보내집니다.
+이 문제를 해결할 수 있도록 도움을 주시고 싶으시다면 오류가 발생하기 이전에 헀던 동작에 대해서 설명해주시고 분석 정보를 보내주세요. 온라인이면 패키지가 분석을 위해서 Melcosoft 서버로 보내집니다.
 
 또는 '충돌 보고' 버튼을 눌러서 GitHub에 직접 새로운 이슈를 만들어서 보고할 수도 있습니다.
 
@@ -217,7 +217,7 @@
     <sys:String x:Key="LOCMetaSourceStore">공식 스토어</sys:String>
     <sys:String x:Key="LOCMetaSourceIGDB">IGDB</sys:String>
     <sys:String x:Key="LOCMetaDescriptionFields">어떤 항목을 자동으로 채울지, 데이터를 얻기 위해 사용할 소스가 어디인지 선택하십시오.</sys:String>
-    <sys:String x:Key="LOCMetaIgdbContribNotif">위의 로고를 클릭하여 Playnite가 사용하는 igdb.com의 데이터 베이스 강화에 기여해주십시오.</sys:String>
+    <sys:String x:Key="LOCMetaIgdbContribNotif">위의 로고를 클릭하여 Melcosoft가 사용하는 igdb.com의 데이터 베이스 강화에 기여해주십시오.</sys:String>
     <!--Progress string-->
     <sys:String x:Key="LOCProgressMetadata">메타데이터 다운로드 중...</sys:String>
     <sys:String x:Key="LOCProgressInstalledGames">설치된 게임 가져오는 중…</sys:String>
@@ -255,6 +255,11 @@
     <sys:String x:Key="LOCMenuHelpTitle">도움말</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">Patreon으로 후원하기</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">Ko-fi로 후원하기</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft 도움말</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft 포럼</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft 홈</sys:String>
+
     <sys:String x:Key="LOCUserManual">사용자 설명서</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">SDK 개발 문서</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">시스템 재시작</sys:String>
@@ -316,7 +321,7 @@
     <sys:String x:Key="LOCSettingsInvalidAccountName">계정 이름은 비워둘 수 없습니다.</sys:String>
     <sys:String x:Key="LOCSettingsDownloadMetadataOnImport">게임을 가져온 후 메타데이터 다운로드</sys:String>
     <sys:String x:Key="LOCSettingsStartMinimized">Playnite를 최소화된 상태로 시작</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBoot">컴퓨터를 부팅했을 때 Playnite 실행</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBoot">컴퓨터를 부팅했을 때 Melcosoft 실행</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootClosedToTray">트레이로 숨김</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Playnite를 시작프로그램으로 등록하지 못했습니다.</sys:String>
     <sys:String x:Key="LOCSettingsStartInFullscreen">전체 화면 모드로 시작</sys:String>
@@ -348,27 +353,27 @@
     <sys:String x:Key="LOCSettingsClearWebCache">웹 캐시 삭제</sys:String>
     <sys:String x:Key="LOCSettingsClearWebCacheTooltip">계정을 연동하는데 발생하는 문제를 해결할 수도 있습니다.</sys:String>
     <sys:String x:Key="LOCSettingsShowTray">알림 영역에 아이콘 표시</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeToTray">알림 영역으로 Playnite 최소화</sys:String>
-    <sys:String x:Key="LOCSettingsCloseToTray">프로그램 창을 닫았을 때 알림 영역으로 Playnite 최소화</sys:String>
+    <sys:String x:Key="LOCSettingsMinimizeToTray">알림 영역으로 Melcosoft 최소화</sys:String>
+    <sys:String x:Key="LOCSettingsCloseToTray">프로그램 창을 닫았을 때 알림 영역으로 Melcosoft 최소화</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameStart">게임 시작 시:</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameClose">게임 종료 시:</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeUseDaysFormatLabel">플레이한 일수를 표시하기 위해 플레이 시간 형식 지정</sys:String>
     <sys:String x:Key="LOCSettingsDatesFormatsLabel">날짜 표시 방법:</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheWarn">연동된 모든 서비스를 로그아웃시킵니다. 응용 프로그램을 재시작해야합니다. 계속하시겠습니까?</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheTitle">캐시를 삭제하시겠습니까?</sys:String>
-    <sys:String x:Key="LOCSettingsSkinChangeRestart">새로운 테마를 적용하기 위해선 Playnite를 재시작해야합니다</sys:String>
+    <sys:String x:Key="LOCSettingsSkinChangeRestart">새로운 테마를 적용하기 위해선 Melcosoft를 재시작해야합니다</sys:String>
     <sys:String x:Key="LOCSettingsGetThemes">더 많은 테마</sys:String>
     <sys:String x:Key="LOCSettingsCreateThemes">새로운 테마 생성</sys:String>
     <sys:String x:Key="LOCSettingsGetExtensions">더 많은 확장 프로그램 받기</sys:String>
     <sys:String x:Key="LOCSettingsCreateExtensions">새 확장 만들기</sys:String>
     <sys:String x:Key="LOCSettingsCreateLocalization">Playnite 번역을 도와주세요</sys:String>
-    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">새 설정을 적용하려면 Playnite를 재시작해야 합니다. 지금 재시작하시겠습니까?
+    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">새 설정을 적용하려면 Melcosoft를 재시작해야 합니다. 지금 재시작하시겠습니까?
 
 재시작하면 현재 진행 중인 작업 (다운로드)이 중지됩니다.</sys:String>
     <sys:String x:Key="LOCSettingsRestartTitle">Playnite를 재시작하시겠습니까?</sys:String>
     <sys:String x:Key="LOCSettingsDBPathNotification" xml:space="preserve">Playnite는 자동으로 라이브러리 파일을 이동할 수 없습니다. 위치를 변경하기 전에 반드시 직접 파일을 이동하거나 복사해야 합니다. 해당 경로에 라이브러리가 없다면 새로 생성됩니다.
 
-새 데이터베이스 위치는 Playnite가 재시작되기 전까지 사용되지 않습니다. </sys:String>
+새 데이터베이스 위치는 Melcosoft가 재시작되기 전까지 사용되지 않습니다. </sys:String>
     <sys:String x:Key="LOCSettingsClosePlaytimeNotif">&quot;닫기&quot; 액션이 설정되어있으면 플레이 시간이 기록되지 않습니다.</sys:String>
     <sys:String x:Key="LOCSettingsFullscreenRows">행 수</sys:String>
     <sys:String x:Key="LOCSettingsFullscreenColumns">열 수</sys:String>
@@ -376,9 +381,9 @@
     <sys:String x:Key="LOCSettingsFullscreenBackgroundOnMainScreen">메인 화면에 배경 이미지 표시</sys:String>
     <sys:String x:Key="LOCBackgroundImageScreenOptionTooltip" xml:space="preserve">메타데이터를 다시 다운로드하지 않으면 기존 게임에는 소급 적용되지 않습니다.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportMode">플레이 시간 가져오기:</sys:String>
-    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Playnite 데이터베이스의 게임에 대해 라이브러리 플러그인이 보고한 플레이 시간을 Playnite가 가져올 시점을 구성합니다. 이 기능을 사용하려면 게임 처리를 담당하는 라이브러리 플러그인의 지원이 필요합니다.
+    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Playnite 데이터베이스의 게임에 대해 라이브러리 플러그인이 보고한 플레이 시간을 Melcosoft가 가져올 시점을 구성합니다. 이 기능을 사용하려면 게임 처리를 담당하는 라이브러리 플러그인의 지원이 필요합니다.
 
-항상: Playnite 새로 가져온 게임과 기존 게임의 플레이 시간을 가져옵니다.
+항상: Melcosoft 새로 가져온 게임과 기존 게임의 플레이 시간을 가져옵니다.
 새로 가져온 게임에만: 새로 가져온 게임의 플레이 시간만 가져옵니다.
 안 함: 플레이 시간을 가져오지 않습니다.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportModeAlways">항상 가져오기</sys:String>
@@ -414,7 +419,7 @@
     <sys:String x:Key="LOCSettingsTextRenderingMode">텍스트 안티 앨리어싱</sys:String>
     <sys:String x:Key="LOCSettingsTextRenderingNotice">텍스트 안티 앨리어싱 및 표시 모드 설정은 게임 설명에 적용되지 않습니다.</sys:String>
     <sys:String x:Key="LOCSettingsImmediateBackgroundDownload">배경화면 미리 불러오기</sys:String>
-    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">이 옵션을 설정하면 Playnite는 메타데이터를 다운로드할 때 배경 아트워크를 다운로드하며, 더 많은 디스크 공간을 사용하며 오프라인에서 아트워크를 사용할 수 있습니다.
+    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">이 옵션을 설정하면 Melcosoft는 메타데이터를 다운로드할 때 배경 아트워크를 다운로드하며, 더 많은 디스크 공간을 사용하며 오프라인에서 아트워크를 사용할 수 있습니다.
 
 해제할 경우 배경 아트워크는 처음에 필요할 때에만 다운로드되며, 더 적은 공간을 사용하지만 아트워크가 표시되기까지 시간이 걸리며 몇몇 이미지는 오프라인에서 사용할 수 없게 됩니다.</sys:String>
     <sys:String x:Key="LOCSettingsAutoCloseLauncherOption">게임을 나가면 자동으로 서드파티 클라이언트 닫기</sys:String>
@@ -454,9 +459,9 @@
     <sys:String x:Key="LOCEmuWizardWindowTitle">에뮬레이터 게임 가져오기 도구</sys:String>
     <sys:String x:Key="LOCEmuWizardIntro">이 마법사는 콘솔 에뮬레이터를 다운로드 및 불러오기를 하는 방법과 에뮬레이팅 게임을 불러오는 방법에 대해서 알려줍니다.</sys:String>
     <sys:String x:Key="LOCEmuWizardNotice">추가적인 에뮬레이터나 게임을 언제든 메인 메뉴에서 추가할 수 있다는 것을 기억하십시오. (에뮬레이터 설정은 &quot;라이브러리&quot; 메뉴에서 가능하며 에뮬레이터 게임은 &quot;게임 추가&quot; 메뉴에서 가능합니다.)</sys:String>
-    <sys:String x:Key="LOCEmuDownloadDescription">다음은 Playnite가 자동으로 인식하고 구성할 수 있는 에뮬레이터 목록입니다. 웹사이트에서 설치 프로그램을 다운로드할 수 있습니다. 에뮬레이터를 수동으로 설치한 뒤 에뮬레이터 설정 창에서 에뮬레이터를 가져올 수 있습니다. </sys:String>
-    <sys:String x:Key="LOCEmuWizardEmuImportIntro">'폴더에서 자동으로 감지…'버튼을 클릭하여 PC에 설치된 에뮬레이터를 가져올 수 있습니다. Playnite는 선택한 폴더에서 알려진 에뮬레이터를 검색하고 가져올 수 있는 옵션을 제공합니다. 이 버튼을 여러 번 사용하여 다른 폴더에서 에뮬레이터를 가져올 수 있습니다. 에뮬레이터는 현재 목록의 맨 아래에 추가됩니다.</sys:String>
-    <sys:String x:Key="LOCEmuWizardGameImportIntro">'에뮬레이터를 사용하여 폴더 스캔' 버튼을 클릭하여 게임을 가져올 수 있습니다. 적절한 에뮬레이터를 선택하면 어떤 파일 유형을 스캔하고 가져와야 하는지를 Playnite에 알려줍니다. 이 버튼을 여러 번 사용하여 다른 폴더에서 게임을 가져올 수 있습니다. 현재 목록의 맨 아래에 게임이 추가됩니다.</sys:String>
+    <sys:String x:Key="LOCEmuDownloadDescription">다음은 Melcosoft가 자동으로 인식하고 구성할 수 있는 에뮬레이터 목록입니다. 웹사이트에서 설치 프로그램을 다운로드할 수 있습니다. 에뮬레이터를 수동으로 설치한 뒤 에뮬레이터 설정 창에서 에뮬레이터를 가져올 수 있습니다. </sys:String>
+    <sys:String x:Key="LOCEmuWizardEmuImportIntro">'폴더에서 자동으로 감지…'버튼을 클릭하여 PC에 설치된 에뮬레이터를 가져올 수 있습니다. Melcosoft는 선택한 폴더에서 알려진 에뮬레이터를 검색하고 가져올 수 있는 옵션을 제공합니다. 이 버튼을 여러 번 사용하여 다른 폴더에서 에뮬레이터를 가져올 수 있습니다. 에뮬레이터는 현재 목록의 맨 아래에 추가됩니다.</sys:String>
+    <sys:String x:Key="LOCEmuWizardGameImportIntro">'에뮬레이터를 사용하여 폴더 스캔' 버튼을 클릭하여 게임을 가져올 수 있습니다. 적절한 에뮬레이터를 선택하면 어떤 파일 유형을 스캔하고 가져와야 하는지를 Melcosoft에 알려줍니다. 이 버튼을 여러 번 사용하여 다른 폴더에서 게임을 가져올 수 있습니다. 현재 목록의 맨 아래에 게임이 추가됩니다.</sys:String>
     <sys:String x:Key="LOCEmuWizardNoEmulatorWarning">불러오기 위한 에뮬레이터가 선택되지 않았습니다. 에뮬레이터 설정 없이 자동으로 에뮬레이터 게임을 불러올 수 없습니다. 불러오기 과정을 계속 진행하시겠습니까?</sys:String>
     <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning">Playnite에 에뮬레이터 설정이 없습니다. 에뮬레이터 설정과 파일 형식 없이 게임을 불러올 수 없습니다. 에뮬레이터를 추가하시겠습니까?</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonScanGames">에뮬레이터를 사용하여 폴더 검색</sys:String>
@@ -467,16 +472,16 @@
     <sys:String x:Key="LOCEmuWizardScanningSpecific">{0} 검색 중...</sys:String>
     <!--FirstTime Wizard-->
     <sys:String x:Key="LOCFirstWindowTitle">처음 설정</sys:String>
-    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">이 프로세스는 외부 게임 라이브러리를 자동으로 가져오고 구성하는 과정을 안내합니다. Playnite는 Steam이나 GOG와 같은 여러 게임 서비스에서 자동으로 게임을 가져올 수 있다.
+    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">이 프로세스는 외부 게임 라이브러리를 자동으로 가져오고 구성하는 과정을 안내합니다. Melcosoft는 Steam이나 GOG와 같은 여러 게임 서비스에서 자동으로 게임을 가져올 수 있다.
 
 나중에 메인 메뉴에서 플랫폼에 대한 사용자 지정 게임이나 에뮬레이션 게임을 수동으로 추가할 수도 있습니다.</sys:String>
     <sys:String x:Key="LOCFirstExternalTitle">라이브러리 통합</sys:String>
-    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">자동적으로 다음과 같은 서비스에서 게임을 불러옵니다. 게임에 변화 (설치 상태)가 Playnite의 초기 실행 또는 설정을 통하여 자동으로 업데이트됩니다. 
+    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">자동적으로 다음과 같은 서비스에서 게임을 불러옵니다. 게임에 변화 (설치 상태)가 Melcosoft의 초기 실행 또는 설정을 통하여 자동으로 업데이트됩니다. 
 선택된 설정은 초기 불러오기 및 불러오기 절차에 반영됩니다.</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedTitle">설정 완료</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedText" xml:space="preserve">초기 설정이 완료되었습니다. 이후에도 '설정' 메뉴에서 모든 설정을 변경할 수 있습니다.
 
-또한 Playnite 로고 메뉴를 눌러서 이후에도 다른 게임을 추가할 수 있습니다.</sys:String>
+또한 Melcosoft 로고 메뉴를 눌러서 이후에도 다른 게임을 추가할 수 있습니다.</sys:String>
     <sys:String x:Key="LOCFirstPluginDownloadError" xml:space="preserve">하나 이상의 확장 프로그램을 다운로드하지 못했습니다.
 
 최초 실행 마법사가 완료된 후 애드온 메뉴에서 통합을 다시 다운로드할 수 있습니다.</sys:String>
@@ -606,7 +611,7 @@
 {2}</sys:String>
     <sys:String x:Key="LOCURLFormatError">링크를 열 수 없습니다. URL이 올바른 포맷이 아닙니다.</sys:String>
     <sys:String x:Key="LOCAppStartupError">프로그램 실행 실패.</sys:String>
-    <sys:String x:Key="LOCCefSharpInitError" xml:space="preserve">웹 보기 구성 요소를 초기화하지 못했습니다. Playnite가 시작 프로세스를 진행할 수 없습니다.
+    <sys:String x:Key="LOCCefSharpInitError" xml:space="preserve">웹 보기 구성 요소를 초기화하지 못했습니다. Melcosoft가 시작 프로세스를 진행할 수 없습니다.
 
 자세한 내용은 https://playnite.link/cefstartup을 참고하십시오.</sys:String>
     <sys:String x:Key="LOCEmulatorImportNoDefinitionsError">정의 파일이 없거나 손상되어 에뮬레이터를 가져올 수 없습니다.</sys:String>
@@ -726,7 +731,7 @@
     <sys:String x:Key="LOCUpdateNoNewUpdateMessage">새로운 버전을 찾지 못했습니다. 최신 버전입니다.</sys:String>
     <sys:String x:Key="LOCGeneralUpdateFailMessage">업데이트 다운로드 및 설치 실패.</sys:String>
     <sys:String x:Key="LOCUpdateProgressCancelAsk">백그라운드 작업이 진행중입니다. 작업을 중단하고 업데이트를 진행하시겠습니까?</sys:String>
-    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">백그라운드 작업이 진행중입니다. 작업을 중단하고 Playnite를 종료하시겠습니까?</sys:String>
+    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">백그라운드 작업이 진행중입니다. 작업을 중단하고 Melcosoft를 종료하시겠습니까?</sys:String>
     <sys:String x:Key="LOCBackgroundProgressCancelAskSwitchMode">백그라운드 작업이 진행중입니다. 모드를 전환하면 작업이 중단됩니다.
 전환하시겠습니까?</sys:String>
     <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">Playnite 업데이트 사용 가능</sys:String>
@@ -827,13 +832,13 @@
     <sys:String x:Key="LOCPLaytime100to500">100시간에서 500시간</sys:String>
     <sys:String x:Key="LOCPLaytime500to1000">500시간에서 1000시간</sys:String>
     <sys:String x:Key="LOCPLaytime1000plus">1000시간 이상</sys:String>
-    <sys:String x:Key="LOCExtInstallationRestartNotif">설치를 완료하려면 Playnite를 재시작해야 합니다. 지금 재시작하시겠습니까?</sys:String>
+    <sys:String x:Key="LOCExtInstallationRestartNotif">설치를 완료하려면 Melcosoft를 재시작해야 합니다. 지금 재시작하시겠습니까?</sys:String>
     <sys:String x:Key="LOCGeneralExtensionPackageError">올바른 확장 프로그램 패키지가 아닙니다.</sys:String>
     <sys:String x:Key="LOCGeneralThemePackageError">올바른 테마 패키지가 아닙니다.</sys:String>
     <sys:String x:Key="LOCSpecificExtensionLoadError">&quot;{0}&quot; 확장 프로그램을 제대로 불러오지 못했습니다.</sys:String>
-    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">{0} 확장 프로그램을 로드할 수 없습니다. 현재 Playnite 버전에서 지원되지 않습니다.</sys:String>
+    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">{0} 확장 프로그램을 로드할 수 없습니다. 현재 Melcosoft 버전에서 지원되지 않습니다.</sys:String>
     <sys:String x:Key="LOCSpecificThemeLoadError">&quot;{0}&quot; 테마를 제대로 불러오지 못했습니다.</sys:String>
-    <sys:String x:Key="LOCSpecificThemeLoadSDKError">{0} 테마를 로드할 수 없습니다. 현재 Playnite 버전에서 지원되지 않습니다.</sys:String>
+    <sys:String x:Key="LOCSpecificThemeLoadSDKError">{0} 테마를 로드할 수 없습니다. 현재 Melcosoft 버전에서 지원되지 않습니다.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionLoadError">확장 프로그램을 제대로 불러오지 못했습니다.</sys:String>    
     <sys:String x:Key="LOCGeneralThemeLoadError">테마를 제대로 불러오지 못했습니다.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionInstallApiVersionFails">테마 또는 확장 프로그램이 지원하지 않는 API 버전을 사용중입니다.</sys:String>
@@ -877,10 +882,10 @@
     <sys:String x:Key="LOCLargeMediaWarningTooltip">선택한 이미지는 너무 크며 성능이 저하될 수 있습니다.</sys:String>
     <sys:String x:Key="LOCThemeUninstallQuestion">선택한 테마를 제거하시겠습니까? 다음에 프로그램을 실행할 때 제거됩니다.</sys:String>
     <sys:String x:Key="LOCThemeBuiltInUninstallHint">기본 탑재된 테마는 제거할 수 없습니다.</sys:String>
-    <sys:String x:Key="LOCThemeUnsupported">이 테마는 현재 버전의 Playnite를 지원하지 않습니다.</sys:String>
+    <sys:String x:Key="LOCThemeUnsupported">이 테마는 현재 버전의 Melcosoft를 지원하지 않습니다.</sys:String>
     <sys:String x:Key="LOCExtensionUninstallQuestion">선택한 확장 프로그램을 제거하시겠습니까? 프로그램이 다시 실행될 때 제거됩니다.</sys:String>
     <sys:String x:Key="LOCExtensionBuiltInUninstallHint">기본 탑재된 확장 프로그램은 제거할 수 없습니다.</sys:String>
-    <sys:String x:Key="LOCExtensionUnsupported">이 확장 프로그램은 현재 버전의 Playnite를 지원하지 않습니다.</sys:String>
+    <sys:String x:Key="LOCExtensionUnsupported">이 확장 프로그램은 현재 버전의 Melcosoft를 지원하지 않습니다.</sys:String>
     <sys:String x:Key="LOCExtensionInstallDir">설치 경로</sys:String>
     <sys:String x:Key="LOCExtensionDataDir">데이터 경로</sys:String>
     <sys:String x:Key="LOCDiagGenerating">분석 패키지 생성 중…</sys:String>
@@ -910,7 +915,7 @@
     <sys:String x:Key="LOCCommonLinksForum">포럼</sys:String>
     <sys:String x:Key="LOCCommonLinksNews">소식</sys:String>
     <sys:String x:Key="LOCCommonLinksStorePage">상점 페이지</sys:String>
-    <sys:String x:Key="LOCFullscreenFirstTimeError">초기 설정이 완료되지 않았습니다. 최초 설치를 완료하기 위하여 Playnite가 데스크탑 모드로 재실행됩니다.</sys:String>
+    <sys:String x:Key="LOCFullscreenFirstTimeError">초기 설정이 완료되지 않았습니다. 최초 설치를 완료하기 위하여 Melcosoft가 데스크탑 모드로 재실행됩니다.</sys:String>
     <sys:String x:Key="LOCQuickFilterRecentlyPlayed">최근 플레이</sys:String>
     <sys:String x:Key="LOCQuickFilterFavorites">즐겨찾기</sys:String>
     <sys:String x:Key="LOCQuickFilterMostPlayed">가장 많이 플레이</sys:String>
@@ -934,7 +939,7 @@
     <sys:String x:Key="LOCAddonsThemesDesktop">데스크톱 테마</sys:String>
     <sys:String x:Key="LOCAddonsThemesFullscren">전체화면 테마</sys:String>
     <sys:String x:Key="LOCAddonsSearching">검색 중...</sys:String>
-    <sys:String x:Key="LOCAddonErrorNotCompatible">애드온이 현재 버전의 Playnite와 호환되지 않습니다.</sys:String>
+    <sys:String x:Key="LOCAddonErrorNotCompatible">애드온이 현재 버전의 Melcosoft와 호환되지 않습니다.</sys:String>
     <sys:String x:Key="LOCAddonErrorDownloadFailed">애드온 설치 패키지 다운로드에 실패했습니다.</sys:String>
     <sys:String x:Key="LOCAddonErrorManifestDownloadError">애드온 설치 매니페스트 다운로드에 실패했습니다.</sys:String>
     <sys:String x:Key="LOCAddonChangesRestart">변경사항을 적용하려면 프로그램을 재시작해야 합니다.</sys:String>
@@ -1005,16 +1010,16 @@
     <sys:String x:Key="LOCConfigure">설정</sys:String>
     <sys:String x:Key="LOCFilterPresetSave">프리셋 저장</sys:String>
     <sys:String x:Key="LOCSettingsMinimizeAfterStartingGame">게임이 시작되면 최소화</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeAfterStartingGameDescription" xml:space="preserve">게임이 시작되면 Playnite를 최소화합니다.
+    <sys:String x:Key="LOCSettingsMinimizeAfterStartingGameDescription" xml:space="preserve">게임이 시작되면 Melcosoft를 최소화합니다.
 
 이 설정을 끄면 게임이 시작될 때 입력이 되지 않는 문제가 발생할 수 있습니다!</sys:String>
     <sys:String x:Key="LOCSettingsFontSize">글꼴 크기</sys:String>
     <sys:String x:Key="LOCSettingsFontSizeSmall">작은 글꼴 크기</sys:String>
     <sys:String x:Key="LOCSettingsControllerApi"></sys:String>
     <sys:String x:Key="LOCSettingsXInputProcessing">게임 컨트롤러 지원</sys:String>
-    <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">이 설정을 해제하면 Playnite는 게임 컨트롤러 입력을 처리하지 않습니다.
+    <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">이 설정을 해제하면 Melcosoft는 게임 컨트롤러 입력을 처리하지 않습니다.
         
-게임 컨트롤러 입력을 마우스/키보드 입력으로 변환하는 도구로 인해 Playnite에서 이중 입력이 발생할 경우 해제하십시오.</sys:String>
+게임 컨트롤러 입력을 마우스/키보드 입력으로 변환하는 도구로 인해 Melcosoft에서 이중 입력이 발생할 경우 해제하십시오.</sys:String>
     <sys:String x:Key="LOCSettingsShowItemsMainMenuHeader">메인 메뉴 표시 항목:</sys:String>
     <sys:String x:Key="LOCSettingsSwapMainViewXAButtons">메인 보기에서 X/A버튼 바인딩 바꾸기</sys:String>
     <sys:String x:Key="LOCSettingsSwapMainViewXAButtonsDescriptions"> 메인 보기에서 게임 시작 또는 세부 정보 표시 버튼의 바인딩을 바꿉니다.</sys:String>
@@ -1022,7 +1027,7 @@
     <sys:String x:Key="LOCSettingsSwapConfirmCancelButtonsDescriptions">A/B 버튼의 확인 취소 바인딩을 바꿉니다.</sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnly">주 컨트롤러만 사용</sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnlyDescription">이 옵션을 설정하면 주 컨트롤러의 입력만 처리합니다.</sys:String>
-    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">가이드 버튼으로 Playnite 열기</sys:String>
+    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">가이드 버튼으로 Melcosoft 열기</sys:String>
     <sys:String x:Key="LOCSettingsInterfaceVolume">인터페이스 볼륨</sys:String>
     <sys:String x:Key="LOCSettingsMusiVolume">배경음악 볼륨</sys:String>
     <sys:String x:Key="LOCSettingsMuteBackground">프로그램이 활성화 되어있을 때만 재생</sys:String>
@@ -1054,7 +1059,7 @@
     <sys:String x:Key="LOCSelectFileTooltip">파일 선택...</sys:String>
     <sys:String x:Key="LOCSelectDirectoryTooltip">폴더 선택...</sys:String>
     <sys:String x:Key="LOCStartupScript">시작 스크립트</sys:String>
-    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">애드온과 테마 모두 Playnite의 성능, 안정성 및 보안에 큰 영향을 미칠 수 있습니다.
+    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">애드온과 테마 모두 Melcosoft의 성능, 안정성 및 보안에 큰 영향을 미칠 수 있습니다.
 
 테마 또는 확장 프로그램을 설치한 후 일부 문제가 발생하기 시작하는 경우 먼저 해당 항목을 비활성화 또는 제거하여 문제를 유발하는지 여부를 확인하십시오.</sys:String>
     <sys:String x:Key="LOCGameActionSelectOnStart">시작 시 선택</sys:String>
@@ -1095,7 +1100,7 @@
     <sys:String x:Key="LOCEmuSaveScanConfig">자동 검색 설정으로 저장</sys:String>
     <sys:String x:Key="LOCEmuSaveScanConfigTooltip">나중에 라이브러리 업데이트 중에 사용할 수 있도록 구성을 저장합니다. 저장된 구성은 &quot;에뮬레이터 설정&quot; 메뉴를 통해 관리할 수 있습니다.</sys:String>
     <sys:String x:Key="LOCEmuImportWithRelativePaths">상대경로로 가져오기</sys:String>
-    <sys:String x:Key="LOCEmuImportWithRelativePathsTooltip">가능한 경우 Playnite의 설치 폴더 또는 에뮬레이터의 설치 폴더와 관련된 경로를 검색하여 게임 파일을 가져옵니다.</sys:String>
+    <sys:String x:Key="LOCEmuImportWithRelativePathsTooltip">가능한 경우 Melcosoft의 설치 폴더 또는 에뮬레이터의 설치 폴더와 관련된 경로를 검색하여 게임 파일을 가져옵니다.</sys:String>
     <sys:String x:Key="LOCEmuImportScanSubfolders">하위 폴더 검색</sys:String>
     <sys:String x:Key="LOCEmuImportScanInsideArchives">압축파일 내 검색</sys:String>
     <sys:String x:Key="LOCEmuMergeRelatedFiles">관련 파일 병합</sys:String>
@@ -1115,7 +1120,7 @@
     <sys:String x:Key="LOCSortingNameAutofillButton">정렬 이름이 없는 게임의 값 채우기</sys:String>
     <sys:String x:Key="LOCSettingsSortingLabel">정렬</sys:String>
     <sys:String x:Key="LOCSortingNameAutofillProgress">정렬 이름 설정 중...</sys:String>
-    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">시스템에 Nahimic 서비스가 실행 중인 것으로 탐지되었습니다. 이 서비스는 Playnite(및 기타 앱)에 렌더링 문제를 일으키는 것으로 알려져 있습니다.
+    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">시스템에 Nahimic 서비스가 실행 중인 것으로 탐지되었습니다. 이 서비스는 Melcosoft(및 기타 앱)에 렌더링 문제를 일으키는 것으로 알려져 있습니다.
 
 Playnite에서 그래픽 손상 또는 기타 렌더링 문제가 발생하는 경우 Nahimic 서비스를 사용하지 않도록 설정하거나 완전히 제거하는 것이 좋습니다.
 
@@ -1139,7 +1144,7 @@ Google Drive, DropBox, OneDrive에서만 지원됩니다.</sys:String>
     <sys:String x:Key="LOCEmuUseSimplifiedOnlineFileScanTooltip">파일을 가져오지만 파일 내용을 로컬로 다운로드하여 표시할 필요가 없는 정확도가 낮은 방법을 사용합니다.</sys:String>
     <sys:String x:Key="LOCMetadatSetAllFieldsToValue">모두 적용</sys:String>
     <sys:String x:Key="LOCOverrideInstallState">설치 상태 재정의</sys:String>
-    <sys:String x:Key="LOCOverrideInstallStateTooltip" xml:space="preserve">설정하면 Playnite는 이 게임을 가져오는 통합 플러그인이 설정한 설치 상태(설치 디렉터리 포함)를 무시합니다.
+    <sys:String x:Key="LOCOverrideInstallStateTooltip" xml:space="preserve">설정하면 Melcosoft는 이 게임을 가져오는 통합 플러그인이 설정한 설치 상태(설치 디렉터리 포함)를 무시합니다.
         
 이 옵션은 특정 게임 가져오기 방법을 사용하는 플러그인에서도 이 오버라이드 옵션을 고려하지 않으면 제대로 작동하지 않을 수 있습니다.</sys:String>
     <sys:String x:Key="LOCOptionOnlyManually">수동으로만</sys:String>
@@ -1219,10 +1224,10 @@ SHIFT-ENTER: 선택한 항목 메뉴 열기</sys:String>
     <sys:String x:Key="LOCBackupOptionThemes">설치된 테마</sys:String>
     <sys:String x:Key="LOCBackupRestoreMessage" xml:space="preserve">복원할 백업 파일을 선택하십시오.
 
-백업 데이터 복원을 위해 Playnite가 자동으로 재시작됩니다.</sys:String>
+백업 데이터 복원을 위해 Melcosoft가 자동으로 재시작됩니다.</sys:String>
     <sys:String x:Key="LOCBackupDataBackupMessage" xml:space="preserve">데이터 백업에 포함할 항목을 선택하십시오. 프로그램 설정 및 게임 라이브러리 데이터는 기본적으로 포함됩니다.
 
-백업 작업을 시작하기 위해 Playnite가 자동으로 다시 시작됩니다.</sys:String>
+백업 작업을 시작하기 위해 Melcosoft가 자동으로 다시 시작됩니다.</sys:String>
     <sys:String x:Key="LOCSettingsEnableAutomaticBackup">데이터 자동 백업</sys:String>
     <sys:String x:Key="LOCSettingsAutoBackupFrequency">자동 백업 주기</sys:String>
     <sys:String x:Key="LOCSettingsBackupFolder">백업 폴더</sys:String>
@@ -1254,7 +1259,7 @@ The specified date format will be used for all other dates.</sys:String>
     <sys:String x:Key="LOCGameMenu">게임 메뉴</sys:String>
     <sys:String x:Key="LOCProgramFolder">프로그램 폴더</sys:String>
     <sys:String x:Key="LOCUserDataFolder">사용자 데이터 디렉터리</sys:String>
-    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">라이브러리 파일 손상이 감지되어 Playnite를 종료합니다.
+    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">라이브러리 파일 손상이 감지되어 Melcosoft를 종료합니다.
     
 Playnite GitHub 페이지에서 손상된 파일을 수정해 달라는 이슈를 생성해 주십시오.</sys:String>
     <sys:String x:Key="LOCUnsavedChangesAskMessage">변경 사항을 저장하시겠습니까?</sys:String>

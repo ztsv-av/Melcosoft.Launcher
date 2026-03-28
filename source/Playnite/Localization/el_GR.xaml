@@ -17,7 +17,7 @@
     <sys:String x:Key="LOCAboutSourceLink">Πηγαίος Κώδικας στο GitHub</sys:String>
     <sys:String x:Key="LOCAboutCreateDiagButton">Δημιουργία diag. πακέτου</sys:String>
     <sys:String x:Key="LOCAboutSendDiagButton">Αποστολή διαγνωστικών δεδομένων</sys:String>
-    <sys:String x:Key="LOCAboutWindowTitle">Σχετικά με το Playnite</sys:String>
+    <sys:String x:Key="LOCAboutWindowTitle">Σχετικά με το Melcosoft</sys:String>
     <sys:String x:Key="LOCAboutAuthor">Φτιάχτηκε από τον Josef Němec</sys:String>
     <sys:String x:Key="LOCCategoryWindowTitle">Αντιστοίχιση κατηγορίας</sys:String>
     <sys:String x:Key="LOCCategorySetButton">Ορισμός Κατηγοριών</sys:String>
@@ -31,7 +31,7 @@
     <sys:String x:Key="LOCCrashDescription" xml:space="preserve">Προέκυψε μη ανακτήσιμο σφάλμα.
 
 Αν επιθυμείς, μπορείς να μας βοηθήσεις να διορθώσουμε αυτό το πρόβλημα, παρακαλούμε περιέγραψε συνοπτικά τις ενέργειες σου πριν το σφάλμα, και μετά στείλε διαγνοστικές πληροφορίες.
-Αν είσαι συνδεδεμένος, το πακέτο θα ανεβεί στον διακοσμιτή του Playnite για ανάλυση.
+Αν είσαι συνδεδεμένος, το πακέτο θα ανεβεί στον διακοσμιτή του Melcosoft για ανάλυση.
 
 Εναλλακτικά, μπορείς να πατήσεις στο 'Αναφορά Σφάλματος' για την δημιουργία ενός GitHub issue και να αναφέρεις το σφάλμα χειροκίνητα.
 
@@ -53,10 +53,10 @@
     <sys:String x:Key="LOCCrashSaveLog">Αποθήκευση αρχείου καταγραφής</sys:String>
     <sys:String x:Key="LOCCrashSendDiag">Αποστολή διαγράμματος πληροφοριών</sys:String>
     <sys:String x:Key="LOCCrashReportIssue">Αναφορά Σφάλματος</sys:String>
-    <sys:String x:Key="LOCCrashRestartPlaynite">Επανεκκίνηση Playnite</sys:String>
+    <sys:String x:Key="LOCCrashRestartPlaynite">Επανεκκίνηση Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashRestartSafe">Επανεκκίνηση σε ασφαλή λειτουργία</sys:String>
     <sys:String x:Key="LOCCrashRestartSafeTooltip">Απενεργοποίηση όλων των επεκτάσεων τρίτων και χρήση προεπιλεγμένου θέματος.</sys:String>
-    <sys:String x:Key="LOCCrashClosePlaynite">Έξοδος απ'το Playnite</sys:String>
+    <sys:String x:Key="LOCCrashClosePlaynite">Έξοδος απ'το Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashUserActionsDescription">Ενέργειες που πάρθηκαν πριν το σφάλμα (στα Αγγλικά)</sys:String>
     <sys:String x:Key="LOCLibraryManager">Διαχείριση Συλλογής</sys:String>
     <sys:String x:Key="LOCGameRemoveAskTitle">Κατάργηση Παιχνιδιών?</sys:String>
@@ -175,7 +175,7 @@
     <sys:String x:Key="LOCSpecialThanks">Ιδιαίτερες ευχαριστίες</sys:String>
     <sys:String x:Key="LOCLicenseLabel">Άδεια</sys:String>
     <sys:String x:Key="LOCContributorsLabel">Συνεισφέροντες</sys:String>
-    <sys:String x:Key="LOCClosingPlaynite">Γίνεται έξοδος από το Playnite…</sys:String>
+    <sys:String x:Key="LOCClosingPlaynite">Γίνεται έξοδος από το Melcosoft…</sys:String>
     <sys:String x:Key="LOCToday">Σήμερα</sys:String>
     <sys:String x:Key="LOCYesterday">Χθες</sys:String>
     <sys:String x:Key="LOCMonday">Δευτέρα</sys:String>
@@ -218,8 +218,8 @@
     <sys:String x:Key="LOCMetaNoFieldsSelectedErrorMessage">Δεν έχουν επιλεχθεί πεδία μεταδεδομένων για κατέβασμα. Παρακαλώ επιλέξτε τουλάχιστον ένα πεδίο και ενεργοποιήστε έστω έναν πάροχο μεταδεδομένων</sys:String>
     <sys:String x:Key="LOCMetaSourceStore">Επίσημο Κατάστημα</sys:String>
     <sys:String x:Key="LOCMetaSourceIGDB">IGDB</sys:String>
-    <sys:String x:Key="LOCMetaDescriptionFields">Επιλέξτε ποια πεδία πρέπει να συμπληρωθούν αυτόματα από το Playnite και ποιες πηγές θα πρέπει να χρησιμοποιηθούν για την απόκτηση των δεδομένων.</sys:String>
-    <sys:String x:Key="LOCMetaIgdbContribNotif">Κάντε κλικ στο παραπάνω λογότυπο για να συνεισφέρετε στην ενημέρωση της βάσης δεδομένων του igdb.com και τη βελτίωση των πληροφοριών των χρηστών του Playnite.</sys:String>
+    <sys:String x:Key="LOCMetaDescriptionFields">Επιλέξτε ποια πεδία πρέπει να συμπληρωθούν αυτόματα από το Melcosoft και ποιες πηγές θα πρέπει να χρησιμοποιηθούν για την απόκτηση των δεδομένων.</sys:String>
+    <sys:String x:Key="LOCMetaIgdbContribNotif">Κάντε κλικ στο παραπάνω λογότυπο για να συνεισφέρετε στην ενημέρωση της βάσης δεδομένων του igdb.com και τη βελτίωση των πληροφοριών των χρηστών του Melcosoft.</sys:String>
     <!--Progress string-->
     <sys:String x:Key="LOCProgressMetadata">Λήψη metadata...</sys:String>
     <sys:String x:Key="LOCProgressInstalledGames">Γίνεται εισαγωγή εγκατεστημένων παιχνιδιών....</sys:String>
@@ -250,13 +250,18 @@
     <sys:String x:Key="LOCMenuAddGameInstalled">Αυτόματη Σάρωση...</sys:String>
     <sys:String x:Key="LOCMenuAddGameEmulated">Παιχνίδι Εξομοίωσης...</sys:String>
     <sys:String x:Key="LOCMenuAddWindowsStore">Εφαρμογή Microsoft Store...</sys:String>
-    <sys:String x:Key="LOCMenuAbout">Σχετικά με το Playnite</sys:String>
+    <sys:String x:Key="LOCMenuAbout">Σχετικά με το Melcosoft</sys:String>
     <sys:String x:Key="LOCMenuIssues">Αποστολή Σχολίων</sys:String>
     <sys:String x:Key="LOCMenuOpenFullscreen">Μεταφορά σε Λειτουργία Πλήρους Οθόνης</sys:String>
     <sys:String x:Key="LOCMenuLinksTitle">Σύνδεσμοι</sys:String>
     <sys:String x:Key="LOCMenuHelpTitle">Βοήθεια</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">Υποστήριξη στο Patreon</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">Υποστήριξη στο Ko-fi</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft Βοήθεια</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft Φόρουμ</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft Αρχική</sys:String>
+
     <sys:String x:Key="LOCUserManual">Εγχειρίδιο χρήστη</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">Οδηγίες SDK</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">Επανεκκίνηση του Συστήματος</sys:String>
@@ -317,10 +322,10 @@
     <sys:String x:Key="LOCSettingsInvalidDBLocation">Μη έγκυρη θέση αρχείου βάσης δεδομένων, πρέπει να οριστεί κατάλληλη διαδρομή αρχείου.</sys:String>
     <sys:String x:Key="LOCSettingsInvalidAccountName">Το όνομα λογαριασμού δεν μπορεί να είναι κενό.</sys:String>
     <sys:String x:Key="LOCSettingsDownloadMetadataOnImport">Λήψη μεταδεδομένων μετά την εισαγωγή παιχνιδιών</sys:String>
-    <sys:String x:Key="LOCSettingsStartMinimized">Εκκίνηση του Playnite σε ελαχιστοποίηση</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBoot">Εκκίνηση του Playnite κατά την εκκίνηση του υπολογιστή σας</sys:String>
+    <sys:String x:Key="LOCSettingsStartMinimized">Εκκίνηση του Melcosoft σε ελαχιστοποίηση</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBoot">Εκκίνηση του Melcosoft κατά την εκκίνηση του υπολογιστή σας</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootClosedToTray">Εκκίνηση ως κλειστό στη γραμμή ειδοποιήσεων</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Η εντολή έναρξης του Playnite κατά την εκκίνηση του υπολογιστή δεν καταχωρήθηκε.</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Η εντολή έναρξης του Melcosoft κατά την εκκίνηση του υπολογιστή δεν καταχωρήθηκε.</sys:String>
     <sys:String x:Key="LOCSettingsStartInFullscreen">Εκκίνηση σε Λειτουργία Πλήρους Οθόνης</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoading">Ασύγχρονη φόρτωση εικόνων</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoadingTooltip">Βελτιώνει την ομαλότητα κύλισης στις λίστες παιχνιδιών μειώνοντας ωστόσο τους χρόνους φόρτωσης των εικόνων.</sys:String>
@@ -346,31 +351,31 @@
     <sys:String x:Key="LOCSettingsSkinColorFullscreen">Προφίλ θέματος πλήρους οθόνης</sys:String>
     <sys:String x:Key="LOCSettingsDBLocation">Τοποθεσία βάσης δεδομένων</sys:String>
     <sys:String x:Key="LOCSettingsLoginStatus">Κατάσταση σύνδεσης:</sys:String>
-    <sys:String x:Key="LOCSettingsWindowTitle">Ρυθμίσεις Playnite</sys:String>
+    <sys:String x:Key="LOCSettingsWindowTitle">Ρυθμίσεις Melcosoft</sys:String>
     <sys:String x:Key="LOCSettingsClearWebCache">Καθαρισμός web cache</sys:String>
     <sys:String x:Key="LOCSettingsClearWebCacheTooltip">Μπορεί να επιλύσει προβλήματα που συναντώνται όταν συνδέονται λογαριασμοί.</sys:String>
     <sys:String x:Key="LOCSettingsShowTray">Εμφάνιση του εικονιδίου της γραμμής ειδοποιήσεων</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeToTray">Ελαχιστοποίηση Playnite στη γραμμή ειδοποιήσεων</sys:String>
-    <sys:String x:Key="LOCSettingsCloseToTray">Ελαχιστοποίηση Playnite στη γραμμή ειδοποιήσεων όταν το παράθυρο της εφαρμογής είναι κλειστό</sys:String>
+    <sys:String x:Key="LOCSettingsMinimizeToTray">Ελαχιστοποίηση Melcosoft στη γραμμή ειδοποιήσεων</sys:String>
+    <sys:String x:Key="LOCSettingsCloseToTray">Ελαχιστοποίηση Melcosoft στη γραμμή ειδοποιήσεων όταν το παράθυρο της εφαρμογής είναι κλειστό</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameStart">Κατά την έναρξη του παιχνιδιού:</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameClose">Μετά το κλείσιμο του παιχνιδιού:</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeUseDaysFormatLabel">Διαμόρφωση Χρόνου Παιξίματος ώστε να εμφανίζει τις μέρες παιξίματος</sys:String>
     <sys:String x:Key="LOCSettingsDatesFormatsLabel">Μορφή ημερομηνίας:</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheWarn">Αυτό θα σας αποσυνδέσει από όλες τις συνδεδεμένες υπηρεσίες. Απαιτείται επανεκκίνηση της εφαρμογής, θέλετε να προχωρήσετε?</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheTitle">Καθαρισμός Cache?</sys:String>
-    <sys:String x:Key="LOCSettingsSkinChangeRestart">Απαιτείται επανεκκίνηση του Playnite για την εφαρμογή νέου θέματος</sys:String>
+    <sys:String x:Key="LOCSettingsSkinChangeRestart">Απαιτείται επανεκκίνηση του Melcosoft για την εφαρμογή νέου θέματος</sys:String>
     <sys:String x:Key="LOCSettingsGetThemes">Λήψη περισσότερων θεμάτων</sys:String>
     <sys:String x:Key="LOCSettingsCreateThemes">Δημιουργία νέου θέματος</sys:String>
     <sys:String x:Key="LOCSettingsGetExtensions">Λήψη περισσότερων επεκτάσεων</sys:String>
     <sys:String x:Key="LOCSettingsCreateExtensions">Δημιουργία νέας επέκτασης</sys:String>
-    <sys:String x:Key="LOCSettingsCreateLocalization">Βοηθήστε μας να μεταφράσουμε το Playnite</sys:String>
-    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">Απαιτείται επανεκκίνηση του Playnite για να ισχύσουν οι αλλαγές. Επανεκκίνηση τώρα;
+    <sys:String x:Key="LOCSettingsCreateLocalization">Βοηθήστε μας να μεταφράσουμε το Melcosoft</sys:String>
+    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">Απαιτείται επανεκκίνηση του Melcosoft για να ισχύσουν οι αλλαγές. Επανεκκίνηση τώρα;
 
 Η επανεκκίνηση θα ακυρώσει κάθε ενεργή εργασία (λήψεις) που βρίσκεται σε εξέλιξη.</sys:String>
-    <sys:String x:Key="LOCSettingsRestartTitle">Επανεκκίνηση Playnite;</sys:String>
-    <sys:String x:Key="LOCSettingsDBPathNotification" xml:space="preserve">Το Playnite δεν μπορεί να μετακινήσει αυτόματα τα αρχεία βιβλιοθήκης. Πρέπει να μετακινήσετε/αντιγράψετε χειροκίνητα τα αρχεία πριν αλλάξετε τη τοποθεσία. Αν δεν υπάρχει βιβλιοθήκη στην τοποθεσία προορισμού, θα δημιουργηθεί μια νέα.
+    <sys:String x:Key="LOCSettingsRestartTitle">Επανεκκίνηση Melcosoft;</sys:String>
+    <sys:String x:Key="LOCSettingsDBPathNotification" xml:space="preserve">Το Melcosoft δεν μπορεί να μετακινήσει αυτόματα τα αρχεία βιβλιοθήκης. Πρέπει να μετακινήσετε/αντιγράψετε χειροκίνητα τα αρχεία πριν αλλάξετε τη τοποθεσία. Αν δεν υπάρχει βιβλιοθήκη στην τοποθεσία προορισμού, θα δημιουργηθεί μια νέα.
 
-Η νέα θέση της βάσης δεδομένων δεν θα χρησιμοποιηθεί μέχρι να γίνει επανεκκίνηση του Playnite </sys:String>
+Η νέα θέση της βάσης δεδομένων δεν θα χρησιμοποιηθεί μέχρι να γίνει επανεκκίνηση του Melcosoft </sys:String>
     <sys:String x:Key="LOCSettingsClosePlaytimeNotif">Ο χρόνος παιχνιδιού δε θα καταγράφεται εάν έχει οριστεί η εντολή &quot;Κλείσιμο&quot;.</sys:String>
     <sys:String x:Key="LOCSettingsFullscreenRows">Αριθμός σειρών</sys:String>
     <sys:String x:Key="LOCSettingsFullscreenColumns">Αριθμός στηλών</sys:String>
@@ -378,9 +383,9 @@
     <sys:String x:Key="LOCSettingsFullscreenBackgroundOnMainScreen">Εμφάνιση εικόνας παρασκηνίου στην Κύρια Οθόνη</sys:String>
     <sys:String x:Key="LOCBackgroundImageScreenOptionTooltip" xml:space="preserve">Δεν ισχύει αναδρομικά στα υπάρχοντα παιχνίδια χωρίς την εκ νέου λήψη των μεταδεδομένων.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportMode">Εισαγωγή χρόνου παιχνιδιού στη βιβλιοθήκη:</sys:String>
-    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Ρυθμίζει την συχνότητα με την οποία το Playnite μπορεί να εισάγει τον χρόνο παιχνιδιού που αναφέρεται στα πρόσθετα βιβλιοθήκης, από την βάση δεδομένων του Playnite. Η υποστήριξη από τα πρόσθετα βιβλιοθήκης, που είναι υπεύθυνα για τον χειρισμό των παιχνιδιών, είναι αναγκαία για την χρήση αυτού του χαρακτηριστικού.
+    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Ρυθμίζει την συχνότητα με την οποία το Melcosoft μπορεί να εισάγει τον χρόνο παιχνιδιού που αναφέρεται στα πρόσθετα βιβλιοθήκης, από την βάση δεδομένων του Melcosoft. Η υποστήριξη από τα πρόσθετα βιβλιοθήκης, που είναι υπεύθυνα για τον χειρισμό των παιχνιδιών, είναι αναγκαία για την χρήση αυτού του χαρακτηριστικού.
 
-Πάντα: Εισάγει τον χρόνο παιχνιδιού τόσο για τα νέα, όσο και για τα ήδη υπάρχοντα παιχνιδια στην βάση δεδομένων του Playnite. 
+Πάντα: Εισάγει τον χρόνο παιχνιδιού τόσο για τα νέα, όσο και για τα ήδη υπάρχοντα παιχνιδια στην βάση δεδομένων του Melcosoft. 
 Μόνο για τα νεοεισαχθέντα παιχνίδια: Εισάγει τον χρόνο παιχνιδιού μόνο για τις νέες εισαγωγές παιχνιδιών.
 Ποτέ: Δεν εισάγεται κανένας χρόνος παιχνιδιού.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportModeAlways">Πάντα</sys:String>
@@ -416,7 +421,7 @@
     <sys:String x:Key="LOCSettingsTextRenderingMode">Λειτουργία απόδοσης κειμένου</sys:String>
     <sys:String x:Key="LOCSettingsTextRenderingNotice">Η απόδοση κειμένου και οι μέθοδοι διαμόρφωσης δε χρησιμοποιούνται αυτή τη στιγμή για τις περιγραφές παιχνιδιών.</sys:String>
     <sys:String x:Key="LOCSettingsImmediateBackgroundDownload">Πρόωρη φόρτωση των εικόνων παρασκηνίου</sys:String>
-    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">Αν ενεργοποιηθεί, το Playnite θα κατεβάσει το εξώφυλλο παρασκηνίου κατά τη λήψη μεταδεδομένων, χρησιμοποιώντας περισσότερο χώρο στο δίσκο και καθιστώντας διαθέσιμο το εξώφυλλο όταν είναι εκτός σύνδεσης.
+    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">Αν ενεργοποιηθεί, το Melcosoft θα κατεβάσει το εξώφυλλο παρασκηνίου κατά τη λήψη μεταδεδομένων, χρησιμοποιώντας περισσότερο χώρο στο δίσκο και καθιστώντας διαθέσιμο το εξώφυλλο όταν είναι εκτός σύνδεσης.
 
 Εάν απενεργοποιηθεί, το εξώφυλλο στο παρασκήνιο λαμβάνεται μόνο όταν απαιτείται, χρησιμοποιώντας λιγότερο χώρο, αλλά μπορεί να οδηγήσει σε καθυστέρηση πριν εμφανιστεί το εξώφυλλο και κάποιες εικόνες ενδέχεται να μην είναι διαθέσιμες όταν είναι εκτός σύνδεσης.</sys:String>
     <sys:String x:Key="LOCSettingsAutoCloseLauncherOption">Αυτόματο κλείσιμο του προγράμματος τρίτων μετά το κλείσιμο του παιχνιδιού</sys:String>
@@ -456,11 +461,11 @@
     <sys:String x:Key="LOCEmuWizardWindowTitle">Οδηγός Εισαγωγής Εξομοιωτών</sys:String>
     <sys:String x:Key="LOCEmuWizardIntro">Αυτός ο οδηγός θα σας καθοδηγήσει στη διαδικασία λήψης και εισαγωγής εξομοιωτών και εισαγωγής παιχνιδιών για εξομοιωτές.</sys:String>
     <sys:String x:Key="LOCEmuWizardNotice">Λάβετε υπόψη ότι μπορείτε πάντα να προσθέσετε επιπλέον εξομοιωτές ή/και παιχνίδια αργότερα μέσω του κύριου μενού (στο μενού &quot;Βιβλιοθήκη&quot; για τις ρυθμίσεις εξομοιωτή και το μενού &quot;Προσθήκη Παιχνιδιών&quot; για εξομοιωμένα παιχνίδια).</sys:String>
-    <sys:String x:Key="LOCEmuDownloadDescription">Παρακάτω είναι μια λίστα με εξομοιωτές που το Playnite μπορεί να αναγνωρίσει και να ρυθμίσει αυτόματα. Μπορείτε να κατεβάσετε εξομοιωτές εγκατάστασης από τις ιστοσελίδες τους. Μόλις εγκαταστήσετε τους εξομοιωτές (χειροκίνητα), μπορείτε να τους εισαγάγετε στο διάλογο ρυθμίσεων εξομοιωτή.</sys:String>
-    <sys:String x:Key="LOCEmuWizardEmuImportIntro">Μπορείτε να εισαγάγετε όλους τους εξομοιωτές που είναι εγκατεστημένοι στον υπολογιστή σας, κάνοντας κλικ στο κουμπί 'Αυτόματη ανίχνευση από φάκελο…'. Το Playnite θα αναζητήσει τον επιλεγμένο φάκελο για όλους τους γνωστούς εξομοιωτές και θα παρέχει την επιλογή για την εισαγωγή τους. Μπορείτε να χρησιμοποιήσετε αυτό το κουμπί πολλές φορές για την εισαγωγή εξομοιωτών από διαφορετικούς φακέλους. Οι εξομοιωτές θα προστεθούν στο κάτω μέρος της τρέχουσας λίστας.</sys:String>
-    <sys:String x:Key="LOCEmuWizardGameImportIntro">Μπορείτε να εισάγετε παιχνίδια κάνοντας κλικ στο κουμπί 'Σάρωση Φακέλου Χρησιμοποιώντας Εξομοιωτή'. Επιλέγοντας τον κατάλληλο εξομοιωτή θα πει στο Playnite ποιοι τύποι αρχείων θα πρέπει να σαρωθούν και να εισαχθούν. Μπορείτε να χρησιμοποιήσετε αυτό το κουμπί πολλές φορές για να εισαγάγετε παιχνίδια από διαφορετικούς φακέλους. Τα παιχνίδια θα προστεθούν στο κάτω μέρος της τρέχουσας λίστας.</sys:String>
+    <sys:String x:Key="LOCEmuDownloadDescription">Παρακάτω είναι μια λίστα με εξομοιωτές που το Melcosoft μπορεί να αναγνωρίσει και να ρυθμίσει αυτόματα. Μπορείτε να κατεβάσετε εξομοιωτές εγκατάστασης από τις ιστοσελίδες τους. Μόλις εγκαταστήσετε τους εξομοιωτές (χειροκίνητα), μπορείτε να τους εισαγάγετε στο διάλογο ρυθμίσεων εξομοιωτή.</sys:String>
+    <sys:String x:Key="LOCEmuWizardEmuImportIntro">Μπορείτε να εισαγάγετε όλους τους εξομοιωτές που είναι εγκατεστημένοι στον υπολογιστή σας, κάνοντας κλικ στο κουμπί 'Αυτόματη ανίχνευση από φάκελο…'. Το Melcosoft θα αναζητήσει τον επιλεγμένο φάκελο για όλους τους γνωστούς εξομοιωτές και θα παρέχει την επιλογή για την εισαγωγή τους. Μπορείτε να χρησιμοποιήσετε αυτό το κουμπί πολλές φορές για την εισαγωγή εξομοιωτών από διαφορετικούς φακέλους. Οι εξομοιωτές θα προστεθούν στο κάτω μέρος της τρέχουσας λίστας.</sys:String>
+    <sys:String x:Key="LOCEmuWizardGameImportIntro">Μπορείτε να εισάγετε παιχνίδια κάνοντας κλικ στο κουμπί 'Σάρωση Φακέλου Χρησιμοποιώντας Εξομοιωτή'. Επιλέγοντας τον κατάλληλο εξομοιωτή θα πει στο Melcosoft ποιοι τύποι αρχείων θα πρέπει να σαρωθούν και να εισαχθούν. Μπορείτε να χρησιμοποιήσετε αυτό το κουμπί πολλές φορές για να εισαγάγετε παιχνίδια από διαφορετικούς φακέλους. Τα παιχνίδια θα προστεθούν στο κάτω μέρος της τρέχουσας λίστας.</sys:String>
     <sys:String x:Key="LOCEmuWizardNoEmulatorWarning">Δεν υπάρχουν επιλεγμένοι εξομοιωτές για εισαγωγή. Δεν θα μπορείτε να εισάγετε αυτόματα οποιαδήποτε παιχνίδια χωρίς να ρυθμίσετε πρώτα τους εξομοιωτές. Είστε σίγουροι ότι θέλετε να συνεχίσετε και να τελειώσει η διαδικασία εισαγωγής;</sys:String>
-    <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning">Δεν υπάρχουν εξομοιωτές ρυθμισμένοι στο Playnite. Δεν μπορείτε να εισάγετε παιχνίδια χωρίς πρώτα να ρυθμίσετε τον εξομοιωτή και επιλέγοντας τους κατάλληλους τύπους αρχείων. Θέλετε να προσθέσετε μερικούς εξομοιωτές τώρα;</sys:String>
+    <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning">Δεν υπάρχουν εξομοιωτές ρυθμισμένοι στο Melcosoft. Δεν μπορείτε να εισάγετε παιχνίδια χωρίς πρώτα να ρυθμίσετε τον εξομοιωτή και επιλέγοντας τους κατάλληλους τύπους αρχείων. Θέλετε να προσθέσετε μερικούς εξομοιωτές τώρα;</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonScanGames">Σάρωση φακέλου χρησιμοποιώντας τον εξομοιωτή</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonSelectFiles">Επιλέξτε αρχεία</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonScanEmulator">Αυτόματη ανίχνευση από φάκελο...</sys:String>
@@ -469,11 +474,11 @@
     <sys:String x:Key="LOCEmuWizardScanningSpecific">Σάρωση {0}…</sys:String>
     <!--FirstTime Wizard-->
     <sys:String x:Key="LOCFirstWindowTitle">Ρυθμίσεις Πρώτης Εκκίνησης</sys:String>
-    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">Αυτή η διαδικασία θα σας καθοδηγήσει στην αυτόματη εισαγωγή και διαμόρφωση εξωτερικών βιβλιοθηκών παιχνιδιών. Το Playnite μπορεί να εισάγει αυτόματα παιχνίδια από πολλαπλές υπηρεσίες παιχνιδιών, όπως το Steam ή το GOG.
+    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">Αυτή η διαδικασία θα σας καθοδηγήσει στην αυτόματη εισαγωγή και διαμόρφωση εξωτερικών βιβλιοθηκών παιχνιδιών. Το Melcosoft μπορεί να εισάγει αυτόματα παιχνίδια από πολλαπλές υπηρεσίες παιχνιδιών, όπως το Steam ή το GOG.
 
 Λάβετε υπόψη ότι μπορείτε επίσης να προσθέσετε χειροκίνητα οποιοδήποτε προσαρμοσμένο ή εξομοιωμένο παιχνίδι για οποιαδήποτε πλατφόρμα αργότερα από το κύριο μενού.</sys:String>
     <sys:String x:Key="LOCFirstExternalTitle">Ενσωμάτωση Βιβλιοθήκης</sys:String>
-    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">Ακολουθεί η λίστα με μερικές επιμελημένες ενσωματώσεις βιβλιοθηκών που υποστηρίζει το Playnite . Παρακαλώ επιλέξτε αυτά που θέλετε να εγκαταστήσετε.
+    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">Ακολουθεί η λίστα με μερικές επιμελημένες ενσωματώσεις βιβλιοθηκών που υποστηρίζει το Melcosoft . Παρακαλώ επιλέξτε αυτά που θέλετε να εγκαταστήσετε.
 
 Περισσότερες ενσωματώσεις μπορούν να εγκατασταθούν αργότερα από το μενού &quot;Πρόσθετα&quot;.</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedTitle">Η διαμόρφωση ολοκληρώθηκε</sys:String>
@@ -600,13 +605,13 @@
     <sys:String x:Key="LOCLibraryImportError">Αποτυχία εισαγωγής παιχνιδιών από {0}.</sys:String>
     <sys:String x:Key="LOCLibraryImportEmulatedError">Αποτυχία εισαγωγής εξομοιωμένων παιχνιδιών από {0}.</sys:String>
     <sys:String x:Key="LOCScanEmulatorGamesEmptyProfileError">Δεν είναι δυνατή η αναζήτηση παιχνιδιών στο επιλεγμένο προφίλ εξομοιωτή. Το προφίλ δεν περιέχει επεκτάσεις αρχείων ή πλατφόρμες.</sys:String>
-    <sys:String x:Key="LOCStartGenericError">Το Playnite απέτυχε να ξεκινήσει. Κλείστε όλες τις τρέχουσες διεργασίες και δοκιμάστε ξανά.</sys:String>
+    <sys:String x:Key="LOCStartGenericError">Το Melcosoft απέτυχε να ξεκινήσει. Κλείστε όλες τις τρέχουσες διεργασίες και δοκιμάστε ξανά.</sys:String>
     <sys:String x:Key="LOCSkinApplyError" xml:space="preserve">Αποτυχία εφαρμογής του θέματος &quot;{0}&quot;, προφίλ χρωμάτων &quot;{1}&quot;
         
 {2}</sys:String>
     <sys:String x:Key="LOCURLFormatError">Δεν είναι δυνατή η σύνδεση, η διεύθυνση URL δεν είναι σε έγκυρη μορφή.</sys:String>
     <sys:String x:Key="LOCAppStartupError">Το άνοιγμα της εφαρμογής απέτυχε</sys:String>
-    <sys:String x:Key="LOCCefSharpInitError" xml:space="preserve">Αποτυχία αρχικοποίησης εφαρμογής προβολής ιστοσελίδας. Το Playnite δεν μπορεί να συνεχίσει με τη διαδικασία εκκίνησης.
+    <sys:String x:Key="LOCCefSharpInitError" xml:space="preserve">Αποτυχία αρχικοποίησης εφαρμογής προβολής ιστοσελίδας. Το Melcosoft δεν μπορεί να συνεχίσει με τη διαδικασία εκκίνησης.
 
 Περισσότερες πληροφορίες στο https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCEmulatorImportNoDefinitionsError">Δεν είναι δυνατή η εισαγωγή εξομοιωτών λόγω του αρχείου ορισμού που λείπει ή είναι κατεστραμμένο.</sys:String>
@@ -625,7 +630,7 @@
     <sys:String x:Key="LOCScanFolder">Σάρωση Φακέλου...</sys:String>
     <sys:String x:Key="LOCDetectInstalled">Ανίχνευση Εγκατεστημένων</sys:String>
     <sys:String x:Key="LOCBrowse">Περιήγηση...</sys:String>
-    <sys:String x:Key="LOCOpenPlaynite">Άνοιγμα Playnite</sys:String>
+    <sys:String x:Key="LOCOpenPlaynite">Άνοιγμα Melcosoft</sys:String>
     <sys:String x:Key="LOCProfileSettings">Ρυθμίσεις προφίλ</sys:String>
     <sys:String x:Key="LOCEmptyGameNameError">Το όνομα παιχνιδιού δεν μπορεί να είναι άδειο.</sys:String>
     <sys:String x:Key="LOCEmptyTrackingFolderError">Ο κατάλογος παρακολούθησης ενεργειών παιχνιδιού δεν μπορεί να είναι κενός.</sys:String>
@@ -673,7 +678,7 @@
     <sys:String x:Key="LOCNoGamesFound">Δεν βρέθηκαν παιχνίδια για συγκεκριμένα κριτήρια αναζήτησης/φίλτρου</sys:String>
     <sys:String x:Key="LOCNoItemsFound">Δεν βρέθηκαν στοιχεία</sys:String>
     <sys:String x:Key="LOCBackToDesktopMode">Εναλλαγή σε λειτουργία επιφάνειας εργασίας</sys:String>
-    <sys:String x:Key="LOCExitPlaynite">Εξοδος Playnite</sys:String>
+    <sys:String x:Key="LOCExitPlaynite">Εξοδος Melcosoft</sys:String>
     <sys:String x:Key="LOCLibraries">Βιβλιοθήκες</sys:String>
     <sys:String x:Key="LOCUpdateAll">Ενημέρωση Όλων</sys:String>
     <sys:String x:Key="LOCExtensionCreatedBy">Δημιουργήθηκε από</sys:String>
@@ -726,9 +731,9 @@
     <sys:String x:Key="LOCUpdateNoNewUpdateMessage">Δεν βρέθηκε νέα έκδοση, είστε ενημερωμένοι.</sys:String>
     <sys:String x:Key="LOCGeneralUpdateFailMessage">Αποτυχία λήψης και εγκατάστασης της ενημέρωσης.</sys:String>
     <sys:String x:Key="LOCUpdateProgressCancelAsk">Κάποια εργασία στο παρασκήνιο είναι σε εξέλιξη. Θέλετε να την ακυρώσετε και να προχωρήσετε με την ενημέρωση;</sys:String>
-    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">Κάποια εργασία στο παρασκήνιο είναι σε εξέλιξη. Θέλετε να την ακυρώσετε και να βγείτε από το Playnite;</sys:String>
+    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">Κάποια εργασία στο παρασκήνιο είναι σε εξέλιξη. Θέλετε να την ακυρώσετε και να βγείτε από το Melcosoft;</sys:String>
     <sys:String x:Key="LOCBackgroundProgressCancelAskSwitchMode">Κάποια εργασία στο παρασκήνιο είναι σε εξέλιξη. Η εναλλαγή λειτουργιών θα ακυρώσει την εργασία, θέλετε να αλλάξετε οπωσδήποτε;</sys:String>
-    <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">Μία ενημέρωση για το Playnite είναι διαθέσιμη</sys:String>
+    <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">Μία ενημέρωση για το Melcosoft είναι διαθέσιμη</sys:String>
     <sys:String x:Key="LOCThemeTestReloadList">Ανανέωση της λίστας θεμάτων</sys:String>
     <sys:String x:Key="LOCThemeTestApplySkin">Εφαρμογή επιλεγμένου θέματος</sys:String>
     <sys:String x:Key="LOCThemeTestWatchChanges">Παρακολούθηση αλλαγών αρχείων</sys:String>
@@ -784,7 +789,7 @@
     <sys:String x:Key="LOCDescriptionSizeBytes">Το μέγεθος εγκατάστασης υποδεικνύεται σε bytes.</sys:String>
     <sys:String x:Key="LOCReleaseDateTooltip">Η ημερομηνία κυκλοφορίας πρέπει να οριστεί σε μορφή 'χρόνος-μήνας-ημέρα'. Οι τιμές μήνα και ημέρας μπορούν να παραλειφθούν.</sys:String>
     <sys:String x:Key="LOCDescriptionScoreValues">Τιμές από 0 έως 100 ή κενές για καμία βαθμολογία.</sys:String>
-    <sys:String x:Key="LOCPatreonDevelopMessage">Η ανάπτυξη του Playnite υποστηρίζεται από αυτούς τους patrons και τα μέλη του Ko-fi:</sys:String>
+    <sys:String x:Key="LOCPatreonDevelopMessage">Η ανάπτυξη του Melcosoft υποστηρίζεται από αυτούς τους patrons και τα μέλη του Ko-fi:</sys:String>
     <sys:String x:Key="LOCAboutContributorsMessage">Κώδικας, εντοπιότητα και άλλοι συνεισφέροντες χωρίς συγκεκριμένη σειρά:</sys:String>
     <sys:String x:Key="LOCCancelMonitoringAskTitle">Ακύρωση παρακολούθησης παιχνιδιών?</sys:String>
     <sys:String x:Key="LOCCancelMonitoringSetupAsk">Η παρακολούθηση της εγκατάστασης εκτελείται αυτή τη στιγμή. Θέλετε να ακυρώσετε τη διαδικασία και να επιστρέψετε το παιχνίδι στην προηγούμενη κατάσταση;</sys:String>
@@ -826,13 +831,13 @@
     <sys:String x:Key="LOCPLaytime100to500">100 έως 500 ώρες</sys:String>
     <sys:String x:Key="LOCPLaytime500to1000">500 έως 1000 ώρες</sys:String>
     <sys:String x:Key="LOCPLaytime1000plus">1000+</sys:String>
-    <sys:String x:Key="LOCExtInstallationRestartNotif">Πρέπει να γίνει επανεκκίνηση του Playnite για να ολοκληρωθεί η εγκατάσταση. Θέλετε να κάνετε επανεκκίνηση τώρα;</sys:String>
+    <sys:String x:Key="LOCExtInstallationRestartNotif">Πρέπει να γίνει επανεκκίνηση του Melcosoft για να ολοκληρωθεί η εγκατάσταση. Θέλετε να κάνετε επανεκκίνηση τώρα;</sys:String>
     <sys:String x:Key="LOCGeneralExtensionPackageError">Η επέκταση δεν τακτοποιήθηκε σωστά.</sys:String>
     <sys:String x:Key="LOCGeneralThemePackageError">Το θέμα δεν τακτοποιήθηκε σωστά.</sys:String>
     <sys:String x:Key="LOCSpecificExtensionLoadError">Η επέκταση &quot;{0}&quot; απέτυχε να φορτώσει σωστά.</sys:String>
-    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">Η επέκταση «{0}» δεν μπορεί να φορτώσει, η τρέχουσα έκδοση Playnite δεν υποστηρίζεται.</sys:String>
+    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">Η επέκταση «{0}» δεν μπορεί να φορτώσει, η τρέχουσα έκδοση Melcosoft δεν υποστηρίζεται.</sys:String>
     <sys:String x:Key="LOCSpecificThemeLoadError">Το θέμα &quot;{0}&quot; απέτυχε να φορτώσει σωστά.</sys:String>
-    <sys:String x:Key="LOCSpecificThemeLoadSDKError">Το θέμα «{0}» δεν μπορεί να φορτώσει, η τρέχουσα έκδοση Playnite δεν υποστηρίζεται.</sys:String>
+    <sys:String x:Key="LOCSpecificThemeLoadSDKError">Το θέμα «{0}» δεν μπορεί να φορτώσει, η τρέχουσα έκδοση Melcosoft δεν υποστηρίζεται.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionLoadError">Η επέκταση απέτυχε να φορτώσει σωστά.</sys:String>    
     <sys:String x:Key="LOCGeneralThemeLoadError">Το θέμα απέτυχε να φορτώσει σωστά.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionInstallApiVersionFails">Το θέμα/επέκταση χρησιμοποιεί μη υποστηριζόμενη έκδοση API.</sys:String>
@@ -864,7 +869,7 @@
 
 Τρέχουσα έκδοση: {1}
 Νέα έκδοση: {2}</sys:String>
-    <sys:String x:Key="LOCUrlNavigationMessage" xml:space="preserve">Πρόκειται να εξέλθετε από το Playnite και να μεταβείτε στην ακόλουθη ιστοσελίδα χρησιμοποιώντας το προεπιλεγμένο πρόγραμμα περιήγησης. Θέλετε να συνεχίσετε;
+    <sys:String x:Key="LOCUrlNavigationMessage" xml:space="preserve">Πρόκειται να εξέλθετε από το Melcosoft και να μεταβείτε στην ακόλουθη ιστοσελίδα χρησιμοποιώντας το προεπιλεγμένο πρόγραμμα περιήγησης. Θέλετε να συνεχίσετε;
 
 {0}</sys:String>
     <sys:String x:Key="LOCGameImageSizeWarning" xml:space="preserve">Η επιλεγμένη εικόνα(ες) μπορεί να είναι πολύ μεγάλη για βέλτιστη απόδοση. Χρησιμοποιώντας πολύ μεγάλες εικόνες μπορεί να οδηγήσει σε χειρότερη απόκριση UI και αυξημένη χρήση μνήμης. 
@@ -880,10 +885,10 @@
     <sys:String x:Key="LOCLargeMediaWarningTooltip">Το επιλεγμένο αρχείο εικόνας μπορεί να είναι πολύ μεγάλο για βέλτιστη απόδοση.</sys:String>
     <sys:String x:Key="LOCThemeUninstallQuestion">Είστε σίγουροι ότι θέλετε να απεγκαταστήσετε το επιλεγμένο θέμα; Η απεγκατάσταση θα δρομολογηθεί στην επόμενη εκκίνηση της εφαρμογής.</sys:String>
     <sys:String x:Key="LOCThemeBuiltInUninstallHint">Τα ενσωματωμένα θέματα δεν μπορούν να απεγκατασταθούν.</sys:String>
-    <sys:String x:Key="LOCThemeUnsupported">Αυτό το θέμα δεν υποστηρίζει αυτήν την έκδοση του Playnite.</sys:String>
+    <sys:String x:Key="LOCThemeUnsupported">Αυτό το θέμα δεν υποστηρίζει αυτήν την έκδοση του Melcosoft.</sys:String>
     <sys:String x:Key="LOCExtensionUninstallQuestion">Είστε σίγουροι ότι θέλετε να απεγκαταστήσετε το επιλεγμένο θέμα; Η απεγκατάσταση θα δρομολογηθεί στην επόμενη εκκίνηση της εφαρμογής.</sys:String>
     <sys:String x:Key="LOCExtensionBuiltInUninstallHint">Οι ενσωματωμένες επεκτάσεις δεν μπορούν να απεγκατασταθούν.</sys:String>
-    <sys:String x:Key="LOCExtensionUnsupported">Αυτή η επέκταση δεν υποστηρίζει αυτήν την έκδοση του Playnite.</sys:String>
+    <sys:String x:Key="LOCExtensionUnsupported">Αυτή η επέκταση δεν υποστηρίζει αυτήν την έκδοση του Melcosoft.</sys:String>
     <sys:String x:Key="LOCExtensionInstallDir">Φάκελος εγκατάστασης</sys:String>
     <sys:String x:Key="LOCExtensionDataDir">Φάκελος δεδομένων</sys:String>
     <sys:String x:Key="LOCDiagGenerating">Δημιουργία πακέτου διαγνωστικών…</sys:String>
@@ -913,7 +918,7 @@
     <sys:String x:Key="LOCCommonLinksForum">Φόρουμ</sys:String>
     <sys:String x:Key="LOCCommonLinksNews">Νέα</sys:String>
     <sys:String x:Key="LOCCommonLinksStorePage">Σελίδα Καταστήματος</sys:String>
-    <sys:String x:Key="LOCFullscreenFirstTimeError">Η αρχική εγκατάσταση δεν ολοκληρώθηκε. Το Playnite θα επανεκκινήσει τώρα σε Λειτουργία Επιφάνειας Εργασίας για να ολοκληρώσετε τη διαδικασία.</sys:String>
+    <sys:String x:Key="LOCFullscreenFirstTimeError">Η αρχική εγκατάσταση δεν ολοκληρώθηκε. Το Melcosoft θα επανεκκινήσει τώρα σε Λειτουργία Επιφάνειας Εργασίας για να ολοκληρώσετε τη διαδικασία.</sys:String>
     <sys:String x:Key="LOCQuickFilterRecentlyPlayed">Παίχτηκαν Πρόσφατα</sys:String>
     <sys:String x:Key="LOCQuickFilterFavorites">Αγαπημένα</sys:String>
     <sys:String x:Key="LOCQuickFilterMostPlayed">Παίχτηκαν Περισσότερο</sys:String>
@@ -937,7 +942,7 @@
     <sys:String x:Key="LOCAddonsThemesDesktop">Θέματα Επιφάνειας Εργασίας</sys:String>
     <sys:String x:Key="LOCAddonsThemesFullscren">Θέματα Πλήρους Οθόνης</sys:String>
     <sys:String x:Key="LOCAddonsSearching">Πραγματοποιείται Αναζήτηση…</sys:String>
-    <sys:String x:Key="LOCAddonErrorNotCompatible">Το πρόσθετο δεν είναι συμβατό με αυτήν την έκδοση του Playnite.</sys:String>
+    <sys:String x:Key="LOCAddonErrorNotCompatible">Το πρόσθετο δεν είναι συμβατό με αυτήν την έκδοση του Melcosoft.</sys:String>
     <sys:String x:Key="LOCAddonErrorDownloadFailed">Αποτυχία λήψης του πακέτου εγκατάστασης πρόσθετου.</sys:String>
     <sys:String x:Key="LOCAddonErrorManifestDownloadError">Αποτυχία λήψης δήλωσης εγκατάστασης πρόσθετου.</sys:String>
     <sys:String x:Key="LOCAddonChangesRestart">Απαιτείται επανεκκίνηση της εφαρμογής για την εφαρμογή εκκρεμών αλλαγών.</sys:String>
@@ -1008,16 +1013,16 @@
     <sys:String x:Key="LOCConfigure">Διαμόρφωση</sys:String>
     <sys:String x:Key="LOCFilterPresetSave">Αποθήκευση προεπιλογής</sys:String>
     <sys:String x:Key="LOCSettingsMinimizeAfterStartingGame">Ελαχιστοποίηση μετά την έναρξη παιχνιδιού</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeAfterStartingGameDescription" xml:space="preserve">Ελαχιστοποίηση Playnite μετά την εκκίνηση ενός παιχνιδιού.
+    <sys:String x:Key="LOCSettingsMinimizeAfterStartingGameDescription" xml:space="preserve">Ελαχιστοποίηση Melcosoft μετά την εκκίνηση ενός παιχνιδιού.
 
 Η απενεργοποίηση αυτού μπορεί να οδηγήσει σε προβλήματα σε παιχνίδια που δεν περιλαμβάνουν εστίαση εισόδου κατά την εκκίνηση!</sys:String>
     <sys:String x:Key="LOCSettingsFontSize">Μέγεθος Γραμματοσειράς</sys:String>
     <sys:String x:Key="LOCSettingsFontSizeSmall">Μέγεθος Γραμματοσειράς Μικρό</sys:String>
     <sys:String x:Key="LOCSettingsControllerApi"></sys:String>
     <sys:String x:Key="LOCSettingsXInputProcessing">Υποστήριξη χειριστηρίου παιχνιδιών</sys:String>
-    <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">Αν απενεργοποιηθεί, το Playnite δεν θα δέχεται καμία είσοδο χειριστηρίου παιχνιδιού.
+    <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">Αν απενεργοποιηθεί, το Melcosoft δεν θα δέχεται καμία είσοδο χειριστηρίου παιχνιδιού.
         
-Απενεργοποιήστε το αν χρησιμοποιείτε εργαλεία που μεταφράζουν εισόδους χειριστηρίου παιχνιδιών στις εισόδους ποντικιού/πληκτρολογίου και λαμβάνετε διπλές εισόδους στο Playnite.</sys:String>
+Απενεργοποιήστε το αν χρησιμοποιείτε εργαλεία που μεταφράζουν εισόδους χειριστηρίου παιχνιδιών στις εισόδους ποντικιού/πληκτρολογίου και λαμβάνετε διπλές εισόδους στο Melcosoft.</sys:String>
     <sys:String x:Key="LOCSettingsShowItemsMainMenuHeader">Εμφάνιση στοιχείων στο κύριο μενού:</sys:String>
     <sys:String x:Key="LOCSettingsSwapMainViewXAButtons">Εναλλαγή κουμπιών κεντρικής προβολής X/A</sys:String>
     <sys:String x:Key="LOCSettingsSwapMainViewXAButtonsDescriptions">Εναλλάσσει την διαμόρφωση κουμπιών για την εκκίνηση παιχνιδιού και την εμφάνιση των λεπτομερειών παιχνιδιού στην κεντρική προβολή.</sys:String>
@@ -1025,7 +1030,7 @@
     <sys:String x:Key="LOCSettingsSwapConfirmCancelButtonsDescriptions">Εναλλάσσει τα κουμπιά A/B για την επιβεβαίωση και ακύρωση.</sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnly">Κύριο χειριστήριο μόνο</sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnlyDescription">Αποδοχή εισόδων από τον πρωτεύον χειριστήριο μόνο όταν είναι ενεργοποιημένο.</sys:String>
-    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">Το κουμπί οδηγού να ανοίγει το Playnite</sys:String>
+    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">Το κουμπί οδηγού να ανοίγει το Melcosoft</sys:String>
     <sys:String x:Key="LOCSettingsInterfaceVolume">Ένταση ήχου διεπαφής</sys:String>
     <sys:String x:Key="LOCSettingsMusiVolume">Ένταση ήχου φόντου</sys:String>
     <sys:String x:Key="LOCSettingsMuteBackground">Σίγαση όταν βρίσκεστε στο παρασκήνιο</sys:String>
@@ -1057,7 +1062,7 @@
     <sys:String x:Key="LOCSelectFileTooltip">Επιλογή αρχείου</sys:String>
     <sys:String x:Key="LOCSelectDirectoryTooltip">Επιλογή φακέλου</sys:String>
     <sys:String x:Key="LOCStartupScript">Σενάριο εκκίνησης</sys:String>
-    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">Σημειώστε ότι τόσο οι επεκτάσεις όσο και τα θέματα μπορούν να επηρεάσουν σημαντικά την απόδοση, τη σταθερότητα και την ασφάλεια του Playnite.
+    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">Σημειώστε ότι τόσο οι επεκτάσεις όσο και τα θέματα μπορούν να επηρεάσουν σημαντικά την απόδοση, τη σταθερότητα και την ασφάλεια του Melcosoft.
     
 Εάν αρχίσετε να αντιμετωπίζετε προβλήματα μετά την εγκατάσταση ενός θέματος ή μιας επέκτασης, δοκιμάστε να το απενεργοποιήσετε/απεγκαταστήσετε πρώτα για να δείτε αν είναι η ρίζα του προβλήματος.</sys:String>
     <sys:String x:Key="LOCGameActionSelectOnStart">Επιλέξτε κατά την εκκίνηση</sys:String>
@@ -1098,7 +1103,7 @@
     <sys:String x:Key="LOCEmuSaveScanConfig">Αποθήκευση ρυθμίσεων αυτόματης σάρωσης</sys:String>
     <sys:String x:Key="LOCEmuSaveScanConfigTooltip">Αποθηκεύει τις ρυθμίσεις για μεταγενέστερη χρήση κατά την ενημέρωση της βιβλιοθήκης. Οι αποθηκευμένες ρυθμίσεις μπορούν να τροποποιηθούν μέσω του μενού &quot;Ρύθμιση εξομοιωτών&quot;.</sys:String>
     <sys:String x:Key="LOCEmuImportWithRelativePaths">Εισαγωγή με χρήση σχετικών διαδρομών</sys:String>
-    <sys:String x:Key="LOCEmuImportWithRelativePathsTooltip">Η εισαγωγή, όσο είναι δυνατόν, αρχείων παιχνιδιών χρησιμοποιώντας διαδρομές σε σχέση με το φάκελο εγκατάστασης του Playnite ή το φάκελο εγκατάστασης του εξομοιωτή.</sys:String>
+    <sys:String x:Key="LOCEmuImportWithRelativePathsTooltip">Η εισαγωγή, όσο είναι δυνατόν, αρχείων παιχνιδιών χρησιμοποιώντας διαδρομές σε σχέση με το φάκελο εγκατάστασης του Melcosoft ή το φάκελο εγκατάστασης του εξομοιωτή.</sys:String>
     <sys:String x:Key="LOCEmuImportScanSubfolders">Σάρωση υποφακέλων</sys:String>
     <sys:String x:Key="LOCEmuImportScanInsideArchives">Σάρωση μέσα σε αρχειοθήκες</sys:String>
     <sys:String x:Key="LOCEmuMergeRelatedFiles">Συγχώνευση σχετικών αρχείων</sys:String>
@@ -1118,15 +1123,15 @@
     <sys:String x:Key="LOCSortingNameAutofillButton">Συμπληρώστε το όνομα ταξινόμησης σε παιχνίδια που δεν έχουν</sys:String>
     <sys:String x:Key="LOCSettingsSortingLabel">Ταξινόμηση</sys:String>
     <sys:String x:Key="LOCSortingNameAutofillProgress">Πλήρωση τιμών ονόματος ταξινόμησης…</sys:String>
-    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">Η υπηρεσία Nahimic έχει εντοπιστεί ότι εκτελείται στο σύστημά σας. Αυτή η υπηρεσία είναι γνωστό ότι προκαλεί προβλήματα απόδοσης στο Playnite (και σε άλλες εφαρμογές).
+    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">Η υπηρεσία Nahimic έχει εντοπιστεί ότι εκτελείται στο σύστημά σας. Αυτή η υπηρεσία είναι γνωστό ότι προκαλεί προβλήματα απόδοσης στο Melcosoft (και σε άλλες εφαρμογές).
 
-Εάν αντιμετωπίσετε οποιαδήποτε φθορά γραφικών ή άλλα ζητήματα απόδοσης στο Playnite, σας συνιστούμε να απενεργοποιήσετε ή να απεγκαταστήσετε εντελώς την υπηρεσία Nahimic.
+Εάν αντιμετωπίσετε οποιαδήποτε φθορά γραφικών ή άλλα ζητήματα απόδοσης στο Melcosoft, σας συνιστούμε να απενεργοποιήσετε ή να απεγκαταστήσετε εντελώς την υπηρεσία Nahimic.
 
 Περισσότερες πληροφορίες στο https://playnite.link/nahimicsucks</sys:String>
-    <sys:String x:Key="LOCElevatedProcessWarning" xml:space="preserve">Το Playnite εκτελείται με αυξημένα δικαιώματα (ως διαχειριστής). Αυτό δεν συνιστάται, δεδομένου ότι παρέχει αυξημένα δικαιώματα σε όλες τις εγκατεστημένες επεκτάσεις και όλα τα παιχνίδια/εφαρμογές που ξεκίνησαν από το Playnite!
+    <sys:String x:Key="LOCElevatedProcessWarning" xml:space="preserve">Το Melcosoft εκτελείται με αυξημένα δικαιώματα (ως διαχειριστής). Αυτό δεν συνιστάται, δεδομένου ότι παρέχει αυξημένα δικαιώματα σε όλες τις εγκατεστημένες επεκτάσεις και όλα τα παιχνίδια/εφαρμογές που ξεκίνησαν από το Melcosoft!
 
 Περισσότερες πληροφορίες στο https://playnite.link/adminfaq</sys:String>
-    <sys:String x:Key="LOCElevatedProcessWarningShowOption">Εμφάνιση προειδοποίησης αν το Playnite εκτελείται με αυξημένα δικαιώματα</sys:String>
+    <sys:String x:Key="LOCElevatedProcessWarningShowOption">Εμφάνιση προειδοποίησης αν το Melcosoft εκτελείται με αυξημένα δικαιώματα</sys:String>
     <sys:String x:Key="LOCInstallSizeScanUseSizeOnDiskOption">Εμφάνιση του πραγματικού μεγέθους στη μονάδα δίσκου κατά τον υπολογισμό του μεγέθους των παιχνιδιών</sys:String>
     <sys:String x:Key="LOCInstallSizeScanUseSizeOnDiskOptionTooltip" xml:space="preserve">Αν ενεργοποιηθεί, οι σαρώσεις θα είναι πιο αργές και θα λαμβάνουν το πραγματικό μέγεθος που χρησιμοποιούν τα αρχεία στο δίσκο.
 Αν απενεργοποιηθεί, οι σαρώσεις θα είναι ταχύτερες και θα χρησιμοποιούν το μέγεθος των ίδιων των αρχείων.</sys:String>
@@ -1140,7 +1145,7 @@
     <sys:String x:Key="LOCEmuUseSimplifiedOnlineFileScanTooltip">Τα αρχεία θα εισαχθούν αλλά χρησιμοποιώντας λιγότερο ακριβή μέθοδο που δεν απαιτεί τη λήψη του περιεχομένου του αρχείου και την εμφάνισή του τοπικά.</sys:String>
     <sys:String x:Key="LOCMetadatSetAllFieldsToValue">Εφαρμογή σε όλα</sys:String>
     <sys:String x:Key="LOCOverrideInstallState">Παράκαμψη κατάστασης εγκατάστασης</sys:String>
-    <sys:String x:Key="LOCOverrideInstallStateTooltip" xml:space="preserve">Όταν οριστεί, το Playnite θα αγνοήσει την κατάσταση εγκατάστασης (συμπεριλαμβανομένου του καταλόγου εγκατάστασης) που έχει οριστεί από το πρόσθετο ενσωμάτωσης που εισάγει αυτό το παιχνίδι.
+    <sys:String x:Key="LOCOverrideInstallStateTooltip" xml:space="preserve">Όταν οριστεί, το Melcosoft θα αγνοήσει την κατάσταση εγκατάστασης (συμπεριλαμβανομένου του καταλόγου εγκατάστασης) που έχει οριστεί από το πρόσθετο ενσωμάτωσης που εισάγει αυτό το παιχνίδι.
         
 Αυτή η επιλογή μπορεί να μην λειτουργεί πλήρως με πρόσθετα που χρησιμοποιούν συγκεκριμένη μέθοδο εισαγωγής παιχνιδιού, εκτός αν λάβουν υπόψη αυτή την επιλογή.</sys:String>
     <sys:String x:Key="LOCOptionOnlyManually">Χειροκίνητα μόνο</sys:String>
@@ -1187,7 +1192,7 @@ SHIFT-ENTER: άνοιγμα μενού στοιχείων</sys:String>
     <sys:String x:Key="LOCSearchSettingsDefaultKeyword">Προεπιλεγμένες Λέξεις-κλειδιά </sys:String>
     <sys:String x:Key="LOCSearchSettingsCustomKeyword">Προσαρμοσμένη λέξη-κλειδί</sys:String>
     <sys:String x:Key="LOCSearchSettingsSystemWideShortcut">Μεγάλη συντόμευση συστήματος</sys:String>
-    <sys:String x:Key="LOCSearchTitle">Αναζήτηση Playnite</sys:String>
+    <sys:String x:Key="LOCSearchTitle">Αναζήτηση Melcosoft</sys:String>
     <sys:String x:Key="LOCExtensionSettingsMenu">Ρυθμίσεις επεκτάσεων</sys:String>
     <sys:String x:Key="LOCExclusions">Εξαιρέσεις</sys:String>
     <sys:String x:Key="LOCEmuScannerExcludedFiles">Εξαιρούμενοι φάκελοι σχετικοί με τους φακέλους σάρωσης</sys:String>
@@ -1219,10 +1224,10 @@ SHIFT-ENTER: άνοιγμα μενού στοιχείων</sys:String>
     <sys:String x:Key="LOCBackupOptionThemes">Εγκατεστημένα θέματα</sys:String>
     <sys:String x:Key="LOCBackupRestoreMessage" xml:space="preserve">Επιλέξτε τα δεδομένα που θα αποκατασταθούν από το καθορισμένο αρχείο αντιγράφου ασφαλείας.
     
-Το Playnite θα επανεκκινήσει αυτόματα για να ξεκινήσει η διαδικασία επαναφοράς αντιγράφων ασφαλείας.</sys:String>
+Το Melcosoft θα επανεκκινήσει αυτόματα για να ξεκινήσει η διαδικασία επαναφοράς αντιγράφων ασφαλείας.</sys:String>
     <sys:String x:Key="LOCBackupDataBackupMessage" xml:space="preserve">Επιλέξτε τα στοιχεία που θα συμπεριληφθούν σε αντίγραφα ασφαλείας δεδομένων. Οι ρυθμίσεις εφαρμογών και τα δεδομένα της βιβλιοθήκης παιχνιδιών περιλαμβάνονται από προεπιλογή.
     
-Το Playnite θα επανεκκινήσει αυτόματα για να ξεκινήσει η διαδικασία δημιουργίας αντιγράφων ασφαλείας.</sys:String>
+Το Melcosoft θα επανεκκινήσει αυτόματα για να ξεκινήσει η διαδικασία δημιουργίας αντιγράφων ασφαλείας.</sys:String>
     <sys:String x:Key="LOCSettingsEnableAutomaticBackup">Αυτόματα αντίγραφα ασφαλείας δεδομένων</sys:String>
     <sys:String x:Key="LOCSettingsAutoBackupFrequency">Συχνότητα αυτόματων αντιγράφων ασφαλείας</sys:String>
     <sys:String x:Key="LOCSettingsBackupFolder">Φάκελος αντιγράφων ασφαλείας</sys:String>
@@ -1255,9 +1260,9 @@ SHIFT-ENTER: άνοιγμα μενού στοιχείων</sys:String>
     <sys:String x:Key="LOCGameMenu">Μενού παιχνιδιού</sys:String>
     <sys:String x:Key="LOCProgramFolder">Φάκελος προγράμματος</sys:String>
     <sys:String x:Key="LOCUserDataFolder">Κατάλογος δεδομένων χρήστη</sys:String>
-    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">Έχουν εντοπιστεί κατεστραμμένα αρχεία βιβλιοθήκης, το Playnite θα τερματιστεί.
+    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">Έχουν εντοπιστεί κατεστραμμένα αρχεία βιβλιοθήκης, το Melcosoft θα τερματιστεί.
     
-Ανοίξτε νέο ζήτημα στη σελίδα GitHub του Playnite με αίτημα να διορθωθεί το πρόβλημα στα αρχεία σας.</sys:String>
+Ανοίξτε νέο ζήτημα στη σελίδα GitHub του Melcosoft με αίτημα να διορθωθεί το πρόβλημα στα αρχεία σας.</sys:String>
     <sys:String x:Key="LOCUnsavedChangesAskMessage">Θέλετε να αποθηκεύσετε τις αλλαγές που κάνατε?</sys:String>
     <sys:String x:Key="LOCPortableInstallation">Φορητή εγκατάσταση</sys:String>
     <sys:String x:Key="LOCNoControllersDetected">Δεν εντοπίστηκαν χειριστήρια</sys:String>

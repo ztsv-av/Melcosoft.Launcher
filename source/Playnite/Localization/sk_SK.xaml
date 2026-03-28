@@ -4,7 +4,7 @@
     THIS FILE IS NOT PART OF THE THEME, DO NOT MODIFY!
     -->
     <sys:String x:Key="LanguageName">Slovenčina</sys:String>
-    <sys:String x:Key="LOCLanguageSettingsLabel">Jazyk Playnite</sys:String>
+    <sys:String x:Key="LOCLanguageSettingsLabel">Jazyk Melcosoft</sys:String>
     <sys:String x:Key="LOCExitAppLabel">Ukončiť</sys:String>
     <sys:String x:Key="LOCFilterActiveLabel">Filter je aktívny</sys:String>
     <sys:String x:Key="LOCFilterInactiveLabel">Filter je vypnutý</sys:String>
@@ -17,7 +17,7 @@
     <sys:String x:Key="LOCAboutSourceLink">Zdrojový kód na GitHub</sys:String>
     <sys:String x:Key="LOCAboutCreateDiagButton">Vytvoriť diagnostický balíček</sys:String>
     <sys:String x:Key="LOCAboutSendDiagButton">Odoslať diagnostický balíček</sys:String>
-    <sys:String x:Key="LOCAboutWindowTitle">O Playnite</sys:String>
+    <sys:String x:Key="LOCAboutWindowTitle">O Melcosoft</sys:String>
     <sys:String x:Key="LOCAboutAuthor">Vytvoril Josef Němec</sys:String>
     <sys:String x:Key="LOCCategoryWindowTitle">Priradiť kategóriu</sys:String>
     <sys:String x:Key="LOCCategorySetButton">Nastaviť kategórie</sys:String>
@@ -30,7 +30,7 @@ Neurčité - Žiadne zmeny (pri úprave viacerých hier)</sys:String>
     <sys:String x:Key="LOCCrashWindowTitle">Ojoj! Niečo sa pokazilo…</sys:String>
     <sys:String x:Key="LOCCrashDescription" xml:space="preserve">Stala sa závažná chyba.
 
-Ak by ste nám chceli pomôcť chybu opraviť, opíšte prosím v skratke vaše akcie, ktoré viedli k pádu programu a následne odošlite diagnostický balíček. Ak ste pripojený na internet, tento balíček sa nahrá na servery Playnite a bude podrobený analýze.
+Ak by ste nám chceli pomôcť chybu opraviť, opíšte prosím v skratke vaše akcie, ktoré viedli k pádu programu a následne odošlite diagnostický balíček. Ak ste pripojený na internet, tento balíček sa nahrá na servery Melcosoft a bude podrobený analýze.
 
 Prípadne môžete tiež použiť tlačítko 'Nahlásiť pád' a tým sa vytvorí nový záznam o chybe na GitHub kde budete môcť popísať problém sami.
 
@@ -51,10 +51,10 @@ Ak nám chcete pomôcť tento problém opraviť, odošlite prosím diagnostický
     <sys:String x:Key="LOCCrashSaveLog">Uložiť záznamy (log)</sys:String>
     <sys:String x:Key="LOCCrashSendDiag">Odoslať diagnostické informácie</sys:String>
     <sys:String x:Key="LOCCrashReportIssue">Nahlásiť chybu</sys:String>
-    <sys:String x:Key="LOCCrashRestartPlaynite">Reštartovať Playnite</sys:String>
+    <sys:String x:Key="LOCCrashRestartPlaynite">Reštartovať Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashRestartSafe">Reštartovať v bezpečnom režime</sys:String>
     <sys:String x:Key="LOCCrashRestartSafeTooltip">Vypínajú sa všetky rozšírenia tretích strán a nastavuje sa predvolený motív vzhľadu.</sys:String>
-    <sys:String x:Key="LOCCrashClosePlaynite">Ukončiť Playnite</sys:String>
+    <sys:String x:Key="LOCCrashClosePlaynite">Ukončiť Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashUserActionsDescription">Akcie uskutočnené pred pádom programu (v angličtine):</sys:String>
     <sys:String x:Key="LOCLibraryManager">Správca knižnice</sys:String>
     <sys:String x:Key="LOCGameRemoveAskTitle">Odstrániť Hru(y)?</sys:String>
@@ -174,7 +174,7 @@ Výber možnosti „pridať do zoznamu vylúčených“ zabráni ďalšiemu impo
     <sys:String x:Key="LOCSpecialThanks">Špeciálne poďakovanie</sys:String>
     <sys:String x:Key="LOCLicenseLabel">Licencia</sys:String>
     <sys:String x:Key="LOCContributorsLabel">Prispievatelia</sys:String>
-    <sys:String x:Key="LOCClosingPlaynite">Ukončuje sa Playnite…</sys:String>
+    <sys:String x:Key="LOCClosingPlaynite">Ukončuje sa Melcosoft…</sys:String>
     <sys:String x:Key="LOCToday">Dnes</sys:String>
     <sys:String x:Key="LOCYesterday">Včera</sys:String>
     <sys:String x:Key="LOCMonday">Pondelok</sys:String>
@@ -217,8 +217,8 @@ Výber možnosti „pridať do zoznamu vylúčených“ zabráni ďalšiemu impo
     <sys:String x:Key="LOCMetaNoFieldsSelectedErrorMessage">Žiadne polia metadát nie sú vybrané na stiahnutie. Prosíme vyberte aspoň jedno a povoľte pre ne aspoň jedného poskytovateľa metadát.</sys:String>
     <sys:String x:Key="LOCMetaSourceStore">Oficiálny bbchod</sys:String>
     <sys:String x:Key="LOCMetaSourceIGDB">IGDB</sys:String>
-    <sys:String x:Key="LOCMetaDescriptionFields">Vyberte, ktoré polia by mali byť automaticky doplnené apkou Playnite a ktoré zdroje by sa mali použiť pre získanie údajov.</sys:String>
-    <sys:String x:Key="LOCMetaIgdbContribNotif">Zváže prosím ručnú aktualizáciu databázy igdb.com kliknutím na logo vyššie, čím pomôžete skvalitniť dáta, ktoré používa Playnite.</sys:String>
+    <sys:String x:Key="LOCMetaDescriptionFields">Vyberte, ktoré polia by mali byť automaticky doplnené apkou Melcosoft a ktoré zdroje by sa mali použiť pre získanie údajov.</sys:String>
+    <sys:String x:Key="LOCMetaIgdbContribNotif">Zváže prosím ručnú aktualizáciu databázy igdb.com kliknutím na logo vyššie, čím pomôžete skvalitniť dáta, ktoré používa Melcosoft.</sys:String>
     <!--Progress string-->
     <sys:String x:Key="LOCProgressMetadata">Preberajú sa metadáta…</sys:String>
     <sys:String x:Key="LOCProgressInstalledGames">Importujú sa nainštalované hry…</sys:String>
@@ -249,13 +249,18 @@ Výber možnosti „pridať do zoznamu vylúčených“ zabráni ďalšiemu impo
     <sys:String x:Key="LOCMenuAddGameInstalled">Automaticky prehľadať…</sys:String>
     <sys:String x:Key="LOCMenuAddGameEmulated">Emulovaná hra…</sys:String>
     <sys:String x:Key="LOCMenuAddWindowsStore">Apka Microsoft Store…</sys:String>
-    <sys:String x:Key="LOCMenuAbout">O Playnite</sys:String>
+    <sys:String x:Key="LOCMenuAbout">O Melcosoft</sys:String>
     <sys:String x:Key="LOCMenuIssues">Odoslať spätnú väzbu</sys:String>
     <sys:String x:Key="LOCMenuOpenFullscreen">Prepnúť do režimu celej obrazovky</sys:String>
     <sys:String x:Key="LOCMenuLinksTitle">Odkazy</sys:String>
     <sys:String x:Key="LOCMenuHelpTitle">Nápoveda</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">Podporiť na Patreone</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">Podporiť na Ko-fi</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft Pomoc</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft Fórum</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft Domov</sys:String>
+
     <sys:String x:Key="LOCUserManual">Používateľský manuál</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">Dokumentácia SDK</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">Reštartovať systém</sys:String>
@@ -295,7 +300,7 @@ Výber možnosti „pridať do zoznamu vylúčených“ zabráni ďalšiemu impo
     <sys:String x:Key="LOCSettingsCovertAspectSteam">Steam baner</sys:String>
     <sys:String x:Key="LOCSettingsCovertAspectSteamVertical">Vertikálne obaly Steam</sys:String>
     <sys:String x:Key="LOCSettingsCovertAspectTwitch">Twitch</sys:String>
-    <sys:String x:Key="LOCSettingsRestartNotification">* Toto nastavenie sa prejaví až po reštarte Playnite</sys:String>
+    <sys:String x:Key="LOCSettingsRestartNotification">* Toto nastavenie sa prejaví až po reštarte Melcosoft</sys:String>
     <sys:String x:Key="LOCSettingsLabel">Nastavenia</sys:String>
     <sys:String x:Key="LOCSettingsGeneralLabel">Všeobecné</sys:String>
     <sys:String x:Key="LOCSettingsTopPanelLabel">Horný panel</sys:String>
@@ -316,10 +321,10 @@ Výber možnosti „pridať do zoznamu vylúčených“ zabráni ďalšiemu impo
     <sys:String x:Key="LOCSettingsInvalidDBLocation">Chybné umiestnenie súboru databázy, musíte zadať správne umiestnenie súboru.</sys:String>
     <sys:String x:Key="LOCSettingsInvalidAccountName">Názov účtu nesmie byť prázdny.</sys:String>
     <sys:String x:Key="LOCSettingsDownloadMetadataOnImport">Prevziať metadáta po importe hier</sys:String>
-    <sys:String x:Key="LOCSettingsStartMinimized">Spustiť Playnite minimalizovaný</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBoot">Spustiť Playnite po štarte systému</sys:String>
+    <sys:String x:Key="LOCSettingsStartMinimized">Spustiť Melcosoft minimalizovaný</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBoot">Spustiť Melcosoft po štarte systému</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootClosedToTray">Štart zatvorený do trayeu</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Nepodarilo sa zaregistrovať Playnite pre štart pri spustení počítača.</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Nepodarilo sa zaregistrovať Melcosoft pre štart pri spustení počítača.</sys:String>
     <sys:String x:Key="LOCSettingsStartInFullscreen">Spustiť v režime celej obrazovky</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoading">Asynchrónne načítanie obrázkov</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoadingTooltip">Vylepšuje plynulosť skrolovania zoznamu hier na úkor pomalšieho načítavania obrázkov.</sys:String>
@@ -345,31 +350,31 @@ Výber možnosti „pridať do zoznamu vylúčených“ zabráni ďalšiemu impo
     <sys:String x:Key="LOCSettingsSkinColorFullscreen">Profil motívu vzhľadu v režime celej obrazovky</sys:String>
     <sys:String x:Key="LOCSettingsDBLocation">Umiestnenie databázy</sys:String>
     <sys:String x:Key="LOCSettingsLoginStatus">Stav prihlásenia:</sys:String>
-    <sys:String x:Key="LOCSettingsWindowTitle">Nastavenia Playnite</sys:String>
+    <sys:String x:Key="LOCSettingsWindowTitle">Nastavenia Melcosoft</sys:String>
     <sys:String x:Key="LOCSettingsClearWebCache">Vymazať vyrovnávaciu pamäť</sys:String>
     <sys:String x:Key="LOCSettingsClearWebCacheTooltip">Môže vyriešiť problémy pri pripájaní účtov.</sys:String>
     <sys:String x:Key="LOCSettingsShowTray">Zobraziť ikonu na systémovej lište</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeToTray">Minimalizovať Playnite do systémovej lišty</sys:String>
-    <sys:String x:Key="LOCSettingsCloseToTray">Po zatvorení okna aplikácie minimalizovať Playnite do systémovej lišty</sys:String>
+    <sys:String x:Key="LOCSettingsMinimizeToTray">Minimalizovať Melcosoft do systémovej lišty</sys:String>
+    <sys:String x:Key="LOCSettingsCloseToTray">Po zatvorení okna aplikácie minimalizovať Melcosoft do systémovej lišty</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameStart">Pri spustení hry:</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameClose">Po ukončení hry:</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeUseDaysFormatLabel">Formátovanie času stráveného v hre pre indikáciu nahraných dní</sys:String>
     <sys:String x:Key="LOCSettingsDatesFormatsLabel">Formát dátumu:</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheWarn">Táto akcia vás odhlási zo všetkých pripojených služieb (účtov). Vyžaduje sa reštart aplikácie. Chcete pokračovať?</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheTitle">Vymazať vyrovnávaciu pamäť?</sys:String>
-    <sys:String x:Key="LOCSettingsSkinChangeRestart">Pre zmenu vzhľadu je potrebné reštartovať Playnite</sys:String>
+    <sys:String x:Key="LOCSettingsSkinChangeRestart">Pre zmenu vzhľadu je potrebné reštartovať Melcosoft</sys:String>
     <sys:String x:Key="LOCSettingsGetThemes">Získať viac motívov vzhľadu</sys:String>
     <sys:String x:Key="LOCSettingsCreateThemes">Vytvoriť nový motív vzhľadu</sys:String>
     <sys:String x:Key="LOCSettingsGetExtensions">Získať viac rozšírení</sys:String>
     <sys:String x:Key="LOCSettingsCreateExtensions">Vytvoriť nové rozšírenie</sys:String>
-    <sys:String x:Key="LOCSettingsCreateLocalization">Pomôžte nám s prekladom Playnite</sys:String>
-    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">Ak chcete použiť nové nastavenia, je potrebné reštartovať Playnite. Reštartovať teraz?
+    <sys:String x:Key="LOCSettingsCreateLocalization">Pomôžte nám s prekladom Melcosoft</sys:String>
+    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">Ak chcete použiť nové nastavenia, je potrebné reštartovať Melcosoft. Reštartovať teraz?
 
 Reštartovaním sa zrušia všetky aktívne úlohy (preberania), ktoré práve prebiehajú.</sys:String>
-    <sys:String x:Key="LOCSettingsRestartTitle">Reštartovať Playnite?</sys:String>
+    <sys:String x:Key="LOCSettingsRestartTitle">Reštartovať Melcosoft?</sys:String>
     <sys:String x:Key="LOCSettingsDBPathNotification" xml:space="preserve">Playnite nemôže automaticky presúvať vaše súbory z knižnice. Pred zmenou umiestnenia musíte súbory ručne presunúť / skopírovať. Ak v cieľovom umiestnení nie je žiadna knižnica, vytvorí sa nová.
 
-Nové umiestnenie databázy sa použije až po reštartovaní Playnite.</sys:String>
+Nové umiestnenie databázy sa použije až po reštartovaní Melcosoft.</sys:String>
     <sys:String x:Key="LOCSettingsClosePlaytimeNotif">Ak je nastavená akcia &quot;Zavrieť&quot;, nebude sa zaznamenávať čas hrania.</sys:String>
     <sys:String x:Key="LOCSettingsFullscreenRows">Počet riadkov</sys:String>
     <sys:String x:Key="LOCSettingsFullscreenColumns">Počet stĺpcov</sys:String>
@@ -411,7 +416,7 @@ Nové umiestnenie databázy sa použije až po reštartovaní Playnite.</sys:Str
     <sys:String x:Key="LOCSettingsTextRenderingMode">Režim vykresľovania textu</sys:String>
     <sys:String x:Key="LOCSettingsTextRenderingNotice">Metódy pre renderovanie a formátovanie textu sa momentálne nepoužívaju pre popisy hier.</sys:String>
     <sys:String x:Key="LOCSettingsImmediateBackgroundDownload">Predbežne načítať obrázky pozadí</sys:String>
-    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">Ak je povolené, Playnite prevezme obrázky pozadia počas preberania metadát. Obrázky budú dostupné aj v režime offline, avšak použije sa viac miesta na disku.
+    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">Ak je povolené, Melcosoft prevezme obrázky pozadia počas preberania metadát. Obrázky budú dostupné aj v režime offline, avšak použije sa viac miesta na disku.
         
 Ak nie je povolené, obrázky pozadia sa budú preberať len vtedy ak sú potrebné. Ušetrí sa tým miesto na disku, avšak ich zobrazenie môže byť oneskorené a niektoré obrázky nemusia byť k dispozícii v režime offline.</sys:String>
     <sys:String x:Key="LOCSettingsAutoCloseLauncherOption">Po ukončení hry automaticky strany zatvárať klientov tretích strán</sys:String>
@@ -450,10 +455,10 @@ Je to tiež možné zmeniť v nastaveniach.</sys:String>
     <sys:String x:Key="LOCEmuWizardIntro">Tento sprievodca vás prevedie procesom prevzatia a importovania konzolových emulátorov a importovaním emulovaných hier.</sys:String>
     <sys:String x:Key="LOCEmuWizardNotice">Nezabudnite, že ďalšie emulátory a/alebo hry, môžete kedykoľvek pridať prostredníctvom hlavnej ponuky (v ponuke &quot;Knižnica&quot; pre nastavenie emulátorov a &quot;Pridať hry&quot; pre emulované hry).</sys:String>
     <sys:String x:Key="LOCEmuDownloadDescription"></sys:String>
-    <sys:String x:Key="LOCEmuWizardEmuImportIntro">Kliknutím na 'Automaticky zistiť z priečinka…' môžete importovať akýkoľvek emulátor nainštalovaný vo vašom PC. Playnite prehľadá zvolený priečinok a skúsi importovať akýkoľvek známy emulátor. Toto tlačidlo na import emulátorov môžete napoužiť viacnásobne. Nové emulátory sa pridaju na spodok aktuálneho zoznamu.</sys:String>
-    <sys:String x:Key="LOCEmuWizardGameImportIntro">Importovať hry môžete kliknutím na tlačidlo 'Prehľadať priečinok pomocou emulátora'. Vybraním príslušného emulátora bude Playnite vedieť, ktoré typy súborov by mali byť skenované a následne importované. Toto tlačidlo môžete použiť viacnásobne pre importovanie hier z rôznych priečinkov. Hry sa pridajú na spodok aktuálneho zoznamu.</sys:String>
+    <sys:String x:Key="LOCEmuWizardEmuImportIntro">Kliknutím na 'Automaticky zistiť z priečinka…' môžete importovať akýkoľvek emulátor nainštalovaný vo vašom PC. Melcosoft prehľadá zvolený priečinok a skúsi importovať akýkoľvek známy emulátor. Toto tlačidlo na import emulátorov môžete napoužiť viacnásobne. Nové emulátory sa pridaju na spodok aktuálneho zoznamu.</sys:String>
+    <sys:String x:Key="LOCEmuWizardGameImportIntro">Importovať hry môžete kliknutím na tlačidlo 'Prehľadať priečinok pomocou emulátora'. Vybraním príslušného emulátora bude Melcosoft vedieť, ktoré typy súborov by mali byť skenované a následne importované. Toto tlačidlo môžete použiť viacnásobne pre importovanie hier z rôznych priečinkov. Hry sa pridajú na spodok aktuálneho zoznamu.</sys:String>
     <sys:String x:Key="LOCEmuWizardNoEmulatorWarning">Nie sú nastavené žiadne emulátory pre import. Bez konfigurácie emulátorov nebudete môcť importovať žiadne emulované hry. Naozaj chcete pokračovať a ukončiť import?</sys:String>
-    <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning">V Playnite nie sú nakonfigurované žiadne emulátory. Hry nemôžete importovať bez toho, aby ste najskôr nakonfigurovali emulátor a vybrali príslušné typy súborov. Chcete pridať nejaké emulátory teraz?</sys:String>
+    <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning">V Melcosoft nie sú nakonfigurované žiadne emulátory. Hry nemôžete importovať bez toho, aby ste najskôr nakonfigurovali emulátor a vybrali príslušné typy súborov. Chcete pridať nejaké emulátory teraz?</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonScanGames">Prehľadať priečinok pomocou emulátora</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonSelectFiles">Vybrať súbory</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonScanEmulator">Automaticky detegovať z priečinka…</sys:String>
@@ -462,11 +467,11 @@ Je to tiež možné zmeniť v nastaveniach.</sys:String>
     <sys:String x:Key="LOCEmuWizardScanningSpecific"></sys:String>
     <!--FirstTime Wizard-->
     <sys:String x:Key="LOCFirstWindowTitle">Úvodné nastavenie</sys:String>
-    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">Tento sprievodca vás prevedie procesom automatického importu a konfigurácie externých knižníc hier. Playnite môže automaticky importovať hry z viacerých herných služieb ako napr. Steam alebo GOG, a tiež udržovať knižnicu aktuálnu automatickou aktualizáciou pri každom spustení aplikácie.
+    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">Tento sprievodca vás prevedie procesom automatického importu a konfigurácie externých knižníc hier. Melcosoft môže automaticky importovať hry z viacerých herných služieb ako napr. Steam alebo GOG, a tiež udržovať knižnicu aktuálnu automatickou aktualizáciou pri každom spustení aplikácie.
 
 Nezabudnite, že ľubovoľnú vlastnú hru pre ľubovoľnú platformu môžete pridať aj neskôr ručne kliknutím na tlačidlo 'Playnite' v hlavnej ponuke.</sys:String>
     <sys:String x:Key="LOCFirstExternalTitle">Integrácia knižnice</sys:String>
-    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">Automaticky importovať hry zo služieb uvedených nižšie. Všetky neskoršie zmeny hry (stav inštalácie) sa aktualizujú automaticky pri spustení Playnite alebo pri manuálnom spustení. Vybraté nastavenia ovplyvnia počiatočný a všetky nasledujúce importy.</sys:String>
+    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">Automaticky importovať hry zo služieb uvedených nižšie. Všetky neskoršie zmeny hry (stav inštalácie) sa aktualizujú automaticky pri spustení Melcosoft alebo pri manuálnom spustení. Vybraté nastavenia ovplyvnia počiatočný a všetky nasledujúce importy.</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedTitle">Konfigurácia dokončená</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedText" xml:space="preserve">Počiatočné nastavenie bolo dokončené. Nezabudnite, že všetky nastavenia môžete neskôr zmeniť v ponuke „Nastavenia“.</sys:String>
     <sys:String x:Key="LOCFirstPluginDownloadError" xml:space="preserve"></sys:String>
@@ -589,7 +594,7 @@ Pri nahlasovaní problému pripojte nasledujúce ID:</sys:String>
     <sys:String x:Key="LOCLibraryImportError">Nepodarilo sa importovať hry z {0}.</sys:String>
     <sys:String x:Key="LOCLibraryImportEmulatedError">Nepodarilo sa importovať emulované hry z {0}.</sys:String>
     <sys:String x:Key="LOCScanEmulatorGamesEmptyProfileError">Nie je možné hľadať hry podľa vybratého profilu emulátora, pretože neobsahuje žiadne prípony súborov alebo platformy.</sys:String>
-    <sys:String x:Key="LOCStartGenericError">Playnite sa nepodarilo spustiť. Zavrite prosím všetky inštancie aplikácie Playnite a skúste to znovu.</sys:String>
+    <sys:String x:Key="LOCStartGenericError">Playnite sa nepodarilo spustiť. Zavrite prosím všetky inštancie aplikácie Melcosoft a skúste to znovu.</sys:String>
     <sys:String x:Key="LOCSkinApplyError" xml:space="preserve">Nepodarilo sa použiť motív &quot;{0}&quot;, farebný profil &quot;{1}&quot;
 
 {2}</sys:String>
@@ -612,7 +617,7 @@ Pri nahlasovaní problému pripojte nasledujúce ID:</sys:String>
     <sys:String x:Key="LOCScanFolder">Prehľadať priečinok…</sys:String>
     <sys:String x:Key="LOCDetectInstalled">Detegovať nainštalované</sys:String>
     <sys:String x:Key="LOCBrowse">Prechádzať…</sys:String>
-    <sys:String x:Key="LOCOpenPlaynite">Otvoriť Playnite</sys:String>
+    <sys:String x:Key="LOCOpenPlaynite">Otvoriť Melcosoft</sys:String>
     <sys:String x:Key="LOCProfileSettings">Nastavenia profilu</sys:String>
     <sys:String x:Key="LOCEmptyGameNameError">Názov hry nemôže byť prázdny.</sys:String>
     <sys:String x:Key="LOCEmptyTrackingFolderError"></sys:String>
@@ -660,7 +665,7 @@ Pri nahlasovaní problému pripojte nasledujúce ID:</sys:String>
     <sys:String x:Key="LOCNoGamesFound">Pre zadané kritériá vyhľadávania sa nenašli žiadne hry</sys:String>
     <sys:String x:Key="LOCNoItemsFound">Nenašli sa žiadne položky</sys:String>
     <sys:String x:Key="LOCBackToDesktopMode">Prepnúť na režim plochy</sys:String>
-    <sys:String x:Key="LOCExitPlaynite">Ukončiť Playnite</sys:String>
+    <sys:String x:Key="LOCExitPlaynite">Ukončiť Melcosoft</sys:String>
     <sys:String x:Key="LOCLibraries">Knižnice</sys:String>
     <sys:String x:Key="LOCUpdateAll">Aktualizovať všetko</sys:String>
     <sys:String x:Key="LOCExtensionCreatedBy">Vytvoril:</sys:String>
@@ -710,12 +715,12 @@ Pri nahlasovaní problému pripojte nasledujúce ID:</sys:String>
     <sys:String x:Key="LOCCheckForUpdates">Skontrolovať aktualizácie</sys:String>
     <sys:String x:Key="LOCUpdateError">Chyba aktualizácie</sys:String>
     <sys:String x:Key="LOCUpdateCheckFailMessage">Nepodarilo sa skontrolovať aktualizácie.</sys:String>
-    <sys:String x:Key="LOCUpdateNoNewUpdateMessage">Nenašla sa žiadna nová verzia, Playnite je aktuálny.</sys:String>
+    <sys:String x:Key="LOCUpdateNoNewUpdateMessage">Nenašla sa žiadna nová verzia, Melcosoft je aktuálny.</sys:String>
     <sys:String x:Key="LOCGeneralUpdateFailMessage">Nepodarilo sa prevziať a nainštalovat aktualizáciu.</sys:String>
     <sys:String x:Key="LOCUpdateProgressCancelAsk"></sys:String>
     <sys:String x:Key="LOCBackgroundProgressCancelAskExit"></sys:String>
     <sys:String x:Key="LOCBackgroundProgressCancelAskSwitchMode"></sys:String>
-    <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">Je k dispozícii aktualizácia pre Playnite</sys:String>
+    <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">Je k dispozícii aktualizácia pre Melcosoft</sys:String>
     <sys:String x:Key="LOCThemeTestReloadList">Obnoviť zoznam motívov vzhľadu</sys:String>
     <sys:String x:Key="LOCThemeTestApplySkin">Použiť vybratý motív vzhľadu</sys:String>
     <sys:String x:Key="LOCThemeTestWatchChanges">Sledovať zmeny súboru</sys:String>
@@ -813,7 +818,7 @@ Pri nahlasovaní problému pripojte nasledujúce ID:</sys:String>
     <sys:String x:Key="LOCPLaytime100to500">100 až 500 hodín</sys:String>
     <sys:String x:Key="LOCPLaytime500to1000">500 až 1000 hodín</sys:String>
     <sys:String x:Key="LOCPLaytime1000plus">1000+</sys:String>
-    <sys:String x:Key="LOCExtInstallationRestartNotif">Na dokončenie inštalácie je potrebné Playnite reštartovať. Chcete teraz reštartovať?</sys:String>
+    <sys:String x:Key="LOCExtInstallationRestartNotif">Na dokončenie inštalácie je potrebné Melcosoft reštartovať. Chcete teraz reštartovať?</sys:String>
     <sys:String x:Key="LOCGeneralExtensionPackageError">Rozšírenie nie je správne zabalené.</sys:String>
     <sys:String x:Key="LOCGeneralThemePackageError">Motív vzhľadu nie je správne zabalený.</sys:String>
     <sys:String x:Key="LOCSpecificExtensionLoadError">Rozšírenie &quot;{0}&quot; sa nepodarilo správne načítať</sys:String>
@@ -851,7 +856,7 @@ Verzia {2}</sys:String>
 
 Aktuálna verzia: {1}
 Nová verzia: {2}</sys:String>
-    <sys:String x:Key="LOCUrlNavigationMessage" xml:space="preserve">Chystáte sa opustiť Playnite a otvoriť nasledujúcu web stránku vo vašom predvolenom webovom prehliadači.
+    <sys:String x:Key="LOCUrlNavigationMessage" xml:space="preserve">Chystáte sa opustiť Melcosoft a otvoriť nasledujúcu web stránku vo vašom predvolenom webovom prehliadači.
 Chcete pokračovať?
  
 {0}</sys:String>
@@ -868,10 +873,10 @@ Pozadia: {2} mega pixelov</sys:String>
     <sys:String x:Key="LOCLargeMediaWarningTooltip">Vybratý súbor obrázka môže byť príliš veľký na dosiahnutie optimálneho výkonu.</sys:String>
     <sys:String x:Key="LOCThemeUninstallQuestion">Naozaj chcete odinštalovať vybraný motív vzhľadu? Odinštalácia bude sa vykoná pri ďalšom štarte aplikácie.</sys:String>
     <sys:String x:Key="LOCThemeBuiltInUninstallHint">Vstavané motívy vzhľadu nemožno odinštalovať.</sys:String>
-    <sys:String x:Key="LOCThemeUnsupported">Tento motív vzhľadu nepodporuje túto verziu Playnite.</sys:String>
+    <sys:String x:Key="LOCThemeUnsupported">Tento motív vzhľadu nepodporuje túto verziu Melcosoft.</sys:String>
     <sys:String x:Key="LOCExtensionUninstallQuestion">Naozaj chcete odinštalovať vybrané rozšírenie? Odinštalácia sa vykoná pri ďalšom štarte aplikácie.</sys:String>
     <sys:String x:Key="LOCExtensionBuiltInUninstallHint">Vstavané rozšírenia nemožno odinštalovať.</sys:String>
-    <sys:String x:Key="LOCExtensionUnsupported">Toto rozšírenie nepodporuje túto verziu Playnite.</sys:String>
+    <sys:String x:Key="LOCExtensionUnsupported">Toto rozšírenie nepodporuje túto verziu Melcosoft.</sys:String>
     <sys:String x:Key="LOCExtensionInstallDir">Inštalačný priečinok</sys:String>
     <sys:String x:Key="LOCExtensionDataDir">Adresár s dátami</sys:String>
     <sys:String x:Key="LOCDiagGenerating">Vytvára sa diagnostický balíček…</sys:String>
@@ -896,7 +901,7 @@ Pozadia: {2} mega pixelov</sys:String>
     <sys:String x:Key="LOCCommonLinksForum">Fórum</sys:String>
     <sys:String x:Key="LOCCommonLinksNews">Novinky</sys:String>
     <sys:String x:Key="LOCCommonLinksStorePage">Stránka v obchode</sys:String>
-    <sys:String x:Key="LOCFullscreenFirstTimeError">Prvotné nastavenie nie je dokončené. Playnite sa preto prepne do režimu plochy, aby sa toto nastavenie mohlo dokončiť.</sys:String>
+    <sys:String x:Key="LOCFullscreenFirstTimeError">Prvotné nastavenie nie je dokončené. Melcosoft sa preto prepne do režimu plochy, aby sa toto nastavenie mohlo dokončiť.</sys:String>
     <sys:String x:Key="LOCQuickFilterRecentlyPlayed">Nedávno hrané</sys:String>
     <sys:String x:Key="LOCQuickFilterFavorites">Obľúbené</sys:String>
     <sys:String x:Key="LOCQuickFilterMostPlayed">Najviac hrané</sys:String>

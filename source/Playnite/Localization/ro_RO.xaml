@@ -4,7 +4,7 @@
     THIS FILE IS NOT PART OF THE THEME, DO NOT MODIFY!
     -->
     <sys:String x:Key="LanguageName">Română</sys:String>
-    <sys:String x:Key="LOCLanguageSettingsLabel">Limbă Playnite</sys:String>
+    <sys:String x:Key="LOCLanguageSettingsLabel">Limbă Melcosoft</sys:String>
     <sys:String x:Key="LOCExitAppLabel">Iesire</sys:String>
     <sys:String x:Key="LOCFilterActiveLabel">Filtru activ</sys:String>
     <sys:String x:Key="LOCFilterInactiveLabel">Filtru dezactivat</sys:String>
@@ -17,7 +17,7 @@
     <sys:String x:Key="LOCAboutSourceLink">Codul sursă pe GitHub</sys:String>
     <sys:String x:Key="LOCAboutCreateDiagButton">Creează pachet de diagnostic</sys:String>
     <sys:String x:Key="LOCAboutSendDiagButton">Trimite informaţiile despre sistem</sys:String>
-    <sys:String x:Key="LOCAboutWindowTitle">Despre Playnite</sys:String>
+    <sys:String x:Key="LOCAboutWindowTitle">Despre Melcosoft</sys:String>
     <sys:String x:Key="LOCAboutAuthor">Creat de Josef Němec</sys:String>
     <sys:String x:Key="LOCCategoryWindowTitle">Alocă categorie</sys:String>
     <sys:String x:Key="LOCCategorySetButton">Setează Categorii</sys:String>
@@ -30,7 +30,7 @@ Nedeterminat - Nicio schimbare (când editezi jocuri multiple)</sys:String>
     <sys:String x:Key="LOCCrashWindowTitle">Ooops! A apărut o problemă...</sys:String>
     <sys:String x:Key="LOCCrashDescription" xml:space="preserve">A apărut o eroare nerecuperabilă.
 
-Dacă doriţi să ne ajutaţi să rezolvăm această problemă, vă rugăm să descrieţi pe scurt acţiunile întreprinse înainte de eroare şi apoi să trimiteţi informaţiile de diagnosticare. Dacă sunteți online, acestea vor fi încărcat pe serverul Playnite pentru analiză.
+Dacă doriţi să ne ajutaţi să rezolvăm această problemă, vă rugăm să descrieţi pe scurt acţiunile întreprinse înainte de eroare şi apoi să trimiteţi informaţiile de diagnosticare. Dacă sunteți online, acestea vor fi încărcat pe serverul Melcosoft pentru analiză.
 
 Alternativ, puteți face clic pe butonul &quot;Raportare eroare&quot; pentru a raporta eroarea manual pe GitHub.
 
@@ -51,10 +51,10 @@ Dacă doriți să ne ajutați să rezolvăm această problemă, vă rugăm să t
     <sys:String x:Key="LOCCrashSaveLog">Salvează fișierul jurnal...</sys:String>
     <sys:String x:Key="LOCCrashSendDiag">Trimite informațiile de diagnosticare</sys:String>
     <sys:String x:Key="LOCCrashReportIssue">Raportează o eroare</sys:String>
-    <sys:String x:Key="LOCCrashRestartPlaynite">Restartează Playnite</sys:String>
+    <sys:String x:Key="LOCCrashRestartPlaynite">Restartează Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashRestartSafe">Repornire în Safe Mode</sys:String>
     <sys:String x:Key="LOCCrashRestartSafeTooltip">Dezactivând toate extensiile 3rd party și folosind tema prestabilită</sys:String>
-    <sys:String x:Key="LOCCrashClosePlaynite">Ieșire Playnite</sys:String>
+    <sys:String x:Key="LOCCrashClosePlaynite">Ieșire Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashUserActionsDescription">Acțiuni luate înaintea crash-ului (în engleză):</sys:String>
     <sys:String x:Key="LOCLibraryManager">Managerul Librăriei</sys:String>
     <sys:String x:Key="LOCGameRemoveAskTitle">Înlătură Joc(uri)?</sys:String>
@@ -216,8 +216,8 @@ Selectarea opțiunii „adaugă la lista de excludere” va împiedica jocurile 
     <sys:String x:Key="LOCMetaNoFieldsSelectedErrorMessage"></sys:String>
     <sys:String x:Key="LOCMetaSourceStore">Magazin Oficial</sys:String>
     <sys:String x:Key="LOCMetaSourceIGDB">IGDB</sys:String>
-    <sys:String x:Key="LOCMetaDescriptionFields">Selectați câmpurile dorite pentru ca Playnite să le populeze automat și ce surse vreți să utilizați pentru a obține datele.</sys:String>
-    <sys:String x:Key="LOCMetaIgdbContribNotif">Te rog consideră să apeși sigla de mai sus și să contribui cu actualizări la data de baze igdb.com ca să îmbunătătim funcționalițatea Playnite.</sys:String>
+    <sys:String x:Key="LOCMetaDescriptionFields">Selectați câmpurile dorite pentru ca Melcosoft să le populeze automat și ce surse vreți să utilizați pentru a obține datele.</sys:String>
+    <sys:String x:Key="LOCMetaIgdbContribNotif">Te rog consideră să apeși sigla de mai sus și să contribui cu actualizări la data de baze igdb.com ca să îmbunătătim funcționalițatea Melcosoft.</sys:String>
     <!--Progress string-->
     <sys:String x:Key="LOCProgressMetadata">Se descarcă metadata...</sys:String>
     <sys:String x:Key="LOCProgressInstalledGames">Se importă jocurile instalate...</sys:String>
@@ -248,13 +248,18 @@ Selectarea opțiunii „adaugă la lista de excludere” va împiedica jocurile 
     <sys:String x:Key="LOCMenuAddGameInstalled">Scanare Automată...</sys:String>
     <sys:String x:Key="LOCMenuAddGameEmulated">Joc Emulat...</sys:String>
     <sys:String x:Key="LOCMenuAddWindowsStore">Aplicație Microsoft Store…</sys:String>
-    <sys:String x:Key="LOCMenuAbout">Despre Playnite</sys:String>
+    <sys:String x:Key="LOCMenuAbout">Despre Melcosoft</sys:String>
     <sys:String x:Key="LOCMenuIssues">Exprimați-vă Părerea</sys:String>
     <sys:String x:Key="LOCMenuOpenFullscreen">Schimbă în mod Fullscreen</sys:String>
     <sys:String x:Key="LOCMenuLinksTitle">Link-uri</sys:String>
     <sys:String x:Key="LOCMenuHelpTitle">Ajutor</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">Ajutați-ne pe Patreon</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">Susțineți-ne pe Ko-fi</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft Ajutor</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft Forum</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft Acasă</sys:String>
+
     <sys:String x:Key="LOCUserManual">Manual de utilizare</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">Documentaţie Trusă de Dezvoltare</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">Repornire Sistem</sys:String>
@@ -315,10 +320,10 @@ Selectarea opțiunii „adaugă la lista de excludere” va împiedica jocurile 
     <sys:String x:Key="LOCSettingsInvalidDBLocation">Locație către baza de date este invalidă, trebuie setată în mod corect.</sys:String>
     <sys:String x:Key="LOCSettingsInvalidAccountName">Numele contului nu poate fi gol.</sys:String>
     <sys:String x:Key="LOCSettingsDownloadMetadataOnImport">Descarcă metadata după ce imporți jocurile</sys:String>
-    <sys:String x:Key="LOCSettingsStartMinimized">Lansează Playnite la bară</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBoot">Lansează Playnite la pornirea calculatorului</sys:String>
+    <sys:String x:Key="LOCSettingsStartMinimized">Lansează Melcosoft la bară</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBoot">Lansează Melcosoft la pornirea calculatorului</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootClosedToTray">Deschidere în bara de procese</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Nu s-a putut seta Playnite pentru pornirea deodată cu calculatorul.</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Nu s-a putut seta Melcosoft pentru pornirea deodată cu calculatorul.</sys:String>
     <sys:String x:Key="LOCSettingsStartInFullscreen">Lansează în mod Fullscreen</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoading">Încărcarea asincronă a imaginilor</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoadingTooltip">Îmbunătățește performanța în scroll-ul listelor de jocuri, dar imaginile se vor încărca mai incet.</sys:String>
@@ -344,12 +349,12 @@ Selectarea opțiunii „adaugă la lista de excludere” va împiedica jocurile 
     <sys:String x:Key="LOCSettingsSkinColorFullscreen">Profilul Temei Fullscreen</sys:String>
     <sys:String x:Key="LOCSettingsDBLocation">Locaţia bazei de date</sys:String>
     <sys:String x:Key="LOCSettingsLoginStatus">Stare de conectare:</sys:String>
-    <sys:String x:Key="LOCSettingsWindowTitle">Setari Playnite</sys:String>
+    <sys:String x:Key="LOCSettingsWindowTitle">Setari Melcosoft</sys:String>
     <sys:String x:Key="LOCSettingsClearWebCache">Goliţi cache-ul web</sys:String>
     <sys:String x:Key="LOCSettingsClearWebCacheTooltip">Ar putea rezolva probleme întâlnite la legarea conturilor.</sys:String>
     <sys:String x:Key="LOCSettingsShowTray">Arata iconița în bara de sistem</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeToTray">Minimizează Playnite în bara de sistem</sys:String>
-    <sys:String x:Key="LOCSettingsCloseToTray">Minimizează Playnite în bara de sistem când aplicația este închisă</sys:String>
+    <sys:String x:Key="LOCSettingsMinimizeToTray">Minimizează Melcosoft în bara de sistem</sys:String>
+    <sys:String x:Key="LOCSettingsCloseToTray">Minimizează Melcosoft în bara de sistem când aplicația este închisă</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameStart">Când jocul pornește:</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameClose">După ce jocul se închide:</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeUseDaysFormatLabel">Formatează timpul jucat pentru a indica numărul de zile jucate</sys:String>
@@ -365,10 +370,10 @@ Selectarea opțiunii „adaugă la lista de excludere” va împiedica jocurile 
     <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">Playnite trebuie să fie repornit pentru a aplica noile setări. Reporniți acum?
 
 Repornirea va anula orice sarcini active (descărcări) în curs de desfășurare.</sys:String>
-    <sys:String x:Key="LOCSettingsRestartTitle">Reporniți Playnite?</sys:String>
+    <sys:String x:Key="LOCSettingsRestartTitle">Reporniți Melcosoft?</sys:String>
     <sys:String x:Key="LOCSettingsDBPathNotification" xml:space="preserve">Playnite nu poate muta fișierele bibliotecii automat. Trebuie să mutați manual/să copiați fișierele înainte de a schimba locația. Dacă nu există nici o bibliotecă în locația țintă, va fi creată una nouă.
 
-Noua locație a bazei de date nu va fi utilizată până când Playnite nu va fi repornit. </sys:String>
+Noua locație a bazei de date nu va fi utilizată până când Melcosoft nu va fi repornit. </sys:String>
     <sys:String x:Key="LOCSettingsClosePlaytimeNotif">Durata jocului nu va fi înregistrată dacă este setată acțiunea de &quot;Închidere&quot;.</sys:String>
     <sys:String x:Key="LOCSettingsFullscreenRows">Număr de rânduri</sys:String>
     <sys:String x:Key="LOCSettingsFullscreenColumns">Număr de coloane</sys:String>
@@ -376,9 +381,9 @@ Noua locație a bazei de date nu va fi utilizată până când Playnite nu va fi
     <sys:String x:Key="LOCSettingsFullscreenBackgroundOnMainScreen">Arată imaginea de fundal pe ecranul principal</sys:String>
     <sys:String x:Key="LOCBackgroundImageScreenOptionTooltip" xml:space="preserve">Nu se aplică retroactiv jocurilor existente fără re-descărcarea metadatelor.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportMode">Importă timpul jucat al jocurilor în bibliotecă:</sys:String>
-    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Configurează când trebuie ca Playnite să importe timpul jucat de plugin-urile bibliotecii pentru jocurile din baza de date Playnite. Pentru a putea utiliza această caracteristică, este nevoie de suportul plugin-urilor ce gestionează biblioteca de jocuri.
+    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Configurează când trebuie ca Melcosoft să importe timpul jucat de plugin-urile bibliotecii pentru jocurile din baza de date Melcosoft. Pentru a putea utiliza această caracteristică, este nevoie de suportul plugin-urilor ce gestionează biblioteca de jocuri.
 
-Întotdeauna: Importați timpul jucat pentru jocurile noi importate și existente în baza de date Playnite.
+Întotdeauna: Importați timpul jucat pentru jocurile noi importate și existente în baza de date Melcosoft.
 Doar pentru jocurile nou importate: Importați timpul jucat doar pentru jocuri noi importate.
 Niciodată: Nu importa niciodată timpul jucat în nicio circumstanță.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportModeAlways">Întotdeauna</sys:String>
@@ -414,7 +419,7 @@ Niciodată: Nu importa niciodată timpul jucat în nicio circumstanță.</sys:St
     <sys:String x:Key="LOCSettingsTextRenderingMode">Mod randare text</sys:String>
     <sys:String x:Key="LOCSettingsTextRenderingNotice">Metodele de redare și formatare a textului nu sunt utilizate în prezent pentru descrierile jocurilor.</sys:String>
     <sys:String x:Key="LOCSettingsImmediateBackgroundDownload">Preîncarcă imaginile de fundal</sys:String>
-    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">Dacă este activat, Playnite va descărca ilustrații de fundal în timp ce descarcă metadate, utilizând mai mult spațiu pe disc și făcând ilustrațiile disponibile atunci când sunteți offline.
+    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">Dacă este activat, Melcosoft va descărca ilustrații de fundal în timp ce descarcă metadate, utilizând mai mult spațiu pe disc și făcând ilustrațiile disponibile atunci când sunteți offline.
 
 Dacă este dezactivată, ilustrația de fundal este descărcată numai atunci când este nevoie prima dată, folosind mai puțin spațiu, dar poate duce la o întârziere înainte ca ilustrația să fie afișată și este posibil ca unele imagini să nu fie disponibile când sunteți offline.</sys:String>
     <sys:String x:Key="LOCSettingsAutoCloseLauncherOption">Închide automat clientul terț după ieșirea din joc</sys:String>
@@ -454,8 +459,8 @@ Poate fi modificată, de asemenea, în setările aplicației.</sys:String>
     <sys:String x:Key="LOCEmuWizardWindowTitle">Procedura Import Emulare</sys:String>
     <sys:String x:Key="LOCEmuWizardIntro">Acest asistent vă va ghida prin procesul de descărcare și import de emulatoare de consolă și de import de jocuri emulate.</sys:String>
     <sys:String x:Key="LOCEmuWizardNotice">Rețineți că puteți adăuga oricând emulatoare și/sau jocuri suplimentare ulterior prin meniul principal (sub meniul „Bibliotecă” pentru setările emulatorului și meniul „Adăugați jocuri” pentru jocurile emulate).</sys:String>
-    <sys:String x:Key="LOCEmuDownloadDescription">Mai jos este o listă de emulatoare pe care Playnite îi poate recunoaște și configura automat. Puteți descărca programe de instalare a emulatoarelor de pe site-urile lor web. După ce aveți emulatoarele instalate (manual), le puteți importa în dialogul de configurare a emulatorului.</sys:String>
-    <sys:String x:Key="LOCEmuWizardEmuImportIntro">Puteți importa orice emulator care este instalat pe computer făcând clic pe butonul „Detectează automat din folder...”.  Playnite va căuta în folderul selectat orice emulator cunoscut și va oferi opțiunea de a le importa.  Puteți folosi acest buton de mai multe ori pentru a importa emulatoare din foldere diferite.  Emulatoarele vor fi adăugate în partea de jos a listei curente.</sys:String>
+    <sys:String x:Key="LOCEmuDownloadDescription">Mai jos este o listă de emulatoare pe care Melcosoft îi poate recunoaște și configura automat. Puteți descărca programe de instalare a emulatoarelor de pe site-urile lor web. După ce aveți emulatoarele instalate (manual), le puteți importa în dialogul de configurare a emulatorului.</sys:String>
+    <sys:String x:Key="LOCEmuWizardEmuImportIntro">Puteți importa orice emulator care este instalat pe computer făcând clic pe butonul „Detectează automat din folder...”.  Melcosoft va căuta în folderul selectat orice emulator cunoscut și va oferi opțiunea de a le importa.  Puteți folosi acest buton de mai multe ori pentru a importa emulatoare din foldere diferite.  Emulatoarele vor fi adăugate în partea de jos a listei curente.</sys:String>
     <sys:String x:Key="LOCEmuWizardGameImportIntro"></sys:String>
     <sys:String x:Key="LOCEmuWizardNoEmulatorWarning"></sys:String>
     <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning"></sys:String>
@@ -610,7 +615,7 @@ Poate fi modificată, de asemenea, în setările aplicației.</sys:String>
     <sys:String x:Key="LOCScanFolder">Caută Folder-ul...</sys:String>
     <sys:String x:Key="LOCDetectInstalled">Detectează instalările</sys:String>
     <sys:String x:Key="LOCBrowse">Navigare...</sys:String>
-    <sys:String x:Key="LOCOpenPlaynite">Deschide Playnite</sys:String>
+    <sys:String x:Key="LOCOpenPlaynite">Deschide Melcosoft</sys:String>
     <sys:String x:Key="LOCProfileSettings">Setări de Profil</sys:String>
     <sys:String x:Key="LOCEmptyGameNameError">Nume jocului nu poate fi gol.</sys:String>
     <sys:String x:Key="LOCEmptyTrackingFolderError"></sys:String>
@@ -658,7 +663,7 @@ Poate fi modificată, de asemenea, în setările aplicației.</sys:String>
     <sys:String x:Key="LOCNoGamesFound"></sys:String>
     <sys:String x:Key="LOCNoItemsFound">Niciun element găsit</sys:String>
     <sys:String x:Key="LOCBackToDesktopMode">Revenire la modul Desktop</sys:String>
-    <sys:String x:Key="LOCExitPlaynite">Ieșire Playnite</sys:String>
+    <sys:String x:Key="LOCExitPlaynite">Ieșire Melcosoft</sys:String>
     <sys:String x:Key="LOCLibraries">Librării</sys:String>
     <sys:String x:Key="LOCUpdateAll">Actualizează Tot</sys:String>
     <sys:String x:Key="LOCExtensionCreatedBy">Creat de:</sys:String>
@@ -849,7 +854,7 @@ Versiunea {2}</sys:String>
     <sys:String x:Key="LOCThemeUnsupported"></sys:String>
     <sys:String x:Key="LOCExtensionUninstallQuestion"></sys:String>
     <sys:String x:Key="LOCExtensionBuiltInUninstallHint">Extensiile integrate nu pot fi dezinstalate.</sys:String>
-    <sys:String x:Key="LOCExtensionUnsupported">Această extensie nu suportă versiunea actuală de Playnite.</sys:String>
+    <sys:String x:Key="LOCExtensionUnsupported">Această extensie nu suportă versiunea actuală de Melcosoft.</sys:String>
     <sys:String x:Key="LOCExtensionInstallDir">Directorul de instalare</sys:String>
     <sys:String x:Key="LOCExtensionDataDir"></sys:String>
     <sys:String x:Key="LOCDiagGenerating"></sys:String>

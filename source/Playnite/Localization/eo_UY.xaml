@@ -17,7 +17,7 @@
     <sys:String x:Key="LOCAboutSourceLink"></sys:String>
     <sys:String x:Key="LOCAboutCreateDiagButton"></sys:String>
     <sys:String x:Key="LOCAboutSendDiagButton"></sys:String>
-    <sys:String x:Key="LOCAboutWindowTitle">Pri Playnite</sys:String>
+    <sys:String x:Key="LOCAboutWindowTitle">Pri Melcosoft</sys:String>
     <sys:String x:Key="LOCAboutAuthor">Farita de Josef Němec</sys:String>
     <sys:String x:Key="LOCCategoryWindowTitle"></sys:String>
     <sys:String x:Key="LOCCategorySetButton"></sys:String>
@@ -233,6 +233,11 @@
     <sys:String x:Key="LOCMenuHelpTitle"></sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport"></sys:String>
     <sys:String x:Key="LOCMenuKofiSupport"></sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft Helpo</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft Forumo</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft Hejmo</sys:String>
+
     <sys:String x:Key="LOCUserManual"></sys:String>
     <sys:String x:Key="LOCSDKDocumentation"></sys:String>
     <sys:String x:Key="LOCMenuRestartSystem"></sys:String>

@@ -17,7 +17,7 @@
     <sys:String x:Key="LOCAboutSourceLink">Se kildekoden på GitHub</sys:String>
     <sys:String x:Key="LOCAboutCreateDiagButton">Opret diag. pakke</sys:String>
     <sys:String x:Key="LOCAboutSendDiagButton">Send diagnose-information</sys:String>
-    <sys:String x:Key="LOCAboutWindowTitle">Om Playnite</sys:String>
+    <sys:String x:Key="LOCAboutWindowTitle">Om Melcosoft</sys:String>
     <sys:String x:Key="LOCAboutAuthor">Lavet af Josef Němec</sys:String>
     <sys:String x:Key="LOCCategoryWindowTitle">Tildel kategori</sys:String>
     <sys:String x:Key="LOCCategorySetButton">Sæt kategorier</sys:String>
@@ -30,7 +30,7 @@ Ubestemt - Ingen ændring (flere spil under redigering)</sys:String>
     <sys:String x:Key="LOCCrashWindowTitle">Hovsa! Noget gik galt.</sys:String>
     <sys:String x:Key="LOCCrashDescription" xml:space="preserve">En uoprettelig fejl er opstået.
 
-Hvis du vil hjælpe os med at ordne problemet, så beskriv venligst de handlinger du udførte før nedbruddet og send så så diagnostisk information. Hvis du er online, vil data blive uploadet til Playnite serveren til analyse. 
+Hvis du vil hjælpe os med at ordne problemet, så beskriv venligst de handlinger du udførte før nedbruddet og send så så diagnostisk information. Hvis du er online, vil data blive uploadet til Melcosoft serveren til analyse. 
 
 Alternativt, kan du klikke på 'Rapportér nedbrud' knappe for at oprette et nyt GitHub issue og rapportere nedbruddet manuelt. 
 
@@ -51,10 +51,10 @@ Hvis du vil hjælpe os med at rette problemet, så send os diagnostisk informati
     <sys:String x:Key="LOCCrashSaveLog">Gem log fil</sys:String>
     <sys:String x:Key="LOCCrashSendDiag">Send diagnostisk info</sys:String>
     <sys:String x:Key="LOCCrashReportIssue">Anmeld crash</sys:String>
-    <sys:String x:Key="LOCCrashRestartPlaynite">Genstart Playnite</sys:String>
+    <sys:String x:Key="LOCCrashRestartPlaynite">Genstart Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashRestartSafe">Genstart i sikker tilstand</sys:String>
     <sys:String x:Key="LOCCrashRestartSafeTooltip">Deaktiverer alle 3'de-parts udvidelser og anvender standard tema.</sys:String>
-    <sys:String x:Key="LOCCrashClosePlaynite">Luk Playnite</sys:String>
+    <sys:String x:Key="LOCCrashClosePlaynite">Luk Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashUserActionsDescription">Handlinger udført før nedbruddet (på Engelsk):</sys:String>
     <sys:String x:Key="LOCLibraryManager">Administrer bibliotek</sys:String>
     <sys:String x:Key="LOCGameRemoveAskTitle">Fjern spil?</sys:String>
@@ -173,7 +173,7 @@ Ved at vælge &quot;Tilføj til udelukkelsesliste&quot; vil spillet ikke blive i
     <sys:String x:Key="LOCSpecialThanks">Særlig tak til</sys:String>
     <sys:String x:Key="LOCLicenseLabel">Licens</sys:String>
     <sys:String x:Key="LOCContributorsLabel">Bidragsydere</sys:String>
-    <sys:String x:Key="LOCClosingPlaynite">Afslutter Playnite…</sys:String>
+    <sys:String x:Key="LOCClosingPlaynite">Afslutter Melcosoft…</sys:String>
     <sys:String x:Key="LOCToday">I dag</sys:String>
     <sys:String x:Key="LOCYesterday">I går</sys:String>
     <sys:String x:Key="LOCMonday">Mandag</sys:String>
@@ -216,8 +216,8 @@ Ved at vælge &quot;Tilføj til udelukkelsesliste&quot; vil spillet ikke blive i
     <sys:String x:Key="LOCMetaNoFieldsSelectedErrorMessage"></sys:String>
     <sys:String x:Key="LOCMetaSourceStore">Officiel Butik</sys:String>
     <sys:String x:Key="LOCMetaSourceIGDB">IGDB</sys:String>
-    <sys:String x:Key="LOCMetaDescriptionFields">Vælg hvilke felter der automatisk skal udfyldes af Playnite og hvilke kilder der skal bruges til at hente data fra.</sys:String>
-    <sys:String x:Key="LOCMetaIgdbContribNotif">Overvej venligst at klikke på logoet ovenfor og bidrage med opdateringer til igdb.com database for at forbedre data Playnite anvendelser.</sys:String>
+    <sys:String x:Key="LOCMetaDescriptionFields">Vælg hvilke felter der automatisk skal udfyldes af Melcosoft og hvilke kilder der skal bruges til at hente data fra.</sys:String>
+    <sys:String x:Key="LOCMetaIgdbContribNotif">Overvej venligst at klikke på logoet ovenfor og bidrage med opdateringer til igdb.com database for at forbedre data Melcosoft anvendelser.</sys:String>
     <!--Progress string-->
     <sys:String x:Key="LOCProgressMetadata">Henter metadata...</sys:String>
     <sys:String x:Key="LOCProgressInstalledGames">Importerer installerede spil…</sys:String>
@@ -248,13 +248,18 @@ Ved at vælge &quot;Tilføj til udelukkelsesliste&quot; vil spillet ikke blive i
     <sys:String x:Key="LOCMenuAddGameInstalled">Scan Automatisk…</sys:String>
     <sys:String x:Key="LOCMenuAddGameEmulated">Emuleret Spil…</sys:String>
     <sys:String x:Key="LOCMenuAddWindowsStore">Microsoft Store Applikation...</sys:String>
-    <sys:String x:Key="LOCMenuAbout">Om Playnite</sys:String>
+    <sys:String x:Key="LOCMenuAbout">Om Melcosoft</sys:String>
     <sys:String x:Key="LOCMenuIssues">Indsend feedback</sys:String>
     <sys:String x:Key="LOCMenuOpenFullscreen">Skift til Fuldskærmstilstand</sys:String>
     <sys:String x:Key="LOCMenuLinksTitle">Links</sys:String>
     <sys:String x:Key="LOCMenuHelpTitle">Hjælp</sys:String>
-    <sys:String x:Key="LOCMenuPatreonSupport">Støt Playnite på Patreon</sys:String>
+    <sys:String x:Key="LOCMenuPatreonSupport">Støt Melcosoft på Patreon</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">Support på Ko-fi</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft Hjælp</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft Forum</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft Hjem</sys:String>
+
     <sys:String x:Key="LOCUserManual">Brugervejledning</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">SDK dokumentation</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">Genstart System</sys:String>
@@ -315,10 +320,10 @@ Ved at vælge &quot;Tilføj til udelukkelsesliste&quot; vil spillet ikke blive i
     <sys:String x:Key="LOCSettingsInvalidDBLocation">Ugyldig placering af databasefil, korrekt filsti skal angives.</sys:String>
     <sys:String x:Key="LOCSettingsInvalidAccountName">Navnefeltet må ikke være tomt.</sys:String>
     <sys:String x:Key="LOCSettingsDownloadMetadataOnImport">Download metadata efter import af spil</sys:String>
-    <sys:String x:Key="LOCSettingsStartMinimized">Start Playnite minimeret</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBoot">Start Playnite når du starter din computer</sys:String>
+    <sys:String x:Key="LOCSettingsStartMinimized">Start Melcosoft minimeret</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBoot">Start Melcosoft når du starter din computer</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootClosedToTray">Start lukket i bakken</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Kunne ikke registrere Playnite til at starte, når computeren starter.</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Kunne ikke registrere Melcosoft til at starte, når computeren starter.</sys:String>
     <sys:String x:Key="LOCSettingsStartInFullscreen">Start i fuldskærmstilstand</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoading">Asynkron billedindlæsning</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoadingTooltip"></sys:String>
@@ -361,9 +366,9 @@ Ved at vælge &quot;Tilføj til udelukkelsesliste&quot; vil spillet ikke blive i
     <sys:String x:Key="LOCSettingsCreateThemes">Opret et nyt tema</sys:String>
     <sys:String x:Key="LOCSettingsGetExtensions"></sys:String>
     <sys:String x:Key="LOCSettingsCreateExtensions"></sys:String>
-    <sys:String x:Key="LOCSettingsCreateLocalization">Hjælp os med at oversætte Playnite</sys:String>
+    <sys:String x:Key="LOCSettingsCreateLocalization">Hjælp os med at oversætte Melcosoft</sys:String>
     <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve"></sys:String>
-    <sys:String x:Key="LOCSettingsRestartTitle">Genstart Playnite?</sys:String>
+    <sys:String x:Key="LOCSettingsRestartTitle">Genstart Melcosoft?</sys:String>
     <sys:String x:Key="LOCSettingsDBPathNotification" xml:space="preserve"></sys:String>
     <sys:String x:Key="LOCSettingsClosePlaytimeNotif"></sys:String>
     <sys:String x:Key="LOCSettingsFullscreenRows"></sys:String>
@@ -647,7 +652,7 @@ Når aktiveret, vil kun en del af beskrivelse tekst i første omgang blive indl�
     <sys:String x:Key="LOCNoGamesFound"></sys:String>
     <sys:String x:Key="LOCNoItemsFound"></sys:String>
     <sys:String x:Key="LOCBackToDesktopMode"></sys:String>
-    <sys:String x:Key="LOCExitPlaynite">Luk Playnite</sys:String>
+    <sys:String x:Key="LOCExitPlaynite">Luk Melcosoft</sys:String>
     <sys:String x:Key="LOCLibraries">Biblioteker</sys:String>
     <sys:String x:Key="LOCUpdateAll">Opdatér alle</sys:String>
     <sys:String x:Key="LOCExtensionCreatedBy">Oprettet af:</sys:String>
@@ -1160,9 +1165,9 @@ Streng matchning kan håndhæves på en individuel sag ved at præfikse filter m
     <sys:String x:Key="LOCGameMenu"></sys:String>
     <sys:String x:Key="LOCProgramFolder">Programmappe</sys:String>
     <sys:String x:Key="LOCUserDataFolder">Bruger datamappe</sys:String>
-    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">Biblioteksfil korruption er blevet opdaget, Playnite vil nu lukke.
+    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">Biblioteksfil korruption er blevet opdaget, Melcosoft vil nu lukke.
     
-Åbn et nyt problem på Playnites GitHub-side med en anmodning om at fikse korruptionen i dine filer.</sys:String>
+Åbn et nyt problem på Melcosofts GitHub-side med en anmodning om at fikse korruptionen i dine filer.</sys:String>
     <sys:String x:Key="LOCUnsavedChangesAskMessage"></sys:String>
     <sys:String x:Key="LOCPortableInstallation"></sys:String>
     <sys:String x:Key="LOCNoControllersDetected"></sys:String>

@@ -255,6 +255,11 @@
     <sys:String x:Key="LOCMenuHelpTitle">ヘルプ</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">Patreon でサポート</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">Ko-Fi でサポート</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft ヘルプ</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft フォーラム</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft ホーム</sys:String>
+
     <sys:String x:Key="LOCUserManual">ユーザーマニュアル</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">SDK ドキュメンテーション</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">システムの再起動</sys:String>
@@ -316,7 +321,7 @@
     <sys:String x:Key="LOCSettingsInvalidAccountName">アカウント名は空にできません。</sys:String>
     <sys:String x:Key="LOCSettingsDownloadMetadataOnImport">ゲームのインポート後にメタデータをダウンロード</sys:String>
     <sys:String x:Key="LOCSettingsStartMinimized">最小化した状態で起動</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBoot">PC 起動時に Playnite を起動</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBoot">PC 起動時に Melcosoft を起動</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootClosedToTray">トレイに閉じた状態で起動</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">コンピュータの起動時に、Playnite を実行するよう登録することができませんでした。</sys:String>
     <sys:String x:Key="LOCSettingsStartInFullscreen">フルスクリーンモードで起動</sys:String>
@@ -349,20 +354,20 @@
     <sys:String x:Key="LOCSettingsClearWebCacheTooltip">アカウントのリンク中に発生した問題を解決できる可能性があります。</sys:String>
     <sys:String x:Key="LOCSettingsShowTray">システムトレイアイコンを表示</sys:String>
     <sys:String x:Key="LOCSettingsMinimizeToTray">Playnite をシステムトレイに最小化</sys:String>
-    <sys:String x:Key="LOCSettingsCloseToTray">アプリウィンドウを閉じたときに Playnite をシステムトレイに最小化</sys:String>
+    <sys:String x:Key="LOCSettingsCloseToTray">アプリウィンドウを閉じたときに Melcosoft をシステムトレイに最小化</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameStart">ゲーム起動時:</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameClose">ゲーム終了後:</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeUseDaysFormatLabel">プレイ日数を示すプレイ時間に書式を適用</sys:String>
     <sys:String x:Key="LOCSettingsDatesFormatsLabel">日付の書式:</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheWarn">これにより、リンクされているすべてのサービスからログアウトします。 アプリケーションの再起動が必要です。続行しますか？</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheTitle">キャッシュをクリアしますか？</sys:String>
-    <sys:String x:Key="LOCSettingsSkinChangeRestart">新しいテーマを適用するには Playnite の再起動が必要です。</sys:String>
+    <sys:String x:Key="LOCSettingsSkinChangeRestart">新しいテーマを適用するには Melcosoft の再起動が必要です。</sys:String>
     <sys:String x:Key="LOCSettingsGetThemes">さらにテーマを入手</sys:String>
     <sys:String x:Key="LOCSettingsCreateThemes">新しいテーマを作る</sys:String>
     <sys:String x:Key="LOCSettingsGetExtensions">さらに拡張機能を入手</sys:String>
     <sys:String x:Key="LOCSettingsCreateExtensions">新しい拡張機能を作る</sys:String>
     <sys:String x:Key="LOCSettingsCreateLocalization">翻訳を手伝う</sys:String>
-    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">新しい設定を適用するためには Playnite を再起動する必要があります。今すぐ再起動しますか？
+    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">新しい設定を適用するためには Melcosoft を再起動する必要があります。今すぐ再起動しますか？
 
 現在進行中のタスク (ダウンロード) は再起動でキャンセルされます。</sys:String>
     <sys:String x:Key="LOCSettingsRestartTitle">Playnite を再起動しますか？</sys:String>
@@ -376,10 +381,10 @@
     <sys:String x:Key="LOCSettingsFullscreenBackgroundOnMainScreen">メイン画面に背景画像を表示</sys:String>
     <sys:String x:Key="LOCBackgroundImageScreenOptionTooltip" xml:space="preserve">メタデータを再ダウンロードせずに既存のゲームに遡って適用することはありません。</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportMode">ゲームのプレイ時間をライブラリにインポート:</sys:String>
-    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Playnite データベース内のゲームについて、ライブラリプラグインから報告されたプレイ時間をいつ Playnite にインポートするかを設定します。
+    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Playnite データベース内のゲームについて、ライブラリプラグインから報告されたプレイ時間をいつ Melcosoft にインポートするかを設定します。
 この機能を利用するには、ゲームの処理を行うライブラリプラグインのサポートが必要です。
 
-常に有効: Playnite データベース内の新しくインポートされたゲームと既存のゲームのプレイ時間をインポートします。
+常に有効: Melcosoft データベース内の新しくインポートされたゲームと既存のゲームのプレイ時間をインポートします。
 新しくインポートされたゲームのみ: 新しくインポートされたゲームのプレイ時間のみをインポートします。
 常に無効: いかなる状況でもプレイ時間をインポートしません。</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportModeAlways">常に有効</sys:String>
@@ -455,7 +460,7 @@
     <sys:String x:Key="LOCEmuWizardWindowTitle">エミュレーションインポートウィザード</sys:String>
     <sys:String x:Key="LOCEmuWizardIntro">このウィザードは、コンソールエミュレータのダウンロードとインポート、エミュレートされたゲームのインポート手順を案内します。</sys:String>
     <sys:String x:Key="LOCEmuWizardNotice">後から、いつでもメインメニューを介して、エミュレータやゲームを追加することができます。(エミュレータ設定の場合は[ツール]メニュー、エミュレートゲームの場合は[ゲームの追加]メニュー)</sys:String>
-    <sys:String x:Key="LOCEmuDownloadDescription">以下は Playnite が認識し自動的に設定できるエミュレータのリストです。あなたはこれらのウェブサイトを訪問し、ダウンロードしてインストールすることができます。エミュレータをインストールしたら、次の画面に進んでそれらを Playnite にインポートします。
+    <sys:String x:Key="LOCEmuDownloadDescription">以下は Melcosoft が認識し自動的に設定できるエミュレータのリストです。あなたはこれらのウェブサイトを訪問し、ダウンロードしてインストールすることができます。エミュレータをインストールしたら、次の画面に進んでそれらを Melcosoft にインポートします。
         
 また、後で設定メニューからカスタムエミュレータを設定してインポートすることもできます。</sys:String>
     <sys:String x:Key="LOCEmuWizardEmuImportIntro">「フォルダから自動検出」ボタンを押すと、PC にインストールされているエミュレータをインポートできます。Playnite は選択されたフォルダから既知のエミュレータを探し、それらをインポートするオプションを提供します。ボタンを複数回使用して複数のフォルダからインポートすることができ、エミュレータは現在のリストの一番下に追加されます。</sys:String>
@@ -475,7 +480,7 @@
 いつでも'Playnite'のメインメニューから、あらゆるプラットフォーム用のカスタムゲームを追加できます。   
     </sys:String>
     <sys:String x:Key="LOCFirstExternalTitle">ライブラリ連携</sys:String>
-    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">以下は Playnite がサポートしているライブラリの一覧です。インストールしたいものを選択してください。
+    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">以下は Melcosoft がサポートしているライブラリの一覧です。インストールしたいものを選択してください。
 
 「アドオン」メニューから追加の連携機能をインストールすることができます。</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedTitle">設定完了</sys:String>
@@ -603,7 +608,7 @@
     <sys:String x:Key="LOCLibraryImportError">{0} からゲームをインポートできませんでした。</sys:String>
     <sys:String x:Key="LOCLibraryImportEmulatedError">{0} からエミュレータゲームをインポートできませんでした。</sys:String>
     <sys:String x:Key="LOCScanEmulatorGamesEmptyProfileError">選択したエミュレータプロファイルではゲームを検索できません。プロファイルにファイル拡張子やプラットフォームが含まれていません。</sys:String>
-    <sys:String x:Key="LOCStartGenericError">Playnite は起動に失敗しました。実行中のすべての Playnite のプログラムを閉じてからやり直してください。</sys:String>
+    <sys:String x:Key="LOCStartGenericError">Playnite は起動に失敗しました。実行中のすべての Melcosoft のプログラムを閉じてからやり直してください。</sys:String>
     <sys:String x:Key="LOCSkinApplyError" xml:space="preserve">テーマ &quot;{0}&quot;、カラープロファイル &quot;{1}&quot;の適用に失敗しました。
         
 {2}</sys:String>
@@ -729,7 +734,7 @@
     <sys:String x:Key="LOCUpdateNoNewUpdateMessage">新しいバージョンは見つかりませんでした。最新版です。</sys:String>
     <sys:String x:Key="LOCGeneralUpdateFailMessage">更新のダウンロードとインストールに失敗しました。</sys:String>
     <sys:String x:Key="LOCUpdateProgressCancelAsk">いくつかのバックグラウンドタスクが現在進行中です。キャンセルして更新を続けますか？</sys:String>
-    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">いくつかのバックグラウンドタスクが現在進行中です。 キャンセルして Playnite を終了しますか？</sys:String>
+    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">いくつかのバックグラウンドタスクが現在進行中です。 キャンセルして Melcosoft を終了しますか？</sys:String>
     <sys:String x:Key="LOCBackgroundProgressCancelAskSwitchMode">いくつかのバックグラウンドタスクが現在進行中です。モードを切り替えるとタスクがキャンセルされますが、それでも切り替えますか?</sys:String>
     <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">Playnite の更新が利用可能です。</sys:String>
     <sys:String x:Key="LOCThemeTestReloadList">テーマリストを再読み込み</sys:String>
@@ -833,9 +838,9 @@
     <sys:String x:Key="LOCGeneralExtensionPackageError">拡張機能は適切にパッケージされていません。</sys:String>
     <sys:String x:Key="LOCGeneralThemePackageError">テーマは適切にパッケージされていません。</sys:String>
     <sys:String x:Key="LOCSpecificExtensionLoadError">拡張機能 &quot;{0}&quot; を正常に読み込めませんでした。</sys:String>
-    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">拡張機能 &quot;{0}&quot; を読み込むことができません。現在の Playnite バージョンではサポートされていません。</sys:String>
+    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">拡張機能 &quot;{0}&quot; を読み込むことができません。現在の Melcosoft バージョンではサポートされていません。</sys:String>
     <sys:String x:Key="LOCSpecificThemeLoadError">テーマ &quot;{0}&quot; を正常に読み込めませんでした。</sys:String>
-    <sys:String x:Key="LOCSpecificThemeLoadSDKError">テーマ &quot;{0}&quot; を読み込むことができません。現在の Playnite のバージョンではサポートされていません。</sys:String>
+    <sys:String x:Key="LOCSpecificThemeLoadSDKError">テーマ &quot;{0}&quot; を読み込むことができません。現在の Melcosoft のバージョンではサポートされていません。</sys:String>
     <sys:String x:Key="LOCGeneralExtensionLoadError">拡張機能を正常に読み込めませんでした。</sys:String>    
     <sys:String x:Key="LOCGeneralThemeLoadError">テーマを正常に読み込めませんでした。</sys:String>
     <sys:String x:Key="LOCGeneralExtensionInstallApiVersionFails">テーマ/拡張機能にサポートされていない API が使用されています。</sys:String>
@@ -885,10 +890,10 @@ Version {2}</sys:String>
     <sys:String x:Key="LOCLargeMediaWarningTooltip">選択された画像は最適なパフォーマンスには大きすぎる可能性があります。</sys:String>
     <sys:String x:Key="LOCThemeUninstallQuestion">選択したテーマをアンインストールしますか？アンインストールは次回アプリ起動時に行われます。</sys:String>
     <sys:String x:Key="LOCThemeBuiltInUninstallHint">ビルトインテーマはアンインストールできません。</sys:String>
-    <sys:String x:Key="LOCThemeUnsupported">このテーマは現在の Playnite ではサポートされていません。</sys:String>
+    <sys:String x:Key="LOCThemeUnsupported">このテーマは現在の Melcosoft ではサポートされていません。</sys:String>
     <sys:String x:Key="LOCExtensionUninstallQuestion">選択した拡張機能をアンインストールしますか？アンインストールは次回アプリ起動時に行われます。</sys:String>
     <sys:String x:Key="LOCExtensionBuiltInUninstallHint">ビルトインテーマはアンインストールできません。</sys:String>
-    <sys:String x:Key="LOCExtensionUnsupported">この拡張機能は現在の Playnite ではサポートされていません。</sys:String>
+    <sys:String x:Key="LOCExtensionUnsupported">この拡張機能は現在の Melcosoft ではサポートされていません。</sys:String>
     <sys:String x:Key="LOCExtensionInstallDir">インストールフォルダ</sys:String>
     <sys:String x:Key="LOCExtensionDataDir">データフォルダ</sys:String>
     <sys:String x:Key="LOCDiagGenerating">診断パッケージを生成中…</sys:String>
@@ -942,7 +947,7 @@ Version {2}</sys:String>
     <sys:String x:Key="LOCAddonsThemesDesktop">デスクトップテーマ</sys:String>
     <sys:String x:Key="LOCAddonsThemesFullscren">フルスクリーンテーマ</sys:String>
     <sys:String x:Key="LOCAddonsSearching">検索中…</sys:String>
-    <sys:String x:Key="LOCAddonErrorNotCompatible">アドオンは、このバージョンの Playnite と互換性がありません。</sys:String>
+    <sys:String x:Key="LOCAddonErrorNotCompatible">アドオンは、このバージョンの Melcosoft と互換性がありません。</sys:String>
     <sys:String x:Key="LOCAddonErrorDownloadFailed">アドオンインストールパッケージのダウンロードに失敗しました。</sys:String>
     <sys:String x:Key="LOCAddonErrorManifestDownloadError">アドオンインストールマニフェストのダウンロードに失敗しました。</sys:String>
     <sys:String x:Key="LOCAddonChangesRestart">変更を適用するにはアプリケーションの再起動が必要です。</sys:String>
@@ -1030,7 +1035,7 @@ Version {2}</sys:String>
     <sys:String x:Key="LOCSettingsSwapConfirmCancelButtonsDescriptions">確認とキャンセルのための A/B ボタンの割り当てを反転します。</sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnly">プライマリーコントローラーのみ</sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnlyDescription">有効な場合にのみプライマリコントローラからの入力を受け付けます。</sys:String>
-    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">ガイドボタンで Playnite にフォーカス</sys:String>
+    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">ガイドボタンで Melcosoft にフォーカス</sys:String>
     <sys:String x:Key="LOCSettingsInterfaceVolume">インターフェイスの音量</sys:String>
     <sys:String x:Key="LOCSettingsMusiVolume">背景の音量</sys:String>
     <sys:String x:Key="LOCSettingsMuteBackground">バックグラウンドでミュート</sys:String>
@@ -1063,7 +1068,7 @@ Version {2}</sys:String>
     <sys:String x:Key="LOCSelectFileTooltip">ファイルを選択</sys:String>
     <sys:String x:Key="LOCSelectDirectoryTooltip">フォルダを選択…</sys:String>
     <sys:String x:Key="LOCStartupScript">起動スクリプト</sys:String>
-    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">拡張機能とテーマのどちらとも Playnite のパフォーマンス、安定性、セキュリティに大きな影響を与える可能性がありますので、ご注意ください。
+    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">拡張機能とテーマのどちらとも Melcosoft のパフォーマンス、安定性、セキュリティに大きな影響を与える可能性がありますので、ご注意ください。
     
 テーマや拡張機能をインストールした後に何らかの問題が発生した場合は、まずそれらを無効化またはアンインストールして、問題の原因であるかどうかを確認してください。</sys:String>
     <sys:String x:Key="LOCGameActionSelectOnStart">起動時に選択</sys:String>
@@ -1126,7 +1131,7 @@ Version {2}</sys:String>
     <sys:String x:Key="LOCSortingNameAutofillProgress">ソート用タイトルの値を設定中…</sys:String>
     <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">Nahimic サービスがシステムで実行されていることが検出されました。このサービスは、Playnite  (および他のアプリ) にレンダリングの問題を引き起こすことが知られています。
 
-もし Playnite でグラフィックの破損やその他のレンダリングの問題が発生した場合、Nahimic サービスを無効にするか完全にアンインストールすることをお勧めします。
+もし Melcosoft でグラフィックの破損やその他のレンダリングの問題が発生した場合、Nahimic サービスを無効にするか完全にアンインストールすることをお勧めします。
 
 詳細については以下の URL を参照してください。
 https://playnite.link/nahimicsucks</sys:String>

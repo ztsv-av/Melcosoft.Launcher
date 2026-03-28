@@ -30,7 +30,7 @@ Négyzet - Ne változzon (több játék állításakor)</sys:String>
     <sys:String x:Key="LOCCrashWindowTitle">Hoppá! Valami hiba történt…</sys:String>
     <sys:String x:Key="LOCCrashDescription" xml:space="preserve">Helyrehozhatatlan hiba történt.
 
-Ha segíteni szeretnél a hiba elhárításában, röviden foglald össze, mit csináltál az összeomlás előtt és hozz létre egy diagnosztikai csomagot. Ha online vagy, a csomagot elküldöm a Playnite szerverre, elemzésre.
+Ha segíteni szeretnél a hiba elhárításában, röviden foglald össze, mit csináltál az összeomlás előtt és hozz létre egy diagnosztikai csomagot. Ha online vagy, a csomagot elküldöm a Melcosoft szerverre, elemzésre.
 
 Más esetben használhatod a 'Hibajelentés küldése' gombot, hogy új hibajegyet hozz létre a GitHub-on és kézzel készítsd el a hibáról az összefoglalót. Angol nyelven kommunikálj, ha kérhetem.
 
@@ -55,7 +55,7 @@ Ha segíteni szeretnél a hiba elhárításában, küldj hibajelentést. Köszö
     <sys:String x:Key="LOCCrashRestartPlaynite">Playnite újraindítása</sys:String>
     <sys:String x:Key="LOCCrashRestartSafe">Újraindítás csökkentett módban</sys:String>
     <sys:String x:Key="LOCCrashRestartSafeTooltip">Minden harmadik féltől származó bővítmény letiltása és az alap téma használata.</sys:String>
-    <sys:String x:Key="LOCCrashClosePlaynite">Kilépés a Playnite-ból.</sys:String>
+    <sys:String x:Key="LOCCrashClosePlaynite">Kilépés a Melcosoft-ból.</sys:String>
     <sys:String x:Key="LOCCrashUserActionsDescription">Röviden foglald össze, mit csináltál az összeomlás előtt (angolul):</sys:String>
     <sys:String x:Key="LOCLibraryManager">Könyvtárkezelő</sys:String>
     <sys:String x:Key="LOCGameRemoveAskTitle">Listából való törlés megerősítése</sys:String>
@@ -174,7 +174,7 @@ A &quot;hozzáadás a kivételekhez&quot; beállítást választva megakadályoz
     <sys:String x:Key="LOCSpecialThanks">Külön köszönet</sys:String>
     <sys:String x:Key="LOCLicenseLabel">Licensz</sys:String>
     <sys:String x:Key="LOCContributorsLabel">Közreműködők</sys:String>
-    <sys:String x:Key="LOCClosingPlaynite">Kilépés a Playnite-ból...</sys:String>
+    <sys:String x:Key="LOCClosingPlaynite">Kilépés a Melcosoft-ból...</sys:String>
     <sys:String x:Key="LOCToday">Ma</sys:String>
     <sys:String x:Key="LOCYesterday">Tegnap</sys:String>
     <sys:String x:Key="LOCMonday">Hétfő</sys:String>
@@ -217,7 +217,7 @@ A &quot;hozzáadás a kivételekhez&quot; beállítást választva megakadályoz
     <sys:String x:Key="LOCMetaNoFieldsSelectedErrorMessage">Nincs letöltendő metaadat mező kiválasztva. Válassz ki legalább egyet, és jelölj ki egy metaadat szolgáltatót hozzá.</sys:String>
     <sys:String x:Key="LOCMetaSourceStore">Hivatalos áruházból</sys:String>
     <sys:String x:Key="LOCMetaSourceIGDB">IGDB</sys:String>
-    <sys:String x:Key="LOCMetaDescriptionFields">Kérlek válaszd ki mely mezőket frissítse a Playnite automatikusan, és milyen forrásból.</sys:String>
+    <sys:String x:Key="LOCMetaDescriptionFields">Kérlek válaszd ki mely mezőket frissítse a Melcosoft automatikusan, és milyen forrásból.</sys:String>
     <sys:String x:Key="LOCMetaIgdbContribNotif">Támogasd az igdb.com-ot azzal, hogy az adatbázisukhoz hozzájárulsz saját anyaggal.</sys:String>
     <!--Progress string-->
     <sys:String x:Key="LOCProgressMetadata">Metaadatok importálása...</sys:String>
@@ -256,6 +256,11 @@ A &quot;hozzáadás a kivételekhez&quot; beállítást választva megakadályoz
     <sys:String x:Key="LOCMenuHelpTitle">Súgó</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">Támogass a Patreon-on</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">Támogass a Ko-Fi-n</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft Súgó</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft Fórum</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft Főoldal</sys:String>
+
     <sys:String x:Key="LOCUserManual">Kézikönyv</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">SDK Dokumentáció</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">Újraindítás</sys:String>
@@ -357,17 +362,17 @@ A &quot;hozzáadás a kivételekhez&quot; beállítást választva megakadályoz
     <sys:String x:Key="LOCSettingsDatesFormatsLabel">Dátum formátum:</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheWarn">Ez kiléptet az összes szolgáltatásból. Ehhez újra kell indítani az alkalmazást, folytatod?</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheTitle">Gyorsítótár ürítése?</sys:String>
-    <sys:String x:Key="LOCSettingsSkinChangeRestart">A Playnite újraindítása szükséges a téma alkalmazásához</sys:String>
+    <sys:String x:Key="LOCSettingsSkinChangeRestart">A Melcosoft újraindítása szükséges a téma alkalmazásához</sys:String>
     <sys:String x:Key="LOCSettingsGetThemes">Még több téma</sys:String>
     <sys:String x:Key="LOCSettingsCreateThemes">Új téma?</sys:String>
     <sys:String x:Key="LOCSettingsGetExtensions">Bővítmények letöltése</sys:String>
     <sys:String x:Key="LOCSettingsCreateExtensions">Új bővítmény létrehozása?</sys:String>
-    <sys:String x:Key="LOCSettingsCreateLocalization">Segíts a Playnite fordításában</sys:String>
-    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">A beállítások alkamazásához újra kell indítanod a Playnite-ot. Újraindítsam most?
+    <sys:String x:Key="LOCSettingsCreateLocalization">Segíts a Melcosoft fordításában</sys:String>
+    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">A beállítások alkamazásához újra kell indítanod a Melcosoft-ot. Újraindítsam most?
 
 Az újraindítás minden futó feladatot (letöltést) megszakít.</sys:String>
-    <sys:String x:Key="LOCSettingsRestartTitle">Újraindítod a Playnite-ot?</sys:String>
-    <sys:String x:Key="LOCSettingsDBPathNotification" xml:space="preserve">A Playnite nem helyezi át automatikusan a könyvtárak fájljait, azt neked kell átmásolni/átmozgatni, mielőtt itt módosítod a helyüket. Ha nincs könyvtár a célhelyen, akkor újat fog létrehozni.
+    <sys:String x:Key="LOCSettingsRestartTitle">Újraindítod a Melcosoft-ot?</sys:String>
+    <sys:String x:Key="LOCSettingsDBPathNotification" xml:space="preserve">A Melcosoft nem helyezi át automatikusan a könyvtárak fájljait, azt neked kell átmásolni/átmozgatni, mielőtt itt módosítod a helyüket. Ha nincs könyvtár a célhelyen, akkor újat fog létrehozni.
 
 Az új adatbázis helye csak újraindítás után lesz alkalmazva. </sys:String>
     <sys:String x:Key="LOCSettingsClosePlaytimeNotif">A játékidő nem lesz rögzítve ha a &quot;Bezárás&quot; van kiválasztva.</sys:String>
@@ -377,9 +382,9 @@ Az új adatbázis helye csak újraindítás után lesz alkalmazva. </sys:String>
     <sys:String x:Key="LOCSettingsFullscreenBackgroundOnMainScreen">Háttérkép megjelenítése a főképernyőn</sys:String>
     <sys:String x:Key="LOCBackgroundImageScreenOptionTooltip" xml:space="preserve">Visszamenőleg nem vonatkozik a meglévő játékokra a metaadatok letöltése nélkül.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportMode">Játékidő importálása az alábbi játékokhoz:</sys:String>
-    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Azt állítja be, hogy a Playnite mikor importálja be a könyvtárbeépülők által megadott játékidőket az adatbázisába. Ehhez a játékokhoz tartozó könyvtárbeépülők támogatása szükséges.
+    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Azt állítja be, hogy a Melcosoft mikor importálja be a könyvtárbeépülők által megadott játékidőket az adatbázisába. Ehhez a játékokhoz tartozó könyvtárbeépülők támogatása szükséges.
 
-Mindig: mindig beimportálja az új és meglévő játékok játékidejét a Playnite adatbázisba.
+Mindig: mindig beimportálja az új és meglévő játékok játékidejét a Melcosoft adatbázisba.
 Csak új importált játékokat: csak az újonnan importált játékok idejét adja hozzá.
 Sosem: semmilyen esetben sem importál játékidőt.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportModeAlways">Mindig</sys:String>
@@ -455,11 +460,11 @@ A programbeállításoknál is megváltoztatható.</sys:String>
     <sys:String x:Key="LOCEmuWizardWindowTitle">Emulátor Importálás varázsló</sys:String>
     <sys:String x:Key="LOCEmuWizardIntro">Ez a varázsló segít a játékkonzol emulátorok letöltésének és importálásának folyamatában, valamint az emulált játékromok hozzáadásában.</sys:String>
     <sys:String x:Key="LOCEmuWizardNotice">Ne felejtsd, hogy bármikor adhatsz hozzá emulátort és emulált játékot kézzel a főmenüből (a &quot;Könyvtár&quot; menüpontból eléred az emulátor beállításokat és a &quot;Játék hozzáadása&quot; menüpontból az emulált játékokat).</sys:String>
-    <sys:String x:Key="LOCEmuDownloadDescription">Az alábbi listában található emulátorokat a Playnite automatikusan felismeri és beállítja. Le tudod tölteni és telepíteni őket a sor végén található linkre kattintva. Ha feltelepítetted az emulátorokat (kézzel), lépj a következő képernyőre hogy beimportálhasd a Playnite-ba őket.</sys:String>
-    <sys:String x:Key="LOCEmuWizardEmuImportIntro">A gépeden telepített emulátorokat tudod a &quot;Automatikus felismerés mappából...&quot; gombbal importálni. A Playnite végigkeresi a mappákat az általa ismert emulátorok után és felajánlja az importálás lehetőségét. Több mappából is importálhatsz a már említett gombbal; az újonnan felismert emulátorok a lista aljára kerülnek.</sys:String>
-    <sys:String x:Key="LOCEmuWizardGameImportIntro">A játékokat a &quot;Játék hozzáadása emulátorhoz&quot; gombbal tudod beimportálni. A megfelelő emulátor kiválasztásával a Playnite tudni fogja, hogy mely fájltípusok legyenek beolvasva és importálva. Több mappából is importálhatsz a már említett gombbal; az újonnan felismert játékok a lista aljára kerülnek.</sys:String>
+    <sys:String x:Key="LOCEmuDownloadDescription">Az alábbi listában található emulátorokat a Melcosoft automatikusan felismeri és beállítja. Le tudod tölteni és telepíteni őket a sor végén található linkre kattintva. Ha feltelepítetted az emulátorokat (kézzel), lépj a következő képernyőre hogy beimportálhasd a Melcosoft-ba őket.</sys:String>
+    <sys:String x:Key="LOCEmuWizardEmuImportIntro">A gépeden telepített emulátorokat tudod a &quot;Automatikus felismerés mappából...&quot; gombbal importálni. A Melcosoft végigkeresi a mappákat az általa ismert emulátorok után és felajánlja az importálás lehetőségét. Több mappából is importálhatsz a már említett gombbal; az újonnan felismert emulátorok a lista aljára kerülnek.</sys:String>
+    <sys:String x:Key="LOCEmuWizardGameImportIntro">A játékokat a &quot;Játék hozzáadása emulátorhoz&quot; gombbal tudod beimportálni. A megfelelő emulátor kiválasztásával a Melcosoft tudni fogja, hogy mely fájltípusok legyenek beolvasva és importálva. Több mappából is importálhatsz a már említett gombbal; az újonnan felismert játékok a lista aljára kerülnek.</sys:String>
     <sys:String x:Key="LOCEmuWizardNoEmulatorWarning">Nincs kiválasztva emulátor az importáláshoz. Nem tudsz automatikusan importálni egy emulált játékot sem anélkül, hogy először beállítanál egy emulátort. Biztosan folytatod és kilépsz az importálásból?</sys:String>
-    <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning">Nincs egy emulátor sem beállítva a Playnite-ban. Nem tudsz importálni játékokat, ha nem állítod be az emulátorát és választod ki a fájltípusát. Szeretnél most új emulátort beállítani?</sys:String>
+    <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning">Nincs egy emulátor sem beállítva a Melcosoft-ban. Nem tudsz importálni játékokat, ha nem állítod be az emulátorát és választod ki a fájltípusát. Szeretnél most új emulátort beállítani?</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonScanGames">Mappa beolvasása az emulátorral</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonSelectFiles">Fájlok kiválasztása</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonScanEmulator">Automatikus észlelés mappából...</sys:String>
@@ -468,11 +473,11 @@ A programbeállításoknál is megváltoztatható.</sys:String>
     <sys:String x:Key="LOCEmuWizardScanningSpecific">{0} beolvasása…</sys:String>
     <!--FirstTime Wizard-->
     <sys:String x:Key="LOCFirstWindowTitle">Kezdeti lépések</sys:String>
-    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">Ez a varázsló segít beállítani az automatikus játék importálást, és a külső könyvtárak beállítását. A Playnite automatikusan beimportálja a játékszolgáltatóktól (pl. Steam, GOG, Epic games) a játékokat, és frissíti az esetleges változásokat indításkor.
+    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">Ez a varázsló segít beállítani az automatikus játék importálást, és a külső könyvtárak beállítását. A Melcosoft automatikusan beimportálja a játékszolgáltatóktól (pl. Steam, GOG, Epic games) a játékokat, és frissíti az esetleges változásokat indításkor.
 
 Ne felejtsd, hogy bármikor adhatsz hozzá játékot bármelyik platformhoz kézzel a főmenüből, ha rákattintasz a 'Playnite' gombra bal fent.</sys:String>
     <sys:String x:Key="LOCFirstExternalTitle">Játékkönyvtár integráció</sys:String>
-    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">Automatikusan importálja a játékokat a következő szolgáltatóktól. Bármilyen későbbi változások automatikusan frissülnek a Playnite indulásakor, vagy ha kézzel elindítod a frissítést. A most kiválasztott szolgáltatók befolyásolják a kezdeti és későbbi importálást.</sys:String>
+    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">Automatikusan importálja a játékokat a következő szolgáltatóktól. Bármilyen későbbi változások automatikusan frissülnek a Melcosoft indulásakor, vagy ha kézzel elindítod a frissítést. A most kiválasztott szolgáltatók befolyásolják a kezdeti és későbbi importálást.</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedTitle">Készen vagyunk a beállításokkal</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedText" xml:space="preserve">A kezdeti lépésekkel készen vagyunk. Ne feledd, hogy az összes beállítást eléred a 'Beállítások' menüpontból.
 
@@ -600,13 +605,13 @@ Kérlek csatold hozzá a a következő ID-t a hibajegyhez:</sys:String>
     <sys:String x:Key="LOCLibraryImportError">Nem sikerült a {0} játékok importálása.</sys:String>
     <sys:String x:Key="LOCLibraryImportEmulatedError">Nem sikerült a {0} emulált játékok importálása.</sys:String>
     <sys:String x:Key="LOCScanEmulatorGamesEmptyProfileError">Nem lehet keresni játékot a kiválasztott emulátor profil alapján. Nincs beállítva platform vagy kiterjesztés.</sys:String>
-    <sys:String x:Key="LOCStartGenericError">A Playnite már fut. Zárd be az összes futó folyamatát, majd próbáld meg újra.</sys:String>
+    <sys:String x:Key="LOCStartGenericError">A Melcosoft már fut. Zárd be az összes futó folyamatát, majd próbáld meg újra.</sys:String>
     <sys:String x:Key="LOCSkinApplyError" xml:space="preserve">&quot;{0}&quot; téma és &quot;{1}&quot; színbeállítás nem sikerült
 
 {2}</sys:String>
     <sys:String x:Key="LOCURLFormatError">Nem sikerült a linket megnyitni, az URL nem megfelelő formátumú.</sys:String>
     <sys:String x:Key="LOCAppStartupError">Nem sikerült az alkalmazás elindítása.</sys:String>
-    <sys:String x:Key="LOCCefSharpInitError" xml:space="preserve">Nem sikerült a webes elem elindítása, a Playnite nem indult el.
+    <sys:String x:Key="LOCCefSharpInitError" xml:space="preserve">Nem sikerült a webes elem elindítása, a Melcosoft nem indult el.
 
 Több információt a https://playnite.link/cefstartup oldalon találsz.</sys:String>
     <sys:String x:Key="LOCEmulatorImportNoDefinitionsError">Nem sikerült az emulátorok importálása, az emulátorok definíciói hiányoznak vagy sérültek.</sys:String>
@@ -673,7 +678,7 @@ Több információt a https://playnite.link/cefstartup oldalon találsz.</sys:St
     <sys:String x:Key="LOCNoGamesFound">Nem találtam játékot a megadott adatok alapján</sys:String>
     <sys:String x:Key="LOCNoItemsFound">Nincs találat</sys:String>
     <sys:String x:Key="LOCBackToDesktopMode">Ablakos módra váltás</sys:String>
-    <sys:String x:Key="LOCExitPlaynite">Kilépés a Playnite-ból</sys:String>
+    <sys:String x:Key="LOCExitPlaynite">Kilépés a Melcosoft-ból</sys:String>
     <sys:String x:Key="LOCLibraries">Könytárak</sys:String>
     <sys:String x:Key="LOCUpdateAll">Az összes frissítése</sys:String>
     <sys:String x:Key="LOCExtensionCreatedBy">Készítő:</sys:String>
@@ -726,7 +731,7 @@ Több információt a https://playnite.link/cefstartup oldalon találsz.</sys:St
     <sys:String x:Key="LOCUpdateNoNewUpdateMessage">Az aktuális verzió naprakész.</sys:String>
     <sys:String x:Key="LOCGeneralUpdateFailMessage">Frissítés letöltése és telepítése sikertelen.</sys:String>
     <sys:String x:Key="LOCUpdateProgressCancelAsk">Egy háttérfolyamat jelenleg is fut. Megszakítod, és folytatod a frissítés telepítését?</sys:String>
-    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">Egy háttérfolyamat jelenleg is fut. Megszakítod, és bezárod a Playnite-ot?</sys:String>
+    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">Egy háttérfolyamat jelenleg is fut. Megszakítod, és bezárod a Melcosoft-ot?</sys:String>
     <sys:String x:Key="LOCBackgroundProgressCancelAskSwitchMode">Egy háttérfolyamat jelenleg is fut. A módok közötti váltás befejezi a háttérfolyamatot. Szeretnéd folytatni?</sys:String>
     <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">Playnite frissítés elérhető</sys:String>
     <sys:String x:Key="LOCThemeTestReloadList">Témalista újratöltése</sys:String>
@@ -784,7 +789,7 @@ Több információt a https://playnite.link/cefstartup oldalon találsz.</sys:St
     <sys:String x:Key="LOCDescriptionSizeBytes">Játékméret, byte-ban.</sys:String>
     <sys:String x:Key="LOCReleaseDateTooltip">A megjelenési dátumnak az 'év-hónap-nap' formátumot kell követnie (a hónap és nap értékek opcionálisak).</sys:String>
     <sys:String x:Key="LOCDescriptionScoreValues">Pontérték 0-100-ig, vagy üres mező, ha nincs értékelve.</sys:String>
-    <sys:String x:Key="LOCPatreonDevelopMessage">A Playnite fejlődésének támogatói és Ko-Fi adományozói:</sys:String>
+    <sys:String x:Key="LOCPatreonDevelopMessage">A Melcosoft fejlődésének támogatói és Ko-Fi adományozói:</sys:String>
     <sys:String x:Key="LOCAboutContributorsMessage">Kód, fordítás és egyéb közreműködők:</sys:String>
     <sys:String x:Key="LOCCancelMonitoringAskTitle">Játékfigyelés megszüntetése?</sys:String>
     <sys:String x:Key="LOCCancelMonitoringSetupAsk">A játék telepítés figyelő jelenleg is fut. Meg akarod szakítani a folyamatot és visszatérsz a játék előző állapotához?</sys:String>
@@ -826,13 +831,13 @@ Több információt a https://playnite.link/cefstartup oldalon találsz.</sys:St
     <sys:String x:Key="LOCPLaytime100to500">100-tól 500 óráig</sys:String>
     <sys:String x:Key="LOCPLaytime500to1000">500-tól 1000 óráig</sys:String>
     <sys:String x:Key="LOCPLaytime1000plus">1000 óra felett</sys:String>
-    <sys:String x:Key="LOCExtInstallationRestartNotif">A Playnite-ot újra kell indítani a telepítés befejezéséhez. Szeretnéd újraindítani most?</sys:String>
+    <sys:String x:Key="LOCExtInstallationRestartNotif">A Melcosoft-ot újra kell indítani a telepítés befejezéséhez. Szeretnéd újraindítani most?</sys:String>
     <sys:String x:Key="LOCGeneralExtensionPackageError">A bővítmény helytelenül csomagolt.</sys:String>
     <sys:String x:Key="LOCGeneralThemePackageError">A téma helytelenül csomagolt.</sys:String>
     <sys:String x:Key="LOCSpecificExtensionLoadError">{0} bővítményt nem sikerült betölteni.</sys:String>
-    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">{0} bővítmény betöltése nem sikerült, a Playnite verziója nem támogatott.</sys:String>
+    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">{0} bővítmény betöltése nem sikerült, a Melcosoft verziója nem támogatott.</sys:String>
     <sys:String x:Key="LOCSpecificThemeLoadError">{0} témát nem sikerült betölteni.</sys:String>
-    <sys:String x:Key="LOCSpecificThemeLoadSDKError">{0} téma betöltése nem sikerült, a Playnite verziója nem támogatott.</sys:String>
+    <sys:String x:Key="LOCSpecificThemeLoadSDKError">{0} téma betöltése nem sikerült, a Melcosoft verziója nem támogatott.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionLoadError">A bővítményt nem sikerült betölteni.</sys:String>    
     <sys:String x:Key="LOCGeneralThemeLoadError">A témát nem sikerült betölteni.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionInstallApiVersionFails">A Téma/Bővítmény nem támogatott API-t használ.</sys:String>
@@ -852,7 +857,7 @@ Készítő: {1}
 Verziószám: {2}</sys:String>
     <sys:String x:Key="LOCThemeUpdatePrompt" xml:space="preserve">Frissíted {0} témát?
 Jelenlegi: {1}, új verziószám: {2}.</sys:String>
-    <sys:String x:Key="LOCUrlNavigationMessage" xml:space="preserve">Elhagyod a Playnite-ot és megnyitod a {0} weboldalt a böngésződdel. Folytatod?</sys:String>
+    <sys:String x:Key="LOCUrlNavigationMessage" xml:space="preserve">Elhagyod a Melcosoft-ot és megnyitod a {0} weboldalt a böngésződdel. Folytatod?</sys:String>
     <sys:String x:Key="LOCGameImageSizeWarning" xml:space="preserve">A választott kép(ek) túl nagy méretűek az optimális működéshez. A nagy képek miatt több memória lesz használatban és lassabb lesz a felület reakcióideje.
 
 Maximális ajánlott méretek:
@@ -866,10 +871,10 @@ Hátterek: {2} megapixel</sys:String>
     <sys:String x:Key="LOCLargeMediaWarningTooltip">A kiválasztott kép túl nagy méretű az optimális működéshez. </sys:String>
     <sys:String x:Key="LOCThemeUninstallQuestion">Biztos eltávolítod a kijelölt témát? A következő indításnál fog törlődni.</sys:String>
     <sys:String x:Key="LOCThemeBuiltInUninstallHint">Beépitett témát nem lehet eltávolítani.</sys:String>
-    <sys:String x:Key="LOCThemeUnsupported">Ez a téma nem támogatja ezt a Playnite verziót.</sys:String>
+    <sys:String x:Key="LOCThemeUnsupported">Ez a téma nem támogatja ezt a Melcosoft verziót.</sys:String>
     <sys:String x:Key="LOCExtensionUninstallQuestion">Biztos eltávolítod a kijelölt bővítményt? A következő indításnál fog törlődni.</sys:String>
     <sys:String x:Key="LOCExtensionBuiltInUninstallHint">Beépitett bővítményt nem lehet eltávolítani.</sys:String>
-    <sys:String x:Key="LOCExtensionUnsupported">Ez a bővítmény nem támogatja ezt a Playnite verziót.</sys:String>
+    <sys:String x:Key="LOCExtensionUnsupported">Ez a bővítmény nem támogatja ezt a Melcosoft verziót.</sys:String>
     <sys:String x:Key="LOCExtensionInstallDir">Telepítési hely</sys:String>
     <sys:String x:Key="LOCExtensionDataDir">Adatmappa</sys:String>
     <sys:String x:Key="LOCDiagGenerating">Diagnosztikai csomag létrehozása…</sys:String>
@@ -899,7 +904,7 @@ Hátterek: {2} megapixel</sys:String>
     <sys:String x:Key="LOCCommonLinksForum">Fórum</sys:String>
     <sys:String x:Key="LOCCommonLinksNews">Újdonságok</sys:String>
     <sys:String x:Key="LOCCommonLinksStorePage">Áruházbeli oldala</sys:String>
-    <sys:String x:Key="LOCFullscreenFirstTimeError">A kezdeti lépések nem lettek befejezve. A Playnite újraindul Ablakos módban, hogy befejezhesd.</sys:String>
+    <sys:String x:Key="LOCFullscreenFirstTimeError">A kezdeti lépések nem lettek befejezve. A Melcosoft újraindul Ablakos módban, hogy befejezhesd.</sys:String>
     <sys:String x:Key="LOCQuickFilterRecentlyPlayed">Nemrég játszott</sys:String>
     <sys:String x:Key="LOCQuickFilterFavorites">Kedvencek</sys:String>
     <sys:String x:Key="LOCQuickFilterMostPlayed">Legtöbbet játszott</sys:String>
@@ -923,10 +928,10 @@ Ha telepíteni vagy eltávolítani szeretnéd őket, használd a főmenü &quot;
     <sys:String x:Key="LOCAddonsThemesDesktop">Asztali nézet témák</sys:String>
     <sys:String x:Key="LOCAddonsThemesFullscren">Teljes képernyős témák</sys:String>
     <sys:String x:Key="LOCAddonsSearching">Keresés…</sys:String>
-    <sys:String x:Key="LOCAddonErrorNotCompatible">Ez a bővítmény nem támogatja ezt a Playnite verziót.</sys:String>
+    <sys:String x:Key="LOCAddonErrorNotCompatible">Ez a bővítmény nem támogatja ezt a Melcosoft verziót.</sys:String>
     <sys:String x:Key="LOCAddonErrorDownloadFailed">Bővítmény telepítőcsomag letöltése sikertelen.</sys:String>
     <sys:String x:Key="LOCAddonErrorManifestDownloadError">Bővítmény telepítőcsomag lista letöltése sikertelen.</sys:String>
-    <sys:String x:Key="LOCAddonChangesRestart">A Playnite újraindítása szükséges a változtatások alkalmazásához.</sys:String>
+    <sys:String x:Key="LOCAddonChangesRestart">A Melcosoft újraindítása szükséges a változtatások alkalmazásához.</sys:String>
     <sys:String x:Key="LOCAddonQueuedForInstall">A bővítmény telepítése ütemezve.</sys:String>
     <sys:String x:Key="LOCAddonInstall">Telepítés</sys:String>
     <sys:String x:Key="LOCAddonReinstall">Újratelepítés</sys:String>
@@ -994,14 +999,14 @@ Ha telepíteni vagy eltávolítani szeretnéd őket, használd a főmenü &quot;
     <sys:String x:Key="LOCConfigure">Beállítás</sys:String>
     <sys:String x:Key="LOCFilterPresetSave">Szűrőséma mentése</sys:String>
     <sys:String x:Key="LOCSettingsMinimizeAfterStartingGame">Játék indítása után tálcára kicsinyítés</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeAfterStartingGameDescription" xml:space="preserve">Játék indítása után a Playnite tálcára kicsinyítése.
+    <sys:String x:Key="LOCSettingsMinimizeAfterStartingGameDescription" xml:space="preserve">Játék indítása után a Melcosoft tálcára kicsinyítése.
 
 Ha kikapcsolod, bizonyos játékoknál hibát okozhat, hogy nem kapnak indításkor beviteli elsőbbséget.</sys:String>
     <sys:String x:Key="LOCSettingsFontSize">Betűméret</sys:String>
     <sys:String x:Key="LOCSettingsFontSizeSmall">Kis betűméret</sys:String>
     <sys:String x:Key="LOCSettingsControllerApi">Játékvezérlő API támogatás</sys:String>
     <sys:String x:Key="LOCSettingsXInputProcessing">XInput támogatás</sys:String>
-    <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">Ha ki van kapcsolva, a Playnite nem fogja használni a játékvezérlőket.
+    <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">Ha ki van kapcsolva, a Melcosoft nem fogja használni a játékvezérlőket.
         
 Akkor kapcsold ki, ha olyan programokat használsz, ami játékvezérlő gombnyomásokat billentyűleütésekké és kurzormozgássá alakítja, és duplázza az inputot.</sys:String>
     <sys:String x:Key="LOCSettingsShowItemsMainMenuHeader">Elemek mutatása a főmenüben:</sys:String>
@@ -1010,8 +1015,8 @@ Akkor kapcsold ki, ha olyan programokat használsz, ami játékvezérlő gombnyo
     <sys:String x:Key="LOCSettingsSwapConfirmCancelButtons">OK/mégsem gombok funkciójának felcserélése</sys:String>
     <sys:String x:Key="LOCSettingsSwapConfirmCancelButtonsDescriptions">Megfordítja az A/B gombok funkcionailtását, így az alapértelmezett A: OK és B: vissza épp ellenkezőleg fog működni.</sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnly">Csak az elsődleges játékvezérlő</sys:String>
-    <sys:String x:Key="LOCSettingsPrimaryControllerOnlyDescription">Csak az első játékvezérlővel tudod irányítani a Playnite-ot.</sys:String>
-    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">Guide/PS gombbal előtérbe kerül a Playnite</sys:String>
+    <sys:String x:Key="LOCSettingsPrimaryControllerOnlyDescription">Csak az első játékvezérlővel tudod irányítani a Melcosoft-ot.</sys:String>
+    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">Guide/PS gombbal előtérbe kerül a Melcosoft</sys:String>
     <sys:String x:Key="LOCSettingsInterfaceVolume">Felület hangerő</sys:String>
     <sys:String x:Key="LOCSettingsMusiVolume">Háttérzene hangerő</sys:String>
     <sys:String x:Key="LOCSettingsMuteBackground">Háttérben némít</sys:String>
@@ -1043,7 +1048,7 @@ Jobb képminőség, közepes sebesség, alacsony memóriahasználat.</sys:String
     <sys:String x:Key="LOCSelectFileTooltip">Fájl kiválasztása…</sys:String>
     <sys:String x:Key="LOCSelectDirectoryTooltip">Mappa kiválasztása…</sys:String>
     <sys:String x:Key="LOCStartupScript">Indítószkript</sys:String>
-    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">Érdemes tudnod, hogy a bővítmények és a témák nagyban befolyásolhatják a Playnite teljesítményét, stabilitását és biztonságosságát.
+    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">Érdemes tudnod, hogy a bővítmények és a témák nagyban befolyásolhatják a Melcosoft teljesítményét, stabilitását és biztonságosságát.
     
 Ha problémákat észlelsz egy téma vagy bővítmény telepítése után, érdemes azt lekapcsolni/eltávolítani, hátha az volt az okozója.</sys:String>
     <sys:String x:Key="LOCGameActionSelectOnStart">Indításkor választható</sys:String>
@@ -1084,7 +1089,7 @@ Ha problémákat észlelsz egy téma vagy bővítmény telepítése után, érde
     <sys:String x:Key="LOCEmuSaveScanConfig">Mentse, mint automatikus beolvasás beállítást</sys:String>
     <sys:String x:Key="LOCEmuSaveScanConfigTooltip">Mentse el a beállítást későbbi használatra könyvtárfrissítéskor. A mentett beállítások később kezelhetők az &quot;Emulátorok beállítása&quot; menüpontból.</sys:String>
     <sys:String x:Key="LOCEmuImportWithRelativePaths">Relatív útvonalak használata importáláskor</sys:String>
-    <sys:String x:Key="LOCEmuImportWithRelativePathsTooltip">Ha lehet, akkor a Playnite-ot vagy emulátort tartalmazó mappák relatív útvonalait használja a teljes útvonal helyett.</sys:String>
+    <sys:String x:Key="LOCEmuImportWithRelativePathsTooltip">Ha lehet, akkor a Melcosoft-ot vagy emulátort tartalmazó mappák relatív útvonalait használja a teljes útvonal helyett.</sys:String>
     <sys:String x:Key="LOCEmuImportScanSubfolders">Almappák átvizsgálása</sys:String>
     <sys:String x:Key="LOCEmuImportScanInsideArchives">Tömörített fájlok tartalmát is vizsgálja</sys:String>
     <sys:String x:Key="LOCEmuMergeRelatedFiles">Összetartozó fájlok egyesítése</sys:String>
@@ -1104,17 +1109,17 @@ Ha problémákat észlelsz egy téma vagy bővítmény telepítése után, érde
     <sys:String x:Key="LOCSortingNameAutofillButton">Rendezési név mező automatikus kitöltése</sys:String>
     <sys:String x:Key="LOCSettingsSortingLabel">Sorbarendezés</sys:String>
     <sys:String x:Key="LOCSortingNameAutofillProgress">Rendezési név értékek kitöltése…</sys:String>
-    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">Nahimic észlelve a gépeden. Ez komoly megjelenítésbeli problémákkal járhat a Playnite és más programok esetében.
+    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">Nahimic észlelve a gépeden. Ez komoly megjelenítésbeli problémákkal járhat a Melcosoft és más programok esetében.
 
 Azt ajánljuk, hogy tiltsd le vagy távolítsd el a problémák megelőzésére.
 
 Több információt (angolul) az alábbi linken találsz: https://playnite.link/nahimicsucks</sys:String>
-    <sys:String x:Key="LOCElevatedProcessWarning" xml:space="preserve">A Playnite rendszergazdai jogokkal fut. Nem ajánlott így futtatni, mert az összes bövítménynek és innen indított játéknak is teljes hozzáférése lesz mindenhez.
+    <sys:String x:Key="LOCElevatedProcessWarning" xml:space="preserve">A Melcosoft rendszergazdai jogokkal fut. Nem ajánlott így futtatni, mert az összes bövítménynek és innen indított játéknak is teljes hozzáférése lesz mindenhez.
 
-Javasoljuk, hogy rendszergazdai jogok nélkül futtasd, ugyanis a Playnite nem ígényli ezt a működéséhez.
+Javasoljuk, hogy rendszergazdai jogok nélkül futtasd, ugyanis a Melcosoft nem ígényli ezt a működéséhez.
 
 Több infót a https://playnite.link/adminfaq linken találsz.</sys:String>
-    <sys:String x:Key="LOCElevatedProcessWarningShowOption">Figyelmeztessen, ha rendszergazdaként futtatnám a Playnite-ot.</sys:String>
+    <sys:String x:Key="LOCElevatedProcessWarningShowOption">Figyelmeztessen, ha rendszergazdaként futtatnám a Melcosoft-ot.</sys:String>
     <sys:String x:Key="LOCInstallSizeScanUseSizeOnDiskOption">A háttértáron elfoglalt helyet használja a játék méretének megállapításához</sys:String>
     <sys:String x:Key="LOCInstallSizeScanUseSizeOnDiskOptionTooltip" xml:space="preserve">Ha bekapcsolod, lassabb lesz a beolvasás, mert a fájlok által elfoglalt tárhelyet számolja ki.
 Ha kikapcsolod, akkor a fájlok méretét számolja és adja össze.</sys:String>
@@ -1130,7 +1135,7 @@ Támogatott platformok: Google Drive, DropBox, OneDrive</sys:String>
     <sys:String x:Key="LOCEmuUseSimplifiedOnlineFileScanTooltip">Nem pontos módja a beolvasásnak, ahol a fájlok nem kellenek a gépen letöltve legyenek.</sys:String>
     <sys:String x:Key="LOCMetadatSetAllFieldsToValue">Alkalmazás mindre</sys:String>
     <sys:String x:Key="LOCOverrideInstallState">Telepítési állapot felülbírálása</sys:String>
-    <sys:String x:Key="LOCOverrideInstallStateTooltip" xml:space="preserve">Ha be van kapcsolva, a Playnite figyelmen kívül hagyja a beépülő által jelentett telepítési állapotot.
+    <sys:String x:Key="LOCOverrideInstallStateTooltip" xml:space="preserve">Ha be van kapcsolva, a Melcosoft figyelmen kívül hagyja a beépülő által jelentett telepítési állapotot.
                 
 Bizonyos beépülőknél nem működik teljesen, ahol speciális módon történik a játékimportálás.</sys:String>
     <sys:String x:Key="LOCOptionOnlyManually">Csak kézzel</sys:String>
@@ -1209,10 +1214,10 @@ SHIFT+ENTER: elem menü megnyitása</sys:String>
     <sys:String x:Key="LOCBackupOptionThemes">Telepített témákat</sys:String>
     <sys:String x:Key="LOCBackupRestoreMessage" xml:space="preserve">Válaszd ki a mentés fájlból a visszaállítandó adatokat.
     
-A Playnite automatikusan újraindul, hogy elkezdhesse a visszaállítást.</sys:String>
+A Melcosoft automatikusan újraindul, hogy elkezdhesse a visszaállítást.</sys:String>
     <sys:String x:Key="LOCBackupDataBackupMessage" xml:space="preserve">Válaszd ki a biztonsági mentésbe kerülő adatokat. A program beállításai és a játékkönyvtár alapértelmezésben belekerül.
     
-A Playnite automatikusan újraindul, hogy elkezdhesse a visszaállítást.</sys:String>
+A Melcosoft automatikusan újraindul, hogy elkezdhesse a visszaállítást.</sys:String>
     <sys:String x:Key="LOCSettingsEnableAutomaticBackup">Automatikus biztonsági mentés</sys:String>
     <sys:String x:Key="LOCSettingsAutoBackupFrequency">Automatikus biztonsági mentés gyakorisága</sys:String>
     <sys:String x:Key="LOCSettingsBackupFolder">Biztonsági mentés célmappája</sys:String>
@@ -1244,9 +1249,9 @@ A már megadott dátumformátum lesz érvényes az összes többire.</sys:String
     <sys:String x:Key="LOCGameMenu">Játékmenü</sys:String>
     <sys:String x:Key="LOCProgramFolder">Program mappája</sys:String>
     <sys:String x:Key="LOCUserDataFolder">Felhasználói adat mappája</sys:String>
-    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">Adatbázisfájl sérülést észleltem, a Playnite le fog állni.
+    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">Adatbázisfájl sérülést észleltem, a Melcosoft le fog állni.
     
-Kérlek nyiss egy új jegyet a Playnite GitHub oldalán angolul, kérve, hogy javítsák meg a sérült könyvtárfájlt.</sys:String>
+Kérlek nyiss egy új jegyet a Melcosoft GitHub oldalán angolul, kérve, hogy javítsák meg a sérült könyvtárfájlt.</sys:String>
     <sys:String x:Key="LOCUnsavedChangesAskMessage">Szeretnéd menteni változtatásaidat?</sys:String>
     <sys:String x:Key="LOCPortableInstallation">Hordozható (portable) telepítés</sys:String>
     <sys:String x:Key="LOCNoControllersDetected">Nem található játékvezérlő</sys:String>

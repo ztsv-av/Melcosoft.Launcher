@@ -17,7 +17,7 @@
     <sys:String x:Key="LOCAboutSourceLink">Bronkode by GitHub</sys:String>
     <sys:String x:Key="LOCAboutCreateDiagButton">Maak diag. pakket</sys:String>
     <sys:String x:Key="LOCAboutSendDiagButton">Stuur diag. inligting</sys:String>
-    <sys:String x:Key="LOCAboutWindowTitle">Oor Playnite</sys:String>
+    <sys:String x:Key="LOCAboutWindowTitle">Oor Melcosoft</sys:String>
     <sys:String x:Key="LOCAboutAuthor">Gemaak deur Josef Němec</sys:String>
     <sys:String x:Key="LOCCategoryWindowTitle">Ken Kategorie Toe</sys:String>
     <sys:String x:Key="LOCCategorySetButton">Stel Kategorie</sys:String>
@@ -30,7 +30,7 @@ Onbepaald - Geen veranderinge (wanneer vele speletjies gewysig word)</sys:String
     <sys:String x:Key="LOCCrashWindowTitle">Oeps! Iets het verkeerd gegaan</sys:String>
     <sys:String x:Key="LOCCrashDescription" xml:space="preserve">'n Onherwinbare fout het voorgekom.
 
-As jy ons wil help om hierdie kwessie op te los, beskryf asseblief die aksies wat geneem was voor die crash, en stuur dan diagnostiese inligting. As jy aanlyn is sal die pakket na die Playnite bediener opgelaai word vir ontleding.
+As jy ons wil help om hierdie kwessie op te los, beskryf asseblief die aksies wat geneem was voor die crash, en stuur dan diagnostiese inligting. As jy aanlyn is sal die pakket na die Melcosoft bediener opgelaai word vir ontleding.
 
 Alternatiewelik, kan jy op die 'Meld crash aan' knoppie klik om 'n nuwe GitHub kwessie te maak en die crash per hand aan te meld.
 
@@ -43,10 +43,10 @@ Dankie vir jou hulp.</sys:String>
     <sys:String x:Key="LOCCrashSaveLog"></sys:String>
     <sys:String x:Key="LOCCrashSendDiag"></sys:String>
     <sys:String x:Key="LOCCrashReportIssue">Meld Crash Aan</sys:String>
-    <sys:String x:Key="LOCCrashRestartPlaynite">Begin Playnite Oor</sys:String>
+    <sys:String x:Key="LOCCrashRestartPlaynite">Begin Melcosoft Oor</sys:String>
     <sys:String x:Key="LOCCrashRestartSafe">Begin oor in Veilige Modus</sys:String>
     <sys:String x:Key="LOCCrashRestartSafeTooltip"></sys:String>
-    <sys:String x:Key="LOCCrashClosePlaynite">Verlaat Playnite</sys:String>
+    <sys:String x:Key="LOCCrashClosePlaynite">Verlaat Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashUserActionsDescription"></sys:String>
     <sys:String x:Key="LOCLibraryManager">Biblioteekbestuurder</sys:String>
     <sys:String x:Key="LOCGameRemoveAskTitle">Verwyder Speletjie(s)?</sys:String>
@@ -223,6 +223,11 @@ Dankie vir jou hulp.</sys:String>
     <sys:String x:Key="LOCMenuLinksTitle"></sys:String>
     <sys:String x:Key="LOCMenuHelpTitle"></sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport"></sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft Hulp</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft Forum</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft Tuisblad</sys:String>
+
     <sys:String x:Key="LOCSDKDocumentation"></sys:String>
     <sys:String x:Key="LOCMenuRestartSystem"></sys:String>
     <sys:String x:Key="LOCMenuShutdownSystem"></sys:String>

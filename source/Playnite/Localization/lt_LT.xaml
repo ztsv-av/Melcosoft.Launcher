@@ -17,7 +17,7 @@
     <sys:String x:Key="LOCAboutSourceLink">Atvirąjį kodą rasite GitHub</sys:String>
     <sys:String x:Key="LOCAboutCreateDiagButton">Sukurti diagnostinį paketą</sys:String>
     <sys:String x:Key="LOCAboutSendDiagButton">Siųsti sistemos informaciją</sys:String>
-    <sys:String x:Key="LOCAboutWindowTitle">Apie Playnite</sys:String>
+    <sys:String x:Key="LOCAboutWindowTitle">Apie Melcosoft</sys:String>
     <sys:String x:Key="LOCAboutAuthor">Kūrėjas: Josef Němec</sys:String>
     <sys:String x:Key="LOCCategoryWindowTitle">Priskirti kategorijai</sys:String>
     <sys:String x:Key="LOCCategorySetButton">Nustatyti kategorijas</sys:String>
@@ -30,7 +30,7 @@ Nepažymėta - Jokių pakeitimų (Kai modifikuojami keli žaidimai)</sys:String>
     <sys:String x:Key="LOCCrashWindowTitle">Ooops!Taškas nutiko blogai...</sys:String>
     <sys:String x:Key="LOCCrashDescription" xml:space="preserve">Įvyko nepataisoma klaida.
 
-Jei norite padėti išspręsti šią problemą, trumpai apibūdinkite, ką darėt prieš užlužima, tada atsiųskite diagnostikos informaciją. Jei esate prisijungę, paketas bus įkeltas į Playnite serverį analizei.
+Jei norite padėti išspręsti šią problemą, trumpai apibūdinkite, ką darėt prieš užlužima, tada atsiųskite diagnostikos informaciją. Jei esate prisijungę, paketas bus įkeltas į Melcosoft serverį analizei.
 
 Arba galite spustelėti mygtuką „Pranešti apie gedimą“, kad sukurtumėte naują „GitHub“ problemą ir praneštumėte apie gedimą rankiniu būdu.
 
@@ -51,10 +51,10 @@ Jeigu norite padėti sutaisyti klaidą, atsiųskite diagnostine informaciną.Ač
     <sys:String x:Key="LOCCrashSaveLog">Išsaugoti &quot;log&quot; failą</sys:String>
     <sys:String x:Key="LOCCrashSendDiag">Siųsti diag. informaciją</sys:String>
     <sys:String x:Key="LOCCrashReportIssue">Pranešti apie problemą</sys:String>
-    <sys:String x:Key="LOCCrashRestartPlaynite">Iš naujo paleisti Playnite</sys:String>
+    <sys:String x:Key="LOCCrashRestartPlaynite">Iš naujo paleisti Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashRestartSafe">Perkrauti saugumo režime</sys:String>
     <sys:String x:Key="LOCCrashRestartSafeTooltip">Išjunkite visas trečiujų šalių plėtinius ir naudoti numatytają tema.</sys:String>
-    <sys:String x:Key="LOCCrashClosePlaynite">Uždaryti Playnite</sys:String>
+    <sys:String x:Key="LOCCrashClosePlaynite">Uždaryti Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashUserActionsDescription">Veiksmai padaryti prieš gedimą :</sys:String>
     <sys:String x:Key="LOCLibraryManager">Bibliotekos vedlys</sys:String>
     <sys:String x:Key="LOCGameRemoveAskTitle">Pašalinti žaidimą(us)?</sys:String>
@@ -216,8 +216,8 @@ Pasirinkus opciją &quot;pridėti į išimčių sąrašą&quot; programa neleis 
     <sys:String x:Key="LOCMetaNoFieldsSelectedErrorMessage"></sys:String>
     <sys:String x:Key="LOCMetaSourceStore">Oficiali parduotuvė</sys:String>
     <sys:String x:Key="LOCMetaSourceIGDB">IGDB</sys:String>
-    <sys:String x:Key="LOCMetaDescriptionFields">Pasirinkite laukus, kuriuos Playnite užpildys automatiškai, ir  šaltinį, iš kurio Playnite gaus informaciją.</sys:String>
-    <sys:String x:Key="LOCMetaIgdbContribNotif">Apsvarstykite galimybę spustelėti aukščiau esantį logo ir atnaujinti igdb.com databazę, kad patobulintumėte Playnite duomenis.</sys:String>
+    <sys:String x:Key="LOCMetaDescriptionFields">Pasirinkite laukus, kuriuos Melcosoft užpildys automatiškai, ir  šaltinį, iš kurio Melcosoft gaus informaciją.</sys:String>
+    <sys:String x:Key="LOCMetaIgdbContribNotif">Apsvarstykite galimybę spustelėti aukščiau esantį logo ir atnaujinti igdb.com databazę, kad patobulintumėte Melcosoft duomenis.</sys:String>
     <!--Progress string-->
     <sys:String x:Key="LOCProgressMetadata">Siunčiami metaduomenys…</sys:String>
     <sys:String x:Key="LOCProgressInstalledGames">Importuojami neįrašyti žaidimai</sys:String>
@@ -248,13 +248,18 @@ Pasirinkus opciją &quot;pridėti į išimčių sąrašą&quot; programa neleis 
     <sys:String x:Key="LOCMenuAddGameInstalled">Skenuoti automatiškai...</sys:String>
     <sys:String x:Key="LOCMenuAddGameEmulated">Emuliuojamas žaidimas...</sys:String>
     <sys:String x:Key="LOCMenuAddWindowsStore">Microsoft Store aplikacija...</sys:String>
-    <sys:String x:Key="LOCMenuAbout">Apie Playnite</sys:String>
+    <sys:String x:Key="LOCMenuAbout">Apie Melcosoft</sys:String>
     <sys:String x:Key="LOCMenuIssues">Siųsti atsiliepimą</sys:String>
     <sys:String x:Key="LOCMenuOpenFullscreen">Perjungti į viso ekrano rėžimą</sys:String>
     <sys:String x:Key="LOCMenuLinksTitle">Nuorodos</sys:String>
     <sys:String x:Key="LOCMenuHelpTitle">Pagalba</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">Paremti &quot;Patreon&quot; platformoje</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">Paremkite Ko-fi</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft Pagalba</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft Forumas</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft Pradžia</sys:String>
+
     <sys:String x:Key="LOCUserManual">Vartotojo instrukcijos</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">SDK Documentacija</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">Perkrauti sistemą</sys:String>
@@ -315,10 +320,10 @@ Pasirinkus opciją &quot;pridėti į išimčių sąrašą&quot; programa neleis 
     <sys:String x:Key="LOCSettingsInvalidDBLocation">Neteisinga duombazės failo vieta, nurtodykite tikslų kelią iki failo.</sys:String>
     <sys:String x:Key="LOCSettingsInvalidAccountName">Vartotojo vardas negali būti tuščias.</sys:String>
     <sys:String x:Key="LOCSettingsDownloadMetadataOnImport">Atsisiųsti metaduomenis po žaidimų importavimo</sys:String>
-    <sys:String x:Key="LOCSettingsStartMinimized">Paleisti Playnite sumažintą</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBoot">Leisti Playnite įjungus kompiuterį</sys:String>
+    <sys:String x:Key="LOCSettingsStartMinimized">Paleisti Melcosoft sumažintą</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBoot">Leisti Melcosoft įjungus kompiuterį</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootClosedToTray">Pradėti uždaryta į užduočių juosta</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Nepavyko užregistruoti Playnite paleidimo paleidžiant kompiuterį.</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Nepavyko užregistruoti Melcosoft paleidimo paleidžiant kompiuterį.</sys:String>
     <sys:String x:Key="LOCSettingsStartInFullscreen">Paleisti viso ekrano rėžime</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoading">Asinchroninis paveikslėlių krovimas</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoadingTooltip">Pagreitina navigavimą žaidimų sąraše, bet sulėtina paveikslėlių krovimą.</sys:String>
@@ -348,24 +353,24 @@ Pasirinkus opciją &quot;pridėti į išimčių sąrašą&quot; programa neleis 
     <sys:String x:Key="LOCSettingsClearWebCache">Išvalyti talpyklą</sys:String>
     <sys:String x:Key="LOCSettingsClearWebCacheTooltip">Gali padėti išspręsti problemas, atsiradusias bandant susieti paskyras.</sys:String>
     <sys:String x:Key="LOCSettingsShowTray">Rodyti sistemos dėklo piktogramą</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeToTray">Sutraukti Playnite į sistemos dėklą</sys:String>
-    <sys:String x:Key="LOCSettingsCloseToTray">Sutraukti Playnite į sistemos dėklą kai programos langas yra uždarytas</sys:String>
+    <sys:String x:Key="LOCSettingsMinimizeToTray">Sutraukti Melcosoft į sistemos dėklą</sys:String>
+    <sys:String x:Key="LOCSettingsCloseToTray">Sutraukti Melcosoft į sistemos dėklą kai programos langas yra uždarytas</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameStart">Kai žaidimas paleidžiamas:</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameClose">Kai žaidimas uždaromas:</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeUseDaysFormatLabel">Rodyti žaidimo laiką dienomis</sys:String>
     <sys:String x:Key="LOCSettingsDatesFormatsLabel">Datos formatas</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheWarn">Šis veiksmas atjungs Jus nuo visų paskyrų. Reikalingas programos paleidimas iš naujo, ar norite tęsti?</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheTitle">Išvalyti Talpyklą?</sys:String>
-    <sys:String x:Key="LOCSettingsSkinChangeRestart">Pritaikius naują temą Playnite reikės paleisti iš naujo</sys:String>
+    <sys:String x:Key="LOCSettingsSkinChangeRestart">Pritaikius naują temą Melcosoft reikės paleisti iš naujo</sys:String>
     <sys:String x:Key="LOCSettingsGetThemes">Gauti daugiau temų</sys:String>
     <sys:String x:Key="LOCSettingsCreateThemes">Sukurti naują temą</sys:String>
     <sys:String x:Key="LOCSettingsGetExtensions">Gauti daugiau plėtinių</sys:String>
     <sys:String x:Key="LOCSettingsCreateExtensions">Sukurti naują plėtinį</sys:String>
-    <sys:String x:Key="LOCSettingsCreateLocalization">Padėk mums išversti Playnite</sys:String>
-    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">Norint pritaikyti naujus nustatymus, Playnite reikia paleisti iš naujo. Paleisti iš naujo dabar?
+    <sys:String x:Key="LOCSettingsCreateLocalization">Padėk mums išversti Melcosoft</sys:String>
+    <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">Norint pritaikyti naujus nustatymus, Melcosoft reikia paleisti iš naujo. Paleisti iš naujo dabar?
 
 Paleidus iš naujo bus atšauktos visos šiuo metu vykdomos aktyvios užduotys (atsiuntimai).</sys:String>
-    <sys:String x:Key="LOCSettingsRestartTitle">Paleisti Playnite iš naujo?</sys:String>
+    <sys:String x:Key="LOCSettingsRestartTitle">Paleisti Melcosoft iš naujo?</sys:String>
     <sys:String x:Key="LOCSettingsDBPathNotification" xml:space="preserve">Playnite negali automatiškai perkelti bibliotekos failų. Prieš keisdami vietą, turite rankiniu būdu perkelti / nukopijuoti failus. Jei tiksliname aplanke vietoje nėra bibliotekos, bus sukurta nauja.
 
 Nauja duomenų bazės vieta nebus naudojama, kol „Playnite“ nebus paleista iš naujo.</sys:String>
@@ -377,9 +382,9 @@ Nauja duomenų bazės vieta nebus naudojama, kol „Playnite“ nebus paleista i
     <sys:String x:Key="LOCBackgroundImageScreenOptionTooltip" xml:space="preserve">Playnite kaip foną naudos turimas žaidimo nuotraukas, o ne paveikslėlius gautus iš duombazės.
 Netaikoma žaidimams, kurie jau yra bibliotekoje.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportMode">Importuoti žaidimo laika iš bibliotekos:</sys:String>
-    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Konfigūruojamas, kada Playnite turėtų importuoti žaidimo laiką, kurį praneša žaidimų bibliotekos priedai Playnite duomenų bazėje. Norint naudotis šia funkcija, reikalingas bibliotekos papildinių, atsakingų už žaidimo (-ų) tvarkymą, palaikymas.
+    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Konfigūruojamas, kada Melcosoft turėtų importuoti žaidimo laiką, kurį praneša žaidimų bibliotekos priedai Melcosoft duomenų bazėje. Norint naudotis šia funkcija, reikalingas bibliotekos papildinių, atsakingų už žaidimo (-ų) tvarkymą, palaikymas.
 
-Visada: importuoja naujų importuotų ir esamų žaidimų žaidimo laiką Playnite duomenų bazėje.
+Visada: importuoja naujų importuotų ir esamų žaidimų žaidimo laiką Melcosoft duomenų bazėje.
 Tik naujai importuotiems žaidimams: importuojamas tik naujų importuotų žaidimų žaidimo laikas.
 Niekada: neimportuoja žaidimo laiko jokiomis aplinkybėmis.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportModeAlways">Visada</sys:String>
@@ -614,7 +619,7 @@ Prašome įtraukti nurodytą ID į klaidos pranešimą:</sys:String>
     <sys:String x:Key="LOCScanFolder">Ieškoti aplanke…</sys:String>
     <sys:String x:Key="LOCDetectInstalled">Aptikti įrašytus</sys:String>
     <sys:String x:Key="LOCBrowse">Naršyti…</sys:String>
-    <sys:String x:Key="LOCOpenPlaynite">Atidaryti Playnite</sys:String>
+    <sys:String x:Key="LOCOpenPlaynite">Atidaryti Melcosoft</sys:String>
     <sys:String x:Key="LOCProfileSettings">Profilio nustatymai</sys:String>
     <sys:String x:Key="LOCEmptyGameNameError">Žaidimo pavadinimas negali būti tuščias.</sys:String>
     <sys:String x:Key="LOCEmptyTrackingFolderError"></sys:String>
@@ -662,7 +667,7 @@ Prašome įtraukti nurodytą ID į klaidos pranešimą:</sys:String>
     <sys:String x:Key="LOCNoGamesFound">Nepavyko rasti žaidimų pagal paieškos/filtro kriterijus</sys:String>
     <sys:String x:Key="LOCNoItemsFound">Nerasta elementų</sys:String>
     <sys:String x:Key="LOCBackToDesktopMode">Perjungti į darbalaukio rėžimą</sys:String>
-    <sys:String x:Key="LOCExitPlaynite">Uždaryti Playnite</sys:String>
+    <sys:String x:Key="LOCExitPlaynite">Uždaryti Melcosoft</sys:String>
     <sys:String x:Key="LOCLibraries">Bibliotekos</sys:String>
     <sys:String x:Key="LOCUpdateAll">Naujinti viską</sys:String>
     <sys:String x:Key="LOCExtensionCreatedBy">Sukurta:</sys:String>
@@ -717,7 +722,7 @@ Prašome įtraukti nurodytą ID į klaidos pranešimą:</sys:String>
     <sys:String x:Key="LOCUpdateProgressCancelAsk"></sys:String>
     <sys:String x:Key="LOCBackgroundProgressCancelAskExit"></sys:String>
     <sys:String x:Key="LOCBackgroundProgressCancelAskSwitchMode"></sys:String>
-    <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">Yra pasiekiamas Playnite atnaujinimas</sys:String>
+    <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">Yra pasiekiamas Melcosoft atnaujinimas</sys:String>
     <sys:String x:Key="LOCThemeTestReloadList">Atnaujinti temų sąrašą</sys:String>
     <sys:String x:Key="LOCThemeTestApplySkin">Pritaikyti pasirinktą temą</sys:String>
     <sys:String x:Key="LOCThemeTestWatchChanges">Ieškoti failų pakeitimų</sys:String>
@@ -819,9 +824,9 @@ Prašome įtraukti nurodytą ID į klaidos pranešimą:</sys:String>
     <sys:String x:Key="LOCGeneralExtensionPackageError"></sys:String>
     <sys:String x:Key="LOCGeneralThemePackageError"></sys:String>
     <sys:String x:Key="LOCSpecificExtensionLoadError">Plėtinio &quot;{0}&quot; nepavyko tinkamai įkelti.</sys:String>
-    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">Nepavyko įkelti plėtinio &quot;{0}&quot;, dabartinė Playnite versija nepalaikoma.</sys:String>
+    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">Nepavyko įkelti plėtinio &quot;{0}&quot;, dabartinė Melcosoft versija nepalaikoma.</sys:String>
     <sys:String x:Key="LOCSpecificThemeLoadError">Temos &quot;{0}&quot; nepavyko tinkamai įkelti.</sys:String>
-    <sys:String x:Key="LOCSpecificThemeLoadSDKError">Nepavyko įkelti temos &quot;{0}&quot;, dabartinė Playnite versija nepalaikoma.</sys:String>
+    <sys:String x:Key="LOCSpecificThemeLoadSDKError">Nepavyko įkelti temos &quot;{0}&quot;, dabartinė Melcosoft versija nepalaikoma.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionLoadError">Plėtinio nepavyko tinkamai įkelti.</sys:String>    
     <sys:String x:Key="LOCGeneralThemeLoadError">Temos nepavyko tinkamai įkelti.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionInstallApiVersionFails">Tema/Plėtinys naudoja nepalaikomą API versiją.</sys:String>
@@ -899,7 +904,7 @@ Prašome įtraukti nurodytą ID į klaidos pranešimą:</sys:String>
     <sys:String x:Key="LOCAddonsThemesDesktop"></sys:String>
     <sys:String x:Key="LOCAddonsThemesFullscren"></sys:String>
     <sys:String x:Key="LOCAddonsSearching">Ieškoma...</sys:String>
-    <sys:String x:Key="LOCAddonErrorNotCompatible">Plėtinys nesuderinamas su šia Playnite versija.</sys:String>
+    <sys:String x:Key="LOCAddonErrorNotCompatible">Plėtinys nesuderinamas su šia Melcosoft versija.</sys:String>
     <sys:String x:Key="LOCAddonErrorDownloadFailed">Nepavyko atsiųsti plėtinio diegimo paketo.</sys:String>
     <sys:String x:Key="LOCAddonErrorManifestDownloadError">Nepavyko atsiųsti plėtinio diegimo manifesto failo.</sys:String>
     <sys:String x:Key="LOCAddonChangesRestart"></sys:String>

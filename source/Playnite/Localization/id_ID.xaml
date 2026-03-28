@@ -4,7 +4,7 @@
     THIS FILE IS NOT PART OF THE THEME, DO NOT MODIFY!
     -->
     <sys:String x:Key="LanguageName">Bahasa Indonesia</sys:String>
-    <sys:String x:Key="LOCLanguageSettingsLabel">Bahasa Playnite</sys:String>
+    <sys:String x:Key="LOCLanguageSettingsLabel">Bahasa Melcosoft</sys:String>
     <sys:String x:Key="LOCExitAppLabel">Keluar</sys:String>
     <sys:String x:Key="LOCFilterActiveLabel">Filter aktif</sys:String>
     <sys:String x:Key="LOCFilterInactiveLabel">Filter dinonaktifkan</sys:String>
@@ -17,7 +17,7 @@
     <sys:String x:Key="LOCAboutSourceLink">Lihat Source Code di GitHub</sys:String>
     <sys:String x:Key="LOCAboutCreateDiagButton">Buat Paket Diagnosa</sys:String>
     <sys:String x:Key="LOCAboutSendDiagButton">Kirim informasi diagnosis</sys:String>
-    <sys:String x:Key="LOCAboutWindowTitle">Tentang Playnite</sys:String>
+    <sys:String x:Key="LOCAboutWindowTitle">Tentang Melcosoft</sys:String>
     <sys:String x:Key="LOCAboutAuthor">Dibuat Oleh Josef Němec</sys:String>
     <sys:String x:Key="LOCCategoryWindowTitle">Beri Kategori</sys:String>
     <sys:String x:Key="LOCCategorySetButton">Atur Kategori</sys:String>
@@ -30,7 +30,7 @@ Tidak tentu - Tidak ada perubahan (ketika mengedit banyak game)</sys:String>
     <sys:String x:Key="LOCCrashWindowTitle">Ups! ada kesalahan…</sys:String>
     <sys:String x:Key="LOCCrashDescription" xml:space="preserve">Kesalahan permanen telah terjadi.
 
-Jika butuh bantuan kami, mohon deskripsikan tindakan sebelum kegagalan, lalu kirim informasi diagnostik. Jika online, paket akan di unggah ke server Playnite untuk di analisa.
+Jika butuh bantuan kami, mohon deskripsikan tindakan sebelum kegagalan, lalu kirim informasi diagnostik. Jika online, paket akan di unggah ke server Melcosoft untuk di analisa.
 
 Alternatifnya, anda bisa ketuk tombol 'Lapor Kegagalan' untuk membuat isu GitHub baru dan melaporkan kegagalan secara manual.
 
@@ -51,10 +51,10 @@ Jika kamu ingin membantu kami memperbaiki issue ini, mohon kirim informasi diagn
     <sys:String x:Key="LOCCrashSaveLog">Simpan file log</sys:String>
     <sys:String x:Key="LOCCrashSendDiag">Kirim info diag.</sys:String>
     <sys:String x:Key="LOCCrashReportIssue">Laporkan Masalah</sys:String>
-    <sys:String x:Key="LOCCrashRestartPlaynite">Muat Ulang Playnite</sys:String>
+    <sys:String x:Key="LOCCrashRestartPlaynite">Muat Ulang Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashRestartSafe">Mulai ulang dalam Safe Mode</sys:String>
     <sys:String x:Key="LOCCrashRestartSafeTooltip">Menonaktifkan semua ekstensi pihak ke-3 dan menggunakan tema default.</sys:String>
-    <sys:String x:Key="LOCCrashClosePlaynite">Keluar Playnite</sys:String>
+    <sys:String x:Key="LOCCrashClosePlaynite">Keluar Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashUserActionsDescription">Aksi yang dilakukan sebelum terjadi kesalahan (dalam bahasa Inggris):</sys:String>
     <sys:String x:Key="LOCLibraryManager">Pengelola Pustaka</sys:String>
     <sys:String x:Key="LOCGameRemoveAskTitle">Hapus Game yang dipilih?</sys:String>
@@ -173,7 +173,7 @@ Pilih opsi &quot;tambahkan ke daftar pengecualian&quot; akan mencegah game diimp
     <sys:String x:Key="LOCSpecialThanks">Terima kasih khusus</sys:String>
     <sys:String x:Key="LOCLicenseLabel">Lisensi</sys:String>
     <sys:String x:Key="LOCContributorsLabel">Kontributor</sys:String>
-    <sys:String x:Key="LOCClosingPlaynite">Keluar Playnite…</sys:String>
+    <sys:String x:Key="LOCClosingPlaynite">Keluar Melcosoft…</sys:String>
     <sys:String x:Key="LOCToday">Hari Ini</sys:String>
     <sys:String x:Key="LOCYesterday">Kemarin</sys:String>
     <sys:String x:Key="LOCMonday">Senin</sys:String>
@@ -217,8 +217,8 @@ Mengaktifkan opsi ini akan melewatkan unduhan metadata pada bidang data yang sud
     <sys:String x:Key="LOCMetaNoFieldsSelectedErrorMessage"></sys:String>
     <sys:String x:Key="LOCMetaSourceStore">Situs Resmi</sys:String>
     <sys:String x:Key="LOCMetaSourceIGDB">IGDB</sys:String>
-    <sys:String x:Key="LOCMetaDescriptionFields">Silahkan pilih baris mana yang akan otomatis diisi oleh Playnite dan source mana yang akan digunakan sebagai sumber data.</sys:String>
-    <sys:String x:Key="LOCMetaIgdbContribNotif">Klik logo di atas untuk berkontribusi di igdb.com agar meningkatkan data yang bisa digunakan oleh Playnite.</sys:String>
+    <sys:String x:Key="LOCMetaDescriptionFields">Silahkan pilih baris mana yang akan otomatis diisi oleh Melcosoft dan source mana yang akan digunakan sebagai sumber data.</sys:String>
+    <sys:String x:Key="LOCMetaIgdbContribNotif">Klik logo di atas untuk berkontribusi di igdb.com agar meningkatkan data yang bisa digunakan oleh Melcosoft.</sys:String>
     <!--Progress string-->
     <sys:String x:Key="LOCProgressMetadata">Mendownload metadata...</sys:String>
     <sys:String x:Key="LOCProgressInstalledGames">Mengimport game yang terinstal...</sys:String>
@@ -250,13 +250,18 @@ Mengaktifkan opsi ini akan melewatkan unduhan metadata pada bidang data yang sud
     <sys:String x:Key="LOCMenuAddGameInstalled">Scan otomatis...</sys:String>
     <sys:String x:Key="LOCMenuAddGameEmulated">Game Emulasi…</sys:String>
     <sys:String x:Key="LOCMenuAddWindowsStore">Aplikasi Microsoft Store...</sys:String>
-    <sys:String x:Key="LOCMenuAbout">Tentang Playnite</sys:String>
+    <sys:String x:Key="LOCMenuAbout">Tentang Melcosoft</sys:String>
     <sys:String x:Key="LOCMenuIssues">Kirim Timbal Balik</sys:String>
     <sys:String x:Key="LOCMenuOpenFullscreen">Ganti ke mode Fullscreen</sys:String>
     <sys:String x:Key="LOCMenuLinksTitle">Tautan</sys:String>
     <sys:String x:Key="LOCMenuHelpTitle">Bantuan</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">Dukung lewat Patreon</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport">Dukungan Ko-fi</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft Bantuan</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft Forum</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft Beranda</sys:String>
+
     <sys:String x:Key="LOCUserManual">Panduan pengguna</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">Dokumentasi SDK</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">Restart Sistem</sys:String>
@@ -317,10 +322,10 @@ Mengaktifkan opsi ini akan melewatkan unduhan metadata pada bidang data yang sud
     <sys:String x:Key="LOCSettingsInvalidDBLocation">Lokasi file database invalid, silahkan set path yang benar.</sys:String>
     <sys:String x:Key="LOCSettingsInvalidAccountName">Nama akun tidak boleh kosong</sys:String>
     <sys:String x:Key="LOCSettingsDownloadMetadataOnImport">Download metadata setelah mengimpor game</sys:String>
-    <sys:String x:Key="LOCSettingsStartMinimized">Luncurkan Playnite diperkecil.</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBoot">Luncurkan Playnite ketika menyala.</sys:String>
+    <sys:String x:Key="LOCSettingsStartMinimized">Luncurkan Melcosoft diperkecil.</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBoot">Luncurkan Melcosoft ketika menyala.</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootClosedToTray">Mulai dengan ditutup ke baki</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Gagal menambahkan Playnite ke daftar start up</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Gagal menambahkan Melcosoft ke daftar start up</sys:String>
     <sys:String x:Key="LOCSettingsStartInFullscreen">Luncurkan dalam Mode Layar Penuh</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoading">Muat gambar secara Asinkron</sys:String>
     <sys:String x:Key="LOCSettingsAsyncImageLoadingTooltip">Menambah kehalusan scroll list game. Lebih lambat memuat gambar.</sys:String>
@@ -346,12 +351,12 @@ Mengaktifkan opsi ini akan melewatkan unduhan metadata pada bidang data yang sud
     <sys:String x:Key="LOCSettingsSkinColorFullscreen">Warna Tema Fullscreen</sys:String>
     <sys:String x:Key="LOCSettingsDBLocation">Lokasi Database</sys:String>
     <sys:String x:Key="LOCSettingsLoginStatus">Status login:</sys:String>
-    <sys:String x:Key="LOCSettingsWindowTitle">Setting Playnite</sys:String>
+    <sys:String x:Key="LOCSettingsWindowTitle">Setting Melcosoft</sys:String>
     <sys:String x:Key="LOCSettingsClearWebCache">Bersihkan cache web</sys:String>
     <sys:String x:Key="LOCSettingsClearWebCacheTooltip">Memungkinkan solusi untuk masalah yang berkaitan dengan akun.</sys:String>
     <sys:String x:Key="LOCSettingsShowTray">Tampilkan ikon system tray</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeToTray">Perkecil Playnite ke system tray</sys:String>
-    <sys:String x:Key="LOCSettingsCloseToTray">Sembunyikan Playnite ke bilah sistem ketika jendela aplikasi ditutup</sys:String>
+    <sys:String x:Key="LOCSettingsMinimizeToTray">Perkecil Melcosoft ke system tray</sys:String>
+    <sys:String x:Key="LOCSettingsCloseToTray">Sembunyikan Melcosoft ke bilah sistem ketika jendela aplikasi ditutup</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameStart">Ketika game dimulai:</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameClose">Setelah gim ditutup:</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeUseDaysFormatLabel">Format waktu yang dimainkan untuk menunjukkan jumlah hari yang dimainkan</sys:String>
@@ -363,9 +368,9 @@ Mengaktifkan opsi ini akan melewatkan unduhan metadata pada bidang data yang sud
     <sys:String x:Key="LOCSettingsCreateThemes">Buat tema baru</sys:String>
     <sys:String x:Key="LOCSettingsGetExtensions">Dapatkan ekstensi lain...</sys:String>
     <sys:String x:Key="LOCSettingsCreateExtensions">Buat ekstensi baru</sys:String>
-    <sys:String x:Key="LOCSettingsCreateLocalization">Bantu kami menerjemahkan Playnite</sys:String>
+    <sys:String x:Key="LOCSettingsCreateLocalization">Bantu kami menerjemahkan Melcosoft</sys:String>
     <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">Playnite perlu dijalankan ulang untuk menerapkan pengaturan baru. Mulai ulang sekarang?</sys:String>
-    <sys:String x:Key="LOCSettingsRestartTitle">Mulai Ulang Playnite?</sys:String>
+    <sys:String x:Key="LOCSettingsRestartTitle">Mulai Ulang Melcosoft?</sys:String>
     <sys:String x:Key="LOCSettingsDBPathNotification" xml:space="preserve">Playnite tidak dapat memindahkan file pustaka anda secara otomatis. Anda harus memindahkan/menyalin file secara manual sebelum mengubah lokasi. Jika tidak ada pustaka di lokasi target, pustaka baru akan dibuat.</sys:String>
     <sys:String x:Key="LOCSettingsClosePlaytimeNotif">Waktu bermain tidak akan direkam jika aksi &quot;Tutup&quot; diatur.</sys:String>
     <sys:String x:Key="LOCSettingsFullscreenRows">Jumlah baris</sys:String>
@@ -374,9 +379,9 @@ Mengaktifkan opsi ini akan melewatkan unduhan metadata pada bidang data yang sud
     <sys:String x:Key="LOCSettingsFullscreenBackgroundOnMainScreen">Tampilkan Gambar Background di Layar Utama</sys:String>
     <sys:String x:Key="LOCBackgroundImageScreenOptionTooltip" xml:space="preserve">Tidak berlaku retrospektif untuk game yang sudah ada tanpa mengunduh ulang metadata.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportMode">Impor waktu bermain game di pustaka:</sys:String>
-    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Mengonfigurasi kapan Playnite harus mengimpor waktu bermain yang dilaporkan oleh plugin perpustakaan untuk game di database Playnite. Dukungan dari plugin perpustakaan yang bertanggung jawab menangani game diperlukan untuk dapat menggunakan fitur ini.
+    <sys:String x:Key="LOCSettingsPlaytimeImportModeTooltip" xml:space="preserve">Mengonfigurasi kapan Melcosoft harus mengimpor waktu bermain yang dilaporkan oleh plugin perpustakaan untuk game di database Melcosoft. Dukungan dari plugin perpustakaan yang bertanggung jawab menangani game diperlukan untuk dapat menggunakan fitur ini.
 
-Selalu: Mengimpor waktu bermain untuk game yang baru diimpor dan game yang sudah ada di basis data Playnite.
+Selalu: Mengimpor waktu bermain untuk game yang baru diimpor dan game yang sudah ada di basis data Melcosoft.
 Hanya untuk game yang baru diimpor: Mengimpor waktu bermain hanya untuk game yang baru diimpor.
 Tidak pernah: Tidak pernah mengimpor waktu bermain dalam keadaan apa pun.</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeImportModeAlways">Selalu</sys:String>
@@ -412,7 +417,7 @@ Tidak pernah: Tidak pernah mengimpor waktu bermain dalam keadaan apa pun.</sys:S
     <sys:String x:Key="LOCSettingsTextRenderingMode">Mode render teks</sys:String>
     <sys:String x:Key="LOCSettingsTextRenderingNotice">Metode rendering dan pemformatan teks saat ini tidak digunakan untuk deskripsi game.</sys:String>
     <sys:String x:Key="LOCSettingsImmediateBackgroundDownload">Memuat gambar latar belakang terlebih dahulu</sys:String>
-    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">Jika diaktifkan, Playnite akan mengunduh artwork latar belakang saat mengunduh metadata, menggunakan lebih banyak ruang disk dan membuat artwork tersedia saat offline.
+    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">Jika diaktifkan, Melcosoft akan mengunduh artwork latar belakang saat mengunduh metadata, menggunakan lebih banyak ruang disk dan membuat artwork tersedia saat offline.
 
 Jika dinonaktifkan, artwork latar belakang hanya akan diunduh saat pertama kali dibutuhkan, menggunakan lebih sedikit ruang, tetapi dapat mengakibatkan penundaan sebelum artwork ditampilkan dan beberapa gambar mungkin tidak tersedia saat offline.</sys:String>
     <sys:String x:Key="LOCSettingsAutoCloseLauncherOption">Secara otomatis menutup client pihak ketiga setelah game keluar</sys:String>
@@ -452,11 +457,11 @@ Dapat juga diubah dalam pengaturan aplikasi</sys:String>
     <sys:String x:Key="LOCEmuWizardWindowTitle">Panduan Import Emulator</sys:String>
     <sys:String x:Key="LOCEmuWizardIntro">Wizard ini akan memandu Anda melalui proses mengunduh dan mengimpor emulator konsol dan mengimpor game emulasi.</sys:String>
     <sys:String x:Key="LOCEmuWizardNotice">Ingatlah bahwa Anda selalu dapat menambahkan emulator dan/atau game tambahan di kemudian hari melalui menu utama (di bawah menu &quot;Library&quot; untuk pengaturan Emulator dan menu &quot; Tambah Game&quot; untuk game emulasi).</sys:String>
-    <sys:String x:Key="LOCEmuDownloadDescription">Di bawah ini adalah daftar emulator yang dapat dikenali dan dikonfigurasikan secara otomatis oleh Playnite. Anda dapat mengunduh penginstal emulator dari situs web mereka. Setelah emulator terinstal (secara manual), Anda dapat mengimpornya pada dialog konfigurasi emulator.</sys:String>
-    <sys:String x:Key="LOCEmuWizardEmuImportIntro">Anda dapat mengimpor emulator apa pun yang terinstal di PC Anda dengan mengeklik tombol 'Autodetect Dari Folder...'. Playnite akan mencari folder yang dipilih untuk emulator yang dikenal dan memberikan opsi untuk mengimpornya. Anda dapat menggunakan tombol ini beberapa kali untuk mengimpor emulator dari folder yang berbeda. Emulator akan ditambahkan ke bagian bawah daftar saat ini.</sys:String>
-    <sys:String x:Key="LOCEmuWizardGameImportIntro">Anda dapat mengimpor game dengan mengeklik tombol 'Pindai Folder Menggunakan Emulator'. Memilih emulator yang sesuai akan memberi tahu Playnite jenis file mana yang harus dipindai dan diimpor. Anda dapat menggunakan tombol ini beberapa kali untuk mengimpor game dari folder yang berbeda. Game akan ditambahkan ke bagian bawah daftar saat ini.</sys:String>
+    <sys:String x:Key="LOCEmuDownloadDescription">Di bawah ini adalah daftar emulator yang dapat dikenali dan dikonfigurasikan secara otomatis oleh Melcosoft. Anda dapat mengunduh penginstal emulator dari situs web mereka. Setelah emulator terinstal (secara manual), Anda dapat mengimpornya pada dialog konfigurasi emulator.</sys:String>
+    <sys:String x:Key="LOCEmuWizardEmuImportIntro">Anda dapat mengimpor emulator apa pun yang terinstal di PC Anda dengan mengeklik tombol 'Autodetect Dari Folder...'. Melcosoft akan mencari folder yang dipilih untuk emulator yang dikenal dan memberikan opsi untuk mengimpornya. Anda dapat menggunakan tombol ini beberapa kali untuk mengimpor emulator dari folder yang berbeda. Emulator akan ditambahkan ke bagian bawah daftar saat ini.</sys:String>
+    <sys:String x:Key="LOCEmuWizardGameImportIntro">Anda dapat mengimpor game dengan mengeklik tombol 'Pindai Folder Menggunakan Emulator'. Memilih emulator yang sesuai akan memberi tahu Melcosoft jenis file mana yang harus dipindai dan diimpor. Anda dapat menggunakan tombol ini beberapa kali untuk mengimpor game dari folder yang berbeda. Game akan ditambahkan ke bagian bawah daftar saat ini.</sys:String>
     <sys:String x:Key="LOCEmuWizardNoEmulatorWarning">Tidak ada emulator dipilih untuk diimpor. Anda tidak bisa mengimport game emulasi secara otomatis tanpa memilih emulator terlebih dahulu. Apa anda yakin untuk melanjutkan dan tutup proses impor game?</sys:String>
-    <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning">Tidak ada emulator yang dikonfigurasi di Playnite. Anda tidak dapat mengimpor game tanpa mengonfigurasi emulator terlebih dahulu dan memilih jenis file yang sesuai. Apakah Anda ingin menambahkan beberapa emulator sekarang?</sys:String>
+    <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning">Tidak ada emulator yang dikonfigurasi di Melcosoft. Anda tidak dapat mengimpor game tanpa mengonfigurasi emulator terlebih dahulu dan memilih jenis file yang sesuai. Apakah Anda ingin menambahkan beberapa emulator sekarang?</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonScanGames">Cari folder menggunakan Emulator</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonSelectFiles">Pilih file</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonScanEmulator">Deteksi Automatis dari Berkas...</sys:String>
@@ -465,17 +470,17 @@ Dapat juga diubah dalam pengaturan aplikasi</sys:String>
     <sys:String x:Key="LOCEmuWizardScanningSpecific">Memindai {0}…</sys:String>
     <!--FirstTime Wizard-->
     <sys:String x:Key="LOCFirstWindowTitle">Konfigurasi Awal</sys:String>
-    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">Proses ini akan memandu Anda melalui impor otomatis dan konfigurasi perpustakaan game eksternal. Playnite dapat mengimpor game secara otomatis dari beberapa layanan game, seperti Steam atau GOG.
+    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">Proses ini akan memandu Anda melalui impor otomatis dan konfigurasi perpustakaan game eksternal. Melcosoft dapat mengimpor game secara otomatis dari beberapa layanan game, seperti Steam atau GOG.
 
 Ingatlah bahwa Anda juga dapat menambahkan game kustom atau game emulasi secara manual untuk platform apa pun nanti dari menu utama.</sys:String>
     <sys:String x:Key="LOCFirstExternalTitle">Integrasi Library</sys:String>
-    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">Berikut ini adalah daftar beberapa integrasi perpustakaan yang didukung Playnite. Pilih salah satu yang ingin Anda instal.
+    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">Berikut ini adalah daftar beberapa integrasi perpustakaan yang didukung Melcosoft. Pilih salah satu yang ingin Anda instal.
 
 Integrasi lainnya dapat diinstal nanti dari menu &quot; Add-ons&quot;.</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedTitle">Konfigurasi telah Selesai</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedText" xml:space="preserve">Setelan awal sudah selesai. Ingat bahwa Anda bisa mengubah kembali semua setelan kapan saja di menu 'Setelan'
 
-Kamu juga bisa menambah game lainnya kapanpun dengan mengklik logo Playnite.</sys:String>
+Kamu juga bisa menambah game lainnya kapanpun dengan mengklik logo Melcosoft.</sys:String>
     <sys:String x:Key="LOCFirstPluginDownloadError" xml:space="preserve">Gagal mengunduh satu atau beberapa ekstensi.
 
 Anda dapat mencoba mengunduh ulang integrasi dari menu add-ons setelah wizard pertama kali selesai.</sys:String>
@@ -602,7 +607,7 @@ Harap lampirkan ID berikut ke laporan masalah Anda:</sys:String>
     <sys:String x:Key="LOCSkinApplyError" xml:space="preserve">Gagal menerapkan tema &quot;{0}&quot;, profil warna &quot;{1}&quot;</sys:String>
     <sys:String x:Key="LOCURLFormatError">Tidak bisa membuka link, URL format tidak valid.</sys:String>
     <sys:String x:Key="LOCAppStartupError">Gagal dalam menjalankan aplikasi.</sys:String>
-    <sys:String x:Key="LOCCefSharpInitError" xml:space="preserve">Gagal menginisialisasi komponen tampilan web. Playnite tidak dapat melanjutkan proses startup.
+    <sys:String x:Key="LOCCefSharpInitError" xml:space="preserve">Gagal menginisialisasi komponen tampilan web. Melcosoft tidak dapat melanjutkan proses startup.
 
 Informasi lebih lanjut klik di https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCEmulatorImportNoDefinitionsError">Tidak dapat mengimpor emulator karena file definisi hilang atau rusak.</sys:String>
@@ -621,7 +626,7 @@ Informasi lebih lanjut klik di https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCScanFolder">Pindai Folder...</sys:String>
     <sys:String x:Key="LOCDetectInstalled">Deteksi yang Terinstal</sys:String>
     <sys:String x:Key="LOCBrowse">Telusuri...</sys:String>
-    <sys:String x:Key="LOCOpenPlaynite">Buka Playnite</sys:String>
+    <sys:String x:Key="LOCOpenPlaynite">Buka Melcosoft</sys:String>
     <sys:String x:Key="LOCProfileSettings">Setting Profil</sys:String>
     <sys:String x:Key="LOCEmptyGameNameError">Nama game tidak boleh kosong.</sys:String>
     <sys:String x:Key="LOCEmptyTrackingFolderError">Direktori pelacakan aksi permainan tidak boleh kosong.</sys:String>
@@ -669,7 +674,7 @@ Informasi lebih lanjut klik di https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCNoGamesFound">Tidak ada permainan yang ditemukan untuk kriteria pencarian/filter tertentu</sys:String>
     <sys:String x:Key="LOCNoItemsFound">Item tidak ditemukan</sys:String>
     <sys:String x:Key="LOCBackToDesktopMode">Beralih ke Mode Desktop</sys:String>
-    <sys:String x:Key="LOCExitPlaynite">Keluar dari Playnite</sys:String>
+    <sys:String x:Key="LOCExitPlaynite">Keluar dari Melcosoft</sys:String>
     <sys:String x:Key="LOCLibraries">Koleksi</sys:String>
     <sys:String x:Key="LOCUpdateAll">Perbarui Semua</sys:String>
     <sys:String x:Key="LOCExtensionCreatedBy">Dibuat Oleh:</sys:String>
@@ -722,9 +727,9 @@ Informasi lebih lanjut klik di https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCUpdateNoNewUpdateMessage">Versi baru tidak ditemukan</sys:String>
     <sys:String x:Key="LOCGeneralUpdateFailMessage">Gagal mengunduh dan memasang pembaruan.</sys:String>
     <sys:String x:Key="LOCUpdateProgressCancelAsk">Beberapa tugas latar belakang sedang berlangsung. Apakah Anda ingin membatalkannya dan melanjutkan pembaruan?</sys:String>
-    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">Beberapa tugas latar belakang sedang berlangsung. Apakah Anda ingin membatalkannya dan keluar dari Playnite?</sys:String>
+    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">Beberapa tugas latar belakang sedang berlangsung. Apakah Anda ingin membatalkannya dan keluar dari Melcosoft?</sys:String>
     <sys:String x:Key="LOCBackgroundProgressCancelAskSwitchMode">Beberapa tugas latar belakang sedang berlangsung. Beralih mode akan membatalkan tugas, apakah Anda tetap ingin beralih?</sys:String>
-    <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">Update untuk Playnite tidak tersedia</sys:String>
+    <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">Update untuk Melcosoft tidak tersedia</sys:String>
     <sys:String x:Key="LOCThemeTestReloadList">Muat ulang list tema</sys:String>
     <sys:String x:Key="LOCThemeTestApplySkin">Gunakan tema yang dipilih</sys:String>
     <sys:String x:Key="LOCThemeTestWatchChanges">Saksikan perubahan file</sys:String>
@@ -780,7 +785,7 @@ Informasi lebih lanjut klik di https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCDescriptionSizeBytes">Ukuran instalasi ditunjukkan dalam byte.</sys:String>
     <sys:String x:Key="LOCReleaseDateTooltip">Tanggal rilis harus ditetapkan dalam format 'tahun-bulan-hari'. Nilai Bulan dan Hari dapat dihilangkan.</sys:String>
     <sys:String x:Key="LOCDescriptionScoreValues">Nilai dari 0 sampai 100 atau kosong untuk tidak menilai.</sys:String>
-    <sys:String x:Key="LOCPatreonDevelopMessage">Perkembangan Playnite didukung oleh pelanggan dan anggota Ko-fi berikut:</sys:String>
+    <sys:String x:Key="LOCPatreonDevelopMessage">Perkembangan Melcosoft didukung oleh pelanggan dan anggota Ko-fi berikut:</sys:String>
     <sys:String x:Key="LOCAboutContributorsMessage">Kode, lokalisasi, dan kontribusi lainnya, tanpa urut:</sys:String>
     <sys:String x:Key="LOCCancelMonitoringAskTitle">Batalkan pemantauan permainan?</sys:String>
     <sys:String x:Key="LOCCancelMonitoringSetupAsk">Pemantauan instalasi sedang berjalan. Apakah Anda ingin membatalkan proses dan mengembalikan game ke keadaan sebelumnya?</sys:String>
@@ -826,9 +831,9 @@ Informasi lebih lanjut klik di https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCGeneralExtensionPackageError">Ekstensi tidak dikemas dengan benar.</sys:String>
     <sys:String x:Key="LOCGeneralThemePackageError">Tema tidak dikemas dengan benar.</sys:String>
     <sys:String x:Key="LOCSpecificExtensionLoadError">Ekstensi &quot;{0}&quot; gagal untuk dimuat dengan sempurna.</sys:String>
-    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">Tidak dapat memuat ekstensi &quot;{0}&quot;, versi Playnite saat ini tidak didukung.</sys:String>
+    <sys:String x:Key="LOCSpecificExtensionLoadSDKError">Tidak dapat memuat ekstensi &quot;{0}&quot;, versi Melcosoft saat ini tidak didukung.</sys:String>
     <sys:String x:Key="LOCSpecificThemeLoadError">Tema &quot;{0}&quot; gagal dimuat dengan sempurna</sys:String>
-    <sys:String x:Key="LOCSpecificThemeLoadSDKError">Tidak dapat memuat tema &quot;{0}&quot;, versi Playnite saat ini tidak mendukung.</sys:String>
+    <sys:String x:Key="LOCSpecificThemeLoadSDKError">Tidak dapat memuat tema &quot;{0}&quot;, versi Melcosoft saat ini tidak mendukung.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionLoadError">Ekstensi gagal dimuat dengan sempurna.</sys:String>    
     <sys:String x:Key="LOCGeneralThemeLoadError">Tema gagal dimuat dengan benar.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionInstallApiVersionFails">Tema/Ekstensi menggunakan versi API yang tidak didukung.</sys:String>
@@ -860,7 +865,7 @@ Versi {2}</sys:String>
 
 Versi saat ini: {1}
 Versi terbaru: {2}</sys:String>
-    <sys:String x:Key="LOCUrlNavigationMessage" xml:space="preserve">Anda akan meninggalkan Playnite dan pergi ke halaman web dengan browser defaut anda. Apakah anda ingin melanjutkan?
+    <sys:String x:Key="LOCUrlNavigationMessage" xml:space="preserve">Anda akan meninggalkan Melcosoft dan pergi ke halaman web dengan browser defaut anda. Apakah anda ingin melanjutkan?
 
 {0}</sys:String>
     <sys:String x:Key="LOCGameImageSizeWarning" xml:space="preserve">Gambar yang dipilih mungkin terlalu besar untuk performa yang optimal. Gambar dengan ukuran yang sangat besar dapat memperburuk respons UI dan menambah penggunaan memori.
@@ -877,10 +882,10 @@ Latar belakang: {2} megapiksel</sys:String>
     <sys:String x:Key="LOCLargeMediaWarningTooltip">File gambar yang dipilih mungkin terlalu besar untuk kinerja yang optimal.</sys:String>
     <sys:String x:Key="LOCThemeUninstallQuestion">Apakah anda yakin ingin menghapus tema yang dipilih? Penghapusan instalasi akan menunggu hingga aplikasi dimulai kembali</sys:String>
     <sys:String x:Key="LOCThemeBuiltInUninstallHint">Tema bawaan tidak dapat di-uninstall</sys:String>
-    <sys:String x:Key="LOCThemeUnsupported">Tema ini tidak mendukung Playnite versi ini</sys:String>
+    <sys:String x:Key="LOCThemeUnsupported">Tema ini tidak mendukung Melcosoft versi ini</sys:String>
     <sys:String x:Key="LOCExtensionUninstallQuestion">Apakah anda yakin ingin menghapus ekstensi yang dipilih? Penghapusan instalasi akan menunggu hingga aplikasi dimulai kembali</sys:String>
     <sys:String x:Key="LOCExtensionBuiltInUninstallHint">Ekstensi bawaan tidak dapat di-uninstall</sys:String>
-    <sys:String x:Key="LOCExtensionUnsupported">Ekstensi ini tidak mendukung Playnite versi ini</sys:String>
+    <sys:String x:Key="LOCExtensionUnsupported">Ekstensi ini tidak mendukung Melcosoft versi ini</sys:String>
     <sys:String x:Key="LOCExtensionInstallDir">Folder instalasi:</sys:String>
     <sys:String x:Key="LOCExtensionDataDir">Folder data</sys:String>
     <sys:String x:Key="LOCDiagGenerating">Membuat paket diagnostik...</sys:String>
@@ -910,7 +915,7 @@ Aplikasi harus dimulai ulang untuk menyelesaikan proses. Apakah anda ingin menga
     <sys:String x:Key="LOCCommonLinksForum">Forum</sys:String>
     <sys:String x:Key="LOCCommonLinksNews">Berita</sys:String>
     <sys:String x:Key="LOCCommonLinksStorePage">Laman Toko</sys:String>
-    <sys:String x:Key="LOCFullscreenFirstTimeError">Penyiapan awal belum selesai. Playnite akan mulai ulang ke mode Desktop untuk menyelesaikan prosedur</sys:String>
+    <sys:String x:Key="LOCFullscreenFirstTimeError">Penyiapan awal belum selesai. Melcosoft akan mulai ulang ke mode Desktop untuk menyelesaikan prosedur</sys:String>
     <sys:String x:Key="LOCQuickFilterRecentlyPlayed">Terakhir Dimainkan</sys:String>
     <sys:String x:Key="LOCQuickFilterFavorites">Favorit</sys:String>
     <sys:String x:Key="LOCQuickFilterMostPlayed">Paling sering dimainkan</sys:String>
@@ -934,7 +939,7 @@ Jika anda ingin menginstal atau meng-uninstal integrasi tambahan, gunakan menu &
     <sys:String x:Key="LOCAddonsThemesDesktop">Tema Desktop</sys:String>
     <sys:String x:Key="LOCAddonsThemesFullscren">Tema mode layar penuh</sys:String>
     <sys:String x:Key="LOCAddonsSearching">Mencari…</sys:String>
-    <sys:String x:Key="LOCAddonErrorNotCompatible">Add-on tidak mendukung Playnite versi ini.</sys:String>
+    <sys:String x:Key="LOCAddonErrorNotCompatible">Add-on tidak mendukung Melcosoft versi ini.</sys:String>
     <sys:String x:Key="LOCAddonErrorDownloadFailed">Gagal mendownload paket instalasi add-on.</sys:String>
     <sys:String x:Key="LOCAddonErrorManifestDownloadError">Gagal mendownload manifest penginstalan add-on.</sys:String>
     <sys:String x:Key="LOCAddonChangesRestart">Mulai ulang aplikasi diperlukan untuk menerapkan perubahan yang tertunda.</sys:String>
@@ -1005,16 +1010,16 @@ Jika anda ingin menginstal atau meng-uninstal integrasi tambahan, gunakan menu &
     <sys:String x:Key="LOCConfigure">Konfigurasi</sys:String>
     <sys:String x:Key="LOCFilterPresetSave">Simpan Preset</sys:String>
     <sys:String x:Key="LOCSettingsMinimizeAfterStartingGame">Minimalkan setelah memulai permainan</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeAfterStartingGameDescription" xml:space="preserve">Minimalkan Playnite setelah permainan dimulai.
+    <sys:String x:Key="LOCSettingsMinimizeAfterStartingGameDescription" xml:space="preserve">Minimalkan Melcosoft setelah permainan dimulai.
 
 Menonaktifkan ini dapat menyebabkan masalah dengan permainan yang tidak mendapatkan fokus input saat startup!</sys:String>
     <sys:String x:Key="LOCSettingsFontSize">Ukuran font</sys:String>
     <sys:String x:Key="LOCSettingsFontSizeSmall">Ukuran Font Kecil</sys:String>
     <sys:String x:Key="LOCSettingsControllerApi"></sys:String>
     <sys:String x:Key="LOCSettingsXInputProcessing">Dukungan kontroler game</sys:String>
-    <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">Jika dinonaktifkan, Playnite tidak akan menerima input kontroler game apa pun.
+    <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">Jika dinonaktifkan, Melcosoft tidak akan menerima input kontroler game apa pun.
         
-Nonaktifkan jika Anda menggunakan alat yang menerjemahkan input pengontrol game ke input mouse/keyboard dan Anda mendapatkan input ganda di Playnite.</sys:String>
+Nonaktifkan jika Anda menggunakan alat yang menerjemahkan input pengontrol game ke input mouse/keyboard dan Anda mendapatkan input ganda di Melcosoft.</sys:String>
     <sys:String x:Key="LOCSettingsShowItemsMainMenuHeader">Tampilkan item pada menu utama:</sys:String>
     <sys:String x:Key="LOCSettingsSwapMainViewXAButtons">Balik binding tombol tampilan utama X/A</sys:String>
     <sys:String x:Key="LOCSettingsSwapMainViewXAButtonsDescriptions">Tukar binding tombol untuk memulai permainan dan menampilkan halaman detail permainan pada tampilan utama</sys:String>
@@ -1022,7 +1027,7 @@ Nonaktifkan jika Anda menggunakan alat yang menerjemahkan input pengontrol game 
     <sys:String x:Key="LOCSettingsSwapConfirmCancelButtonsDescriptions">Balik binding tombol A/B untuk konfirmasi dan pembatalan</sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnly">Kontroler utama saja</sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnlyDescription">Hanya menerima input dari kontroler utama bila diaktifkan.</sys:String>
-    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">Tombol Guide memfokuskan Playnite</sys:String>
+    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">Tombol Guide memfokuskan Melcosoft</sys:String>
     <sys:String x:Key="LOCSettingsInterfaceVolume">Volume antarmuka</sys:String>
     <sys:String x:Key="LOCSettingsMusiVolume">Volume latar belakang</sys:String>
     <sys:String x:Key="LOCSettingsMuteBackground">Bisukan saat di latar belakang</sys:String>
@@ -1054,7 +1059,7 @@ Kualitas yang lebih baik, kecepatan menengah, penggunaan memori rendah</sys:Stri
     <sys:String x:Key="LOCSelectFileTooltip">Pilih file…</sys:String>
     <sys:String x:Key="LOCSelectDirectoryTooltip">Pilih folder…</sys:String>
     <sys:String x:Key="LOCStartupScript">Skrip startup</sys:String>
-    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">Harap diperhatikan bahwa ekstensi dan tema dapat sangat memengaruhi kinerja, stabilitas, dan keamanan Playnite.
+    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">Harap diperhatikan bahwa ekstensi dan tema dapat sangat memengaruhi kinerja, stabilitas, dan keamanan Melcosoft.
     
 Jika Anda mulai mengalami masalah setelah menginstal tema atau ekstensi, coba nonaktifkan/hapus instalannya terlebih dahulu untuk mengetahui penyebab masalahnya.</sys:String>
     <sys:String x:Key="LOCGameActionSelectOnStart">Pilih saat startup</sys:String>
@@ -1095,7 +1100,7 @@ Jika Anda mulai mengalami masalah setelah menginstal tema atau ekstensi, coba no
     <sys:String x:Key="LOCEmuSaveScanConfig">Simpan sebagai konfigurasi pemindaian otomatis</sys:String>
     <sys:String x:Key="LOCEmuSaveScanConfigTooltip">Menyimpan konfigurasi untuk digunakan nanti selama pembaruan pustaka. Konfigurasi yang disimpan dapat diatur melalui menu “Konfigurasi Emulator”.</sys:String>
     <sys:String x:Key="LOCEmuImportWithRelativePaths">Impor menggunakan jalur relatif</sys:String>
-    <sys:String x:Key="LOCEmuImportWithRelativePathsTooltip">Jika memungkinkan impor file game menggunakan jalur relatif ke folder instalasi Playnite atau folder instalasi emulator.</sys:String>
+    <sys:String x:Key="LOCEmuImportWithRelativePathsTooltip">Jika memungkinkan impor file game menggunakan jalur relatif ke folder instalasi Melcosoft atau folder instalasi emulator.</sys:String>
     <sys:String x:Key="LOCEmuImportScanSubfolders">Pindai subfolder</sys:String>
     <sys:String x:Key="LOCEmuImportScanInsideArchives">Pindai di dalam arsip</sys:String>
     <sys:String x:Key="LOCEmuMergeRelatedFiles">Gabungkan file terkait</sys:String>
@@ -1115,15 +1120,15 @@ Jika Anda mulai mengalami masalah setelah menginstal tema atau ekstensi, coba no
     <sys:String x:Key="LOCSortingNameAutofillButton">Isi Nama Pengurutan untuk game yang tidak memiliki nama</sys:String>
     <sys:String x:Key="LOCSettingsSortingLabel">Penyortiran</sys:String>
     <sys:String x:Key="LOCSortingNameAutofillProgress">Mengisi data Nama Pengurutan...</sys:String>
-    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">Layanan Nahimic telah terdeteksi berjalan di sistem Anda. Layanan ini diketahui menyebabkan masalah rendering pada Playnite (dan aplikasi lainnya).
+    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">Layanan Nahimic telah terdeteksi berjalan di sistem Anda. Layanan ini diketahui menyebabkan masalah rendering pada Melcosoft (dan aplikasi lainnya).
 
-Jika Anda mengalami kerusakan grafis atau masalah rendering lainnya di Playnite, kami sarankan untuk menonaktifkan atau menghapus layanan Nahimic sepenuhnya.
+Jika Anda mengalami kerusakan grafis atau masalah rendering lainnya di Melcosoft, kami sarankan untuk menonaktifkan atau menghapus layanan Nahimic sepenuhnya.
 
 Informasi lebih lanjut di https://playnite.link/nahimicsucks</sys:String>
-    <sys:String x:Key="LOCElevatedProcessWarning" xml:space="preserve">Playnite berjalan dengan akses yang lebih tinggi (sebagai administrator). Hal ini tidak disarankan karena memberikan akses yang lebih tinggi ke semua ekstensi yang terpasang dan semua game/aplikasi yang dimulai dari Playnite!
+    <sys:String x:Key="LOCElevatedProcessWarning" xml:space="preserve">Playnite berjalan dengan akses yang lebih tinggi (sebagai administrator). Hal ini tidak disarankan karena memberikan akses yang lebih tinggi ke semua ekstensi yang terpasang dan semua game/aplikasi yang dimulai dari Melcosoft!
 
 Informasi lebih lanjut di https://playnite.link/adminfaq</sys:String>
-    <sys:String x:Key="LOCElevatedProcessWarningShowOption">Tampilkan peringatan jika Playnite berjalan dengan akses tingkat tinggi</sys:String>
+    <sys:String x:Key="LOCElevatedProcessWarningShowOption">Tampilkan peringatan jika Melcosoft berjalan dengan akses tingkat tinggi</sys:String>
     <sys:String x:Key="LOCInstallSizeScanUseSizeOnDiskOption">Dapatkan ukuran aktual pada penyimpanan saat menghitung ukuran permainan</sys:String>
     <sys:String x:Key="LOCInstallSizeScanUseSizeOnDiskOptionTooltip" xml:space="preserve">Jika diaktifkan, pemindaian akan lebih lambat dan akan mendapatkan ukuran sebenarnya yang digunakan file dalam penyimpanan.
 Jika dinonaktifkan, pemindaian akan lebih cepat dan akan menggunakan ukuran file itu sendiri.</sys:String>
@@ -1138,7 +1143,7 @@ Dukungan hanya untuk: Google Drive, DropBox, OneDrive</sys:String>
     <sys:String x:Key="LOCEmuUseSimplifiedOnlineFileScanTooltip">File akan diimpor tetapi menggunakan metode yang kurang akurat sehingga tidak memerlukan konten file untuk diunduh dan ditampilkan secara lokal.</sys:String>
     <sys:String x:Key="LOCMetadatSetAllFieldsToValue">Terapkan ke semua</sys:String>
     <sys:String x:Key="LOCOverrideInstallState">Timpa status instalasi</sys:String>
-    <sys:String x:Key="LOCOverrideInstallStateTooltip" xml:space="preserve">Ketika diatur, Playnite akan mengabaikan status instalasi (termasuk direktori instalasi) yang ditetapkan oleh plugin integrasi yang mengimpor permainan ini.
+    <sys:String x:Key="LOCOverrideInstallStateTooltip" xml:space="preserve">Ketika diatur, Melcosoft akan mengabaikan status instalasi (termasuk direktori instalasi) yang ditetapkan oleh plugin integrasi yang mengimpor permainan ini.
         
 Opsi ini mungkin tidak sepenuhnya berfungsi dengan plugin yang menggunakan metode impor permainan tertentu kecuali jika plugin tersebut juga mempertimbangkan opsi pengabaian ini.</sys:String>
     <sys:String x:Key="LOCOptionOnlyManually">Hanya secara manual</sys:String>
@@ -1185,7 +1190,7 @@ Shift-ENTER: membuka menu item</sys:String>
     <sys:String x:Key="LOCSearchSettingsDefaultKeyword">Kata kunci bawaan</sys:String>
     <sys:String x:Key="LOCSearchSettingsCustomKeyword">Kata kunci kustom</sys:String>
     <sys:String x:Key="LOCSearchSettingsSystemWideShortcut">Pintasan di seluruh sistem</sys:String>
-    <sys:String x:Key="LOCSearchTitle">Pencarian Playnite</sys:String>
+    <sys:String x:Key="LOCSearchTitle">Pencarian Melcosoft</sys:String>
     <sys:String x:Key="LOCExtensionSettingsMenu">Pengaturan Ekstensi</sys:String>
     <sys:String x:Key="LOCExclusions">Pengecualian</sys:String>
     <sys:String x:Key="LOCEmuScannerExcludedFiles">File yang dikecualikan relatif terhadap folder untuk pemindaian</sys:String>
@@ -1254,9 +1259,9 @@ Format tanggal yang ditentukan akan digunakan untuk semua tanggal lainnya.</sys:
     <sys:String x:Key="LOCGameMenu">Menu Game</sys:String>
     <sys:String x:Key="LOCProgramFolder">Folder program</sys:String>
     <sys:String x:Key="LOCUserDataFolder">Direktori data pengguna</sys:String>
-    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">Kerusakan file perpustakaan telah terdeteksi, Playnite sekarang akan ditutup.
+    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">Kerusakan file perpustakaan telah terdeteksi, Melcosoft sekarang akan ditutup.
     
-Buka masalah baru di halaman GitHub Playnite dengan permintaan untuk memperbaiki kerusakan pada file Anda.</sys:String>
+Buka masalah baru di halaman GitHub Melcosoft dengan permintaan untuk memperbaiki kerusakan pada file Anda.</sys:String>
     <sys:String x:Key="LOCUnsavedChangesAskMessage">Apakah Anda ingin menyimpan perubahan yang Anda buat?</sys:String>
     <sys:String x:Key="LOCPortableInstallation">Pemasangan portabel</sys:String>
     <sys:String x:Key="LOCNoControllersDetected">Tidak ada kontroler yang terdeteksi</sys:String>

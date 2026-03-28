@@ -17,7 +17,7 @@
     <sys:String x:Key="LOCAboutSourceLink">Lähdekoodi GitHubissa</sys:String>
     <sys:String x:Key="LOCAboutCreateDiagButton">Luo diag. paketti</sys:String>
     <sys:String x:Key="LOCAboutSendDiagButton">Lähetä diag. tiedot</sys:String>
-    <sys:String x:Key="LOCAboutWindowTitle">Tietoja Playnitesta</sys:String>
+    <sys:String x:Key="LOCAboutWindowTitle">Tietoja Melcosoftsta</sys:String>
     <sys:String x:Key="LOCAboutAuthor">Luonut Josef Němec</sys:String>
     <sys:String x:Key="LOCCategoryWindowTitle">Valitse kategoria</sys:String>
     <sys:String x:Key="LOCCategorySetButton">Aseta kategoriat</sys:String>
@@ -31,7 +31,7 @@ Määrittelemätön - Ei muutoksia (kun muokataan useita pelejä)</sys:String>
     <sys:String x:Key="LOCCrashDescription" xml:space="preserve">Tapahtui peruuttamaton virhe.
 
 Jos haluat auttaa meitä korjaamaan tämän ongelman, kirjoita lyhyt kuvaus siitä, mitä teit ennen virheen tapahtumista ja lähetä
-diagnostiikkatiedot. Jos olet yhdistettynä verkkoon, paketti lähetetään Playnite-palvelimelle tutkimusta varten.
+diagnostiikkatiedot. Jos olet yhdistettynä verkkoon, paketti lähetetään Melcosoft-palvelimelle tutkimusta varten.
 
 Vaihtoehtoisesti voit painaa &quot;Ilmoita ohjelman kaatumisesta&quot; -nappia ja luoda GitHubiin uuden korjausehdotuksen ja raportoida virheen suoraan sinne.
 
@@ -50,10 +50,10 @@ Jos haluat auttaa meitä korjaamaan tämän ongelman, ole hyvä ja lähetä diag
     <sys:String x:Key="LOCCrashSaveLog">Tallenna lokitiedosto</sys:String>
     <sys:String x:Key="LOCCrashSendDiag">Lähetä diagnostiikkatiedot</sys:String>
     <sys:String x:Key="LOCCrashReportIssue">Ilmoita ohjelman kaatumisesta</sys:String>
-    <sys:String x:Key="LOCCrashRestartPlaynite">Uudelleenkäynnistä Playnite</sys:String>
+    <sys:String x:Key="LOCCrashRestartPlaynite">Uudelleenkäynnistä Melcosoft</sys:String>
     <sys:String x:Key="LOCCrashRestartSafe">Käynnistä uudelleen vikasietotilassa</sys:String>
     <sys:String x:Key="LOCCrashRestartSafeTooltip">Poistetaan kaikki kolmannen osapuolen laajennukset käytöstä ja käytetään oletusteemaa.</sys:String>
-    <sys:String x:Key="LOCCrashClosePlaynite">Poistu Playnitesta</sys:String>
+    <sys:String x:Key="LOCCrashClosePlaynite">Poistu Melcosoftsta</sys:String>
     <sys:String x:Key="LOCCrashUserActionsDescription">Mitä tein ennen kuin ohjelma kaatui (Englanniksi):</sys:String>
     <sys:String x:Key="LOCLibraryManager">Kirjaston hallinta</sys:String>
     <sys:String x:Key="LOCGameRemoveAskTitle">Poista peli(t)?</sys:String>
@@ -215,8 +215,8 @@ Jos valitset &quot;lisää ohituslistalle&quot; -valinnan näitä pelejä ei tuo
     <sys:String x:Key="LOCMetaNoFieldsSelectedErrorMessage"></sys:String>
     <sys:String x:Key="LOCMetaSourceStore">Virallinen kauppa</sys:String>
     <sys:String x:Key="LOCMetaSourceIGDB">IGDB</sys:String>
-    <sys:String x:Key="LOCMetaDescriptionFields">Valitse kentät jotka Playniten tulisi automaattisesti täyttää ja mitä lähteitä datan hakemiseen tulisi käyttää.</sys:String>
-    <sys:String x:Key="LOCMetaIgdbContribNotif">Parantaaksesi Playniten käyttämää dataa, harkitse yllä olevan logon klikkaamista ja osallistumista igdb.com-tietokannan päivittämiseen.</sys:String>
+    <sys:String x:Key="LOCMetaDescriptionFields">Valitse kentät jotka Melcosoftn tulisi automaattisesti täyttää ja mitä lähteitä datan hakemiseen tulisi käyttää.</sys:String>
+    <sys:String x:Key="LOCMetaIgdbContribNotif">Parantaaksesi Melcosoftn käyttämää dataa, harkitse yllä olevan logon klikkaamista ja osallistumista igdb.com-tietokannan päivittämiseen.</sys:String>
     <!--Progress string-->
     <sys:String x:Key="LOCProgressMetadata">Ladataan metadataa…</sys:String>
     <sys:String x:Key="LOCProgressInstalledGames">Tuodaan asennettuja pelejä…</sys:String>
@@ -247,13 +247,18 @@ Jos valitset &quot;lisää ohituslistalle&quot; -valinnan näitä pelejä ei tuo
     <sys:String x:Key="LOCMenuAddGameInstalled">Etsi automaattisesti…</sys:String>
     <sys:String x:Key="LOCMenuAddGameEmulated">Emuloitu peli…</sys:String>
     <sys:String x:Key="LOCMenuAddWindowsStore">Microsoft Storen sovellus</sys:String>
-    <sys:String x:Key="LOCMenuAbout">Tietoja Playnitesta</sys:String>
+    <sys:String x:Key="LOCMenuAbout">Tietoja Melcosoftsta</sys:String>
     <sys:String x:Key="LOCMenuIssues">Lähetä palautetta</sys:String>
     <sys:String x:Key="LOCMenuOpenFullscreen">Vaihda televisiotilaan</sys:String>
     <sys:String x:Key="LOCMenuLinksTitle">Linkit</sys:String>
     <sys:String x:Key="LOCMenuHelpTitle">Ohjeet</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">Tue Patreonissa</sys:String>
     <sys:String x:Key="LOCMenuKofiSupport"></sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft Ohje</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft Foorumi</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft Kotisivu</sys:String>
+
     <sys:String x:Key="LOCUserManual"></sys:String>
     <sys:String x:Key="LOCSDKDocumentation">SDK-dokumentaatio</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">Käynnistä järjestelmä uudelleen</sys:String>
@@ -314,8 +319,8 @@ Jos valitset &quot;lisää ohituslistalle&quot; -valinnan näitä pelejä ei tuo
     <sys:String x:Key="LOCSettingsInvalidDBLocation">Virheellinen tietokannan sijainti, oikea polku vaaditaan.</sys:String>
     <sys:String x:Key="LOCSettingsInvalidAccountName">Tunnuksen nimi ei voi olla tyhjä.</sys:String>
     <sys:String x:Key="LOCSettingsDownloadMetadataOnImport">Lataa metadata pelien tuonnin jälkeen</sys:String>
-    <sys:String x:Key="LOCSettingsStartMinimized">Käynnistä Playnite pienennettynä</sys:String>
-    <sys:String x:Key="LOCSettingsStartOnBoot">Käynnistä Playnite kun tietokone käynnistyy</sys:String>
+    <sys:String x:Key="LOCSettingsStartMinimized">Käynnistä Melcosoft pienennettynä</sys:String>
+    <sys:String x:Key="LOCSettingsStartOnBoot">Käynnistä Melcosoft kun tietokone käynnistyy</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootClosedToTray">Aloita ilmoitusalueelle suljettuna</sys:String>
     <sys:String x:Key="LOCSettingsStartOnBootRegistrationError">Playniten asettaminen koneen käynnistykseen epäonnistui.</sys:String>
     <sys:String x:Key="LOCSettingsStartInFullscreen">Käynnistä kokoruututilassa</sys:String>
@@ -347,8 +352,8 @@ Jos valitset &quot;lisää ohituslistalle&quot; -valinnan näitä pelejä ei tuo
     <sys:String x:Key="LOCSettingsClearWebCache">Tyhjennä välimuisti</sys:String>
     <sys:String x:Key="LOCSettingsClearWebCacheTooltip">Saattaa ratkaista ongelmia tunnusten linkittämisessä.</sys:String>
     <sys:String x:Key="LOCSettingsShowTray">Näytä järjestelmäkuvake</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeToTray">Pienennä Playnite ilmoitusalueelle</sys:String>
-    <sys:String x:Key="LOCSettingsCloseToTray">Pienennä Playnite ilmoitusalueelle kun sovellusikkuna on suljettu</sys:String>
+    <sys:String x:Key="LOCSettingsMinimizeToTray">Pienennä Melcosoft ilmoitusalueelle</sys:String>
+    <sys:String x:Key="LOCSettingsCloseToTray">Pienennä Melcosoft ilmoitusalueelle kun sovellusikkuna on suljettu</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameStart">Kun peli käynnistyy:</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameClose">Kun peli sulkeutuu:</sys:String>
     <sys:String x:Key="LOCSettingsPlaytimeUseDaysFormatLabel"></sys:String>
@@ -360,14 +365,14 @@ Jos valitset &quot;lisää ohituslistalle&quot; -valinnan näitä pelejä ei tuo
     <sys:String x:Key="LOCSettingsCreateThemes">Luo uusi teema</sys:String>
     <sys:String x:Key="LOCSettingsGetExtensions">Hanki lisää laajennuksia</sys:String>
     <sys:String x:Key="LOCSettingsCreateExtensions">Luo uusi laajennus</sys:String>
-    <sys:String x:Key="LOCSettingsCreateLocalization">Auta meitä kääntämään Playnite muille kielille</sys:String>
+    <sys:String x:Key="LOCSettingsCreateLocalization">Auta meitä kääntämään Melcosoft muille kielille</sys:String>
     <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">Playnite pitää käynnistää uudelleen, jotta uudet asetukset tulevat voimaan. Käynnistä uudelleen nyt?
 
 Uudelleenkäynnistys peruuttaa kaikki käynnissä olevat aktiiviset tehtävät (lataukset).</sys:String>
-    <sys:String x:Key="LOCSettingsRestartTitle">Käynnistä Playnite uudelleen?</sys:String>
+    <sys:String x:Key="LOCSettingsRestartTitle">Käynnistä Melcosoft uudelleen?</sys:String>
     <sys:String x:Key="LOCSettingsDBPathNotification" xml:space="preserve">Playnite ei voi siirtää kirjaston tiedostoja automaattisesti. Sinun pitää itse siirtää tai kopioida tiedostot ennen sijainnin vaihtamista. Jos kohdehakemistossa ei ole kirjastoa, sinne luodaan uusi kirjasto.
 
-Tietokannan uusi sijainti ei tule käyttöön ennen kuin Playnite on käynnistetty uudelleen. </sys:String>
+Tietokannan uusi sijainti ei tule käyttöön ennen kuin Melcosoft on käynnistetty uudelleen. </sys:String>
     <sys:String x:Key="LOCSettingsClosePlaytimeNotif">Peliaikaa ei kirjata jos &quot;Sulje&quot;-toiminto on asetettu.</sys:String>
     <sys:String x:Key="LOCSettingsFullscreenRows">Rivien määrä</sys:String>
     <sys:String x:Key="LOCSettingsFullscreenColumns">Sarakkeiden määrä</sys:String>
@@ -409,7 +414,7 @@ Tietokannan uusi sijainti ei tule käyttöön ennen kuin Playnite on käynnistet
     <sys:String x:Key="LOCSettingsTextRenderingMode">Tekstin esitystila</sys:String>
     <sys:String x:Key="LOCSettingsTextRenderingNotice">Tekstin esitys- ja muotoilutapoja ei tällä hetkellä käytetä pelien kuvausteksteihin.</sys:String>
     <sys:String x:Key="LOCSettingsImmediateBackgroundDownload">Esilataa taustakuvat</sys:String>
-    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">Jos käytössä, Playnite lataa taustakuvat metatietoja ladatessaan, mikä vie enemmän levytilaa mutta kuvat voidaan näyttää myös offline-tilassa.
+    <sys:String x:Key="LOCSettingsImmediateBackgroundDownloadTooltip" xml:space="preserve">Jos käytössä, Melcosoft lataa taustakuvat metatietoja ladatessaan, mikä vie enemmän levytilaa mutta kuvat voidaan näyttää myös offline-tilassa.
 
 Jos ei käytössä, taustakuvat ladataan vain kun niitä ensimmäisen kerran tarvitaan, mikä vie vähemmän levytilaa, mutta taustakuvat saatetaan näyttää viiveellä eikä kaikkia kuvia ole välttämättä saatavilla offline-tilassa.</sys:String>
     <sys:String x:Key="LOCSettingsAutoCloseLauncherOption">Sulje automaattisesti kolmannen osapuolen sovellukset pelin sammuttua</sys:String>
@@ -448,11 +453,11 @@ Voidaan muuttaa myös sovelluksen asetuksista.</sys:String>
     <sys:String x:Key="LOCEmuWizardIntro">Tämä ohjattu toiminto opastaa sinua konsoliemulaattorien lataamisessa ja tuomisessa sekä emuloitujen pelien tuomisessa.</sys:String>
     <sys:String x:Key="LOCEmuWizardNotice">Pidä mielessä, että voit aina lisätä emulaattoreita ja/tai pelejä jälkeenpäin päävalikon kautta 
 (Kirjasto valikkon alta Emulaattori-asetuksista sekä &quot;Lisää peli&quot; valikosta emulaattoripelejä).</sys:String>
-    <sys:String x:Key="LOCEmuDownloadDescription">Alla on lista emulaattoreista, jotka Playnite voi tunnistaa ja konfiguroida automaattisesti. Voit ladata ja asentaa ne vierailemalla niiden verkkosivuilla. Kun olet asentanut emulaattorit, siirry seuraavaan ruutuun tuodaksesi ne Playniteen. Voit myös konfiguroida ja tuoda minkä tahansa emulaattorin myöhemmin konfiguraatiovalikon kautta.</sys:String>
-    <sys:String x:Key="LOCEmuWizardEmuImportIntro">Voit tuoda minkä tahansa tietokoneellesi asennetun emulaattorin painamalla &quot;Tunnista automaattisesti kansiosta…&quot; -nappia. Playnite etsii valitusta kansiosta tuntemiaan emulaattoreita ja tarjoaa mahdollisuuden tuoda ne. Voit tuoda useista kansioista käyttämällä em. nappia useamman kerran. Emulaattorit lisätään listan loppuun.</sys:String>
-    <sys:String x:Key="LOCEmuWizardGameImportIntro">Voit tuoda pelejä painamalla &quot;Skannaa hakemisto käyttäen emulaattoria&quot; -nappia. Valitsemalla sopivan emulaattorin Playnite tietää minkä tyyppisiä tiedostoja sen pitää skannata ja tuoda. Voit tuoda useista kansiosta käyttämällä em. nappia useamman kerran. Pelit lisätään listan loppuun.</sys:String>
+    <sys:String x:Key="LOCEmuDownloadDescription">Alla on lista emulaattoreista, jotka Melcosoft voi tunnistaa ja konfiguroida automaattisesti. Voit ladata ja asentaa ne vierailemalla niiden verkkosivuilla. Kun olet asentanut emulaattorit, siirry seuraavaan ruutuun tuodaksesi ne Melcosoften. Voit myös konfiguroida ja tuoda minkä tahansa emulaattorin myöhemmin konfiguraatiovalikon kautta.</sys:String>
+    <sys:String x:Key="LOCEmuWizardEmuImportIntro">Voit tuoda minkä tahansa tietokoneellesi asennetun emulaattorin painamalla &quot;Tunnista automaattisesti kansiosta…&quot; -nappia. Melcosoft etsii valitusta kansiosta tuntemiaan emulaattoreita ja tarjoaa mahdollisuuden tuoda ne. Voit tuoda useista kansioista käyttämällä em. nappia useamman kerran. Emulaattorit lisätään listan loppuun.</sys:String>
+    <sys:String x:Key="LOCEmuWizardGameImportIntro">Voit tuoda pelejä painamalla &quot;Skannaa hakemisto käyttäen emulaattoria&quot; -nappia. Valitsemalla sopivan emulaattorin Melcosoft tietää minkä tyyppisiä tiedostoja sen pitää skannata ja tuoda. Voit tuoda useista kansiosta käyttämällä em. nappia useamman kerran. Pelit lisätään listan loppuun.</sys:String>
     <sys:String x:Key="LOCEmuWizardNoEmulatorWarning">Emulaattoreita ei ole valittu tuontia varten. Et voi automaattisesti tuoda emuloituja pelejä ilman että määrität emulaattorit ensin. Haluatko varmasti jatkaa ja lopettaa tuontiprosessin?</sys:String>
-    <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning">Emulaattoreita ei ole määritetty Playnitessa. Et voi tuoda pelejä ilman että määrität emulaattorit ensin ja valitset sopivat tiedostotyypit. Haluatko lisätä joitakin emulaattoreita nyt?</sys:String>
+    <sys:String x:Key="LOCEmuWizardNoEmulatorForGamesWarning">Emulaattoreita ei ole määritetty Melcosoftssa. Et voi tuoda pelejä ilman että määrität emulaattorit ensin ja valitset sopivat tiedostotyypit. Haluatko lisätä joitakin emulaattoreita nyt?</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonScanGames">Skannaa hakemisto käyttäen emulaattoria</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonSelectFiles">Valitse tiedostot</sys:String>
     <sys:String x:Key="LOCEmuWizardButtonScanEmulator">Tunnista automaattisesti kansiosta…</sys:String>
@@ -461,16 +466,16 @@ Voidaan muuttaa myös sovelluksen asetuksista.</sys:String>
     <sys:String x:Key="LOCEmuWizardScanningSpecific">Skannataan {0}</sys:String>
     <!--FirstTime Wizard-->
     <sys:String x:Key="LOCFirstWindowTitle">Ensimmäisen käynnistyksen määritys</sys:String>
-    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">Tämä ohjattu toiminto opastaa sinua ulkopuolisten pelikirjastojen automaattisessa tuonnissa sekä määrittämisessä. Playnite voi automaattisesti tuoda pelejä useista pelipalveluista, kuten Steam tai GOG, sekä pitää kirjastosi ajan tasalla päivittämällä sen automaattisesti sovelluksen käynnistyksen yhteydessä.
+    <sys:String x:Key="LOCFirstIntro" xml:space="preserve">Tämä ohjattu toiminto opastaa sinua ulkopuolisten pelikirjastojen automaattisessa tuonnissa sekä määrittämisessä. Melcosoft voi automaattisesti tuoda pelejä useista pelipalveluista, kuten Steam tai GOG, sekä pitää kirjastosi ajan tasalla päivittämällä sen automaattisesti sovelluksen käynnistyksen yhteydessä.
 
 Muista, että voit aina manuaalisesti lisätä minkä tahansa pelin mille tahansa alustalle klikkaamalla päävalikon &quot;Playnite&quot;-nappia.
     </sys:String>
     <sys:String x:Key="LOCFirstExternalTitle">Kirjastointegrointi</sys:String>
-    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">Tuo pelejä automaattisesti oheisista palveluista. Myöhemmät muutokset peleihin (asennuksen tila) päivittyvät automaattisesti Playniten käynnistyessä tai manuaalisesti aloittaen. Valitut asetukset vaikuttavat ensimmäiseen ja kaikkiin myöhempiin tuonteihin.</sys:String>
+    <sys:String x:Key="LOCFirstImportIntroduction" xml:space="preserve">Tuo pelejä automaattisesti oheisista palveluista. Myöhemmät muutokset peleihin (asennuksen tila) päivittyvät automaattisesti Melcosoftn käynnistyessä tai manuaalisesti aloittaen. Valitut asetukset vaikuttavat ensimmäiseen ja kaikkiin myöhempiin tuonteihin.</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedTitle">Määritys suoritettu</sys:String>
     <sys:String x:Key="LOCFirstConfigFinishedText" xml:space="preserve">Esiasennus on nyt valmis. Muista, että myöhemmin voit vaihtaa kaikkia asetuksia 'Asetukset' valikosta.
 
-Voit myöhemmin myös lisätä minkä tahansa pelin painamalla Playnite-logoa.</sys:String>
+Voit myöhemmin myös lisätä minkä tahansa pelin painamalla Melcosoft-logoa.</sys:String>
     <sys:String x:Key="LOCFirstPluginDownloadError" xml:space="preserve"></sys:String>
     <sys:String x:Key="LOCFirstDownloadingAddon">Ladataan {0} integraatio</sys:String>
     <sys:String x:Key="LOCDefaultAddonListDownload"></sys:String>
@@ -614,7 +619,7 @@ Lisää oheinen tunniste raporttiisi:</sys:String>
     <sys:String x:Key="LOCScanFolder">Skannaa hakemisto…</sys:String>
     <sys:String x:Key="LOCDetectInstalled">Havaitse asennetut</sys:String>
     <sys:String x:Key="LOCBrowse">Selaa…</sys:String>
-    <sys:String x:Key="LOCOpenPlaynite">Avaa Playnite</sys:String>
+    <sys:String x:Key="LOCOpenPlaynite">Avaa Melcosoft</sys:String>
     <sys:String x:Key="LOCProfileSettings">Profiilin asetukset</sys:String>
     <sys:String x:Key="LOCEmptyGameNameError">Pelin nimi ei voi olla tyhjä.</sys:String>
     <sys:String x:Key="LOCEmptyTrackingFolderError"></sys:String>
@@ -662,7 +667,7 @@ Lisää oheinen tunniste raporttiisi:</sys:String>
     <sys:String x:Key="LOCNoGamesFound">Hakua/suodatinta vastaavia pelejä ei löytynyt</sys:String>
     <sys:String x:Key="LOCNoItemsFound">Nimikkeitä ei löytynyt</sys:String>
     <sys:String x:Key="LOCBackToDesktopMode">Vaihda työpöytätilaan</sys:String>
-    <sys:String x:Key="LOCExitPlaynite">Poistu Playnitesta</sys:String>
+    <sys:String x:Key="LOCExitPlaynite">Poistu Melcosoftsta</sys:String>
     <sys:String x:Key="LOCLibraries">Kirjastot</sys:String>
     <sys:String x:Key="LOCUpdateAll">Päivitä kaikki</sys:String>
     <sys:String x:Key="LOCExtensionCreatedBy">Luoja:</sys:String>
@@ -853,7 +858,7 @@ Versio: {2}</sys:String>
 
 Nykyinen versio: {1}
 Uusi versio: {2}</sys:String>
-    <sys:String x:Key="LOCUrlNavigationMessage" xml:space="preserve">Olet poistumassa Playnitesta ja avaamassa seuraavaa verkkosivua oletussselaimellasi. Haluatko jatkaa?
+    <sys:String x:Key="LOCUrlNavigationMessage" xml:space="preserve">Olet poistumassa Melcosoftsta ja avaamassa seuraavaa verkkosivua oletussselaimellasi. Haluatko jatkaa?
  
 {0}</sys:String>
     <sys:String x:Key="LOCGameImageSizeWarning" xml:space="preserve">Valitut kuvat ovat niin suuria, että ne saattavat heikentää suorituskykyä. Erittäin suurien kuvien käyttö voi hidastaa käyttöliittymän vasteaikaa  sekä lisätä muistin käyttöä. 
@@ -869,10 +874,10 @@ Taustakuvat: {2} megapikseliä</sys:String>
     <sys:String x:Key="LOCLargeMediaWarningTooltip">Valittu kuvatiedosto saattaa olla liian suuri optimi tehokkuuteen.</sys:String>
     <sys:String x:Key="LOCThemeUninstallQuestion">Haluatko varmasti poistaa valitun teeman asennuksen? Asennus poistetaan, kun sovellus käynnistyy seuraavan kerran.</sys:String>
     <sys:String x:Key="LOCThemeBuiltInUninstallHint">Sisäänrakennettuja teemoja ei voi poistaa.</sys:String>
-    <sys:String x:Key="LOCThemeUnsupported">Tämä teema ei tue Playniten tämänhetkistä versiota.</sys:String>
+    <sys:String x:Key="LOCThemeUnsupported">Tämä teema ei tue Melcosoftn tämänhetkistä versiota.</sys:String>
     <sys:String x:Key="LOCExtensionUninstallQuestion">Haluatko varmasti poistaa valitun laajennuksen asennuksen? Asennus poistetaan, kun sovellus käynnistyy seuraavan kerran.</sys:String>
     <sys:String x:Key="LOCExtensionBuiltInUninstallHint">Sisäänrakennettuja laajennuksia ei voi poistaa.</sys:String>
-    <sys:String x:Key="LOCExtensionUnsupported">Tämä laajennus ei tue Playniten tämänhetkistä versiota.</sys:String>
+    <sys:String x:Key="LOCExtensionUnsupported">Tämä laajennus ei tue Melcosoftn tämänhetkistä versiota.</sys:String>
     <sys:String x:Key="LOCExtensionInstallDir">Asennushakemisto</sys:String>
     <sys:String x:Key="LOCExtensionDataDir">Datahakemisto</sys:String>
     <sys:String x:Key="LOCDiagGenerating">Luodaan diagnostiikkapakettia…</sys:String>
@@ -902,7 +907,7 @@ Sovelluksen uudelleenkäynnistys vaaditaan. Haluatko varmasti nollata asetukset?
     <sys:String x:Key="LOCCommonLinksForum">Keskustelupalsta</sys:String>
     <sys:String x:Key="LOCCommonLinksNews">Uutiset</sys:String>
     <sys:String x:Key="LOCCommonLinksStorePage">Kaupan sivu</sys:String>
-    <sys:String x:Key="LOCFullscreenFirstTimeError">Alustava asennus ei ole valmis. Toiminnon viimeistelemiseksi Playnite käynnistyy nyt uudelleen työpöytätilassa.</sys:String>
+    <sys:String x:Key="LOCFullscreenFirstTimeError">Alustava asennus ei ole valmis. Toiminnon viimeistelemiseksi Melcosoft käynnistyy nyt uudelleen työpöytätilassa.</sys:String>
     <sys:String x:Key="LOCQuickFilterRecentlyPlayed">Viimeksi pelatut</sys:String>
     <sys:String x:Key="LOCQuickFilterFavorites">Suosikit</sys:String>
     <sys:String x:Key="LOCQuickFilterMostPlayed">Eniten pelatut</sys:String>
@@ -924,7 +929,7 @@ Sovelluksen uudelleenkäynnistys vaaditaan. Haluatko varmasti nollata asetukset?
     <sys:String x:Key="LOCAddonsThemesDesktop">Työpöytä-tilan teemat</sys:String>
     <sys:String x:Key="LOCAddonsThemesFullscren">Televisiotilan teemat</sys:String>
     <sys:String x:Key="LOCAddonsSearching">Etsitään...</sys:String>
-    <sys:String x:Key="LOCAddonErrorNotCompatible">Lisäosa ei ole yhteensopiva tämän Playnite-version kanssa</sys:String>
+    <sys:String x:Key="LOCAddonErrorNotCompatible">Lisäosa ei ole yhteensopiva tämän Melcosoft-version kanssa</sys:String>
     <sys:String x:Key="LOCAddonErrorDownloadFailed">Lisäosan asennuspaketin lataaminen epäonnistui</sys:String>
     <sys:String x:Key="LOCAddonErrorManifestDownloadError"></sys:String>
     <sys:String x:Key="LOCAddonChangesRestart"></sys:String>
@@ -995,7 +1000,7 @@ Sovelluksen uudelleenkäynnistys vaaditaan. Haluatko varmasti nollata asetukset?
     <sys:String x:Key="LOCConfigure">Konfiguroi</sys:String>
     <sys:String x:Key="LOCFilterPresetSave">Tallenna esiasetus</sys:String>
     <sys:String x:Key="LOCSettingsMinimizeAfterStartingGame">Pienennä pelin käynnistämisen jälkeen</sys:String>
-    <sys:String x:Key="LOCSettingsMinimizeAfterStartingGameDescription" xml:space="preserve">Pienennä Playnite pelin käynnistyksen jälkeen.
+    <sys:String x:Key="LOCSettingsMinimizeAfterStartingGameDescription" xml:space="preserve">Pienennä Melcosoft pelin käynnistyksen jälkeen.
 
 Tämän asetuksen käytöstä pois ottaminen voi johtaa syötön ongelmiin peliä käynnistettäessä!</sys:String>
     <sys:String x:Key="LOCSettingsFontSize">Fonttikoko</sys:String>
@@ -1010,7 +1015,7 @@ Tämän asetuksen käytöstä pois ottaminen voi johtaa syötön ongelmiin peli�
     <sys:String x:Key="LOCSettingsSwapConfirmCancelButtonsDescriptions"></sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnly">Vain ensisijainen ohjain</sys:String>
     <sys:String x:Key="LOCSettingsPrimaryControllerOnlyDescription"></sys:String>
-    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">Opaspainike tuo Playniten esiin</sys:String>
+    <sys:String x:Key="LOCSettingsRefocusOnGuidButton">Opaspainike tuo Melcosoftn esiin</sys:String>
     <sys:String x:Key="LOCSettingsInterfaceVolume">Käyttöliittymän äänenvoimakkuus</sys:String>
     <sys:String x:Key="LOCSettingsMusiVolume">Tausta-äänenvoimakkuus</sys:String>
     <sys:String x:Key="LOCSettingsMuteBackground">Mykistä kun taustalla</sys:String>
@@ -1042,7 +1047,7 @@ Parempi kuvanlaatu, keskitason nopeus, pieni muistikäyttö.</sys:String>
     <sys:String x:Key="LOCSelectFileTooltip">Valitse tiedosto…</sys:String>
     <sys:String x:Key="LOCSelectDirectoryTooltip">Valitse kansio...</sys:String>
     <sys:String x:Key="LOCStartupScript">Aloituskomentosarja</sys:String>
-    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">Huomioi että laajennukset ja teemat voivat vaikuttaa Playniten suorituskykyyn, vakauteen ja turvallisuuteen suuresti.
+    <sys:String x:Key="LOCAddonPerfNotice" xml:space="preserve">Huomioi että laajennukset ja teemat voivat vaikuttaa Melcosoftn suorituskykyyn, vakauteen ja turvallisuuteen suuresti.
  
 Jos ongelmia ilmenee teeman tai laajennuksen asentamisen jälkeen, kokeile poistaa ne käytöstä/poistaa niiden asennus nähdäksesi johtuuko ongelma niistä.</sys:String>
     <sys:String x:Key="LOCGameActionSelectOnStart">Valitse käynnistettäessä</sys:String>

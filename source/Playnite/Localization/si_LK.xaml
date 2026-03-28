@@ -215,6 +215,11 @@
     <sys:String x:Key="LOCMenuLinksTitle"></sys:String>
     <sys:String x:Key="LOCMenuHelpTitle"></sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport"></sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMA">Melcosoft Master Account</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftHelp">Melcosoft උදව්</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftCommunity">Melcosoft සංසදය</sys:String>
+    <sys:String x:Key="LOCMenuMelcosoftMain">Melcosoft මුල් පිටුව</sys:String>
+
     <sys:String x:Key="LOCSDKDocumentation"></sys:String>
     <sys:String x:Key="LOCMenuRestartSystem"></sys:String>
     <sys:String x:Key="LOCMenuShutdownSystem"></sys:String>

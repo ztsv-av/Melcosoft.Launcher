@@ -56,7 +56,7 @@ namespace Playnite
             public string Error { get; set; }
         }
 
-        public class DownloadJobProgressResponse
+        public class DownloadProgressSnapshotResponse
         {
             [JsonProperty("bytes_done")]
             public long BytesDone { get; set; }
@@ -92,7 +92,7 @@ namespace Playnite
             public string Message { get; set; }
 
             [JsonProperty("progress")]
-            public DownloadJobProgressResponse Progress { get; set; }
+            public DownloadProgressSnapshotResponse Progress { get; set; }
 
             [JsonProperty("failure")]
             public DownloadJobFailureResponse Failure { get; set; }

@@ -45,13 +45,13 @@
                           SelectedValuePath="Id"
                           DisplayMemberPath="DisplayString"
                           ItemsSource="{Binding AvailableLanguages}"/>
-                <TextBlock Margin="20,0,0,0"
+                <!-- <TextBlock Margin="20,0,0,0"
                            VerticalAlignment="Center">
                 <Hyperlink Command="{x:Static pcmd:GlobalCommands.NavigateUrlCommand}"
                            CommandParameter="https://crowdin.com/project/playnite">
                     <Run Text="{DynamicResource LOCSettingsCreateLocalization}"/>
                 </Hyperlink>
-                </TextBlock>
+                </TextBlock> -->
             </DockPanel>
 
             <StackPanel Orientation="Horizontal"
