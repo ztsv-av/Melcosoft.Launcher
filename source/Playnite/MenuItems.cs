@@ -183,29 +183,29 @@ namespace Playnite
             }
 
             // Links
-            // if (game.Links.HasItems())
-            // {
-            //     var links = new List<SearchItem>();
-            //     foreach (var link in game.Links.Where(a => a != null))
-            //     {
-            //         links.Add(new SearchItem(link.Name, LOC.Activate, () =>
-            //         {
-            //             try
-            //             {
-            //                 GlobalCommands.NavigateUrl(game.ExpandVariables(link.Url));
-            //             }
-            //             catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
-            //             {
-            //                 logger.Error(e, "Failed to open url.");
-            //             }
-            //         })
-            //         {
-            //             Description = link.Url
-            //         });
-            //     }
+            if (game.Links.HasItems())
+            {
+                var links = new List<SearchItem>();
+                foreach (var link in game.Links.Where(a => a != null))
+                {
+                    links.Add(new SearchItem(link.Name, LOC.Activate, () =>
+                    {
+                        try
+                        {
+                            GlobalCommands.NavigateUrl(game.ExpandVariables(link.Url));
+                        }
+                        catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
+                        {
+                            logger.Error(e, "Failed to open url.");
+                        }
+                    })
+                    {
+                        Description = link.Url
+                    });
+                }
 
-            //     items.Add(new SearchItem(LOC.LinksLabel, new ContextSwitchSearchItemAction(LOC.Activate, new GenericListSearchContext(links, LOC.LinksLabel)), linksIcon));
-            // }
+                items.Add(new SearchItem(LOC.LinksLabel, new ContextSwitchSearchItemAction(LOC.Activate, new GenericListSearchContext(links, LOC.LinksLabel)), linksIcon));
+            }
 
             // Open Game Location
             if (game.IsInstalled)
@@ -227,14 +227,14 @@ namespace Playnite
                 game.Favorite ? LOC.RemoveFavoriteGame : LOC.FavoriteGame,
                 LOC.Activate,
                 () => model.App.GamesEditor.ToggleFavoriteGame(game))
-                { Icon = game.Favorite ? unFavoriteIcon : favoriteIcon });
+            { Icon = game.Favorite ? unFavoriteIcon : favoriteIcon });
 
             // Toggle Hide
             items.Add(new SearchItem(
                 game.Hidden ? LOC.UnHideGame : LOC.HideGame,
                 LOC.Activate,
                 () => model.App.GamesEditor.ToggleHideGame(game))
-                { Icon = game.Hidden ? unHideIcon : hideIcon });
+            { Icon = game.Hidden ? unHideIcon : hideIcon });
 
             // Edit
             items.Add(new SearchItem(LOC.EditGame, LOC.Activate, () => model.EditGame(game), editIcon));

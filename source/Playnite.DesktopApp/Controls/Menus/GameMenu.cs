@@ -160,39 +160,39 @@ namespace Playnite.DesktopApp.Controls
             }
 
             // Links
-            // if (game.Links?.Any() == true)
-            // {
-            //     var linksItem = new MenuItem()
-            //     {
-            //         Header = ResourceProvider.GetString(LOC.LinksLabel),
-            //         Icon = linksIcon
-            //     };
+            if (game.Links?.Any() == true)
+            {
+                var linksItem = new MenuItem()
+                {
+                    Header = ResourceProvider.GetString(LOC.LinksLabel),
+                    Icon = linksIcon
+                };
 
-            //     foreach (var link in game.Links)
-            //     {
-            //         if (link != null)
-            //         {
-            //             linksItem.Items.Add(new MenuItem()
-            //             {
-            //                 Header = link.Name,
-            //                 Command = new RelayCommand<Link>((_) =>
-            //                 {
-            //                     try
-            //                     {
-            //                         GlobalCommands.NavigateUrl(game.ExpandVariables(link.Url));
-            //                     }
-            //                     catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
-            //                     {
-            //                         logger.Error(e, "Failed to open url.");
-            //                     }
-            //                 })
-            //             });
-            //         }
-            //     }
+                foreach (var link in game.Links)
+                {
+                    if (link != null)
+                    {
+                        linksItem.Items.Add(new MenuItem()
+                        {
+                            Header = link.Name,
+                            Command = new RelayCommand<Link>((_) =>
+                            {
+                                try
+                                {
+                                    GlobalCommands.NavigateUrl(game.ExpandVariables(link.Url));
+                                }
+                                catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
+                                {
+                                    logger.Error(e, "Failed to open url.");
+                                }
+                            })
+                        });
+                    }
+                }
 
-            //     Items.Add(linksItem);
-            //     Items.Add(new Separator());
-            // }
+                Items.Add(linksItem);
+                Items.Add(new Separator());
+            }
 
             // Open Game Location
             if (game.IsInstalled)
@@ -585,6 +585,9 @@ namespace Playnite.DesktopApp.Controls
 
             foreach (var plugin in model.Extensions.Plugins.Values)
             {
+                if (plugin.Description.Id == "WebExplorer_181ddd05-2168-4162-a116-b9c2a20c652c")
+                    continue;
+
                 try
                 {
                     var items = plugin.Plugin.GetGameMenuItems(args);
