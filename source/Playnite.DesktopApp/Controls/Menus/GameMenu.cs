@@ -160,39 +160,39 @@ namespace Playnite.DesktopApp.Controls
             }
 
             // Links
-            if (game.Links?.Any() == true)
-            {
-                var linksItem = new MenuItem()
-                {
-                    Header = ResourceProvider.GetString(LOC.LinksLabel),
-                    Icon = linksIcon
-                };
+            // if (game.Links?.Any() == true)
+            // {
+            //     var linksItem = new MenuItem()
+            //     {
+            //         Header = ResourceProvider.GetString(LOC.LinksLabel),
+            //         Icon = linksIcon
+            //     };
 
-                foreach (var link in game.Links)
-                {
-                    if (link != null)
-                    {
-                        linksItem.Items.Add(new MenuItem()
-                        {
-                            Header = link.Name,
-                            Command = new RelayCommand<Link>((_) =>
-                            {
-                                try
-                                {
-                                    GlobalCommands.NavigateUrl(game.ExpandVariables(link.Url));
-                                }
-                                catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
-                                {
-                                    logger.Error(e, "Failed to open url.");
-                                }
-                            })
-                        });
-                    }
-                }
+            //     foreach (var link in game.Links)
+            //     {
+            //         if (link != null)
+            //         {
+            //             linksItem.Items.Add(new MenuItem()
+            //             {
+            //                 Header = link.Name,
+            //                 Command = new RelayCommand<Link>((_) =>
+            //                 {
+            //                     try
+            //                     {
+            //                         GlobalCommands.NavigateUrl(game.ExpandVariables(link.Url));
+            //                     }
+            //                     catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
+            //                     {
+            //                         logger.Error(e, "Failed to open url.");
+            //                     }
+            //                 })
+            //             });
+            //         }
+            //     }
 
-                Items.Add(linksItem);
-                Items.Add(new Separator());
-            }
+            //     Items.Add(linksItem);
+            //     Items.Add(new Separator());
+            // }
 
             // Open Game Location
             if (game.IsInstalled)

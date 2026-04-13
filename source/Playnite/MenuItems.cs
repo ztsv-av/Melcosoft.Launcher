@@ -183,29 +183,29 @@ namespace Playnite
             }
 
             // Links
-            if (game.Links.HasItems())
-            {
-                var links = new List<SearchItem>();
-                foreach (var link in game.Links.Where(a => a != null))
-                {
-                    links.Add(new SearchItem(link.Name, LOC.Activate, () =>
-                    {
-                        try
-                        {
-                            GlobalCommands.NavigateUrl(game.ExpandVariables(link.Url));
-                        }
-                        catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
-                        {
-                            logger.Error(e, "Failed to open url.");
-                        }
-                    })
-                    {
-                        Description = link.Url
-                    });
-                }
+            // if (game.Links.HasItems())
+            // {
+            //     var links = new List<SearchItem>();
+            //     foreach (var link in game.Links.Where(a => a != null))
+            //     {
+            //         links.Add(new SearchItem(link.Name, LOC.Activate, () =>
+            //         {
+            //             try
+            //             {
+            //                 GlobalCommands.NavigateUrl(game.ExpandVariables(link.Url));
+            //             }
+            //             catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
+            //             {
+            //                 logger.Error(e, "Failed to open url.");
+            //             }
+            //         })
+            //         {
+            //             Description = link.Url
+            //         });
+            //     }
 
-                items.Add(new SearchItem(LOC.LinksLabel, new ContextSwitchSearchItemAction(LOC.Activate, new GenericListSearchContext(links, LOC.LinksLabel)), linksIcon));
-            }
+            //     items.Add(new SearchItem(LOC.LinksLabel, new ContextSwitchSearchItemAction(LOC.Activate, new GenericListSearchContext(links, LOC.LinksLabel)), linksIcon));
+            // }
 
             // Open Game Location
             if (game.IsInstalled)
