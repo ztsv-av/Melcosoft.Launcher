@@ -55,6 +55,9 @@
                         IsEnabled="{Binding ShowProgress, Converter={pcon:NegateConverter}}"
                         Style="{StaticResource BottomButton}"
                         Command="{Binding InstallUpdateCommand}"/>
+                <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="5,0,0,0"
+                           Style="{DynamicResource BaseTextBlockStyle}" Opacity="0.7"
+                           Text="{Binding CurrentRegionDisplay}"/>
             </DockPanel>
         </Border>
     </Grid>

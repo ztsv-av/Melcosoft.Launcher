@@ -2,6 +2,7 @@
 using Playnite.Commands;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading;
 using System.Windows;
 using Playnite.Windows;
@@ -62,6 +63,56 @@ namespace Playnite.ViewModels
             private set;
         }
 
+        public string CurrentRegionDisplay { get; private set; }
+
+        private static string ReadCurrentRegion()
+        {
+            try
+            {
+                var configPath = Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
+                    "Melcosoft", "config.env");
+
+                if (!File.Exists(configPath))
+                    return "EU";
+
+                foreach (var line in File.ReadAllLines(configPath))
+                {
+                    var trimmed = line.Trim();
+                    if (trimmed.StartsWith("REGION", StringComparison.OrdinalIgnoreCase))
+                    {
+                        var eq = trimmed.IndexOf('=');
+                        if (eq < 0) continue;
+                        var code = trimmed.Substring(eq + 1).Trim().Trim('\'').Trim('"').ToUpperInvariant();
+                        if (code.Length > 0) return code;
+                    }
+                }
+            }
+            catch { }
+            return "EU";
+        }
+
+        private string BuildRegionDisplay(string code)
+        {
+            string nameKey;
+            switch (code)
+            {
+                case "EU": nameKey = "LOCMelcosoftRegionEurope"; break;
+                case "RU": nameKey = "LOCMelcosoftRegionRussia"; break;
+                case "NA": nameKey = "LOCMelcosoftRegionSouthAmerica"; break;
+                case "CN": nameKey = "LOCMelcosoftRegionChina"; break;
+                default:   nameKey = null; break;
+            }
+
+            var name = nameKey != null ? resources.GetString(nameKey) : null;
+            if (string.IsNullOrEmpty(name)) name = code;
+
+            var format = resources.GetString("LOCMelcosoftSelectedRegion");
+            if (string.IsNullOrEmpty(format)) format = "Selected download region: {0}";
+
+            return string.Format(format, name);
+        }
+
         public UpdateViewModel(
             Updater updater,
             IWindowFactory window,
@@ -75,6 +126,8 @@ namespace Playnite.ViewModels
             this.resources = resources;
             this.dialogs = dialogs;
             this.mode = mode;
+
+            CurrentRegionDisplay = BuildRegionDisplay(ReadCurrentRegion());
 
             try
             {
