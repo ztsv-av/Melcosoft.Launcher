@@ -1,5 +1,6 @@
 ﻿using Playnite.DesktopApp.Windows;
 using Playnite.SDK;
+using Playnite.SDK.Data;
 using Playnite.SDK.Exceptions;
 using Playnite.SDK.Models;
 using Playnite.SDK.Plugins;
@@ -7,8 +8,8 @@ using Playnite.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
@@ -360,7 +361,8 @@ namespace Playnite.DesktopApp.ViewModels
             {
                 if (game != null)
                 {
-                    StartGame(game, false);
+                    if (!TryLaunchMelcosoftGameFromTray(game))
+                        StartGame(game, false);
                 }
             });
 
@@ -596,6 +598,97 @@ namespace Playnite.DesktopApp.ViewModels
             }, () => GameAdditionAllowed);
 
             OpenPluginSettingsCommand = new RelayCommand<Guid>((pluginId) => OpenPluginSettings(pluginId));
+        }
+
+        // --- Melcosoft tray launch ---
+
+        private static readonly Guid melcosoftPluginId = new Guid("a9e72e5c-1b02-4c9a-9c7d-9b3e40c2f2f1");
+        private const string melcosoftGameIdPrefix = "romm:";
+        private const string melcosoftBackendUrl = "http://127.0.0.1:17877";
+        private static readonly string melcosoftManifestPath = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
+            "Melcosoft",
+            "launcher_manifest.json");
+
+        private class MelcosoftManifestInstall { public string default_entry_key { get; set; } }
+        private class MelcosoftManifest { public Dictionary<string, MelcosoftManifestInstall> installs { get; set; } }
+
+        private class MelcosoftLaunchInfo
+        {
+            public bool ok { get; set; }
+            public string exe_path { get; set; }
+            public string working_dir { get; set; }
+            public List<string> args_list { get; set; }
+        }
+
+        private bool TryLaunchMelcosoftGameFromTray(Game game)
+        {
+            if (game.PluginId != melcosoftPluginId)
+                return false;
+            if (string.IsNullOrEmpty(game.GameId) ||
+                !game.GameId.StartsWith(melcosoftGameIdPrefix, StringComparison.OrdinalIgnoreCase))
+                return false;
+            if (!int.TryParse(game.GameId.Substring(melcosoftGameIdPrefix.Length), out var romId))
+                return false;
+
+            var installDir = game.InstallDirectory;
+            if (string.IsNullOrWhiteSpace(installDir))
+                return false;
+
+            // Read stored default entry key from launcher_manifest.json installs.{romId}.default_entry_key
+            string entryKey = null;
+            try
+            {
+                if (File.Exists(melcosoftManifestPath))
+                {
+                    var manifest = Serialization.FromJson<MelcosoftManifest>(File.ReadAllText(melcosoftManifestPath));
+                    MelcosoftManifestInstall install = null;
+                    manifest?.installs?.TryGetValue(romId.ToString(), out install);
+                    entryKey = install?.default_entry_key;
+                }
+            }
+            catch { /* best-effort */ }
+
+            Task.Run(() =>
+            {
+                try
+                {
+                    var body = Serialization.ToJson(new { install_dir = installDir, entry_key = entryKey });
+                    string json;
+                    using (var wc = new System.Net.WebClient())
+                    {
+                        wc.Headers[System.Net.HttpRequestHeader.ContentType] = "application/json";
+                        json = wc.UploadString($"{melcosoftBackendUrl}/games/{romId}/launch", body);
+                    }
+
+                    var info = Serialization.FromJson<MelcosoftLaunchInfo>(json);
+                    if (info == null || !info.ok || string.IsNullOrWhiteSpace(info.exe_path))
+                        return;
+
+                    var exe = info.exe_path.Trim();
+                    var wd = info.working_dir?.Trim();
+                    if (string.IsNullOrWhiteSpace(wd))
+                        wd = Path.GetDirectoryName(exe);
+
+                    var args = info.args_list?.Count > 0
+                        ? string.Join(" ", info.args_list.Select(a => a.Contains(' ') ? $"\"{a}\"" : a))
+                        : string.Empty;
+
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                    {
+                        FileName = exe,
+                        WorkingDirectory = wd ?? string.Empty,
+                        Arguments = args,
+                        UseShellExecute = true
+                    });
+                }
+                catch (Exception ex)
+                {
+                    Logger.Error(ex, $"TryLaunchMelcosoftGameFromTray failed rom_id={romId}");
+                }
+            });
+
+            return true;
         }
     }
 }

@@ -219,18 +219,6 @@ namespace Playnite.DesktopApp.Controls
 
             Items.Add(shortcutItem);
 
-            // InstallSize
-            if (game.IsInstalled)
-            {
-                Items.Add(new MenuItem()
-                {
-                    Header = ResourceProvider.GetString(LOC.CalculateInstallSize),
-                    Icon = installSizeIcon,
-                    Command = model.UpdateGameInstallSizeWithDialogCommand,
-                    CommandParameter = game
-                });
-            }
-
             // Manual
             if (!game.Manual.IsNullOrEmpty())
             {
