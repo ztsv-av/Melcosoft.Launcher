@@ -799,6 +799,7 @@
     <sys:String x:Key="LOCRemoveGame">Убрать из списка</sys:String>
     <sys:String x:Key="LOCPlayGame">Играть</sys:String>
     <sys:String x:Key="LOCInstallGame">Установить</sys:String>
+    <sys:String x:Key="LOCLaunchAnotherInstance">Запустить ещё одно окно игры</sys:String>
     <sys:String x:Key="LOCGameOptions">Настройки игры</sys:String>
     <sys:String x:Key="LOCGameDetails">Подробная информация</sys:String>
     <sys:String x:Key="LOCUninstallGame">Удалить с устройства</sys:String>

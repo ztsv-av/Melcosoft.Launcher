@@ -51,6 +51,9 @@ namespace Playnite.DesktopApp.Controls
 
         private DesktopAppViewModel model;
 
+        // Melcosoft plugin id
+        private static readonly Guid melcosoftPluginId = new Guid("a9e72e5c-1b02-4c9a-9c7d-9b3e40c2f2f1");
+
         private static object startIcon;
         private static object removeIcon;
         private static object linksIcon;
@@ -146,12 +149,31 @@ namespace Playnite.DesktopApp.Controls
 
             // Custom Actions
             var customAdded = false;
-            foreach (var task in game.GameActions?.Where(a => !a.IsPlayAction) ?? Enumerable.Empty<GameAction>())
+
+            // Melcosoft: for installed games from the Melcosoft plugin, show a single "Launch another
+            // game instance" entry (in place of the per-option launch actions). The entry is rendered
+            // here so it keeps its top position, but the behavior lives in the Melcosoft extension
+            // (play option + window count prompt), invoked via reflection.
+            if (game.IsInstalled && game.PluginId == melcosoftPluginId)
             {
-                var taskItem = new MenuItem { Header = task.Name };
-                taskItem.Click += (s, e) => model.GamesEditor.ActivateAction(game, task);
-                Items.Add(taskItem);
+                var anotherInstanceItem = new MenuItem
+                {
+                    Header = ResourceProvider.GetString("LOCLaunchAnotherInstance"),
+                    Icon = startIcon
+                };
+                anotherInstanceItem.Click += (s, e) => InvokeMelcosoftLaunchAnotherInstance(game);
+                Items.Add(anotherInstanceItem);
                 customAdded = true;
+            }
+            else
+            {
+                foreach (var task in game.GameActions?.Where(a => !a.IsPlayAction) ?? Enumerable.Empty<GameAction>())
+                {
+                    var taskItem = new MenuItem { Header = task.Name };
+                    taskItem.Click += (s, e) => model.GamesEditor.ActivateAction(game, task);
+                    Items.Add(taskItem);
+                    customAdded = true;
+                }
             }
 
             if (customAdded)
@@ -309,6 +331,26 @@ namespace Playnite.DesktopApp.Controls
                 };
 
                 Items.Add(uninstallItem);
+            }
+        }
+
+        // Invokes the Melcosoft extension's "Launch game" behavior (play option +
+        // window count prompt). The menu entry is rendered by core so it keeps its position, but the
+        // logic lives in the extension; core cannot reference the extension type, so it is called by
+        // reflection via the loaded plugin instance.
+        private void InvokeMelcosoftLaunchAnotherInstance(Game game)
+        {
+            try
+            {
+                if (model.Extensions.Plugins.TryGetValue(melcosoftPluginId, out var loaded) && loaded?.Plugin != null)
+                {
+                    var method = loaded.Plugin.GetType().GetMethod("LaunchAnotherInstance", new[] { typeof(Game) });
+                    method?.Invoke(loaded.Plugin, new object[] { game });
+                }
+            }
+            catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
+            {
+                logger.Error(e, "Failed to launch another Melcosoft game instance.");
             }
         }
 

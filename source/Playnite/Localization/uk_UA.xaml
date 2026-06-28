@@ -772,6 +772,7 @@
     <sys:String x:Key="LOCRemoveGame">Прибрати</sys:String>
     <sys:String x:Key="LOCPlayGame">Грати</sys:String>
     <sys:String x:Key="LOCInstallGame">Встановити</sys:String>
+    <sys:String x:Key="LOCLaunchAnotherInstance">Запустити ще одне вікно гри</sys:String>
     <sys:String x:Key="LOCGameOptions">Налаштування гри</sys:String>
     <sys:String x:Key="LOCGameDetails">Деталі</sys:String>
     <sys:String x:Key="LOCUninstallGame">Видалити</sys:String>
