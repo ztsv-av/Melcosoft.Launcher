@@ -54,6 +54,14 @@ namespace Playnite.DesktopApp.Controls
         // Melcosoft plugin id
         private static readonly Guid melcosoftPluginId = new Guid("a9e72e5c-1b02-4c9a-9c7d-9b3e40c2f2f1");
 
+        // Extensions (by manifest Description.Id) whose game menu items are suppressed in the launcher UI.
+        private static readonly HashSet<string> excludedGameMenuExtensionIds = new HashSet<string>(StringComparer.Ordinal)
+        {
+            "WebExplorer_181ddd05-2168-4162-a116-b9c2a20c652c",
+            "felixkmh_StartPage_Plugin",
+            "StartPage"
+        };
+
         private static object startIcon;
         private static object removeIcon;
         private static object linksIcon;
@@ -300,9 +308,6 @@ namespace Playnite.DesktopApp.Controls
 
             Items.Add(categoryItem);
 
-            // Set Completion Status
-            Items.Add(LoadCompletionStatusItem(game));
-
             // Extensions items
             AddExtensionItems(new List<Game>(1) { game });
             Items.Add(new Separator());
@@ -468,9 +473,6 @@ namespace Playnite.DesktopApp.Controls
 
             Items.Add(categoryItem);
 
-            // Set Completion Status
-            Items.Add(LoadCompletionStatusItem(games));
-
             // Extensions items
             AddExtensionItems(games);
             Items.Add(new Separator());
@@ -566,47 +568,6 @@ namespace Playnite.DesktopApp.Controls
             }
         }
 
-        private MenuItem LoadCompletionStatusItem(List<Game> games)
-        {
-            var completionItem = new MenuItem()
-            {
-                Header = ResourceProvider.GetString(LOC.SetCompletionStatus)
-            };
-
-            foreach (var status in model.Database.CompletionStatuses.OrderBy(a => a.Name))
-            {
-                completionItem.Items.Add(new MenuItem
-                {
-                    Header = status.Name,
-                    Command = model.SetGamesCompletionStatusCommand,
-                    CommandParameter = new Tuple<IEnumerable<Game>, CompletionStatus>(games, status)
-                });
-            }
-
-            return completionItem;
-        }
-
-        private MenuItem LoadCompletionStatusItem(Game game)
-        {
-            var completionItem = new MenuItem()
-            {
-                Header = ResourceProvider.GetString(LOC.SetCompletionStatus)
-            };
-
-            foreach (var status in model.Database.CompletionStatuses.OrderBy(a => a.Name))
-            {
-                completionItem.Items.Add(new MenuItem
-                {
-                    Header = status.Name,
-                    Command = model.SetGameCompletionStatusCommand,
-                    CommandParameter = new Tuple<Game, CompletionStatus>(game, status),
-                    IsChecked = game.CompletionStatusId == status.Id
-                });
-            }
-
-            return completionItem;
-        }
-
         private void AddExtensionItems(List<Game> games)
         {
             var args = new GetGameMenuItemsArgs();
@@ -615,7 +576,7 @@ namespace Playnite.DesktopApp.Controls
 
             foreach (var plugin in model.Extensions.Plugins.Values)
             {
-                if (plugin.Description.Id == "WebExplorer_181ddd05-2168-4162-a116-b9c2a20c652c")
+                if (excludedGameMenuExtensionIds.Contains(plugin.Description.Id))
                     continue;
 
                 try
