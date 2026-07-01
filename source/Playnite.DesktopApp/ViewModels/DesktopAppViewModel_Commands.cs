@@ -361,9 +361,8 @@ namespace Playnite.DesktopApp.ViewModels
             {
                 if (game != null)
                 {
-                    // Route through the normal play pipeline so Melcosoft games show the
-                    // play option selector window instead of launching directly.
-                    StartGame(game, false);
+                    if (!TryLaunchMelcosoftGameFromTray(game))
+                        StartGame(game, false);
                 }
             });
 
@@ -599,6 +598,46 @@ namespace Playnite.DesktopApp.ViewModels
             }, () => GameAdditionAllowed);
 
             OpenPluginSettingsCommand = new RelayCommand<Guid>((pluginId) => OpenPluginSettings(pluginId));
+        }
+
+        // --- Melcosoft tray launch ---
+
+        private static readonly Guid melcosoftPluginId = new Guid("a9e72e5c-1b02-4c9a-9c7d-9b3e40c2f2f1");
+
+        // For Melcosoft games that are already running, invokes the extension's "Launch game" behavior (play option + window count prompt) to start additional instances. 
+        // This case is intercepted because GamesEditor.PlayGame refuses to start a game that is already running/launching. 
+        // When nothing is running yet, this returns false so the caller uses the normal play pipeline (StartGame) instead, which performs the "check for updates" step just like the Play button. 
+        // The logic lives in the extension; core cannot reference the extension type, so it is called by reflection via the loaded plugin instance. 
+        // Also returns false for non-Melcosoft games or if the extension is not available.
+        private bool TryLaunchMelcosoftGameFromTray(Game game)
+        {
+            if (game.PluginId != melcosoftPluginId)
+                return false;
+
+            // Only intercept the already-running case.
+            // Otherwise let the normal play pipeline run (so updates are checked before launch).
+            var live = Database.Games.Get(game.Id) ?? game;
+            if (!game.IsRunning && !game.IsLaunching && !live.IsRunning && !live.IsLaunching)
+                return false;
+
+            try
+            {
+                if (Extensions.Plugins.TryGetValue(melcosoftPluginId, out var loaded) && loaded?.Plugin != null)
+                {
+                    var method = loaded.Plugin.GetType().GetMethod("LaunchAnotherInstance", new[] { typeof(Game) });
+                    if (method != null)
+                    {
+                        method.Invoke(loaded.Plugin, new object[] { game });
+                        return true;
+                    }
+                }
+            }
+            catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
+            {
+                Logger.Error(e, "Failed to launch Melcosoft game from tray.");
+            }
+
+            return false;
         }
     }
 }
