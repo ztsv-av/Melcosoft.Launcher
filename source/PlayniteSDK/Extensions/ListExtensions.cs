@@ -454,25 +454,5 @@ namespace System.Collections.Generic
             }
         }
 
-        /// <summary>
-        ///
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="source"></param>
-        /// <returns></returns>
-        public static HashSet<T> ToHashSet<T>(this IEnumerable<T> source)
-        {
-            if (source == null)
-            {
-                return null;
-            }
-
-            if (!source.HasItems())
-            {
-                return new HashSet<T>();
-            }
-
-            return new HashSet<T>(source);
-        }
     }
 }
