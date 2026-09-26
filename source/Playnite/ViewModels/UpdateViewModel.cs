@@ -105,6 +105,15 @@ namespace Playnite.ViewModels
             }
 
             var name = nameKey != null ? resources.GetString(nameKey) : null;
+
+            // Reserve regions ("RESERV1".."RESERV4") share one "Reserve {0}" format key
+            if (nameKey == null && code.StartsWith("RESERV") && int.TryParse(code.Substring("RESERV".Length), out var reserveNumber))
+            {
+                var reserveFormat = resources.GetString("LOCMelcosoftRegionReserve");
+                if (!string.IsNullOrEmpty(reserveFormat) && reserveFormat.Contains("{0}"))
+                    name = string.Format(reserveFormat, reserveNumber);
+            }
+
             if (string.IsNullOrEmpty(name)) name = code;
 
             var format = resources.GetString("LOCMelcosoftSelectedRegion");

@@ -2647,7 +2647,7 @@ namespace Playnite
 
         public bool ShouldCheckAddonUpdatePeriodic()
         {
-            return true;
+            return false;
         }
 
         public bool ShouldCheckProgramUpdateStartup()
@@ -2657,7 +2657,7 @@ namespace Playnite
 
         public bool ShouldCheckAddonUpdateStartup()
         {
-            return true;
+            return false;
         }
 
         public bool ShouldCheckLibraryOnStartup()
