@@ -105,24 +105,11 @@ namespace Playnite
             {
                 if (currentVersion == null)
                 {
-                    try
+                    var versionString = ReadLauncherVersion();
+                    if (!string.IsNullOrWhiteSpace(versionString) && Version.TryParse(versionString.Trim(), out var parsed))
                     {
-                        if (File.Exists(LauncherManifestPath))
-                        {
-                            var json = File.ReadAllText(LauncherManifestPath);
-                            var jObj = JObject.Parse(json);
-                            var versionString = jObj["launcher_version"]?.ToString();
-
-                            if (!string.IsNullOrWhiteSpace(versionString))
-                            {
-                                currentVersion = new Version(versionString);
-                                return currentVersion;
-                            }
-                        }
-                    }
-                    catch
-                    {
-                        // fallback
+                        currentVersion = parsed;
+                        return currentVersion;
                     }
 
                     currentVersion = Assembly
@@ -133,6 +120,35 @@ namespace Playnite
 
                 return currentVersion;
             }
+        }
+
+        // Reads launcher_version from launcher_manifest.json without blocking its writers. The
+        // backend, the plugin and the updater replace the file in one step, and a reader that holds
+        // it open without delete sharing makes that replace fail. A failed read is tried again.
+        private static string ReadLauncherVersion()
+        {
+            for (var attempt = 0; attempt < 3; attempt++)
+            {
+                try
+                {
+                    if (!File.Exists(LauncherManifestPath))
+                    {
+                        return null;
+                    }
+
+                    using (var fs = new FileStream(LauncherManifestPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite | FileShare.Delete))
+                    using (var reader = new StreamReader(fs))
+                    {
+                        return JObject.Parse(reader.ReadToEnd())["launcher_version"]?.ToString();
+                    }
+                }
+                catch (Exception)
+                {
+                    System.Threading.Thread.Sleep(50);
+                }
+            }
+
+            return null;
         }
 
         // Backend manifest shape (subset)
@@ -407,13 +423,15 @@ namespace Playnite
                 throw new Exception($"updater_exe_missing: {prep.UpdaterPath}");
             }
 
-            // 2) Build args for the Melcosoft.Updater.exe
-            var args = $"--apply --version \"{prep.Version}\" --package \"{prep.Package}\" --install-dir \"{prep.InstallDir}\" --service-name \"Melcosoft\" --health-url \"{BackendBaseUrl}/health\"";
+            // 2) Build args for the Melcosoft.Updater.exe. The updater checks the updated backend on /ping,
+            // which does not call the RomM server.
+            var args = $"--apply --version \"{prep.Version}\" --package \"{prep.Package}\" --install-dir \"{prep.InstallDir}\" --health-url \"{BackendBaseUrl}/ping\"";
 
             logger.Info($"Starting Melcosoft updater: {prep.UpdaterPath} {args}");
 
-            // 3) Elevate
-            playniteApp.QuitAndStart(prep.UpdaterPath, args, true);
+            // 3) Start without elevation. The files of the launcher belong to the user, so an update
+            // needs no administrator rights. The updater asks for them itself when it does.
+            playniteApp.QuitAndStart(prep.UpdaterPath, args, false);
         }
 
         private BackendManifest EnsureBackendChecked()
