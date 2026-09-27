@@ -57,9 +57,7 @@ namespace Playnite.DesktopApp.Controls
         // Extensions (by manifest Description.Id) whose game menu items are suppressed in the launcher UI.
         private static readonly HashSet<string> excludedGameMenuExtensionIds = new HashSet<string>(StringComparer.Ordinal)
         {
-            "WebExplorer_181ddd05-2168-4162-a116-b9c2a20c652c",
-            "felixkmh_StartPage_Plugin",
-            "StartPage"
+            "WebExplorer_181ddd05-2168-4162-a116-b9c2a20c652c"
         };
 
         private static object startIcon;

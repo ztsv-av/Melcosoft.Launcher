@@ -43,17 +43,17 @@ namespace Playnite.DesktopApp.Controls.Views
         private Panel PanelMainPluginItems;
 
         private TopPanelWrapperItem ButtonViewSettings;
-        private TopPanelWrapperItem ButtonGroupSettings;
+        // private TopPanelWrapperItem ButtonGroupSettings;
         private TopPanelWrapperItem ButtonSortSettings;
-        private TopPanelWrapperItem ButtonFilterPresets;
-        private TopPanelWrapperItem ButtonExplorerSwitch;
-        private TopPanelWrapperItem ButtonSearch;
+        // private TopPanelWrapperItem ButtonFilterPresets;
+        // private TopPanelWrapperItem ButtonExplorerSwitch;
+        // private TopPanelWrapperItem ButtonSearch;
 
         private TopPanelWrapperItem ButtonSwitchDetailsView;
-        private TopPanelWrapperItem ButtonSwitchGridView;
+        // private TopPanelWrapperItem ButtonSwitchGridView;
         private TopPanelWrapperItem ButtonSwitchListView;
-        private TopPanelWrapperItem ButtonSelectRandomGame;
-        private TopPanelWrapperItem ButtonViewSelectRandomGame;
+        // private TopPanelWrapperItem ButtonSelectRandomGame;
+        // private TopPanelWrapperItem ButtonViewSelectRandomGame;
 
         private Canvas LeftViewSeparator = new Canvas();
         private Canvas RightViewSeparator = new Canvas();
@@ -108,19 +108,19 @@ namespace Playnite.DesktopApp.Controls.Views
         private void SetButtonVisibility()
         {
             ButtonViewSettings.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelGeneralViewItem;
-            ButtonGroupSettings.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelGroupingItem;
+            // ButtonGroupSettings.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelGroupingItem;
             ButtonSortSettings.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelSortingItem;
-            ButtonFilterPresets.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelFilterPresetsItem;
-            ButtonExplorerSwitch.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelExplorerSwitch;
-            ButtonSearch.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelSearchButton;
+            // ButtonFilterPresets.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelFilterPresetsItem;
+            // ButtonExplorerSwitch.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelExplorerSwitch;
+            // ButtonSearch.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelSearchButton;
 
             ButtonSwitchDetailsView.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelDetailsViewSwitch;
-            ButtonSwitchGridView.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelGridViewSwitch;
+            // ButtonSwitchGridView.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelGridViewSwitch;
             ButtonSwitchListView.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelListViewSwitch;
-            ButtonSelectRandomGame.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelSelectRandomGameButton;
-            ButtonViewSelectRandomGame.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelViewSelectRandomGameButton;
+            // ButtonSelectRandomGame.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelSelectRandomGameButton;
+            // ButtonViewSelectRandomGame.PanelItem.Visible = mainModel.AppSettings.ShowTopPanelViewSelectRandomGameButton;
 
-            var showSeparators = ButtonSwitchDetailsView.Visible || ButtonSwitchGridView.Visible || ButtonSwitchListView.Visible;
+            var showSeparators = ButtonSwitchDetailsView.Visible || ButtonSwitchListView.Visible;
             LeftViewSeparator.Visibility = showSeparators ? Visibility.Visible : Visibility.Collapsed;
             RightViewSeparator.Visibility = showSeparators ? Visibility.Visible : Visibility.Collapsed;
         }
@@ -163,10 +163,10 @@ namespace Playnite.DesktopApp.Controls.Views
             PanelMainItems = Template.FindName("PART_PanelMainItems", this) as Panel;
             if (PanelMainItems != null)
             {
-                PanelMainItems.Children.Add(AssignPanelButton("TopPanelSearchButtonTemplate", mainModel.OpenGlobalSearchCommand, LOC.OpenSearch, out ButtonSearch));
+                // PanelMainItems.Children.Add(AssignPanelButton("TopPanelSearchButtonTemplate", mainModel.OpenGlobalSearchCommand, LOC.OpenSearch, out ButtonSearch));
                 PanelMainItems.Children.Add(AssignPanelButton("TopPanelGeneralViewSettingsTemplate", new ViewSettingsMenu(mainModel.AppSettings), LOC.SettingsTopPanelGeneralViewItem, out ButtonViewSettings));
-                PanelMainItems.Children.Add(AssignPanelButton("TopPanelFilterPresetsSelectionTemplate", new FilterPresetsMenu(mainModel), LOC.SettingsTopPanelFilterPresetsItem, out ButtonFilterPresets));
-                PanelMainItems.Children.Add(AssignPanelButton("TopPanelGroupSettingsTemplate", new GroupSettingsMenu(mainModel.AppSettings), LOC.SettingsTopPanelGroupingItem, out ButtonGroupSettings));
+                // PanelMainItems.Children.Add(AssignPanelButton("TopPanelFilterPresetsSelectionTemplate", new FilterPresetsMenu(mainModel), LOC.SettingsTopPanelFilterPresetsItem, out ButtonFilterPresets));
+                // PanelMainItems.Children.Add(AssignPanelButton("TopPanelGroupSettingsTemplate", new GroupSettingsMenu(mainModel.AppSettings), LOC.SettingsTopPanelGroupingItem, out ButtonGroupSettings));
                 PanelMainItems.Children.Add(AssignPanelButton("TopPanelSortSettingsTemplate", new SortSettingsMenu(mainModel.AppSettings), LOC.SettingsTopPanelSortingItem, out ButtonSortSettings));
 
                 LeftViewSeparator.Width = mainModel.AppSettings.TopPanelSectionSeparatorWidth;
@@ -182,14 +182,14 @@ namespace Playnite.DesktopApp.Controls.Views
                     converterParameter: DesktopView.Details);
                 PanelMainItems.Children.Add(detailsButton);
 
-                var gridButton = AssignPanelButton("TopPanelSwitchGridViewTemplate", mainModel.SwitchGridViewCommand, DesktopView.Grid.GetDescription(), out ButtonSwitchGridView);
-                BindingTools.SetBinding(gridButton,
-                    TopPanelItem.IsToggledProperty,
-                    mainModel.AppSettings.ViewSettings,
-                    nameof(ViewSettings.GamesViewType),
-                    converter: new EnumToBooleanConverter(),
-                    converterParameter: DesktopView.Grid);
-                PanelMainItems.Children.Add(gridButton);
+                // var gridButton = AssignPanelButton("TopPanelSwitchGridViewTemplate", mainModel.SwitchGridViewCommand, DesktopView.Grid.GetDescription(), out ButtonSwitchGridView);
+                // BindingTools.SetBinding(gridButton,
+                //     TopPanelItem.IsToggledProperty,
+                //     mainModel.AppSettings.ViewSettings,
+                //     nameof(ViewSettings.GamesViewType),
+                //     converter: new EnumToBooleanConverter(),
+                //     converterParameter: DesktopView.Grid);
+                // PanelMainItems.Children.Add(gridButton);
 
                 var listButton = AssignPanelButton("TopPanelSwitchListViewTemplate", mainModel.SwitchListViewCommand, DesktopView.List.GetDescription(), out ButtonSwitchListView);
                 BindingTools.SetBinding(listButton,
@@ -208,15 +208,15 @@ namespace Playnite.DesktopApp.Controls.Views
                     nameof(mainModel.UpdatesAvailable),
                     converter: new BooleanToVisibilityConverter());
                 PanelMainItems.Children.Add(updatesButton);
-                PanelMainItems.Children.Add(AssignPanelButton("TopPanelSelectRandomGameButtonTemplate", mainModel.SelectRandomGameCommand, ResourceProvider.GetString(LOC.TopPanelSelectRandomGameButton), out ButtonSelectRandomGame));
-                PanelMainItems.Children.Add(AssignPanelButton("TopPanelViewSelectRandomGameButtonTemplate", mainModel.ViewSelectRandomGameCommand, ResourceProvider.GetString(LOC.TopPanelViewSelectRandomGameButtonTooltip), out ButtonViewSelectRandomGame));
+                // PanelMainItems.Children.Add(AssignPanelButton("TopPanelSelectRandomGameButtonTemplate", mainModel.SelectRandomGameCommand, ResourceProvider.GetString(LOC.TopPanelSelectRandomGameButton), out ButtonSelectRandomGame));
+                // PanelMainItems.Children.Add(AssignPanelButton("TopPanelViewSelectRandomGameButtonTemplate", mainModel.ViewSelectRandomGameCommand, ResourceProvider.GetString(LOC.TopPanelViewSelectRandomGameButtonTooltip), out ButtonViewSelectRandomGame));
 
-                var explorerButton = AssignPanelButton("TopPanelExplorerSwitchTemplate", mainModel.ToggleExplorerPanelCommand, ResourceProvider.GetString(LOC.TopPanelExplorerSwitch), out ButtonExplorerSwitch);
-                BindingTools.SetBinding(explorerButton,
-                    TopPanelItem.IsToggledProperty,
-                    mainModel.AppSettings,
-                    nameof(PlayniteSettings.ExplorerPanelVisible));
-                PanelMainItems.Children.Add(explorerButton);
+                // var explorerButton = AssignPanelButton("TopPanelExplorerSwitchTemplate", mainModel.ToggleExplorerPanelCommand, ResourceProvider.GetString(LOC.TopPanelExplorerSwitch), out ButtonExplorerSwitch);
+                // BindingTools.SetBinding(explorerButton,
+                //     TopPanelItem.IsToggledProperty,
+                //     mainModel.AppSettings,
+                //     nameof(PlayniteSettings.ExplorerPanelVisible));
+                // PanelMainItems.Children.Add(explorerButton);
                 SetButtonVisibility();
             }
 

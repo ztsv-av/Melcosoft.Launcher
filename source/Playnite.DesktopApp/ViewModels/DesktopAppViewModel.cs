@@ -1375,22 +1375,23 @@ namespace Playnite.DesktopApp.ViewModels
         public void RegisterSystemSearchHotkey()
         {
             UnregisterSystemSearchHotkey();
-            if (AppSettings.SystemSearchHotkey == null)
-            {
-                return;
-            }
+            // Global search is disabled in the launcher, so the system search hotkey is never registered.
+            // if (AppSettings.SystemSearchHotkey == null)
+            // {
+            //     return;
+            // }
 
-            try
-            {
-                Window.Window.RegisterHotKeyHandler(1337, AppSettings.SystemSearchHotkey, () =>
-                {
-                    OpenGlobalSearch();
-                });
-            }
-            catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
-            {
-                Logger.Error(e, "Failed to register system search hotkey.");
-            }
+            // try
+            // {
+            //     Window.Window.RegisterHotKeyHandler(1337, AppSettings.SystemSearchHotkey, () =>
+            //     {
+            //         OpenGlobalSearch();
+            //     });
+            // }
+            // catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
+            // {
+            //     Logger.Error(e, "Failed to register system search hotkey.");
+            // }
         }
 
         public void UnregisterSystemSearchHotkey()

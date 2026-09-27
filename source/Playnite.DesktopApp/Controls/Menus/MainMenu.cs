@@ -107,15 +107,15 @@ namespace Playnite.DesktopApp.Controls
             Items.Add(new Separator());
 
             // Library
-            var libraryItem = AddMenuChild(Items, "LOCLibrary", null);
-            AddMenuChild(libraryItem.Items, "LOCMenuConfigureIntegrations", mainModel.OpenLibraryIntegrationsConfigCommand);
-            AddMenuChild(libraryItem.Items, "LOCMenuLibraryManagerTitle", mainModel.OpenDbFieldsManagerCommand);
-            AddMenuChild(libraryItem.Items, "LOCMenuConfigureEmulatorsMenuTitle", mainModel.OpenEmulatorsCommand);
-            AddMenuChild(libraryItem.Items, "LOCMenuDownloadMetadata", mainModel.DownloadMetadataCommand);
-            AddMenuChild(libraryItem.Items, "LOCMenuSoftwareTools", mainModel.OpenSoftwareToolsCommand);
-            libraryItem.Items.Add(new Separator());
-            AddMenuChild(libraryItem.Items, "LOCMenuBackupData", mainModel.BackupDataCommand, null, "BackupIcon");
-            AddMenuChild(libraryItem.Items, "LOCMenuRestoreBackup", mainModel.RestoreDataBackupCommand, null, "RestoreBackupIcon");
+            // var libraryItem = AddMenuChild(Items, "LOCLibrary", null);
+            // AddMenuChild(libraryItem.Items, "LOCMenuConfigureIntegrations", mainModel.OpenLibraryIntegrationsConfigCommand);
+            // AddMenuChild(libraryItem.Items, "LOCMenuLibraryManagerTitle", mainModel.OpenDbFieldsManagerCommand);
+            // AddMenuChild(libraryItem.Items, "LOCMenuConfigureEmulatorsMenuTitle", mainModel.OpenEmulatorsCommand);
+            // AddMenuChild(libraryItem.Items, "LOCMenuDownloadMetadata", mainModel.DownloadMetadataCommand);
+            // AddMenuChild(libraryItem.Items, "LOCMenuSoftwareTools", mainModel.OpenSoftwareToolsCommand);
+            // libraryItem.Items.Add(new Separator());
+            // AddMenuChild(libraryItem.Items, "LOCMenuBackupData", mainModel.BackupDataCommand, null, "BackupIcon");
+            // AddMenuChild(libraryItem.Items, "LOCMenuRestoreBackup", mainModel.RestoreDataBackupCommand, null, "RestoreBackupIcon");
 
             // Update Library
             var updateItem = AddMenuChild(Items, "LOCMenuReloadLibrary", null, null, "UpdateDbIcon");
@@ -128,7 +128,7 @@ namespace Playnite.DesktopApp.Controls
             }
 
             // Random game select
-            AddMenuChild(Items, "LOCMenuSelectRandomGame", mainModel.SelectRandomGameCommand, null, "DiceIcon");
+            // AddMenuChild(Items, "LOCMenuSelectRandomGame", mainModel.SelectRandomGameCommand, null, "DiceIcon");
 
             // Addons
             AddMenuChild(Items, "LOCMenuAddons", mainModel.OpenAddonsCommand, null, "AddonsIcon");
