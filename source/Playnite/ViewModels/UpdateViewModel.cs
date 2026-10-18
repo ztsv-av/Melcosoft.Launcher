@@ -41,10 +41,22 @@ namespace Playnite.ViewModels
             }
         }
 
+        // Mandatory update: no "Later". The Close button reads "Exit", and the caller quits the
+        // app when the window closes without the update.
+        public bool IsMandatory { get; private set; }
+
+        public string CloseButtonText => resources.GetString(IsMandatory ? "LOCExitAppLabel" : "LOCCloseLabel");
+
         public RelayCommand<object> CloseCommand
         {
             get => new RelayCommand<object>((a) =>
             {
+                // Fullscreen key and gamepad bindings reach this even while the buttons are disabled.
+                if (ShowProgress)
+                {
+                    return;
+                }
+
                 CloseView();
             });
         }
@@ -127,7 +139,8 @@ namespace Playnite.ViewModels
             IWindowFactory window,
             IResourceProvider resources,
             IDialogsFactory dialogs,
-            ApplicationMode mode)
+            ApplicationMode mode,
+            bool isMandatory = false)
         {
             context = SynchronizationContext.Current;
             this.window = window;
@@ -135,6 +148,7 @@ namespace Playnite.ViewModels
             this.resources = resources;
             this.dialogs = dialogs;
             this.mode = mode;
+            IsMandatory = isMandatory;
 
             CurrentRegionDisplay = BuildRegionDisplay(ReadCurrentRegion());
 
@@ -179,7 +193,12 @@ namespace Playnite.ViewModels
                 }
                 else
                 {
-                    window.Close(false);
+                    // A mandatory update window stays open: the player can only update or exit.
+                    if (!IsMandatory)
+                    {
+                        window.Close(false);
+                    }
+
                     return;
                 }
             }
@@ -211,7 +230,12 @@ namespace Playnite.ViewModels
                     MessageBoxButton.OK,
                     MessageBoxImage.Error);
 
-                window.Close(false);
+                // A mandatory update window stays open, so the player can try again or exit.
+                if (!IsMandatory)
+                {
+                    window.Close(false);
+                }
+
                 return;
             }
         }

@@ -800,6 +800,10 @@
     <sys:String x:Key="LOCPlayGame">Играть</sys:String>
     <sys:String x:Key="LOCInstallGame">Установить</sys:String>
     <sys:String x:Key="LOCLaunchAnotherInstance">Запустить ещё одно окно игры</sys:String>
+    <sys:String x:Key="LOCUpdaterMandatoryInfo">Это обновление лаунчера обязательно. Запуск, установка и восстановление игр недоступны, пока оно не установлено.</sys:String>
+    <sys:String x:Key="LOCServicesUnavailableTitle">Сервисы Melcosoft недоступны</sys:String>
+    <sys:String x:Key="LOCServicesUnavailableMessage">Сервисы Melcosoft сейчас недоступны или находятся на техническом обслуживании. Попробуйте позже.</sys:String>
+    <sys:String x:Key="LOCRetryLabel">Повторить</sys:String>
     <sys:String x:Key="LOCGameOptions">Настройки игры</sys:String>
     <sys:String x:Key="LOCGameDetails">Подробная информация</sys:String>
     <sys:String x:Key="LOCUninstallGame">Удалить с устройства</sys:String>

@@ -925,10 +925,15 @@ namespace Playnite.DesktopApp.ViewModels
         {
             var updater = new Updater(App);
             var appUpdateAvailable = false;
+            var appUpdateMandatory = false;
             var addonUpdates = new List<AddonUpdate>();
             var dialogRes = Dialogs.ActivateGlobalProgress((args) =>
                 {
                     appUpdateAvailable = updater.IsUpdateAvailable;
+                    if (updater.TryGetMandatoryState(out appUpdateMandatory))
+                    {
+                        MandatoryUpdate.SetState(appUpdateMandatory);
+                    }
                     args.Text = LOC.AddonLookingForUpdates.GetLocalized();
                     addonUpdates = Addons.CheckAddonUpdates(App.ServicesClient);
                 },
@@ -943,6 +948,12 @@ namespace Playnite.DesktopApp.ViewModels
             if (!appUpdateAvailable && !addonUpdates.HasItems())
             {
                 Dialogs.ShowMessage(LOC.UpdateNoNewUpdateMessage.GetLocalized(), string.Empty);
+                return;
+            }
+
+            if (appUpdateMandatory)
+            {
+                MandatoryUpdate.ShowBlockingWindow();
                 return;
             }
 

@@ -1267,4 +1267,8 @@ Playnite 将自动重启以开始备份过程。</sys:String>
     <sys:String x:Key="LOCUnsavedChangesAskMessage">您想要保存您所作的更改吗？</sys:String>
     <sys:String x:Key="LOCPortableInstallation">便携式安装</sys:String>
     <sys:String x:Key="LOCNoControllersDetected">未检测到控制器</sys:String>
+    <sys:String x:Key="LOCUpdaterMandatoryInfo">此启动器更新为必需更新。安装此更新之前，无法启动、安装或修复游戏。</sys:String>
+    <sys:String x:Key="LOCServicesUnavailableTitle">Melcosoft 服务不可用</sys:String>
+    <sys:String x:Key="LOCServicesUnavailableMessage">Melcosoft 服务当前无法访问或正在维护中。请稍后再试。</sys:String>
+    <sys:String x:Key="LOCRetryLabel">重试</sys:String>
 </ResourceDictionary>

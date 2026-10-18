@@ -34,10 +34,15 @@ namespace Playnite
         private IPlayniteApplication playniteApp;
         private IDownloader downloader;
 
-        // Cache check response to avoid calling backend too often inside same window open
+        // Cache check response to avoid calling backend too often inside same window open.
+        // A failed check is cached too (cachedManifest == null), so one Updater does not
+        // wait for the timeout again on each property read.
         private BackendManifest cachedManifest;
         private DateTime cachedManifestAtUtc = DateTime.MinValue;
         private static readonly TimeSpan CacheTtl = TimeSpan.FromSeconds(10);
+
+        // Timeout of the release check call. The check before a game action uses a short one.
+        public int CheckTimeoutMs { get; set; } = 30_000;
 
         private static string updateBranch
         {
@@ -171,6 +176,9 @@ namespace Playnite
 
             [JsonProperty("install_dir")]
             public string InstallDir { get; set; }
+
+            [JsonProperty("update_mandatory")]
+            public bool UpdateMandatory { get; set; }
         }
 
         private sealed class PrepareUpdaterResponse
@@ -225,6 +233,22 @@ namespace Playnite
 
                 return false;
             }
+        }
+
+        // Live mandatory state of the release check. Returns false when the check failed
+        // (backend or release server not reachable); then mandatory is false.
+        // Mandatory needs an available update, so the Win7/8/32-bit rule above applies too.
+        public bool TryGetMandatoryState(out bool mandatory)
+        {
+            mandatory = false;
+            var m = EnsureBackendChecked();
+            if (m == null)
+            {
+                return false;
+            }
+
+            mandatory = m.UpdateMandatory && IsUpdateAvailable;
+            return true;
         }
 
         public Version GetLatestVersion()
@@ -436,24 +460,24 @@ namespace Playnite
 
         private BackendManifest EnsureBackendChecked()
         {
-            if (cachedManifest != null && (DateTime.UtcNow - cachedManifestAtUtc) < CacheTtl)
+            if ((DateTime.UtcNow - cachedManifestAtUtc) < CacheTtl)
             {
                 return cachedManifest;
             }
 
             try
             {
-                var json = PostJson(BackendBaseUrl + CheckEndpoint, "{}");
-                var m = JsonConvert.DeserializeObject<BackendManifest>(json);
-                cachedManifest = m;
-                cachedManifestAtUtc = DateTime.UtcNow;
-                return m;
+                var json = PostJson(BackendBaseUrl + CheckEndpoint, "{}", CheckTimeoutMs);
+                cachedManifest = JsonConvert.DeserializeObject<BackendManifest>(json);
             }
             catch (Exception e)
             {
                 logger.Warn(e, "Failed to check updates via backend.");
-                return null;
+                cachedManifest = null;
             }
+
+            cachedManifestAtUtc = DateTime.UtcNow;
+            return cachedManifest;
         }
 
         private static async Task<string> GetAsync(string url)
@@ -489,12 +513,12 @@ namespace Playnite
             }
         }
 
-        private static string PostJson(string url, string body)
+        private static string PostJson(string url, string body, int timeoutMs = 30_000)
         {
             var req = (HttpWebRequest)WebRequest.Create(url);
             req.Method = "POST";
             req.ContentType = "application/json";
-            req.Timeout = 30_000;
+            req.Timeout = timeoutMs;
 
             var bytes = Encoding.UTF8.GetBytes(body ?? "{}");
             using (var stream = req.GetRequestStream())

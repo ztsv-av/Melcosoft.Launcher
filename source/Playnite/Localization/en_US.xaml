@@ -690,6 +690,10 @@
         <sys:String x:Key="LOCPlayGame"></sys:String>
         <sys:String x:Key="LOCInstallGame"></sys:String>
         <sys:String x:Key="LOCLaunchAnotherInstance">Launch game</sys:String>
+        <sys:String x:Key="LOCUpdaterMandatoryInfo">This launcher update is required. You cannot start, install or repair games until you install it.</sys:String>
+        <sys:String x:Key="LOCServicesUnavailableTitle">Melcosoft services unavailable</sys:String>
+        <sys:String x:Key="LOCServicesUnavailableMessage">Melcosoft services are not reachable at the moment or are under maintenance. Please try again later.</sys:String>
+        <sys:String x:Key="LOCRetryLabel">Retry</sys:String>
         <sys:String x:Key="LOCGameOptions"></sys:String>
         <sys:String x:Key="LOCGameDetails"></sys:String>
         <sys:String x:Key="LOCUninstallGame"></sys:String>

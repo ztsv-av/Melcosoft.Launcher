@@ -40,6 +40,10 @@
             <Border Background="{StaticResource ControlBackgroundDarkBrush}" CornerRadius="3"
                     Grid.Column="1" Grid.Row="1">
                 <DockPanel>
+                    <TextBlock Text="{DynamicResource LOCUpdaterMandatoryInfo}"
+                           Visibility="{Binding IsMandatory, Converter={pcon:BooleanToVisibilityConverter}}"
+                           Style="{StaticResource TextBlockBaseStyle}" FontWeight="Bold" TextWrapping="Wrap"
+                           Margin="20,20,20,0" DockPanel.Dock="Top"/>
                     <TextBlock Text="{DynamicResource LOCUpdaterChangesInfo}"
                            Style="{StaticResource TextBlockBaseStyle}"     
                            Margin="20" DockPanel.Dock="Top"/>
@@ -74,7 +78,7 @@
                     <ProgressBar Value="{Binding UpdateProgress}" Maximum="100" Height="35"
                              Visibility="{Binding ShowProgress, Converter={pcon:BooleanToVisibilityConverter}}"
                              DockPanel.Dock="Top" Margin="5"/>
-                    <pctrls:ButtonEx x:Name="ButtonClose" Content="{DynamicResource LOCCloseLabel}" DockPanel.Dock="Right" IsCancel="True"
+                    <pctrls:ButtonEx x:Name="ButtonClose" Content="{Binding CloseButtonText}" DockPanel.Dock="Right" IsCancel="True"
                             Style="{StaticResource MessageBoxButton}"
                             IsEnabled="{Binding ShowProgress, Converter={pcon:NegateConverter}}"
                             Command="{Binding CloseCommand}" />

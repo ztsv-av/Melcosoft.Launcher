@@ -1322,7 +1322,19 @@ namespace Playnite
                 {
                     var showNotification = false;
                     var updater = new Updater(this);
-                    if (updater.IsUpdateAvailable)
+
+                    // A failed check keeps the last known state (fail open when nothing is known yet).
+                    if (updater.TryGetMandatoryState(out var mandatory))
+                    {
+                        MandatoryUpdate.SetState(mandatory);
+                    }
+
+                    if (mandatory)
+                    {
+                        MainModelBase.UpdatesAvailable = true;
+                        MandatoryUpdate.ShowBlockingWindow();
+                    }
+                    else if (updater.IsUpdateAvailable)
                     {
                         if (AppSettings.UpdateNotificationOnPatchesOnly)
                         {

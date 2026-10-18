@@ -471,6 +471,12 @@ namespace Playnite.ViewModels
 
         private void OpenUpdates()
         {
+            if (MandatoryUpdate.IsRequired)
+            {
+                MandatoryUpdate.ShowBlockingWindow();
+                return;
+            }
+
             new UpdateViewModel(
                 new Updater(App),
                 new UpdateWindowFactory(),
