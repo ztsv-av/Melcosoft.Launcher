@@ -40,10 +40,16 @@
             <Border Background="{StaticResource ControlBackgroundDarkBrush}" CornerRadius="3"
                     Grid.Column="1" Grid.Row="1">
                 <DockPanel>
-                    <TextBlock Text="{DynamicResource LOCUpdaterMandatoryInfo}"
-                           Visibility="{Binding IsMandatory, Converter={pcon:BooleanToVisibilityConverter}}"
-                           Style="{StaticResource TextBlockBaseStyle}" FontWeight="Bold" TextWrapping="Wrap"
-                           Margin="20,20,20,0" DockPanel.Dock="Top"/>
+                    <Border Background="#FFB300" CornerRadius="4" Padding="20,15" Margin="20,20,20,0" DockPanel.Dock="Top"
+                            Visibility="{Binding IsMandatory, Converter={pcon:BooleanToVisibilityConverter}}">
+                        <DockPanel>
+                            <TextBlock Text="&#x26A0;" FontFamily="Segoe UI Symbol" FontSize="40" Foreground="#1A1A1A"
+                                       VerticalAlignment="Center" Margin="0,0,20,0" DockPanel.Dock="Left"/>
+                            <TextBlock Text="{DynamicResource LOCUpdaterMandatoryInfo}"
+                                       Style="{StaticResource TextBlockBaseStyle}" FontSize="30" FontWeight="Bold"
+                                       Foreground="#1A1A1A" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                        </DockPanel>
+                    </Border>
                     <TextBlock Text="{DynamicResource LOCUpdaterChangesInfo}"
                            Style="{StaticResource TextBlockBaseStyle}"     
                            Margin="20" DockPanel.Dock="Top"/>
